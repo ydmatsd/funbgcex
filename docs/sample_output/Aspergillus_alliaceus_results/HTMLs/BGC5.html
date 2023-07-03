@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BGC5</title>
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+		<link  rel="stylesheet" href="css/style.css">
+		<script src="js/BGC5.js" defer></script>
+	</head>
+
+	<body>
+		<header class="page-header wrapper" id="top">
+			<h1><a href="../results.html"><img class="logo" src="img/logo.png" alt="FunBGCeX"></a></h1>
+			<h2><i><u><strong>Fun</strong></u>gal <u><strong>B</strong></u>iosynthetic <u><strong>G</strong></u>ene<br> <u><strong>C</strong></u>luster <u><strong>eX</strong></u>tractor</i></h2>
+			<nav>
+				<ul class="main-nav">
+					<li><a href="http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html" target="_blank" rel="noopener noreferrer">FunBGCs</a></li>
+					<li><a href="http://staffweb1.cityu.edu.hk/ymatsuda/index.html" target="_blank" rel="noopener noreferrer">THE MATSUDA GROUP</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<h3><a class="link" href="../results.html">BGCs Overview</a></h3>
+
+		<ol class="wrapper2"> 
+			<li><a href="BGC1.html#top"><span class="circle terpene">1</span></a></li>
+			<li><a href="BGC2.html#top"><span class="circle terpene">2</span></a></li>
+			<li><a href="BGC3.html#top"><span class="circle terpene">3</span></a></li>
+			<li><a href="BGC4.html#top"><span class="circle idt">4</span></a></li>
+			<li><a href="BGC5.html#top"><span class="circle current_idt">5</span></a></li>
+
+		</ol>
+
+		<table>
+			<tr><th colspan="2">BGC5 - Aspergillus alliaceus</th></tr>
+			<tr><th>Scaffold / Position</th><td>NW_022474773 / 17193...56711</td></tr>
+			<tr><th>Length (bp)</th><td>39519</td></tr>
+			<tr><th><a class="link" href="classification.html" target="_blank">Core enzymes</a></th><td>NRPS, TC (Pyr4), PT (PaxC), PPPS</td></tr>
+			<tr><th>Similar BGC / Similarity score</th><td><a class='funbgcs' href='http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs/FBGC00178.html' target='_blank'>FBGC00178</a> (14-(N,N-dimethylleucyloxy)paspalinine) / 98.7</td></tr>
+		</table>
+
+	    <p><a class="link" href="../BGCs/BGC5_NW_022474773_BDW43DRAFT_304690_BDW43DRAFT_316928.gbk">Download BGC GenBank file</a></p>
+
+	    <canvas id="canvas" width="800" height="60"></canvas>
+
+		<table>
+			<tr><th colspan="2">Gene information</th></tr>
+			<tr><th>Locus tag / Position</th><td><span id="position"></span></td></tr>
+			<tr><th>Predicted function</th><td><span id="function"></span></td></tr>
+			<tr><th>Predicted domain organization</th><td><span id="domain"></span></td></tr>
+			<tr><th>Closest homologue in FunBGCs</th><td><span id="homologue"></span></td></tr>
+			<tr><th>Representative protein families</th><td><span id="pfam"></span></td></tr>
+			<tr><th>Amino acid length</th><td><span id="aalen"></span></td></tr>
+		</table>
+
+		<p id="aaseq" style="display: none;"></p>
+		<button type="button" autofocus onclick="copyToClipboard()" class="btn">Copy AA sequence to clipboard</button>
+	    <p id="blastLink"><a class="link" id="blast" href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&LAYOUT=OneWindow&PROGRAM=blastp&PAGE=Proteins&FORMAT_TYPE=HTML&NCBI_GI=on&SHOW_OVERVIEW=on" target="_blank" rel="noopener noreferrer">BLASTp on this protein</a></p>
+	    <p id="message" style="display: none;"><font color="red"><b>The sequence is too long. For BLASTp, copy the sequence and go to the BLAST website.</b></font></p>
+	    <br>
+
+ 	</body>
+</html>
