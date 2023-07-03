@@ -1,7 +1,7 @@
 # FunBGCeX (Fungal Biosynthetic Gene Cluster eXtractor)
 
 ## Overview
-FunBGCeX is a genome mining tool for fungal natural product discovery, which detects biosynthetic proteins based on our manually curated database of fungal natural product biosynthetic gene clusters (BGCs), [FunBGCs](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html). FunBGCeX can extract not only all possible BGCs from given fungal genomes but also those encoding a protein of user's interest. The extracted BGCs are provided in the GenBank format and can also be visualized using a web browser (You can access a sample output [here](https://github.com/ydmatsd/funbgcex/tree/main/docs/sample_output) or [here](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcex/sample/results.html)).
+**FunBGCeX** is a genome mining tool for fungal natural product discovery, which detects biosynthetic proteins based on our manually curated database of fungal natural product biosynthetic gene clusters (BGCs), [FunBGCs](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html). FunBGCeX can extract not only all possible BGCs from given fungal genomes but also those encoding a protein of user's interest. The extracted BGCs are provided in the GenBank format and can also be visualized using a web browser (You can access a sample output [here](docs/sample_output) or [here](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcex/sample/results.html)).
 
 <img src="docs/img/result.png" alt="FunBGCeX sample result" width=500>
 
@@ -12,7 +12,7 @@ Install the following dependencies:
 * [HMMER](http://hmmer.org/documentation.html) (version 3.3.2 tested)
 
 Make sure that `diamond` and HMMER executables (e.g., `hmmscan` and `hmmfetch`) are on your system $PATH.  
-Note: FunBGCeX was tested on MacOS Ventura 13.4.
+**Note:** FunBGCeX was tested on MacOS Ventura 13.4.
 
 ## Installation
 `funbgcex` can be installed using pip:
@@ -62,14 +62,16 @@ To extract BGCs that encode a protein with a protein family/domain (Pfam) of you
 $ funbgcex input_directory output_directory -m pfam -p Pfam_name
 ```
 
+See [here](docs/available_Pfam.txt) for available protein domains.
+
 ### Example: Extracting BGCs encoding Pyr4-family terpene cyclases
-Suppose you have several GenBank files in a directory named `gbk`. If you wish to extract BGCs that encode a Pyr4-family terpene cyclase from these GenBank files and to obtain the result in a directory named `results`, then run the following:
+Suppose you have several GenBank files in a directory named `gbk` in your current directory. If you wish to extract BGCs that encode a Pyr4-family terpene cyclase from these GenBank files and to obtain the result in a directory named `results`, then run the following:
 
 ```bash
 $ funbgcex gbk results -m pfam -p Pyr4
 ```
 
-Alternatively, you may prepare a FASTA file containing the protein sequences of Pyr4 homologues. If the FASTA file is saved as `Pyr4.fasta`, then run the following:
+Alternatively, you may prepare a FASTA file containing the protein sequences of Pyr4 homologues. If the FASTA file is saved as `Pyr4.fasta` in your current director, then run the following:
 
 ```bash
 $ funbgcex gbk results -m target -f Pyr4.fasta
