@@ -65,13 +65,13 @@ $ funbgcex input_directory output_directory -m pfam -p Pfam_name
 See [here](docs/available_Pfam.txt) for available protein domains.
 
 ### Example: Extracting BGCs encoding Pyr4-family terpene cyclases
-Suppose you have several GenBank files in a directory named `gbk`. If you wish to extract BGCs that encode a Pyr4-family terpene cyclase from these GenBank files and to obtain the result in a directory named `results`, then run the following:
+Suppose you have several GenBank files in a directory named `gbk` in your current directory. If you wish to extract BGCs that encode a Pyr4-family terpene cyclase from these GenBank files and to obtain the result in a directory named `results`, then run the following:
 
 ```bash
 $ funbgcex gbk results -m pfam -p Pyr4
 ```
 
-Alternatively, you may prepare a FASTA file containing the protein sequences of Pyr4 homologues. If the FASTA file is saved as `Pyr4.fasta`, then run the following:
+Alternatively, you may prepare a FASTA file containing the protein sequences of Pyr4 homologues. If the FASTA file is saved as `Pyr4.fasta` in your current director, then run the following:
 
 ```bash
 $ funbgcex gbk results -m target -f Pyr4.fasta
