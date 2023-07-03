@@ -82,19 +82,5 @@ To check other options, run the following:
 $ funbgcex -h
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Citation
+If you find FunBGCex useful, please cite:
