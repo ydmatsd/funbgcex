@@ -1,0 +1,587 @@
+HMM,function,exception,color,source,accession
+2-Hacid_dh,dehydrogenase,,#531B93,Pfam,PF00389.33
+2-Hacid_dh_C,dehydrogenase,,#531B93,Pfam,PF02826.22
+2OG-Fe_Oxy_2,2OG-Fe(II)-dependent dioxygenase,,#FF2F92,Pfam,PF10014.12
+2OG-FeII_Oxy,2OG-Fe(II)-dependent dioxygenase,,#FF2F92,Pfam,PF03171.23
+2OG-FeII_Oxy_2,2OG-Fe(II)-dependent dioxygenase,,#FF2F92,Pfam,PF13532.9
+2OG-FeII_Oxy_3,2OG-Fe(II)-dependent dioxygenase,,#FF2F92,Pfam,PF13640.9
+3Beta_HSD,short-chain dehydrogenase/reductase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS",#531B93,Pfam,PF01073.22
+3HCDH,acyl-CoA dehydrogenase,,,Pfam,PF00725.25
+3HCDH_N,acyl-CoA dehydrogenase,,,Pfam,PF02737.21
+4HBT,thioesterase,"NR-PKS,PR-PKS,HR-PKS,NRPS,PKS-NRPS,NRPS-PKS",#0096FF,Pfam,PF03061.25
+4HBT_2,thioesterase,"NR-PKS,PR-PKS,HR-PKS,NRPS,PKS-NRPS,NRPS-PKS",#0096FF,Pfam,PF13279.9
+4HBT_3,thioesterase,"NR-PKS,PR-PKS,HR-PKS,NRPS,PKS-NRPS,NRPS-PKS",#0096FF,Pfam,PF13622.9
+AA_kinase,aspartate kinase,,#D7B467,Pfam,PF00696.31
+AA_permease,amino-acid permease,,#000000,Pfam,PF00324.24
+AA_permease_2,amino-acid permease,,#000000,Pfam,PF13520.9
+Aa_trans,amino acid transporter,,#000000,Pfam,PF01490.21
+AA-adenyl-dom,adenylation domain,"PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#011993,TIGRFAMs,TIGR01733
+AAA_16,ABC transporter,,#000000,Pfam,PF13191.9
+AAA_19,ABC transporter,,#000000,Pfam,PF13245.9
+AAA_21,ABC transporter,,#000000,Pfam,PF13304.9
+AAA_22,ABC transporter,,#000000,Pfam,PF13401.9
+AAA_23,ABC transporter,,#000000,Pfam,PF13476.9
+AAA_25,ABC transporter,,#000000,Pfam,PF13481.9
+AAA_29,ABC transporter,,#000000,Pfam,PF13555.9
+AAA_30,ABC transporter,,#000000,Pfam,PF13604.9
+AAA_33,ABC transporter,,#000000,Pfam,PF13671.9
+AAT,acyltransferase,,#76D6FF,Pfam,PF03417.19
+AATase,alcohol acetyltransferase,,#76D6FF,Pfam,PF07247.15
+ABA3,,,,MyHMM,
+ABC_ATPase,ABC transporter,,#000000,Pfam,PF09818.12
+ABC_membrane,ABC transporter,,#000000,Pfam,PF00664.26
+ABC_tran,ABC transporter,,#000000,Pfam,PF00005.30
+ABC_trans_N,ABC transporter,,#000000,Pfam,PF14510.9
+ABC1,ABC transporter,,#000000,Pfam,PF03109.19
+ABC2_membrane,ABC transporter,,#000000,Pfam,PF01061.27
+ABC2_membrane_3,ABC transporter,,#000000,Pfam,PF12698.10
+ABC2_membrane_7,ABC transporter,,#000000,Pfam,PF19055.3
+Abhydrolase_1,hydrolase,,#0096FF,Pfam,PF00561.23
+Abhydrolase_2,hydrolase,,#0096FF,Pfam,PF02230.19
+Abhydrolase_3,hydrolase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF07859.16
+Abhydrolase_6,hydrolase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF12697.10
+ABM,,,,Pfam,PF03992.19
+ACAS_N,CoA ligase,,#011993,Pfam,PF16177.8
+ACC_central,acetyl-CoA carboxylase,,#005493,Pfam,PF08326.15
+Acetyltransf_3,acetyltransferase,,#76D6FF,Pfam,PF13302.10
+Acetyltransf_7,acetyltransferase,,#76D6FF,Pfam,PF13508.10
+Acetyltransf_8,acetyltransferase,,#76D6FF,Pfam,PF13523.9
+Aconitase,aconitase,,#656401,Pfam,PF00330.23
+Aconitase_C,aconitase,,#656401,Pfam,PF00694.22
+ACP_PCP,,,,MyHMM,
+ACP_syn_III_C,,,,Pfam,PF08541.13
+ACPS,fatty acid synthase,,#FF8059,Pfam,PF01648.23
+ACT,aspartate kinase,,#D7B467,Pfam,PF01842.28
+ACT_7,aspartate kinase,,#D7B467,Pfam,PF13840.9
+Acyl_transf_1,fatty acid synthase,"NR-PKS,PR-PKS,HR-PKS,NRPS,PKS-NRPS,NRPS-PKS",#FF8059,Pfam,PF00698.24
+Acyl_transf_3,acetyltransferase/acyltransferase,,#76D6FF,Pfam,PF01757.25
+Acyl-CoA_dh_1,acyl-CoA dehydrogenase,,#008F00,Pfam,PF00441.27
+Acyl-CoA_dh_2,acyl-CoA dehydrogenase,,#008F00,Pfam,PF08028.14
+Acyl-CoA_dh_M,acyl-CoA dehydrogenase,,#008F00,Pfam,PF02770.22
+Acyl-CoA_dh_N,acyl-CoA dehydrogenase,,#008F00,Pfam,PF02771.19
+ADC,decarboxylase,,#73FCD6,Pfam,PF06314.14
+ADH_N,medium-chain dehydrogenase/reductase,"HR-PKS,PKS-NRPS,NRPS-PKS",#531B93,Pfam,PF08240.15
+ADH_N_2,medium-chain dehydrogenase/reductase,"HR-PKS,PKS-NRPS,NRPS-PKS",#531B93,Pfam,PF16884.8
+adh_short,short-chain dehydrogenase/reductase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS",#531B93,Pfam,PF00106.28
+adh_short_C2,short-chain dehydrogenase/reductase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS",#531B93,Pfam,PF13561.9
+ADH_zinc_N,medium-chain dehydrogenase/reductase,"HR-PKS,PKS-NRPS,NRPS-PKS",#531B93,Pfam,PF00107.29
+ADH_zinc_N_2,medium-chain dehydrogenase/reductase,"HR-PKS,PKS-NRPS,NRPS-PKS",#531B93,Pfam,PF13602.9
+ADP_ribosyl_GH,ADP-ribosylglycohydrolase,,#0096FF,Pfam,PF03747.17
+ADSL_C,,,,Pfam,PF10397.12
+AflR,transcription factor,,#929000,Pfam,PF08493.13
+AIG2_2,,,,Pfam,PF13772.9
+Aldedh,aldehyde dehydrogenase,,#531B93,Pfam,PF00171.25
+Aldo_ket_red,aldo-keto reductase,,#531B93,Pfam,PF00248.24
+Aldolase_II,aldolase,,#D4FB79,Pfam,PF00596.24
+Aldose_epim,isomerase,,#00FA92,Pfam,PF01263.23
+Alpha-amylase,alpha-glucosidase,,#0096FF,Pfam,PF00128.27
+Amidase,amidotransferase,,#941100,Pfam,PF01425.24
+Amidohydro_1,,,,Pfam,PF01979.23
+Amidohydro_2,decarboxylase,,#73FCD6,Pfam,PF04909.17
+Amidohydro_3,amidohydrolase,,#941100,Pfam,PF07969.14
+Amino_oxidase,FAD-linked oxidoreductase,,#008F02,Pfam,PF01593.27
+Aminotran_1_2,aminotransferase,,#73FCD6,Pfam,PF00155.24
+Aminotran_3,aminotransferase,,#73FCD6,Pfam,PF00202.24
+Aminotran_4,aminotransferase,,#73FCD6,Pfam,PF01063.22
+Aminotran_5,aminotransferase,,#73FCD6,Pfam,PF00266.22
+Ank,ankyrin repeat domain-containing protein,,#CCCCCC,Pfam,PF00023.33
+Ank_2,ankyrin repeat domain-containing protein,,#CCCCCC,Pfam,PF12796.10
+Ank_3,ankyrin repeat domain-containing protein,,#CCCCCC,Pfam,PF13606.9
+Ank_4,ankyrin repeat domain-containing protein,,#CCCCCC,Pfam,PF13637.9
+Ank_5,ankyrin repeat domain-containing protein,,#CCCCCC,Pfam,PF13857.9
+AnkA,,,,MyHMM,
+Anth_synt_I_N,,,,Pfam,PF04715.16
+Anthrone_oxy,anthrone oxygenase,,#8EFA00,Pfam,PF08592.14
+ApbA,oxidoreductase,,#531B93,Pfam,PF02558.19
+ApbA_C,oxidoreductase,,#531B93,Pfam,PF08546.14
+APH,metalloprotease,,#0096FF,Pfam,PF01636.26
+Asn_synthase,amidotransferase,,#941100,Pfam,PF00733.24
+Asp,aspartic protease,,#0096FF,Pfam,PF00026.26
+Asp_aminotransf,,,,Pfam,PF12897.10
+Asp_Glu_race,epimerase,,#00FA92,Pfam,PF01177.25
+AsR5,Diels-Alderase,,#00F900,MyHMM,
+AsR6,,,,MyHMM,
+AstC,,,,MyHMM,
+AtaL,,,,Pfam,PF08982.14
+ATEG_03636,,,,MyHMM,
+AtnE,transcription factor,,#929000,MyHMM,
+ATP-grasp,ATP-grasp protein,,#D783FF,Pfam,PF02222.25
+ATP-grasp_4,ATP-grasp protein,,#D783FF,Pfam,PF13535.9
+ATP-synt_ab,ATP synthase,,,Pfam,PF00006.28
+ATP-synt_ab_N,ATP synthase,,,Pfam,PF02874.26
+ATP11,ATP11 protein,,,Pfam,PF06644.14
+ATPgrasp_N,ATP-grasp protein,,#D783FF,Pfam,PF18130.4
+ATPgrasp_Ter,ATP-grasp protein,,#D783FF,Pfam,PF15632.9
+AXE1,hydrolase,,#0096FF,Pfam,PF05448.15
+BAAT_C,,,,Pfam,PF08840.14
+Bac_luciferase,,,,Pfam,PF00296.23
+BBE,FAD-linked oxidoreductase,,#008F02,Pfam,PF08031.15
+BD-FAE,,,,Pfam,PF20434.1
+Beta_elim_lyase,PLP-containing enzyme,,#73FCD6,Pfam,PF01212.24
+Beta-lactamase,beta-lactamase-like enzyme,,#0096FF,Pfam,PF00144.27
+BfL6,ketosteroid isomerase-like protein,,#00FA92,MyHMM,
+BfL8,,,,MyHMM,
+Biotin_carb_C,,,,Pfam,PF02785.22
+Biotin_carb_N,,,,Pfam,PF00289.25
+Biotin_lipoyl,,,,Pfam,PF00364.25
+bZIP_1,transcription factor,,#929000,Pfam,PF00170.24
+CalD,acetyltransferase/acyltransferase,,#76D6FF,MyHMM,
+Caps_synth,glycosyltransferase,,#9437FF,Pfam,PF05704.15
+Carboxyl_trans,,,,Pfam,PF01039.25
+Carn_acyltransf,,,,Pfam,PF00755.23
+Catalase,catalase,,#4F8F00,Pfam,PF00199.22
+Catalase-rel,catalase,,#4F8F00,Pfam,PF06628.15
+CBM-like,,,,Pfam,PF14683.9
+CBS,,,,Pfam,PF00571.31
+CghF,transcription factor,,#929000,MyHMM,
+Chal_sti_synt_C,,,,Pfam,PF02797.18
+Chal_sti_synt_N,,,,Pfam,PF00195.22
+Chlorophyllase2,,,,Pfam,PF12740.10
+Chorismate_bind,,,,Pfam,PF00425.21
+Citrate_synt,citrate synthase-like protein,,#DBD701,Pfam,PF00285.24
+Clz3,copper dependent oxygenase,,#009193,MyHMM,
+Clz7,transcription factor,,#929000,MyHMM,
+CMAS,,,,Pfam,PF02353.23
+CoA_transf_3,CoA transferase,,#76D6FF,Pfam,PF02515.20
+COesterase,hydrolase,,#0096FF,Pfam,PF00135.31
+Cofilin_ADF,,,,Pfam,PF00241.23
+Condensation,condensation domain,"NRPS,PKS-NRPS,NRPS-like",,Pfam,PF00668.23
+CpaE,transcription factor,,#929000,MyHMM,
+CPSase_L_D2,,,,Pfam,PF02786.20
+CPSase_L_D3,,,,Pfam,PF02787.22
+CtvD,epoxide hydrolase,,#0096FF,MyHMM,
+Cu_amine_oxid,copper amine oxidase,,#009193,Pfam,PF01179.23
+Cu-oxidase,laccase,,#009193,Pfam,PF00394.25
+Cu-oxidase_2,laccase,,#009193,Pfam,PF07731.17
+Cu-oxidase_3,laccase,,#009193,Pfam,PF07732.18
+Cupin_2,cupin domain-containing protein,,#FF7E79,Pfam,PF07883.14
+Cys_Met_Meta_PP,PLP-containing enzyme,,#73FCD6,Pfam,PF01053.23
+Cyt-b5,cytochrome b5-like protein,,#FF8AD8,Pfam,PF00173.31
+Dabb,,,,Pfam,PF07876.15
+DAHP_synth_1,phospho-2-dehydro-3-deoxyheptonate aldolase,,,Pfam,PF00793.23
+Dala_Dala_lig_C,,,,Pfam,PF07478.16
+DAO,FAD-dependent monooxygenase,,#008F01,Pfam,PF01266.27
+dCMP_cyt_deam_1,deaminase,,#73FCD6,Pfam,PF00383.26
+DDE_1,,,,Pfam,PF03184.22
+DDE_3,,,,Pfam,PF13358.9
+DHDPS,aldolase,,#D4FB79,Pfam,PF00701.25
+Dimer_Tnp_hAT,,,,Pfam,PF05699.17
+Dimerisation,methyltransferase,,#FF9300,Pfam,PF08100.14
+Dimerisation2,methyltransferase,,#FF9300,Pfam,PF16864.8
+DIOX_N,2OG-Fe(II)-dependent dioxygenase,,#FF2F92,Pfam,PF14226.9
+DIT1_PvcA,isocyanide synthase,,#83194C,Pfam,PF05141.15
+DJ-1_PfpI,isocyanide hydratase,,#00FDFF,Pfam,PF01965.27
+DLH,hydrolase,,#0096FF,Pfam,PF01738.21
+DUF1295,ene-reductase,,#531B93,Pfam,PF06966.15
+DUF1479,,,,Pfam,PF07350.15
+DUF1729,fatty acid synthase,,#FF8059,Pfam,PF08354.13
+DUF1749,esterase,,#0096FF,Pfam,PF08538.13
+DUF1752,,,,Pfam,PF08550.13
+DUF1776,,,,Pfam,PF08643.13
+DUF1965,copper amine oxidase,,#009193,Pfam,PF09248.13
+DUF1993,,,,Pfam,PF09351.13
+DUF2306,,,,Pfam,PF10067.12
+DUF2334,,,,Pfam,PF10096.12
+DUF2470,,,,Pfam,PF10615.12
+DUF2784,,,,Pfam,PF10861.11
+DUF3176,,,,Pfam,PF11374.11
+DUF3237,DUF3237 protein,,#FFD479,Pfam,PF11578.11
+DUF3425,transcription factor,,#929000,Pfam,PF11905.11
+DUF3471,beta-lactamase-like hydrolase,,#0096FF,Pfam,PF11954.11
+DUF4149,,,,Pfam,PF13664.9
+DUF4185,,,,Pfam,PF13810.9
+DUF4188,ABM superfamily monoxygenase,,#009193,Pfam,PF13826.9
+DUF4267,,,,Pfam,PF14087.9
+DUF4385,,,,Pfam,PF14328.9
+DUF4413,,,,Pfam,PF14372.9
+DUF5519,luciferase,,#011993,Pfam,PF17648.4
+DUF6534,,,,Pfam,PF20152.2
+DUF6570,,,,Pfam,PF20209.1
+DUF659,,,,Pfam,PF04937.18
+DUF87,,,,Pfam,PF01935.20
+Dynamin_N,,,,Pfam,PF00350.26
+Dyp_perox,peroxidase,,#00A4A7,Pfam,PF04261.15
+EamA,transporter,,#000000,Pfam,PF00892.23
+EcdJ,,,,MyHMM,
+ECH_1,enoyl-CoA hydratase,,#00FDFF,Pfam,PF00378.23
+ECH_2,enoyl-CoA hydratase,,,Pfam,PF16113.8
+EcKL,,,,Pfam,PF02958.23
+EfHP,,,,MyHMM,
+EHN,hydrolase,,#0096FF,Pfam,PF06441.15
+ElcH,FAD-dependent monooxygenase,,#008F01,MyHMM,
+Epimerase,short-chain dehydrogenase/reductase,,#531B93,Pfam,PF01370.24
+EqxR,transcription factor,,#929000,MyHMM,
+ERG4_ERG24,methyltransferase,,#FF9300,Pfam,PF01222.20
+Esterase,esterase,"NR-PKS,PR-PKS,HR-PKS,NRPS,PKS-NRPS,NRPS-PKS",#0096FF,Pfam,PF00756.23
+EthD,EthD domain-containing protein,,#73FCD6,Pfam,PF07110.14
+F420_oxidored,reductase,,#008F00,Pfam,PF03807.20
+F5_F8_type_C,,,,Pfam,PF00754.28
+FA_hydroxylase,fatty acid hydroxylase,,#FF8AD8,Pfam,PF04116.16
+FAA_hydrolase,fumarylacetoacetate hydrolase family hydrolase,,#0096FF,Pfam,PF01557.21
+FAD_binding_1,cytochrome P450 reductase,,#FF8AD8,Pfam,PF00667.23
+FAD_binding_2,,,,Pfam,PF00890.27
+FAD_binding_3,FAD-dependent monooxygenase,,#008F01,Pfam,PF01494.22
+FAD_binding_4,FAD-linked oxidoreductase,,#008F02,Pfam,PF01565.26
+FAD_binding_6,,,,Pfam,PF00970.27
+FAD_oxidored,,,,Pfam,PF12831.10
+FAE1_CUT1_RppA,,,,Pfam,PF08392.15
+Fas_alpha_ACP,fatty acid synthase,,#FF8059,Pfam,PF18325.4
+FAS_I_H,fatty acid synthase,,#FF8059,Pfam,PF18314.4
+FAS_meander,fatty acid synthase,,#FF8059,Pfam,PF17951.4
+FAS_N,fatty acid synthase,,#FF8059,Pfam,PF17828.4
+Fasciclin,fasciclin-like protein,,#BF7001,Pfam,PF02469.25
+Fe-ADH,iron-containing alcohol dehydrogenase,,#FF2F92,Pfam,PF00465.22
+Fe-ADH_2,iron-containing alcohol dehydrogenase,,#FF2F92,Pfam,PF13685.9
+Ferric_reduct,NADPH oxidase,,#008F02,Pfam,PF01794.22
+FhuF,,,,Pfam,PF06276.15
+Flavodoxin_1,cytochrome P450 reductase,,#FF8AD8,Pfam,PF00258.28
+Flavodoxin_2,,,,Pfam,PF02525.20
+FMN_dh,FMN-dependent dehydrogenase,,#008F00,Pfam,PF01070.21
+FMN_red,NADPH-dependent FMN reductase,,#008F02,Pfam,PF03358.18
+FMO-like,FAD-dependent monooxygenase,,#008F01,Pfam,PF00743.22
+fn3_3,,,,Pfam,PF14686.9
+Fn3-like,glycosyl hydrolase,,#0096FF,Pfam,PF14310.9
+FncF,short-chain dehydrogenase/reductase,,#531B93,MyHMM,
+FolB,aldolase,,#D4FB79,Pfam,PF02152.21
+fPKS_DH,,,,MyHMM,
+fPKS_ER,trans-acting enoylreductase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS",#531B93,MyHMM,
+fPKS_KR,,,,MyHMM,
+fPKS_PT,,,,MyHMM,
+fPKS_R,,,,MyHMM,
+fPKS_TH,,,,MyHMM,
+FPSE_09189,transcription factor,,#929000,MyHMM,
+FR47,acyltransferase,,#76D6FF,Pfam,PF08445.13
+FrsA-like,hydrolase,,#0096FF,Pfam,PF06500.14
+FrzJ,phosphotransferase,,#D7B467,MyHMM,
+Fsa2,Diels-Alderase,,#00F900,MyHMM,
+FscB,transcription factor,,#929000,MyHMM,
+FSH1,hydrolase,,#0096FF,Pfam,PF03959.16
+FtsK_SpoIIIE,,,,Pfam,PF01580.21
+Fungal_trans,transcription factor,,#929000,Pfam,PF04082.21
+Fungal_trans_2,transcription factor,,#929000,Pfam,PF11951.11
+G_glu_transpept,gamma-glutamyltranspeptidase,,#0096FF,Pfam,PF01019.24
+GATase,amidotransferase,,#941100,Pfam,PF00117.31
+GATase_6,amidotransferase,,#941100,Pfam,PF13522.9
+GATase_7,amidotransferase,,#941100,Pfam,PF13537.9
+GBBH-like_N,,,,Pfam,PF06155.15
+GDP_Man_Dehyd,short-chain dehydrogenase/reductase,,#531B93,Pfam,PF16363.8
+GFO_IDH_MocA,dehydrogenase,,#531B93,Pfam,PF01408.25
+GFO_IDH_MocA_C,dehydrogenase,,#531B93,Pfam,PF02894.20
+GGPS,,,,MyHMM,
+GH3,,,,Pfam,PF03321.16
+GH43_C2,glycosyl hydrolase,,#0096FF,Pfam,PF17851.4
+GIDA,,,,Pfam,PF01134.25
+GliK,gamma-glutamyl cyclotransferase,,#73FDFF,MyHMM,
+GliN,methyltransferase,,#FF9300,MyHMM,
+Glu_dehyd_C,,,,Pfam,PF16912.8
+Gly_transf_sug,,,,Pfam,PF04488.18
+Glyco_hydro_11,glycosyl hydrolase,,#0096FF,Pfam,PF00457.20
+Glyco_hydro_3,glycosyl hydrolase,,#0096FF,Pfam,PF00933.24
+Glyco_hydro_3_C,glycosyl hydrolase,,#0096FF,Pfam,PF01915.25
+Glyco_hydro_31,glycosyl hydrolase,,#0096FF,Pfam,PF01055.29
+Glyco_hydro_43,glycosyl hydrolase,,#0096FF,Pfam,PF04616.17
+Glyco_hydro_cc,glycosyl hydrolase,,#0096FF,Pfam,PF11790.11
+Glyco_transf_28,glycosyltransferase,,#9437FF,Pfam,PF03033.23
+Glyoxal_oxid_N,,,,Pfam,PF07250.14
+Glyoxalase,glyoxalase-like protein,,#B61C65,Pfam,PF00903.28
+Glyoxalase_3,glyoxalase-like protein,,#B61C65,Pfam,PF13468.9
+Glyoxalase_4,glyoxalase-like protein,,#B61C65,Pfam,PF13669.9
+Glyoxalase_6,glyoxalase-like protein,,#B61C65,Pfam,PF18029.4
+GMC_oxred_C,glucose-methanol-choline family oxidoreductase,,#008F00,Pfam,PF05199.16
+GMC_oxred_N,glucose-methanol-choline family oxidoreductase,,#008F00,Pfam,PF00732.22
+GO-like_E_set,galactose oxidase,,#009193,Pfam,PF09118.14
+Gp_dh_C,glyceraldehyde-3-phosphate dehydrogenase,,,Pfam,PF02800.23
+Gp_dh_N,glyceraldehyde-3-phosphate dehydrogenase,,,Pfam,PF00044.27
+Gpr1_Fun34_YaaH,acetate transporter,,#000000,Pfam,PF01184.22
+GsfR1,transcription factor,,#929000,MyHMM,
+GST_C,glutathione S-transferase,,#73FDFF,Pfam,PF00043.28
+GST_C_2,glutathione S-transferase,,#73FDFF,Pfam,PF13410.9
+GST_C_3,glutathione S-transferase,,#73FDFF,Pfam,PF14497.9
+GST_C_5,glutathione S-transferase,,#73FDFF,Pfam,PF16865.8
+GST_N,glutathione S-transferase,,#73FDFF,Pfam,PF02798.23
+GST_N_2,glutathione S-transferase,,#73FDFF,Pfam,PF13409.9
+GST_N_3,glutathione S-transferase,,#73FDFF,Pfam,PF13417.9
+GST_N_4,glutathione S-transferase,,#73FDFF,Pfam,PF17172.7
+GTP_cyclohydroI,GTP cyclohydrolase,,,Pfam,PF01227.25
+HAD_2,HAD-like hydrolase,TC (AstC),#0096FF,Pfam,PF13419.9
+HbpS-like,,,,Pfam,PF03928.17
+Helitron_like_N,,,,Pfam,PF14214.9
+Helo_like_N,,,,Pfam,PF17111.8
+Hemerythrin,,,,Pfam,PF01814.26
+Hemocyanin_C,cyclopenase,,#00FA92,Pfam,PF03723.17
+Hemocyanin_M,cyclopenase,,#00FA92,Pfam,PF00372.22
+Hexapep,,,,Pfam,PF00132.27
+HI0933_like,,,,Pfam,PF03486.17
+HimD,transcription factor,,#929000,MyHMM,
+Histone,,,,Pfam,PF00125.27
+Histone_H2A_C,histone H2A,,,Pfam,PF16211.8
+HLH,transcription factor,,#929000,Pfam,PF00010.29
+HMG_CoA_synt_C,HMG-CoA synthase,,#CCCCCC,Pfam,PF08540.13
+HMG_CoA_synt_N,HMG-CoA synthase,,#CCCCCC,Pfam,PF01154.20
+HMG-CoA_red,HMG-CoA reductase,,#CCCCCC,Pfam,PF00368.21
+HMGL-like,HMG-CoA lyase-like enzyme,,#CCCCCC,Pfam,PF00682.22
+Homeobox_KN,homeodomain-containing protein,,,Pfam,PF05920.14
+Homeodomain,,,,Pfam,PF00046.32
+Homoserine_dh,,,,Pfam,PF00742.22
+HpcH_HpaI,aldolase,,#D4FB79,Pfam,PF03328.17
+HPIH,HMG-CoA reductase,,#CCCCCC,Pfam,PF13323.9
+HSP20,,,,Pfam,PF00011.24
+HTH_51,,,,Pfam,PF18558.4
+HTH_psq,transposase,,,Pfam,PF05225.19
+HTH_Tnp_Tc5,transposase,,,Pfam,PF03221.19
+Hydrolase,hydrolase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS-like",#0096FF,Pfam,PF00702.29
+Hydrolase_4,hydrolase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS-like",#0096FF,Pfam,PF12146.11
+Hydrolase_like,,,,Pfam,PF13242.9
+ICMT,methyltransferase,,#FF9300,Pfam,PF04140.17
+IDO,"indoleamine 2,3-dioxygenase",,#FF2F92,Pfam,PF01231.21
+ILVD_EDD,dihydroxyacid dehydratase,,,Pfam,PF00920.24
+IMPDH,inosine-5'-monophosphate dehydrogenase,,,Pfam,PF00478.28
+IPPT,isopentenyltransferase,,#0000FF,Pfam,PF01715.20
+IPT,,,,Pfam,PF01745.19
+Iso_dh,isopropyl malate dehydrogenase,,#656401,Pfam,PF00180.23
+Isochorismatase,isochorismatase-family protein,,,Pfam,PF00857.23
+IucA_IucC,,,,Pfam,PF04183.15
+Kdo,,,,Pfam,PF06293.17
+Kelch_1,Kelch-like protein,,,Pfam,PF01344.28
+Kelch_2,Kelch-like protein,,,Pfam,PF07646.18
+Kelch_3,Kelch-like protein,,,Pfam,PF13415.9
+Kelch_4,Kelch-like protein,,,Pfam,PF13418.9
+Kelch_6,Kelch-like protein,,,Pfam,PF13964.9
+Lactamase_B,beta-lactamase-like hydrolase/thioesterase,,#0096FF,Pfam,PF00753.30
+Lactamase_B_2,beta-lactamase-like hydrolase,,#0096FF,Pfam,PF12706.10
+Lactamase_B_3,,,,Pfam,PF13483.9
+LCM,methyltransferase,,#FF9300,Pfam,PF04072.17
+LcsT,short-chain dehydrogenase/reductase,,#531B93,MyHMM,
+LIP,hydrolase,,#0096FF,Pfam,PF03583.17
+Lipocalin_5,,,,Pfam,PF13924.9
+Lipocalin_9,,,,Pfam,PF17186.7
+LolU,acetyltransferase,,#76D6FF,MyHMM,
+LtmS,,,,MyHMM,
+Lumazine_bd_2,aldolase,,#D4FB79,Pfam,PF12893.10
+Lyase_1,,,,Pfam,PF00206.23
+Lyase_aromatic,phenylalanine ammonia-lyase,,#9BB75A,Pfam,PF00221.22
+Lycopene_cycl,,,,Pfam,PF05834.15
+Lys_Orn_oxgnase,L-ornithine N(5)-monooxygenase,,#531B93,Pfam,PF13434.9
+Lysine_decarbox,,,,Pfam,PF03641.17
+M20_dimer,peptidase,,#0096FF,Pfam,PF07687.17
+MafB19-deam,,,,Pfam,PF14437.9
+MaoC_dehydrat_N,fatty acid synthase,,#FF8059,Pfam,PF13452.9
+MaoC_dehydratas,fatty acid synthase,,#FF8059,Pfam,PF01575.22
+MARVEL,,,,Pfam,PF01284.26
+MBOAT_2,acetyltransferase,,#76D6FF,Pfam,PF13813.9
+MdpA,transcriptional coactivator,,#929000,MyHMM,
+Methyltransf_10,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",,Pfam,PF05971.15
+Methyltransf_11,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",#FF9300,Pfam,PF08241.15
+Methyltransf_12,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",#FF9300,Pfam,PF08242.15
+Methyltransf_16,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",#FF9300,Pfam,PF10294.12
+Methyltransf_2,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",#FF9300,Pfam,PF00891.21
+Methyltransf_21,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",,Pfam,PF05050.15
+Methyltransf_23,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",#FF9300,Pfam,PF13489.9
+Methyltransf_24,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",#FF9300,Pfam,PF13578.9
+Methyltransf_25,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",#FF9300,Pfam,PF13649.9
+Methyltransf_28,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",,Pfam,PF02636.20
+Methyltransf_3,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",#FF9300,Pfam,PF01596.20
+Methyltransf_31,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",#FF9300,Pfam,PF13847.9
+Methyltransf_32,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",,Pfam,PF13679.9
+Methyltransf_33,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",#FF9300,Pfam,PF10017.12
+Methyltransf_4,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",,Pfam,PF02390.20
+Methyltransf_7,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",#FF9300,Pfam,PF03492.18
+Methyltransf_9,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",#FF9300,Pfam,PF08003.14
+MetW,,,,Pfam,PF07021.15
+MFS_1,major facilitator superfamily transporter,,#000000,Pfam,PF07690.19
+MFS_1_like,major facilitator superfamily transporter,,#000000,Pfam,PF12832.10
+MFS_2,major facilitator superfamily transporter,,#000000,Pfam,PF13347.9
+MFS_4,major facilitator superfamily transporter,,#000000,Pfam,PF06779.17
+MFS_5,major facilitator superfamily transporter,,,Pfam,PF05631.17
+Mito_carr,tricarboxylate transporter,,#000000,Pfam,PF00153.30
+MmgE_PrpD,2-methylcitrate dehydratase,,#C4C35F,Pfam,PF03972.17
+MmgE_PrpD_C,2-methylcitrate dehydratase,,#C4C35F,Pfam,PF19305.2
+MMR_HSR1,,,,Pfam,PF01926.26
+MPAB_Lcp_cat,globin-like oxygenase,,#009193,Pfam,PF09995.12
+MscL,,,,Pfam,PF01741.21
+MTS,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS",#FF9300,Pfam,PF05175.17
+MULE,transposase,,,Pfam,PF10551.12
+Myb_DNA-bind_6,transcription factor,,#929000,Pfam,PF13921.9
+Myb_DNA-bind_7,transcription factor,,#929000,Pfam,PF15963.8
+Myb_DNA-binding,transcription factor,,#929000,Pfam,PF00249.34
+NACHT,,,,Pfam,PF05729.15
+NAD_binding_1,,,,Pfam,PF00175.24
+NAD_binding_10,short-chain dehydrogenase/reductase,,#531B93,Pfam,PF13460.9
+NAD_binding_2,,,,Pfam,PF03446.18
+NAD_binding_3,short-chain dehydrogenase/reductase,,#531B93,Pfam,PF03447.19
+NAD_binding_4,,,,Pfam,PF07993.15
+NAD_binding_6,,,,Pfam,PF08030.15
+NAD_binding_8,FAD-dependent monooxygenase,,#008F00,Pfam,PF13450.9
+NAD_binding_9,,,,Pfam,PF13454.9
+Nitroreductase,nitroreductase,,#531B93,Pfam,PF00881.27
+NMO,,,,Pfam,PF03060.18
+NmrA,short-chain dehydrogenase/reductase,,#531B93,Pfam,PF05368.16
+NnrU,,,,Pfam,PF07298.14
+NodS,,,,Pfam,PF05401.14
+NRPS_C,,,,MyHMM,
+NRPS_CT,,,,MyHMM,
+NRPS_E,,,,MyHMM,
+NRPS_term_dom,,,,TIGRFAMs,TIGR02353
+NtCtMGAM_N,alpha-glucosidase,,#0096FF,Pfam,PF16863.8
+NvfI,2OG-Fe(II)-dependent dioxygenase,,#FF2F92,MyHMM,
+O-FucT,,,,Pfam,PF10250.12
+OATP,,,,Pfam,PF03137.23
+OphC,,,,MyHMM,
+OPT,oligopeptide transporter,,#000000,Pfam,PF03169.18
+Orn_Arg_deC_N,ornithine decarboxylase,,#73FCD6,Pfam,PF02784.19
+Orn_DAP_Arg_deC,,,,Pfam,PF00278.25
+OtaR1,transcription factor,,#929000,MyHMM,
+Oxidored_FMN,NADH-dependent flavin oxidoreductase,,#008F02,Pfam,PF00724.23
+Oxysterol_BP,oxysterol-binding protein,,,Pfam,PF01237.21
+P_proprotein,kexin protease,,#0096FF,Pfam,PF01483.23
+p450,cytochrome P450 monooxygenase,,#FF8AD8,Pfam,PF00067.25
+P5CR_dimer,pyrroline-5-carboxylate reductase,,#531B93,Pfam,PF14748.9
+PAP2_3,,,,Pfam,PF14378.9
+Patched,,,,Pfam,PF02460.21
+PatF,,,,MyHMM,
+PatJ,cupin domain-containing protein,,#FF7E79,MyHMM,
+PaxC,,,,MyHMM,
+PbcA,,,,MyHMM,
+PBP,phosphatidylethanolamine-binding protein-like protein,,#00D0D4,Pfam,PF01161.23
+PCMT,,,,Pfam,PF01135.22
+PDR_CDR,ABC transporter,,#000000,Pfam,PF06422.15
+Pec_lyase,,,,Pfam,PF09492.13
+PEMT,,,,Pfam,PF04191.16
+PenF,quinolone epoxide rearrangement protein,,#0096FF,MyHMM,
+PEP_mutase,phosphoenolpyruvate mutase,,#9BB75A,Pfam,PF13714.9
+Peptidase_M19,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF01244.24
+Peptidase_M20,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF01546.31
+Peptidase_M24,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF00557.27
+Peptidase_M3,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF01432.23
+Peptidase_S10,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF00450.25
+Peptidase_S15,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF02129.21
+Peptidase_S28,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF05577.15
+Peptidase_S41,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF03572.21
+Peptidase_S8,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF00082.25
+Peptidase_S9,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF00326.24
+Peptidase_S9_N,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF02897.18
+peroxidase,peroxidase,,#00A4A7,Pfam,PF00141.26
+Peroxidase_2,peroxidase,,#00A4A7,Pfam,PF01328.20
+Phe_hydrox_dim,FAD-dependent monooxygenase,,#008F01,Pfam,PF07976.15
+PHM7_cyt,,,,Pfam,PF14703.9
+PhomB,,,,MyHMM,
+Phosphodiest,,,,Pfam,PF01663.25
+PhyH,2OG-Fe(II)-dependent dioxygenase,,#FF2F92,Pfam,PF05721.16
+PIF1,,,,Pfam,PF05970.17
+PIGO_PIGG,GPI ethanolamine phosphate transferase,,#D7B467,Pfam,PF19316.2
+Pkinase,,,,Pfam,PF00069.28
+PKS_AT,,,,SMART,SM00827
+PKS_KS,,,,SMART,SM00825
+PKS_NRPS_MT,trans-acting methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS",#FF9300,MyHMM,
+Polyketide_cyc2,,,,Pfam,PF10604.12
+Polysacc_deac_1,,,,Pfam,PF01522.24
+Polysacc_synt_2,,,,Pfam,PF02719.18
+Prefoldin,,,,Pfam,PF02996.20
+Prenyltrans,,,,Pfam,PF00432.24
+Pribosyltran,,,,Pfam,PF00156.30
+Pro_isomerase,,,,Pfam,PF00160.24
+Proteasome,,,,Pfam,PF00227.29
+PrpF,aconitate-delta-isomerase,,#00FA92,Pfam,PF04303.16
+PS_Dcarbxylase,decarboxylase,,#73FCD6,Pfam,PF02666.18
+PSDC,decarboxylase,,#73FCD6,Pfam,PF12588.11
+PTR2,major facilitator superfamily transporter,,#000000,Pfam,PF00854.24
+PydY,Diels-Alderase,,#00F900,MyHMM,
+Pyr_redox,,,,Pfam,PF00070.30
+Pyr_redox_2,FAD-dependent monooxygenase,,#008F01,Pfam,PF07992.17
+Pyr_redox_3,FAD-dependent monooxygenase,,#008F01,Pfam,PF13738.9
+Pyr4,,,,MyHMM,
+Pyridoxal_deC,decarboxylase,,#73FCD6,Pfam,PF00282.22
+Questin_oxidase,dioxygenase,,#FF2F92,Pfam,PF14027.9
+RmlD_sub_bind,,,,Pfam,PF04321.20
+RsgA_GTPase,,,,Pfam,PF03193.19
+RSN1_7TM,,,,Pfam,PF02714.18
+RSN1_TM,,,,Pfam,PF13967.9
+RTA1,transporter,,#000000,Pfam,PF04479.16
+Rua1_C,transcription factor,,#929000,Pfam,PF14616.9
+Sacchrp_dh_NADP,,,,Pfam,PF03435.21
+SAT2,starter-unit acyltransferase,NR-PKS,#5298B5,MyHMM,
+Say1_Mug180,,,,Pfam,PF10340.12
+Scytalone_dh,dehydratase,,#C4C35F,Pfam,PF02982.17
+Sdh_cyt,succinate dehydrogenase cytochrome B subunit,,,Pfam,PF01127.25
+SdnJ,glycosyltransferase,,#9437FF,MyHMM,
+Semialdhyde_dh,,,,Pfam,PF01118.27
+SET,,,,Pfam,PF00856.31
+SGL,gluconolactonase,,#0096FF,Pfam,PF08450.15
+Shikimate_DH,,,,Pfam,PF01488.23
+SmbD,short-chain dehydrogenase/reductase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS",#531B93,MyHMM,
+SMC_N,,,,Pfam,PF02463.22
+SnoaL,SnoaL-like domain-containing protein,,#00FA92,Pfam,PF07366.15
+SnoaL_2,SnoaL-like domain-containing protein,,#00FA92,Pfam,PF12680.10
+SnoaL_4,SnoaL-like domain-containing protein,,#00FA92,Pfam,PF13577.9
+Spd14,major facilitator superfamily transporter,,#000000,MyHMM,
+SQHop_cyclase_C,,,,Pfam,PF13243.9
+SQHop_cyclase_N,,,,Pfam,PF13249.9
+SQS_PSY,squalene synthase,,#0000FF,Pfam,PF00494.22
+SrdD,cupin domain-containing protein,,#FF7E79,MyHMM,
+Steroid_dh,,,,Pfam,PF02544.19
+Sterol_MT_C,methyltransferase,,#FF9300,Pfam,PF08498.13
+Sterol-sensing,HMG-CoA reductase,,#CCCCCC,Pfam,PF12349.11
+Str_synth,,,,Pfam,PF03088.19
+Sugar_tr,major facilitator superfamily transporter,,#000000,Pfam,PF00083.27
+Sulfotransfer_4,sulfotransferase,,#24424F,Pfam,PF17784.4
+T2SSE,,,,Pfam,PF00437.23
+Tannase,esterase,,#0096FF,Pfam,PF07519.14
+TauD,2OG-Fe(II)-dependent dioxygenase,,#FF2F92,Pfam,PF02668.19
+TdiC,medium-chain dehydrogenase/reductase,,#531B93,MyHMM,
+Terpene_syn_C_2,,,,Pfam,PF19086.3
+Terpene_synth_C,,,,Pfam,PF03936.19
+TFIIE_alpha,transcription factor,,#929000,Pfam,PF02002.20
+Thi4,,,,Pfam,PF01946.20
+Thioesterase,thioesterase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS-like",#0096FF,Pfam,PF00975.23
+Thiolase_N,,,,Pfam,PF00108.26
+TIM,isomerase,,#00FA92,Pfam,PF00121.21
+Tmemb_14,,,,Pfam,PF03647.16
+TP_methylase,methyltransferase/RiPP precursor proprotein,,#FF9300,Pfam,PF00590.23
+TPMT,,,,Pfam,PF05724.14
+TPP_enzyme_C,,,,Pfam,PF02775.24
+TPP_enzyme_M,,,,Pfam,PF00205.25
+TPP_enzyme_N,,,,Pfam,PF02776.21
+TPR_2,,,,Pfam,PF07719.20
+TqaK,transcription factor,,#929000,MyHMM,
+TRAM_LAG1_CLN8,sphingosine N-acyltransferase,,#76D6FF,Pfam,PF03798.19
+TRAM1,sphingosine N-acyltransferase,,#76D6FF,Pfam,PF08390.14
+Transferase,acetyltransferase/acyltransferase,,#76D6FF,Pfam,PF02458.18
+Transketolase_C,transketolase,,#0080E2,Pfam,PF02780.23
+Transketolase_N,transketolase,,#0080E2,Pfam,PF00456.24
+Transp_cyt_pur,transporter,,#000000,Pfam,PF02133.18
+TRI12,major facilitator superfamily transporter,,#000000,Pfam,PF06609.16
+Tri14,,,,MyHMM,
+Tri3,acetyltransferase,,#76D6FF,Pfam,PF07428.14
+TRI5,,,,Pfam,PF06330.14
+Tri6,transcription factor,,#929000,MyHMM,
+TRI9,,,,Pfam,PF08195.14
+tRNA_anti-codon,tRNA synthetase,,,Pfam,PF01336.28
+tRNA-synt_1c,tRNA synthetase,,,Pfam,PF00749.24
+tRNA-synt_1c_C,tRNA synthetase,,,Pfam,PF03950.21
+tRNA-synt_2,tRNA synthetase,,,Pfam,PF00152.23
+tRNA-synt_2c,tRNA synthetase,,,Pfam,PF01411.22
+tRNA-synt_2d,tRNA synthetase,,,Pfam,PF01409.23
+Trp_DMAT,,,,Pfam,PF11991.11
+Trp_halogenase,FAD-dependent halogenase,,#008F00,Pfam,PF04820.17
+Trt14,isomerase,,#00FA92,MyHMM,
+Trt5,methyltransferase,,#FF9300,MyHMM,
+Trypsin,trypsin-like serine protease,,#0096FF,Pfam,PF00089.29
+Trypsin_2,trypsin-like serine protease,,#0096FF,Pfam,PF13365.9
+TwmC,,,,MyHMM,
+Tyrosinase,tyrosinase,,#009193,Pfam,PF00264.23
+UbiA_PT,,,,MyHMM,
+UbiA_TC,,,,MyHMM,
+Ubie_methyltran,,,,Pfam,PF01209.21
+UDPGT,glycosyltransferase,,#9437FF,Pfam,PF00201.21
+UNC-93,,,,Pfam,PF05978.19
+UstYa,DUF3328 protein (UstY-like),,#FFD479,Pfam,PF11807.11
+VicYx,DUF3328 protein (UstY-like),,#FFD479,MyHMM,
+VidS,dehydratase,,#C4C35F,MyHMM,
+VrtF,methyltransferase,,#FF9300,MyHMM,
+WD40,,,,Pfam,PF00400.35
+XenC,cyclic ether formation enzyme,,,MyHMM,
+XenD,epoxidase,,,MyHMM,
+YCII,,,,Pfam,PF03795.17
+zf-C6H2,,,,Pfam,PF15801.8
+zf-H2C2_2,,,,Pfam,PF13465.9
+Zn_clus,transcription factor,,#929000,Pfam,PF00172.21

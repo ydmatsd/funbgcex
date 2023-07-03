@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FunBGCeX Result Overview</title>
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+		<link  rel="stylesheet" href="HTMLs/css/main_style.css">
+		<script src="HTMLs/js/filter.js" defer></script>
+
+	<body>
+		<header class="page-header wrapper">
+			<h1><a href="results.html"><img class="logo" src="HTMLs/img/logo.png" alt="FunBGCeX"></a></h1>
+			<h2><i><u><strong>Fun</strong></u>gal <u><strong>B</strong></u>iosynthetic <u><strong>G</strong></u>ene<br> <u><strong>C</strong></u>luster <u><strong>eX</strong></u>tractor</i></h2>
+			<nav>
+				<ul class="main-nav">
+					<li><a href="http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html" target="_blank" rel="noopener noreferrer">FunBGCs</a></li>
+					<li><a href="http://staffweb1.cityu.edu.hk/ymatsuda/index.html" target="_blank" rel="noopener noreferrer">THE MATSUDA GROUP</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<p class="filter">Filter: <input type="text" id="search" onkeyup="Filter()" placeholder="Enter search query"></p>
+		<p id="count"></p>
+
+		<table id="bgcTable">
+			<tr class="header">
+				<th style="width: 8%">BGC no.</th>
+				<th style="width: 27%">Scaffold / Position</th>
+				<th style="width: 8%">Number of genes</th>
+				<th style="width: 32%">Core enzymes</th>
+				<th style="width: 17%">Similar BGC</th>
+				<th style="width: 8%">Similarity score</th>
+			</tr>
+BGCsTABLE
+		</table>
+
+  </body>
+</html>
