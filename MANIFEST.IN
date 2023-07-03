@@ -1,2 +1,1 @@
 recursive-include funbgcex/data *
-exclude README.md
