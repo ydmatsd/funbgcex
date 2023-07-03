@@ -81,6 +81,3 @@ To check other options, run the following:
 ```bash
 $ funbgcex -h
 ```
-
-## Citation
-If you find FunBGCex useful, please cite:
