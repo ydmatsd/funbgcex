@@ -25,7 +25,6 @@ or by cloning the repository and installing:
 
 ```bash
 $ git clone https://github.com/ydmatsd/funbgcex.git
-...
 $ cd funbgcex/
 $ pip install .
 ```
