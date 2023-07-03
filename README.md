@@ -1,7 +1,7 @@
 # FunBGCeX (Fungal Biosynthetic Gene Cluster eXtractor)
 
 ## Overview
-FunBGCeX is a genome mining tool for fungal natural product discovery, which detects biosynthetic proteins based on our manually curated database of fungal natural product biosynthetic gene clusters (BGCs), [FunBGCs](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html). FunBGCeX can extract not only all possible BGCs from given fungal genomes but also those encoding a protein of user's interest. The extracted BGCs are provided in the GenBank format and can also be visualized using a web browser (You can access a sample output [here](docs/sample_output) or [here](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcex/sample/results.html)).
+**FunBGCeX** is a genome mining tool for fungal natural product discovery, which detects biosynthetic proteins based on our manually curated database of fungal natural product biosynthetic gene clusters (BGCs), [FunBGCs](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html). FunBGCeX can extract not only all possible BGCs from given fungal genomes but also those encoding a protein of user's interest. The extracted BGCs are provided in the GenBank format and can also be visualized using a web browser (You can access a sample output [here](docs/sample_output) or [here](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcex/sample/results.html)).
 
 <img src="docs/img/result.png" alt="FunBGCeX sample result" width=500>
 
@@ -12,7 +12,7 @@ Install the following dependencies:
 * [HMMER](http://hmmer.org/documentation.html) (version 3.3.2 tested)
 
 Make sure that `diamond` and HMMER executables (e.g., `hmmscan` and `hmmfetch`) are on your system $PATH.  
-Note: FunBGCeX was tested on MacOS Ventura 13.4.
+**Note:** FunBGCeX was tested on MacOS Ventura 13.4.
 
 ## Installation
 `funbgcex` can be installed using pip:
