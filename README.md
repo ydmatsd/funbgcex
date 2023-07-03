@@ -72,7 +72,7 @@ $ funbgcex gbk results -m pfam -p Pyr4
 Alternatively, you may prepare a FASTA file containing the protein sequences of Pyr4 homologues. If the FASTA file is saved as `Pyr4.fasta`, then run the following:
 
 ```bash
-$ funbgcex gbk results -m target -f Pyr4.
+$ funbgcex gbk results -m target -f Pyr4.fasta
 ```
 
 ### Other options
