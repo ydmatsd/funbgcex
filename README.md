@@ -49,10 +49,10 @@ $ funbgcex input_directory output_directory
 ```
 
 ### Extract BGCs that encode a homologue of given protein sequence(s)
-To extract BGCs that encode a homologue of protein(s) of your interest, use the target mode by specifying `-m target`. First, create a fasta file containing the protein sequences, and then run the following:
+To extract BGCs that encode a homologue of protein(s) of your interest, use the target mode by specifying `-m target`. First, create a FASTA file containing the protein sequences, and then run the following:
 
 ```bash
-$ funbgcex input_directory output_directory -m target -f fasta_file
+$ funbgcex input_directory output_directory -m target -f FASTA_file
 ```
 
 ### Extract BGCs that encode a protein with a selected protein family
@@ -69,10 +69,10 @@ Suppose you have several GenBank files in a directory named `gbk`. If you wish t
 $ funbgcex gbk results -m pfam -p Pyr4
 ```
 
-Alternatively, you may prepare a fasta file containing the protein sequences of Pyr4 homologues. If the fasta file is saved as `Pyr4.fasta`, then run the following:
+Alternatively, you may prepare a FASTA file containing the protein sequences of Pyr4 homologues. If the FASTA file is saved as `Pyr4.fasta`, then run the following:
 
 ```bash
-$ funbgcex gbk results -m target -f Pyr4.fasta
+$ funbgcex gbk results -m target -f Pyr4.
 ```
 
 ### Other options
