@@ -71,7 +71,7 @@ Suppose you have several GenBank files in a directory named `gbk` in your curren
 $ funbgcex gbk results -m pfam -p Pyr4
 ```
 
-Alternatively, you may prepare a FASTA file containing the protein sequences of Pyr4 homologues. If the FASTA file is saved as `Pyr4.fasta` in your current director, then run the following:
+Alternatively, you may prepare a FASTA file containing the protein sequences of Pyr4 homologues. If the FASTA file is saved as `Pyr4.fasta` (an example FASTA file can be found [here](docs/Pyr4.fasta)) in your current directory, then run the following:
 
 ```bash
 $ funbgcex gbk results -m target -f Pyr4.fasta
