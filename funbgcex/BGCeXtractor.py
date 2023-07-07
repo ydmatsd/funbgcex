@@ -16,6 +16,7 @@ from funbgcex.HTMLgenerator import HTMLgenerator
 from funbgcex.SimilarBGCfinder import MakeProtBGCidDict
 
 
+
 def BGCeXtractor(gbk_dir,results_dir,mode,query,gap_allowed,max_bgc_gap,min_prot_len,num_of_genes_checked,min_identity):
     current_dir = os.path.dirname(os.path.abspath(__file__))
 
