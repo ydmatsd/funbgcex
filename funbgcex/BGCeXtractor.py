@@ -381,7 +381,7 @@ def BGCeXtractor(gbk_dir,results_dir,mode,query,gap_allowed,max_bgc_gap,min_prot
         """
         Delete directories
         """
-        shutil.rmtree(temp_dir)      
+        shutil.rmtree(temp_dir)
 
 
         """

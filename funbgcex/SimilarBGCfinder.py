@@ -224,6 +224,7 @@ class SimilarBGCfinder:
 					feature_name = f"PROTEIN{str(counter).zfill(6)}"
 					feature_seq = feature.qualifiers["translation"][0].replace("-","")
 					output_handle.write(">"+feature_name+"\n"+feature_seq+"\n")
+					counter += 1
 				except:
 					pass
 
