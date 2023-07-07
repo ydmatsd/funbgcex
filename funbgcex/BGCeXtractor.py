@@ -94,7 +94,7 @@ def BGCeXtractor(gbk_dir,results_dir,mode,query,gap_allowed,max_bgc_gap,min_prot
         print(f"{file_name}: BGC extraction started")
         logger.info(f"{file_name}: BGC extraction started")
 
-        # try:
+
         """
         Make a file to which the information of all clusters will be saved
         """
@@ -395,11 +395,5 @@ def BGCeXtractor(gbk_dir,results_dir,mode,query,gap_allowed,max_bgc_gap,min_prot
         logger.info(f"{file_name}: BGC extraction finished in {total_time} min. {message} extracted.")
         print(f"{file_name}: BGC extraction finished in {total_time} min. {message} extracted.")
 
-
-        # except:
-        #     print(f"BGC extranction from {file_name} was abnormally terminated.")
-        #     logger.error(f"BGC extranction from {file_name} was abnormally terminated.")
-        #     df.to_csv(analysis_csv)
-        #     pass
 
     logger.info("All BGC extractions completed")
