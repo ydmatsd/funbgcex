@@ -1,4 +1,5 @@
 .DS_Store
+.pypirc
 __pycache__/
 build/
 dist/
