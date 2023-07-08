@@ -81,5 +81,5 @@ $ funbgcex gbk results -m target -f Pyr4.fasta
 To check other options, run the following:
 
 ```bash
-$ funbgcex -h
+$ funbgcex --help
 ```
