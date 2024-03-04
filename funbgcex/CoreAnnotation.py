@@ -73,12 +73,12 @@ class Annotation:
                     domainName = sorted_list[i][0]
                     if length < DomainLength[domainName]*1.5: #The maximum length allowed is 1.5 fold of the domain length.
                         combinedScore = sorted_list[i][1] + sorted_list[j][1]
-                        sorted_list[j][1] = combinedScore
+                        sorted_list[i][1] = combinedScore
                         newStartPoint = sorted_list[i][2]
-                        sorted_list[j][2] = newStartPoint
+                        sorted_list[i][2] = newStartPoint
                         newCenterPoint = (sorted_list[i][2] + sorted_list[j][3])/2
-                        sorted_list[j][4] = newCenterPoint
-                        ToBeDeletedList.append(sorted_list[i])
+                        sorted_list[i][4] = newCenterPoint
+                        ToBeDeletedList.append(sorted_list[j])
                         break
                         
         for item in ToBeDeletedList:
