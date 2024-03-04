@@ -286,8 +286,9 @@ def HTMLgenerator(BGCcsv,fungus_name,output_dir):
                                 coreInfo = feature.qualifiers["core"][0]
                                 if "PKS" in coreInfo or "NRPS" in coreInfo or "ePLS" in coreInfo:
                                     if "T3PKS" not in coreInfo:
-                                        # domain = feature.qualifiers["core"][0].split(" ")[-1]
                                         domain = feature.qualifiers["core"][0].split(";")[-1].replace(" ","")
+                                    else:
+                                        domain = "–"
                                 else:
                                     domain = "–"
                                 cores = coreInfo.split(";")[0].split(",")
