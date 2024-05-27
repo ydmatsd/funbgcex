@@ -90,4 +90,4 @@ $ funbgcex --help
 
 ## Citation
 If you find FunBGCeX useful, please cite:  
-Tang, J., Matsuda, Y. *ChemRxiv* DOI: 10.26434/chemrxiv-2023-f0z8n
+Tang, J., Matsuda, Y. *Nat. Commun.* **15**, 4312 (2024)
