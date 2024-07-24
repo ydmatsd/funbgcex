@@ -21,8 +21,6 @@ class Annotation:
         'fPKS_DH': 306, 'Terpene_syn_C_2': 199, 'Terpene_synth_C':267,'Abhydrolase_3': 211, 'fPKS_KR': 175,
         'AA-adenyl-dom': 409}
 
-        # randList = [random.choice(string.ascii_letters + string.digits) for i in range(10)]
-        # temp_dir = f"{current_dir}/{''.join(randList)}"
         os.makedirs(temp_dir,exist_ok=True)
         fasta = f"{temp_dir}/seq.fasta"
         with open(fasta,"w") as f:
@@ -76,6 +74,8 @@ class Annotation:
                         sorted_list[i][1] = combinedScore
                         newStartPoint = sorted_list[i][2]
                         sorted_list[i][2] = newStartPoint
+                        newEndPoint = sorted_list[j][3]
+                        sorted_list[i][3] = newEndPoint
                         newCenterPoint = (sorted_list[i][2] + sorted_list[j][3])/2
                         sorted_list[i][4] = newCenterPoint
                         ToBeDeletedList.append(sorted_list[j])
