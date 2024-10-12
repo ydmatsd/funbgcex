@@ -5,7 +5,9 @@
 [![DOI](https://zenodo.org/badge/661527897.svg)](https://zenodo.org/badge/latestdoi/661527897)
 
 ## Overview
-**FunBGCeX** is a genome mining tool for fungal natural product discovery, which detects biosynthetic proteins based on our manually curated database of fungal natural product biosynthetic gene clusters (BGCs), [FunBGCs](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html). FunBGCeX can extract not only all possible BGCs from given fungal genomes but also those encoding a protein of user's interest. The extracted BGCs are provided in the GenBank format and can also be visualized using a web browser (You can access a sample output [here](docs/sample_output) or [here](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcex/sample/results.html)).
+**FunBGCeX** is a genome mining tool for fungal natural product discovery, which detects biosynthetic proteins based on our manually curated database of fungal natural product biosynthetic gene clusters (BGCs), [FunBGCs](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html). FunBGCeX can extract not only all possible BGCs from given fungal genomes but also those encoding a protein of the user's interest. The extracted BGCs are provided in the GenBank format and can also be visualized using a web browser (You can access a sample output [here](docs/sample_output) or [here](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcex/sample/results.html)).
+If you have difficulties in installing the software, you could also try the [Google Colab version](https://colab.research.google.com/github/ydmatsd/funbgcex-colab/blob/main/funbgcex-colab/FunBGCeX.ipynb)
+
 
 <img src="docs/img/result.png" alt="FunBGCeX sample result" width=500>
 
