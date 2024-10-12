@@ -78,8 +78,8 @@ def Core_extractor(hmmscan_result,df,temp_dir,mode="normal"):
     hmmscan_core_database = f"{current_dir}/data/hmm/core/core.hmm"
 
     Corefam_list = ["Terpene_syn_C_2","Terpene_synth_C","TRI5","SQHop_cyclase_C","SQHop_cyclase_N",
-    "Trp_DMAT","Pyr4","PbcA","AstC","ABA3","AsR6","UbiA_PT","UbiA_TC","PaxC","GGPS","Chal_sti_synt_N",
-    "Chal_sti_synt_C","AnkA"]
+    "Trp_DMAT","Pyr4","PbcA","AstC","ABA3","AsR6","SalTPS","UbiA_PT","UbiA_TC","CosA","PaxC","GGPS",
+    "Chal_sti_synt_N","Chal_sti_synt_C","AnkA","DIT1_PvcA","PEP_mutase"]
     UstY_list = ["UstYa","VicY"]
 
     # To make a list in which each locus_tag can be linked with a Pfam hit
@@ -138,49 +138,33 @@ def Core_extractor(hmmscan_result,df,temp_dir,mode="normal"):
 
 
 def RiPPppFinder(aa_len,unique_aa,min_repeat,min_match,fasta,df):
-    protList = []
     with open(fasta,"r") as fa:
-        for line in fa:
-            protList.append(line.replace("\n",""))
+        protList = [line.rstrip() for line in fa]
 
     RiPPppCandList = []
-    for i in range(len(protList)-1):
+    i = 0
+    while i < len(protList) - 1:
         if protList[i].startswith(">"):
             seq = protList[i+1]
             isRiPPpp = False
-            seq_list = []
-            for j in range(len(seq)-aa_len+1):
-                seq_list.append(seq[j:j+aa_len])
+            seq_list = [seq[j:j + aa_len] for j in range(len(seq) - aa_len + 1)]
 
             repeated_seq_list = []
             for item in seq_list:
-                hitNumber = 0
-
                 uniqueAA = len(set(item)) #The number of unique amino acids in a given sequence fragment
 
-                #Check if the sequence fragment satisfies the requirements
-                if uniqueAA >= unique_aa and item not in repeated_seq_list\
-                and ("KR" in item or "KK" in item or "RK" in item or "RR" in item):
-                    for item2 in seq_list:
-                        matchNumber = 0
-                        for k in range(aa_len):
-                            if item[k] == item2[k]:
-                                matchNumber += 1
-                        if matchNumber >= min_match:
-                            hitNumber += 1
-                if hitNumber >= min_repeat:
-                    isRiPPpp = True
-                    break
+                if uniqueAA >= unique_aa and item not in repeated_seq_list and any(x in item for x in ["KR", "KK", "RK", "RR"]):
+                    hitNumber = sum(1 for item2 in seq_list if sum(1 for k in range(aa_len) if item[k] == item2[k]) >= min_match)
+                    if hitNumber >= min_repeat:
+                        isRiPPpp = True
 
             if isRiPPpp:
                 protName = protList[i].replace(">","")
                 RiPPppCandList.append(protName)
+        i += 1
 
-    for i in range(len(df)):
-        if df.at[i,"locus_tag"] in RiPPppCandList:
-            if df.at[i,"core"] == "none":
-                df.at[i,"core"] = "RiPP_PP_cand"
-            df.at[i,"BP"] = 1
+    df.loc[df["locus_tag"].isin(RiPPppCandList) & (df["core"] == "none"), "core"] = "RiPP_PP_cand"
+    df.loc[df["locus_tag"].isin(RiPPppCandList), "BP"] = 1
 
 
 def AddTargetHomologue(blastp_result,df):
@@ -211,16 +195,13 @@ def AddTargetHomologue(blastp_result,df):
 def AddTargetPfam(hmmscan_result,df):
     df["withTarget"] = 0
  
-    hit_list = []
-    for qresult in SearchIO.parse(hmmscan_result, 'hmmscan3-domtab'):
-        if qresult.id not in hit_list:
-            hit_list.append(qresult.id)
+    hit_set = set()
 
-    for prot in hit_list:
-        for i in range(len(df)):
-            if df.at[i,"locus_tag"] == prot:
-                df.at[i,"BP"] = 1
-                df.at[i,"withTarget"] = 1
+    for qresult in SearchIO.parse(hmmscan_result, 'hmmscan3-domtab'):
+        hit_set.add(qresult.id)
+
+    df.loc[df['locus_tag'].isin(hit_set),'withTarget'] = 1
+    df.loc[df['locus_tag'].isin(hit_set),'BP'] = 1
 
 
 def ExtractCDS4Check(mode,num_of_genes_checked,output_dir,df):
@@ -392,11 +373,10 @@ def AddPfam(hmmscan_result,df,SMhmm):
         for i in range(1,len(item)):
             if item[i][0] not in sublist:
                 sublist.append(item[i][0])
+
         pfam = ", ".join(sublist)
-        for i in range(len(df)):
-            if df.at[i,"locus_tag"] == item[0]:
-                df.at[i,"Pfam"] = pfam
-                df.at[i,"BP"] = 1
+        df.loc[df["locus_tag"] == item[0], "Pfam"] = pfam
+        df.loc[df["locus_tag"] == item[0], "BP"] = 1
 
 
 def AddHomologue(blastp_result,df):
@@ -420,16 +400,15 @@ def AddHomologue(blastp_result,df):
                     blast_hit = alignment.title.replace(" ","")
                     identity = "{:.1f}".format(100*hsp.identities/len(hsp.match)) # value of %identity
 
-                    for i in range(len(df)):
-                        if df.at[i,"locus_tag"] == query:
-                            df.at[i,"BP"] = 1
-                            df.at[i,"known_homologue"] = prot_df.at[blast_hit,"protein"].split(" ")[-1]
-                            df.at[i,"known_homologue_identity"] = identity
-                            df.at[i,"known_homologue full name"] = prot_df.at[blast_hit,"protein"]
-                            df.at[i,"known_homologue source"] = prot_df.at[blast_hit,"source"]
-                            df.at[i,"known_homologue metabolite"] = prot_df.at[blast_hit,"metabolite"]
-                            df.at[i,"known_homologue FBGC or FPROT ID"] = prot_df.at[blast_hit,"FBGC or FPROT ID"]
-                            break
+                    query_indices = df.index[df["locus_tag"] == query]
+                    i = query_indices[0]
+                    df.at[i,"BP"] = 1
+                    df.at[i,"known_homologue"] = prot_df.at[blast_hit,"protein"].split(" ")[-1]
+                    df.at[i,"known_homologue_identity"] = identity
+                    df.at[i,"known_homologue full name"] = prot_df.at[blast_hit,"protein"]
+                    df.at[i,"known_homologue source"] = prot_df.at[blast_hit,"source"]
+                    df.at[i,"known_homologue metabolite"] = prot_df.at[blast_hit,"metabolite"]
+                    df.at[i,"known_homologue FBGC or FPROT ID"] = prot_df.at[blast_hit,"FBGC or FPROT ID"]
                     break
         except:
             pass
@@ -644,9 +623,9 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                 logger.debug(f"BGC{BGC_num} extracted. Scaffold: {scaffold}; Locus tag start: {locus_tag_start}; Locus tag end: {locus_tag_end}; Start: {start_pos}; End: {end_pos}.")
 
                 preference = {"PKS-NRPS":1,"NRPS-PKS":2,"NR-PKS":3,"PR-PKS":4,"HR-PKS":5,"T3PKS":6,"NRPS":7,"chimeric TS":8,"TC (Class1)":9,
-                            "TC (SHC/OSC)":10,"TC (Tri5)":11,"TC (Pyr4)":12,"TC (UbiA)":13,"TC (PbcA)":14,"TC (AstC)":15,"TC (ABA3)":16,
-                            "TC (AsR6)":17,"PT (UbiA)":18,"PT (PaxC)":19,"PT (DMATS)":20,"PPPS":21,"RiPP PP":22,"RCDPS":23,"NRPS-like":24,
-                            "PKS-like":25,"ePLS":26}
+                                    "TC (SHC/OSC)":10,"TC (Tri5)":11,"TC (Pyr4)":12,"TC (UbiA)":13,"TC (PbcA)":14,"TC (AstC)":15,"TC (ABA3)":16,
+                                    "TC (AsR6)":17,"TC (SalTPS)":18,"PT (UbiA)":19,"PT (PaxC)":20,"PT (DMATS)":21,"PT (CosA)":22,"PPPS":23,"RiPP PP":24,
+                                    "RCDPS":25,"ICS":26,"PEPM":27,"NRPS-like":28,"PKS-like":29,"ePLS":30}
 
                 core_list_sorted = sorted(core_list, key=lambda x: preference[x])
                 core_enz = ", ".join(core_list_sorted)
