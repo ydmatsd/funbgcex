@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .logo {
-    width: 210px;
+    width: 180px;
     margin-top: 15px;
     margin-left: 5px;
 }
@@ -25,10 +25,10 @@ nav {
     margin-left: auto;
 }
 .main-nav {
-    font-size: 1rem;
+    font-size: 0.9rem;
 /*    font-weight: bolder;*/
     display: flex;
-    margin-top: 23px;
+    margin-top: 20px;
     list-style: none;
 }
 .main-nav li {
@@ -47,8 +47,8 @@ h1 {
 }
 h2 {
     text-align: left;
-    font-size: 0.8rem;
-    margin-top: 17px;
+    font-size: 0.75rem;
+    margin-top: 15px;
     margin-left: 10px;
     color: #7F4700;
 }
@@ -57,10 +57,10 @@ h2 {
     border-bottom: 2px solid #FF2F92;
 }
 h3 {
-    text-align: left;
+    text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 32px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
     color: #7F4700;
 }
 .main-text p {
@@ -86,18 +86,25 @@ body {
 }
 
 table {
-    font-size: 90%;
+    font-size: 80%;
     text-align: center;
-    width: 1000px;
+    width: 80%;
     margin: 10px auto 20px auto;
     border-collapse: collapse;
-    font-size: 14px;
 }
 
 th,td {
     border: 1px solid #ccc;
     padding: 5px;
     border-collapse: collapse;
+}
+
+th {
+    cursor:pointer;
+}
+
+th:hover {
+ background-color:  #EF4998;
 }
 
 td {
