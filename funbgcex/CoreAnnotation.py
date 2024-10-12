@@ -19,7 +19,7 @@ class Annotation:
         'NRPS_term_dom': 695, 'NRPS_CT': 416, 'PbcA': 972, 'ABA3': 446, 'Chal_sti_synt_C': 151, 
         'UbiA_TC': 292, 'Thioesterase': 230, 'SQHop_cyclase_C': 319, 'Carn_acyltransf': 568, 
         'fPKS_DH': 306, 'Terpene_syn_C_2': 199, 'Terpene_synth_C':267,'Abhydrolase_3': 211, 'fPKS_KR': 175,
-        'AA-adenyl-dom': 409}
+        'AA-adenyl-dom': 409, 'DIT1_PvcA': 277, 'PEP_mutase': 241, 'SalTPC': 606, 'CosA': 319}
 
         os.makedirs(temp_dir,exist_ok=True)
         fasta = f"{temp_dir}/seq.fasta"
@@ -261,12 +261,20 @@ class Annotation:
                 classification = "TC (AsR6)"
                 if classification not in coreList:
                     coreList.append(classification)
+            elif "SalTPS" in item:
+                classification = "TC (SalTPS)"
+                if classification not in coreList:
+                    coreList.append(classification)
             elif "UbiA_PT" in item:
                 classification = "PT (UbiA)"
                 if classification not in coreList:
                     coreList.append(classification)
             elif "UbiA_TC" in item:
                 classification = "TC (UbiA)"
+                if classification not in coreList:
+                    coreList.append(classification)
+            elif "CosA" in item:
+                classification = "PT (CosA)"
                 if classification not in coreList:
                     coreList.append(classification)
             elif "GGPS" in item:
@@ -282,6 +290,14 @@ class Annotation:
                 classification = "RCDPS"
                 if classification not in coreList:
                     coreList.append(classification)
+            elif "DIT1_PvcA" in item:
+                classification = "ICS"
+                if classification not in coreList:
+                    coreList.append(classification)
+            elif "PEP_mutase" in item and float(item[1]) > 100:
+                classification = "PEPM"
+                if classification not in coreList:
+                    coreList.append(classification)
         if (withClassOneTC and withGGPS) or (withPbcA and withGGPS):
             if "TC (Class1)" in coreList:
                 coreList.remove("TC (Class1)")
@@ -295,8 +311,8 @@ class Annotation:
 
         preference = {"PKS-NRPS":1,"NRPS-PKS":2,"NR-PKS":3,"PR-PKS":4,"HR-PKS":5,"T3PKS":6,"NRPS":7,"chimeric TS":8,"TC (Class1)":9,
                             "TC (SHC/OSC)":10,"TC (Tri5)":11,"TC (Pyr4)":12,"TC (UbiA)":13,"TC (PbcA)":14,"TC (AstC)":15,"TC (ABA3)":16,
-                            "TC (AsR6)":17,"PT (UbiA)":18,"PT (PaxC)":19,"PT (DMATS)":20,"PPPS":21,"RiPP PP":22,"RCDPS":23,"NRPS-like":24,
-                            "PKS-like":25,"ePLS":26}
+                            "TC (AsR6)":17,"TC (SalTPS)":18,"PT (UbiA)":19,"PT (PaxC)":20,"PT (DMATS)":21,"PT (CosA)":22,"PPPS":23,"RiPP PP":24,
+                            "RCDPS":25,"ICS":26,"PEPM":27,"NRPS-like":28,"PKS-like":29,"ePLS":30}
 
         coreList = sorted(coreList, key=lambda x: preference[x])
 
