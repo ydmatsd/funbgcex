@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .logo {
-    width: 210px;
+    width: 180px;
     margin-top: 15px;
     margin-left: 5px;
 }
@@ -30,10 +30,10 @@ nav {
     margin-left: auto;
 }
 .main-nav {
-    font-size: 1rem;
+    font-size: 0.9rem;
 /*    font-weight: bolder;*/
     display: flex;
-    margin-top: 23px;
+    margin-top: 20px;
     list-style: none;
 }
 .main-nav li {
@@ -52,8 +52,8 @@ h1 {
 }
 h2 {
     text-align: left;
-    font-size: 0.8rem;
-    margin-top: 17px;
+    font-size: 0.75rem;
+    margin-top: 15px;
     margin-left: 10px;
     color: #7F4700;
 }
@@ -91,12 +91,11 @@ body {
 }
 
 table {
-    font-size: 90%;
+    font-size: 80%;
     text-align: center;
     width: 1000px;
     margin: 10px auto 20px auto;
     border-collapse: collapse;
-    font-size: 14px;
 }
 
 th,td {
