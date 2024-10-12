@@ -29,12 +29,16 @@ coreDict = {"PKS-NRPS":"polyketide synthase-nonribosomal peptide synthetase",
             "TC (AstC)":"AstC-like terpene synthase",
             "TC (ABA3)":"ABA3-like terpene synthase",
             "TC (AsR6)":"AsR6-like terpene synthase",
+            "TC (SalTPS)":"SalTPS-like terpene synthase",
             "PT (UbiA)":"UbiA-like prenyltransferase",
             "PT (PaxC)":"IPPS-type prenyltransferase",
             "PT (DMATS)":"DMATS-type prenyltransferase",
+            "PT (CosA)":"CosA-like prenyltransferase",
             "PPPS":"polyprenyl pyrophosphate synthase",
             "RiPP PP":"RiPP precursor peptide",
             "RCDPS":"arginine-containing cyclodipeptide synthase",
+            "ICS":"isocyanide synthase",
+            "PEPM":"phosphoenolpyruvate mutase",
             "NRPS-like":"NRPS-like enzyme",
             "PKS-like":"PKS-like enzyme",
             "ePLS":"epsilon-poly-L-lysine synthetase"}
@@ -57,12 +61,16 @@ coreColorDict = {"PKS-NRPS":"#802A4A",
                 "TC (AstC)":"#945200",
                 "TC (ABA3)":"#945200",
                 "TC (AsR6)":"#945200",
+                "TC (SalTPS)":"#945200",
                 "PT (UbiA)":"#0000FF",
                 "PT (PaxC)":"#0000FF",
                 "PT (DMATS)":"#0000FF",
+                "PT (CosA)":"#0000FF",
                 "PPPS":"#0000FF",
                 "RiPP PP":"#FF6BA0",
                 "RCDPS":"#941751",
+                "ICS":"#83194C",
+                "PEPM":"#C7E280",
                 "NRPS-like":"#005493",
                 "PKS-like":"#FF0000",
                 "ePLS":"#005493"}
@@ -162,6 +170,8 @@ def HTMLgenerator(BGCcsv,fungus_name,output_dir):
         withPT = False
         withPiPPpp = False
         withRCDPS = False
+        withICS = False
+        withPEPM = False
 
         if "PKS-NRPS" in coreList or "PKS-NRPS" in coreList:
             withPKSNRPS = True
@@ -179,6 +189,10 @@ def HTMLgenerator(BGCcsv,fungus_name,output_dir):
             withPiPPpp = True
         if "RCDPS" in coreList:
             withRCDPS = True
+        if "ICS" in coreList:
+            withICS = True
+        if "PEPM" in coreList:
+            withPEPM = True
             
         if withPKSNRPS:
             BGCtype = "pks-nrps"
@@ -199,6 +213,10 @@ def HTMLgenerator(BGCcsv,fungus_name,output_dir):
             BGCtype = "ripp"
         elif withRCDPS:
             BGCtype = "rcdps"
+        elif withICS:
+            BGCtype = "ics"
+        elif withPEPM:
+            BGCtype = "pepm"
         elif withPT:
             BGCtype = "pt-only"
         
