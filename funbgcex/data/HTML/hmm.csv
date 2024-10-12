@@ -146,6 +146,7 @@ CoA_transf_3,CoA transferase,,#76D6FF,Pfam,PF02515.20
 COesterase,hydrolase,,#0096FF,Pfam,PF00135.31
 Cofilin_ADF,,,,Pfam,PF00241.23
 Condensation,condensation domain,"NRPS,PKS-NRPS,NRPS-like",,Pfam,PF00668.23
+CosA,,,,MyHMM,
 CpaE,transcription factor,,#929000,MyHMM,
 CPSase_L_D2,,,,Pfam,PF02786.20
 CPSase_L_D3,,,,Pfam,PF02787.22
@@ -169,7 +170,7 @@ Dimer_Tnp_hAT,,,,Pfam,PF05699.17
 Dimerisation,methyltransferase,,#FF9300,Pfam,PF08100.14
 Dimerisation2,methyltransferase,,#FF9300,Pfam,PF16864.8
 DIOX_N,2OG-Fe(II)-dependent dioxygenase,,#FF2F92,Pfam,PF14226.9
-DIT1_PvcA,isocyanide synthase,,#83194C,Pfam,PF05141.15
+DIT1_PvcA,,,,Pfam,PF05141.15
 DJ-1_PfpI,isocyanide hydratase,,#00FDFF,Pfam,PF01965.27
 DLH,hydrolase,,#0096FF,Pfam,PF01738.21
 DUF1295,ene-reductase,,#531B93,Pfam,PF06966.15
@@ -219,9 +220,9 @@ F5_F8_type_C,,,,Pfam,PF00754.28
 FA_hydroxylase,fatty acid hydroxylase,,#FF8AD8,Pfam,PF04116.16
 FAA_hydrolase,fumarylacetoacetate hydrolase family hydrolase,,#0096FF,Pfam,PF01557.21
 FAD_binding_1,cytochrome P450 reductase,,#FF8AD8,Pfam,PF00667.23
-FAD_binding_2,,,,Pfam,PF00890.27
-FAD_binding_3,FAD-dependent monooxygenase,,#008F01,Pfam,PF01494.22
-FAD_binding_4,FAD-linked oxidoreductase,,#008F02,Pfam,PF01565.26
+FAD_binding_2,FAD-dependent dehydrogenase,,#008F00,Pfam,PF00890.27
+FAD_binding_3,FAD-dependent monooxygenase,,#008F00,Pfam,PF01494.22
+FAD_binding_4,FAD-linked oxidoreductase,,#008F00,Pfam,PF01565.26
 FAD_binding_6,,,,Pfam,PF00970.27
 FAD_oxidored,,,,Pfam,PF12831.10
 FAE1_CUT1_RppA,,,,Pfam,PF08392.15
@@ -237,8 +238,8 @@ FhuF,,,,Pfam,PF06276.15
 Flavodoxin_1,cytochrome P450 reductase,,#FF8AD8,Pfam,PF00258.28
 Flavodoxin_2,,,,Pfam,PF02525.20
 FMN_dh,FMN-dependent dehydrogenase,,#008F00,Pfam,PF01070.21
-FMN_red,NADPH-dependent FMN reductase,,#008F02,Pfam,PF03358.18
-FMO-like,FAD-dependent monooxygenase,,#008F01,Pfam,PF00743.22
+FMN_red,NADPH-dependent FMN reductase,,#008F00,Pfam,PF03358.18
+FMO-like,FAD-dependent monooxygenase,,#008F00,Pfam,PF00743.22
 fn3_3,,,,Pfam,PF14686.9
 Fn3-like,glycosyl hydrolase,,#0096FF,Pfam,PF14310.9
 FncF,short-chain dehydrogenase/reductase,,#531B93,MyHMM,
@@ -448,7 +449,7 @@ PDR_CDR,ABC transporter,,#000000,Pfam,PF06422.15
 Pec_lyase,,,,Pfam,PF09492.13
 PEMT,,,,Pfam,PF04191.16
 PenF,quinolone epoxide rearrangement protein,,#0096FF,MyHMM,
-PEP_mutase,phosphoenolpyruvate mutase,,#9BB75A,Pfam,PF13714.9
+PEP_mutase,phosphoenolpyruvate mutase,,#C7E280,Pfam,PF13714.9
 Peptidase_M19,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF01244.24
 Peptidase_M20,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF01546.31
 Peptidase_M24,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF00557.27
@@ -499,6 +500,7 @@ RSN1_TM,,,,Pfam,PF13967.9
 RTA1,transporter,,#000000,Pfam,PF04479.16
 Rua1_C,transcription factor,,#929000,Pfam,PF14616.9
 Sacchrp_dh_NADP,,,,Pfam,PF03435.21
+SalTPS,,,,MyHMM,
 SAT2,starter-unit acyltransferase,NR-PKS,#5298B5,MyHMM,
 Say1_Mug180,,,,Pfam,PF10340.12
 Scytalone_dh,dehydratase,,#C4C35F,Pfam,PF02982.17
@@ -585,3 +587,4 @@ YCII,,,,Pfam,PF03795.17
 zf-C6H2,,,,Pfam,PF15801.8
 zf-H2C2_2,,,,Pfam,PF13465.9
 Zn_clus,transcription factor,,#929000,Pfam,PF00172.21
+PfB,pericyclase,,#00F900,MyHMM,
