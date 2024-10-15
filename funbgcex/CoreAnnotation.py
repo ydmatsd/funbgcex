@@ -19,7 +19,7 @@ class Annotation:
         'NRPS_term_dom': 695, 'NRPS_CT': 416, 'PbcA': 972, 'ABA3': 446, 'Chal_sti_synt_C': 151, 
         'UbiA_TC': 292, 'Thioesterase': 230, 'SQHop_cyclase_C': 319, 'Carn_acyltransf': 568, 
         'fPKS_DH': 306, 'Terpene_syn_C_2': 199, 'Terpene_synth_C':267,'Abhydrolase_3': 211, 'fPKS_KR': 175,
-        'AA-adenyl-dom': 409, 'DIT1_PvcA': 277, 'PEP_mutase': 241, 'SalTPC': 606, 'CosA': 319}
+        'AA-adenyl-dom': 409, 'DIT1_PvcA': 277, 'PEP_mutase': 241, 'SalTPC': 606, 'CosA': 319, 'Aminotran_5': 371}
 
         os.makedirs(temp_dir,exist_ok=True)
         fasta = f"{temp_dir}/seq.fasta"
@@ -142,6 +142,8 @@ class Annotation:
                 domains_list.append(["ER",item[2]])            
             if "PKS_NRPS_MT" in item:
                 domains_list.append(["MT",item[2]])
+            if "Aminotran_5" in item:
+                domains_list.append(["P",item[2]])
             if "ACP_PCP" in item:
                 domains_list.append(["ACP",item[2]])            
             if "Carn_acyltransf" in item:
