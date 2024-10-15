@@ -474,6 +474,7 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
         withTarget = False
         withRiPPpp = False
         withUstY = False
+        withPPPS = False
         ToBeExtracted = False
         ToBeReset = False
 
@@ -500,6 +501,9 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
 
                 if "UstYa" in df.at[j,"Pfam"] or "VicY" in df.at[j,"Pfam"]:
                     withUstY = True
+
+                if df.at[j,"core"] == "PPPS":
+                    withPPPS = True
 
                 if df.at[j,"core"] == "none" and df.at[j,"Pfam"] == "none" and df.at[j,"known_homologue"] == "none"\
                     and df.at[j,"duplicated_protein"] != "none":
@@ -551,6 +555,9 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                 #in case RiPP PP candidate is found but no UstY homologue is found, the candidate is considered as nonBP, and BGC extraction process will be repeated
                 if withRiPPpp and withUstY == False:
                     ToBeReset = True
+                #in case only a PPPS is found in a BGC, the BGC will not be included
+                if withPPPS and geneNum == 1:
+                    ToBeExtracted = False
 
             if mode == "target" or mode == "pfam":
                 if withRiPPpp and withUstY and withTarget:
@@ -559,6 +566,8 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                     ToBeExtracted = True
                 if withRiPPpp and withUstY == False:
                     ToBeReset = True
+                if withPPPS and geneNum == 1:
+                    ToBeExtracted = False
 
             if ToBeReset:
                 for i in RippPosList:
