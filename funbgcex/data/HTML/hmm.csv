@@ -588,28 +588,28 @@ zf-C6H2,,,,Pfam,PF15801.8
 zf-H2C2_2,,,,Pfam,PF13465.9
 Zn_clus,transcription factor,,#929000,Pfam,PF00172.21
 PfB,pericyclase,,#00F900,MyHMM,
-Acetyltransf_1,acetyltransferase,,#76D6FF,Pfam,PF13434.8
-CMD,decarboxylase,,#73FCD6,Pfam,PF09118.13
-Cytochrom_B561,,,,Pfam,PF08592.13
-DSBA,thioredoxin-like protein,,#FFFC79,Pfam,PF08982.13
-DUF1772,anthrone oxygenase,,#8EFA00,Pfam,PF03928.16
-DUF1857,,,,Pfam,PF14616.8
-DUF1929,,,,Pfam,PF00583.27
-DUF3533,,,,Pfam,PF07678.16
-DUF4451,,,,Pfam,PF01966.24
-Egh16-like,,,,Pfam,PF14833.8
-FtsJ,methyltransferase,,#FF9300,Pfam,PF07714.19
-Gln-synt_C,glutamine synthetase,,#D783FF,Pfam,PF02627.22
-Glyco_tran_28_C,glycosyltransferase,,#9437FF,Pfam,PF12051.10
-HD,phosphohydrolase,,#0096FF,Pfam,PF03188.18
-Haem_degrading,,,,Pfam,PF00075.26
-K_oxygenase,FAD-dependent monooxygenase,,#008F01,Pfam,PF01728.21
-Melibiase_2,alpha-galactosidase,,#0096FF,Pfam,PF04101.18
-Melibiase_C,alpha-galactosidase,,#0096FF,Pfam,PF06414.14
-NAD_binding_11,dehydrogenase,,#531B93,Pfam,PF13041.8
-PK_Tyr_Ser-Thr,,,,Pfam,PF04910.16
-PPR_2,,,,Pfam,PF00096.28
-Tcf25,transcription factor,,#929000,Pfam,PF16499.7
-zf-C2H2,transcription factor,,#929000,Pfam,PF11327.10
+Acetyltransf_1,acetyltransferase,,#76D6FF,Pfam,PF00583.27
+CMD,decarboxylase,,#73FCD6,Pfam,PF02627.22
+Cytochrom_B561,,,,Pfam,PF03188.18
+DSBA,thioredoxin-like protein,,#FFFC79,Pfam,PF01323.22
+DUF1772,anthrone oxygenase,,#8EFA00,Pfam,PF08592.13
+DUF1857,,,,Pfam,PF08982.13
+DUF1929,,,,Pfam,PF09118.13
+DUF3533,,,,Pfam,PF12051.10
+DUF4451,,,,Pfam,PF14616.8
+Egh16-like,,,,Pfam,PF11327.10
+FtsJ,methyltransferase,,#FF9300,Pfam,PF01728.21
+Gln-synt_C,glutamine synthetase,,#D783FF,Pfam,PF00120.26
+Glyco_tran_28_C,glycosyltransferase,,#9437FF,Pfam,PF04101.18
+HD,phosphohydrolase,,#0096FF,Pfam,PF01966.24
+Haem_degrading,,,,Pfam,PF03928.16
+K_oxygenase,FAD-dependent monooxygenase,,#008F01,Pfam,PF13434.8
+Melibiase_2,alpha-galactosidase,,#0096FF,Pfam,PF16499.7
+Melibiase_C,alpha-galactosidase,,#0096FF,Pfam,PF17801.3
+NAD_binding_11,dehydrogenase,,#531B93,Pfam,PF14833.8
+PK_Tyr_Ser-Thr,,,,Pfam,PF07714.19
+PPR_2,,,,Pfam,PF13041.8
+Tcf25,transcription factor,,#929000,Pfam,PF04910.16
+zf-C2H2,transcription factor,,#929000,Pfam,PF00096.28
 AnkG,ATP-grasp protein,,#D783FF,MyHMM,
 Cp1D,amide bond synthetase,,#011993,MyHMM,
