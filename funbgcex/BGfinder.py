@@ -489,7 +489,9 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
 
             DupProtNum = 0
             allowedDupNum = 2
+            geneNum = -1
             for j in range(counter,len(df)):
+                geneNum += 1
                 if df.at[j,"core"] != "none" and df.at[j,"core"] != "RiPP_PP_cand":
                     withCore = True
 
