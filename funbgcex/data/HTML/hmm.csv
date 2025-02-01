@@ -205,14 +205,14 @@ Dyp_perox,peroxidase,,#00A4A7,Pfam,PF04261.15
 EamA,transporter,,#000000,Pfam,PF00892.23
 EcdJ,,,,MyHMM,
 ECH_1,enoyl-CoA hydratase,,#00FDFF,Pfam,PF00378.23
-ECH_2,enoyl-CoA hydratase,,,Pfam,PF16113.8
+ECH_2,enoyl-CoA hydratase,,#00FDFF,Pfam,PF16113.8
 EcKL,,,,Pfam,PF02958.23
 EfHP,,,,MyHMM,
 EHN,hydrolase,,#0096FF,Pfam,PF06441.15
 ElcH,FAD-dependent monooxygenase,,#008F01,MyHMM,
 Epimerase,short-chain dehydrogenase/reductase,,#531B93,Pfam,PF01370.24
 EqxR,transcription factor,,#929000,MyHMM,
-ERG4_ERG24,methyltransferase,,#FF9300,Pfam,PF01222.20
+ERG4_ERG24,ERG4/ERG24 family protein,,,Pfam,PF01222.20
 Esterase,esterase,"NR-PKS,PR-PKS,HR-PKS,NRPS,PKS-NRPS,NRPS-PKS",#0096FF,Pfam,PF00756.23
 EthD,EthD domain-containing protein,,#73FCD6,Pfam,PF07110.14
 F420_oxidored,reductase,,#008F00,Pfam,PF03807.20
