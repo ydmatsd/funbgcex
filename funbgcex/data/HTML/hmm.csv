@@ -48,7 +48,7 @@ Acetyltransf_7,acetyltransferase,,#76D6FF,Pfam,PF13508.10
 Acetyltransf_8,acetyltransferase,,#76D6FF,Pfam,PF13523.9
 Aconitase,aconitase,,#656401,Pfam,PF00330.23
 Aconitase_C,aconitase,,#656401,Pfam,PF00694.22
-ACP_PCP,,,,MyHMM,
+ACP_PCP,acyl/peptidyl carrier protein,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS-like",#AA98A9,MyHMM,
 ACP_syn_III_C,,,,Pfam,PF08541.13
 ACPS,fatty acid synthase,,#FF8059,Pfam,PF01648.23
 ACT,aspartate kinase,,#D7B467,Pfam,PF01842.28
@@ -76,7 +76,7 @@ Aldolase_II,aldolase,,#D4FB79,Pfam,PF00596.24
 Aldose_epim,isomerase,,#00FA92,Pfam,PF01263.23
 Alpha-amylase,alpha-glucosidase,,#0096FF,Pfam,PF00128.27
 Amidase,amidotransferase,,#941100,Pfam,PF01425.24
-Amidohydro_1,,,,Pfam,PF01979.23
+Amidohydro_1,deaminase,,#73FCD6,Pfam,PF01979.23
 Amidohydro_2,decarboxylase,,#73FCD6,Pfam,PF04909.17
 Amidohydro_3,amidohydrolase,,#941100,Pfam,PF07969.14
 Amino_oxidase,FAD-linked oxidoreductase,,#008F02,Pfam,PF01593.27
@@ -303,7 +303,7 @@ GST_N,glutathione S-transferase,,#73FDFF,Pfam,PF02798.23
 GST_N_2,glutathione S-transferase,,#73FDFF,Pfam,PF13409.9
 GST_N_3,glutathione S-transferase,,#73FDFF,Pfam,PF13417.9
 GST_N_4,glutathione S-transferase,,#73FDFF,Pfam,PF17172.7
-GTP_cyclohydroI,GTP cyclohydrolase,,,Pfam,PF01227.25
+GTP_cyclohydroI,GTP cyclohydrolase,,#0096FF,Pfam,PF01227.25
 HAD_2,HAD-like hydrolase,TC (AstC),#0096FF,Pfam,PF13419.9
 HbpS-like,,,,Pfam,PF03928.17
 Helitron_like_N,,,,Pfam,PF14214.9
@@ -394,7 +394,7 @@ MFS_1_like,major facilitator superfamily transporter,,#000000,Pfam,PF12832.10
 MFS_2,major facilitator superfamily transporter,,#000000,Pfam,PF13347.9
 MFS_4,major facilitator superfamily transporter,,#000000,Pfam,PF06779.17
 MFS_5,major facilitator superfamily transporter,,,Pfam,PF05631.17
-Mito_carr,tricarboxylate transporter,,#000000,Pfam,PF00153.30
+Mito_carr,mitochondrial carrier protein,,#000000,Pfam,PF00153.30
 MmgE_PrpD,2-methylcitrate dehydratase,,#C4C35F,Pfam,PF03972.17
 MmgE_PrpD_C,2-methylcitrate dehydratase,,#C4C35F,Pfam,PF19305.2
 MMR_HSR1,,,,Pfam,PF01926.26
@@ -465,7 +465,7 @@ peroxidase,peroxidase,,#00A4A7,Pfam,PF00141.26
 Peroxidase_2,peroxidase,,#00A4A7,Pfam,PF01328.20
 Phe_hydrox_dim,FAD-dependent monooxygenase,,#008F01,Pfam,PF07976.15
 PHM7_cyt,,,,Pfam,PF14703.9
-PhomB,,,,MyHMM,
+PhomB,DUF3328 protein (UstY-like),,#FFD479,MyHMM,
 Phosphodiest,,,,Pfam,PF01663.25
 PhyH,2OG-Fe(II)-dependent dioxygenase,,#FF2F92,Pfam,PF05721.16
 PIF1,,,,Pfam,PF05970.17
@@ -501,7 +501,7 @@ RTA1,transporter,,#000000,Pfam,PF04479.16
 Rua1_C,transcription factor,,#929000,Pfam,PF14616.9
 Sacchrp_dh_NADP,,,,Pfam,PF03435.21
 SalTPS,,,,MyHMM,
-SAT2,starter-unit acyltransferase,NR-PKS,#5298B5,MyHMM,
+SAT2,starter-unit acyltransferase,"NR-PKS,PR-PKS,HR-PKS,NRPS,PKS-NRPS,NRPS-PKS",#5298B5,MyHMM,
 Say1_Mug180,,,,Pfam,PF10340.12
 Scytalone_dh,dehydratase,,#C4C35F,Pfam,PF02982.17
 Sdh_cyt,succinate dehydrogenase cytochrome B subunit,,,Pfam,PF01127.25
@@ -581,8 +581,8 @@ VicYx,DUF3328 protein (UstY-like),,#FFD479,MyHMM,
 VidS,dehydratase,,#C4C35F,MyHMM,
 VrtF,methyltransferase,,#FF9300,MyHMM,
 WD40,,,,Pfam,PF00400.35
-XenC,cyclic ether formation enzyme,,,MyHMM,
-XenD,epoxidase,,,MyHMM,
+XenC,cyclic ether formation enzyme,,#009193,MyHMM,
+XenD,hydroxylase/epoxidase,,#8EFA00,MyHMM,
 YCII,,,,Pfam,PF03795.17
 zf-C6H2,,,,Pfam,PF15801.8
 zf-H2C2_2,,,,Pfam,PF13465.9
