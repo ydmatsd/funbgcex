@@ -76,7 +76,7 @@ Aldolase_II,aldolase,,#D4FB79,Pfam,PF00596.24
 Aldose_epim,isomerase,,#00FA92,Pfam,PF01263.23
 Alpha-amylase,alpha-glucosidase,,#0096FF,Pfam,PF00128.27
 Amidase,amidotransferase,,#941100,Pfam,PF01425.24
-Amidohydro_1,deaminase,,#73FCD6,Pfam,PF01979.23
+Amidohydro_1,deaminase,,#941100,Pfam,PF01979.23
 Amidohydro_2,decarboxylase,,#73FCD6,Pfam,PF04909.17
 Amidohydro_3,amidohydrolase,,#941100,Pfam,PF07969.14
 Amino_oxidase,FAD-linked oxidoreductase,,#008F02,Pfam,PF01593.27
