@@ -528,9 +528,13 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                         withTarget = True
 
                 if j == len(df) - 1:
-                    end_pos = df.at[j,"end"]
-                    locus_tag_end = df.at[j,"locus_tag"]
-                    break
+                    if df.at[j,"BP"] == 1:
+                        end_pos = df.at[j,"end"]
+                        locus_tag_end = df.at[j,"locus_tag"]
+                        geneNum += 1
+                        break
+                    else:
+                        break
 
                 if df.at[j,"BP"] == 1:                          
                     if df.at[j,"scaffold"] == df.at[j+1,"scaffold"]:
@@ -541,10 +545,12 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                         else:
                             end_pos = df.at[j,"end"]
                             locus_tag_end = df.at[j,"locus_tag"]
+                            geneNum += 1
                             break                           
                     else:
                         end_pos = df.at[j,"end"]
                         locus_tag_end = df.at[j,"locus_tag"]
+                        geneNum += 1
                         break
                 else:
                     break
