@@ -507,7 +507,7 @@ Scytalone_dh,dehydratase,,#C4C35F,Pfam,PF02982.17
 Sdh_cyt,succinate dehydrogenase cytochrome B subunit,,,Pfam,PF01127.25
 SdnJ,glycosyltransferase,,#9437FF,MyHMM,
 Semialdhyde_dh,,,,Pfam,PF01118.27
-SET,,,,Pfam,PF00856.31
+SET,methyltransferase,,#FF9300,Pfam,PF00856.31
 SGL,gluconolactonase,,#0096FF,Pfam,PF08450.15
 Shikimate_DH,,,,Pfam,PF01488.23
 SmbD,short-chain dehydrogenase/reductase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS",#531B93,MyHMM,
