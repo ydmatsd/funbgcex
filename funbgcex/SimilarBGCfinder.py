@@ -127,7 +127,7 @@ def ClusteredProteinFinder(fasta_dir,database,IDdict,deletedProtDict,max_bgc_gap
 				clusterEnd = prot_list[i+1]
 				zeroNum = 0
 				if i == len(prot_list)-2:
-					break
+					pass
 				else:
 					for j in range(i+2,len(prot_list)):
 						if DistanceDict[prot_list[j-1]] > max_bgc_gap and df.at[locus_tag,prot_list[j]] != 2:
@@ -140,7 +140,7 @@ def ClusteredProteinFinder(fasta_dir,database,IDdict,deletedProtDict,max_bgc_gap
 						if zeroNum == 3:
 							break
 
-					clusterList.append([clusterStart,clusterEnd])
+				clusterList.append([clusterStart,clusterEnd])
 
 
 		for i in range(len(prot_list)-1,0,-1):
@@ -164,7 +164,7 @@ def ClusteredProteinFinder(fasta_dir,database,IDdict,deletedProtDict,max_bgc_gap
 				clusterStart = prot_list[i-1]
 				zeroNum = 0
 				if i == 1:
-					break
+					pass
 				else:
 					for j in range(i-2,-1,-1):
 						if DistanceDict[prot_list[j]] > max_bgc_gap and df.at[locus_tag,prot_list[j]] != 2:
@@ -177,8 +177,8 @@ def ClusteredProteinFinder(fasta_dir,database,IDdict,deletedProtDict,max_bgc_gap
 						if zeroNum == 3:
 							break
 
-					if [clusterStart,clusterEnd] not in clusterList:
-						clusterList.append([clusterStart,clusterEnd])
+				if [clusterStart,clusterEnd] not in clusterList:
+					clusterList.append([clusterStart,clusterEnd])
 
 
 		for item in clusterList:
