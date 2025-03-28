@@ -48,7 +48,8 @@ def ClusteredProteinFinder(fasta_dir,database,IDdict,deletedProtDict,max_bgc_gap
 						prot_list.append(protName)
 						link_list.append([protName,[],[]])
 
-		df = pd.DataFrame(columns=prot_list,index=prot_list).fillna(0)
+		# df = pd.DataFrame(columns=prot_list,index=prot_list).fillna(0)
+		df = pd.DataFrame(0, columns=prot_list, index=prot_list)
 
 		"""
 		Run DIAMOND
