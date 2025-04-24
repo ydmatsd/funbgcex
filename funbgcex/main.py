@@ -19,7 +19,7 @@ def get_args():
     parser.add_argument("-ml","--min_length",default=200,help="Minimum protein length considered for biosynthetic protein detection (Default: 200)",type=int)
     parser.add_argument("-n","--num_checked",default=20,help="Number of genes around the core/target genes to be checked (Default: 20)",type=int)
     parser.add_argument("-mi","--min_identity",default=50,help="Minimum identity required to be considered as a duplicated protein (Default: 50)",type=int)
-    parser.add_argument("-v","--version",action="version",version='%(prog)s 0.0.5')
+    parser.add_argument("-v","--version",action="version",version='%(prog)s 0.0.6')
     args = parser.parse_args()
     return(args)
 
