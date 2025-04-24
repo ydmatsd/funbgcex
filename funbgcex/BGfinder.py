@@ -78,7 +78,7 @@ def Core_extractor(hmmscan_result,df,temp_dir,mode="normal"):
     hmmscan_core_database = f"{current_dir}/data/hmm/core/core.hmm"
 
     Corefam_list = ["Terpene_syn_C_2","Terpene_synth_C","TRI5","SQHop_cyclase_C","SQHop_cyclase_N",
-    "Trp_DMAT","Pyr4","PbcA","AstC","ABA3","AsR6","SalTPS","UbiA_PT","UbiA_TC","CosA","PaxC","GGPS",
+    "Trp_DMAT","Pyr4","PbcA","AstC","ABA3","AsR6","SalTPS","VniA","UbiA_PT","UbiA_TC","CosA","PaxC","GGPS",
     "Chal_sti_synt_N","Chal_sti_synt_C","AnkA","DIT1_PvcA","PEP_mutase"]
     UstY_list = ["UstYa","VicY"]
 
@@ -641,8 +641,8 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
 
                 preference = {"PKS-NRPS":1,"NRPS-PKS":2,"NR-PKS":3,"PR-PKS":4,"HR-PKS":5,"T3PKS":6,"NRPS":7,"chimeric TS":8,"TC (Class1)":9,
                                     "TC (SHC/OSC)":10,"TC (Tri5)":11,"TC (Pyr4)":12,"TC (UbiA)":13,"TC (PbcA)":14,"TC (AstC)":15,"TC (ABA3)":16,
-                                    "TC (AsR6)":17,"TC (SalTPS)":18,"PT (UbiA)":19,"PT (PaxC)":20,"PT (DMATS)":21,"PT (CosA)":22,"PPPS":23,"RiPP PP":24,
-                                    "RCDPS":25,"ICS":26,"PEPM":27,"NRPS-like":28,"PKS-like":29,"ePLS":30}
+                                    "TC (AsR6)":17,"TC (SalTPS)":18,"TC (VniA)":19,"PT (UbiA)":20,"PT (PaxC)":21,"PT (DMATS)":22,"PT (CosA)":23,"PPPS":24,
+                                    "RiPP PP":25,"RCDPS":26,"ICS":27,"PEPM":28,"NRPS-like":29,"PKS-like":30,"ePLS":31}
 
                 core_list_sorted = sorted(core_list, key=lambda x: preference[x])
                 core_enz = ", ".join(core_list_sorted)
