@@ -43,6 +43,7 @@ Abhydrolase_6,hydrolase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",
 ABM,,,,Pfam,PF03992.19
 ACAS_N,CoA ligase,,#011993,Pfam,PF16177.8
 ACC_central,acetyl-CoA carboxylase,,#005493,Pfam,PF08326.15
+Acetyltransf_1,acetyltransferase,,#76D6FF,Pfam,PF00583.27
 Acetyltransf_3,acetyltransferase,,#76D6FF,Pfam,PF13302.10
 Acetyltransf_7,acetyltransferase,,#76D6FF,Pfam,PF13508.10
 Acetyltransf_8,acetyltransferase,,#76D6FF,Pfam,PF13523.9
@@ -90,11 +91,13 @@ Ank_3,ankyrin repeat domain-containing protein,,#CCCCCC,Pfam,PF13606.9
 Ank_4,ankyrin repeat domain-containing protein,,#CCCCCC,Pfam,PF13637.9
 Ank_5,ankyrin repeat domain-containing protein,,#CCCCCC,Pfam,PF13857.9
 AnkA,,,,MyHMM,
+AnkG,ATP-grasp protein,,#D783FF,MyHMM,
 Anth_synt_I_N,,,,Pfam,PF04715.16
 Anthrone_oxy,anthrone oxygenase,,#8EFA00,Pfam,PF08592.14
 ApbA,oxidoreductase,,#531B93,Pfam,PF02558.19
 ApbA_C,oxidoreductase,,#531B93,Pfam,PF08546.14
 APH,metalloprotease,,#0096FF,Pfam,PF01636.26
+Arginosuc_synth,argininosuccinate synthetase-like protein,,#C00000,Pfam,PF00764.25
 Asn_synthase,amidotransferase,,#941100,Pfam,PF00733.24
 Asp,aspartic protease,,#0096FF,Pfam,PF00026.26
 Asp_aminotransf,,,,Pfam,PF12897.10
@@ -142,11 +145,13 @@ Citrate_synt,citrate synthase-like protein,,#DBD701,Pfam,PF00285.24
 Clz3,copper dependent oxygenase,,#009193,MyHMM,
 Clz7,transcription factor,,#929000,MyHMM,
 CMAS,,,,Pfam,PF02353.23
+CMD,decarboxylase,,#73FCD6,Pfam,PF02627.22
 CoA_transf_3,CoA transferase,,#76D6FF,Pfam,PF02515.20
 COesterase,hydrolase,,#0096FF,Pfam,PF00135.31
 Cofilin_ADF,,,,Pfam,PF00241.23
 Condensation,condensation domain,"NRPS,PKS-NRPS,NRPS-like",,Pfam,PF00668.23
 CosA,,,,MyHMM,
+Cp1D,amide bond synthetase,,#011993,MyHMM,
 CpaE,transcription factor,,#929000,MyHMM,
 CPSase_L_D2,,,,Pfam,PF02786.20
 CPSase_L_D3,,,,Pfam,PF02787.22
@@ -158,6 +163,7 @@ Cu-oxidase_3,laccase,,#009193,Pfam,PF07732.18
 Cupin_2,cupin domain-containing protein,,#FF7E79,Pfam,PF07883.14
 Cys_Met_Meta_PP,PLP-containing enzyme,,#73FCD6,Pfam,PF01053.23
 Cyt-b5,cytochrome b5-like protein,,#FF8AD8,Pfam,PF00173.31
+Cytochrom_B561,,,,Pfam,PF03188.18
 Dabb,,,,Pfam,PF07876.15
 DAHP_synth_1,phospho-2-dehydro-3-deoxyheptonate aldolase,,,Pfam,PF00793.23
 Dala_Dala_lig_C,,,,Pfam,PF07478.16
@@ -173,12 +179,16 @@ DIOX_N,2OG-Fe(II)-dependent dioxygenase,,#FF2F92,Pfam,PF14226.9
 DIT1_PvcA,,,,Pfam,PF05141.15
 DJ-1_PfpI,isocyanide hydratase,,#00FDFF,Pfam,PF01965.27
 DLH,hydrolase,,#0096FF,Pfam,PF01738.21
+DSBA,thioredoxin-like protein,,#FFFC79,Pfam,PF01323.22
 DUF1295,ene-reductase,,#531B93,Pfam,PF06966.15
 DUF1479,,,,Pfam,PF07350.15
 DUF1729,fatty acid synthase,,#FF8059,Pfam,PF08354.13
 DUF1749,esterase,,#0096FF,Pfam,PF08538.13
 DUF1752,,,,Pfam,PF08550.13
+DUF1772,anthrone oxygenase,,#8EFA00,Pfam,PF08592.13
 DUF1776,,,,Pfam,PF08643.13
+DUF1857,,,,Pfam,PF08982.13
+DUF1929,,,,Pfam,PF09118.13
 DUF1965,copper amine oxidase,,#009193,Pfam,PF09248.13
 DUF1993,,,,Pfam,PF09351.13
 DUF2306,,,,Pfam,PF10067.12
@@ -189,12 +199,14 @@ DUF3176,,,,Pfam,PF11374.11
 DUF3237,DUF3237 protein,,#FFD479,Pfam,PF11578.11
 DUF3425,transcription factor,,#929000,Pfam,PF11905.11
 DUF3471,beta-lactamase-like hydrolase,,#0096FF,Pfam,PF11954.11
+DUF3533,,,,Pfam,PF12051.10
 DUF4149,,,,Pfam,PF13664.9
 DUF4185,,,,Pfam,PF13810.9
 DUF4188,ABM superfamily monoxygenase,,#009193,Pfam,PF13826.9
 DUF4267,,,,Pfam,PF14087.9
 DUF4385,,,,Pfam,PF14328.9
 DUF4413,,,,Pfam,PF14372.9
+DUF4451,,,,Pfam,PF14616.8
 DUF5519,luciferase,,#011993,Pfam,PF17648.4
 DUF6534,,,,Pfam,PF20152.2
 DUF6570,,,,Pfam,PF20209.1
@@ -208,6 +220,7 @@ ECH_1,enoyl-CoA hydratase,,#00FDFF,Pfam,PF00378.23
 ECH_2,enoyl-CoA hydratase,,#00FDFF,Pfam,PF16113.8
 EcKL,,,,Pfam,PF02958.23
 EfHP,,,,MyHMM,
+Egh16-like,,,,Pfam,PF11327.10
 EHN,hydrolase,,#0096FF,Pfam,PF06441.15
 ElcH,FAD-dependent monooxygenase,,#008F01,MyHMM,
 Epimerase,short-chain dehydrogenase/reductase,,#531B93,Pfam,PF01370.24
@@ -257,6 +270,7 @@ FrzJ,phosphotransferase,,#D7B467,MyHMM,
 Fsa2,Diels-Alderase,,#00F900,MyHMM,
 FscB,transcription factor,,#929000,MyHMM,
 FSH1,hydrolase,,#0096FF,Pfam,PF03959.16
+FtsJ,methyltransferase,,#FF9300,Pfam,PF01728.21
 FtsK_SpoIIIE,,,,Pfam,PF01580.21
 Fungal_trans,transcription factor,,#929000,Pfam,PF04082.21
 Fungal_trans_2,transcription factor,,#929000,Pfam,PF11951.11
@@ -274,6 +288,7 @@ GH43_C2,glycosyl hydrolase,,#0096FF,Pfam,PF17851.4
 GIDA,,,,Pfam,PF01134.25
 GliK,gamma-glutamyl cyclotransferase,,#73FDFF,MyHMM,
 GliN,methyltransferase,,#FF9300,MyHMM,
+Gln-synt_C,glutamine synthetase,,#D783FF,Pfam,PF00120.26
 Glu_dehyd_C,,,,Pfam,PF16912.8
 Gly_transf_sug,,,,Pfam,PF04488.18
 Glyco_hydro_11,glycosyl hydrolase,,#0096FF,Pfam,PF00457.20
@@ -282,6 +297,7 @@ Glyco_hydro_3_C,glycosyl hydrolase,,#0096FF,Pfam,PF01915.25
 Glyco_hydro_31,glycosyl hydrolase,,#0096FF,Pfam,PF01055.29
 Glyco_hydro_43,glycosyl hydrolase,,#0096FF,Pfam,PF04616.17
 Glyco_hydro_cc,glycosyl hydrolase,,#0096FF,Pfam,PF11790.11
+Glyco_tran_28_C,glycosyltransferase,,#9437FF,Pfam,PF04101.18
 Glyco_transf_28,glycosyltransferase,,#9437FF,Pfam,PF03033.23
 Glyoxal_oxid_N,,,,Pfam,PF07250.14
 Glyoxalase,glyoxalase-like protein,,#B61C65,Pfam,PF00903.28
@@ -305,7 +321,9 @@ GST_N_3,glutathione S-transferase,,#73FDFF,Pfam,PF13417.9
 GST_N_4,glutathione S-transferase,,#73FDFF,Pfam,PF17172.7
 GTP_cyclohydroI,GTP cyclohydrolase,,#0096FF,Pfam,PF01227.25
 HAD_2,HAD-like hydrolase,TC (AstC),#0096FF,Pfam,PF13419.9
+Haem_degrading,,,,Pfam,PF03928.16
 HbpS-like,,,,Pfam,PF03928.17
+HD,phosphohydrolase,,#0096FF,Pfam,PF01966.24
 Helitron_like_N,,,,Pfam,PF14214.9
 Helo_like_N,,,,Pfam,PF17111.8
 Hemerythrin,,,,Pfam,PF01814.26
@@ -342,6 +360,7 @@ IPT,,,,Pfam,PF01745.19
 Iso_dh,isopropyl malate dehydrogenase,,#656401,Pfam,PF00180.23
 Isochorismatase,isochorismatase-family protein,,,Pfam,PF00857.23
 IucA_IucC,,,,Pfam,PF04183.15
+K_oxygenase,FAD-dependent monooxygenase,,#008F01,Pfam,PF13434.8
 Kdo,,,,Pfam,PF06293.17
 Kelch_1,Kelch-like protein,,,Pfam,PF01344.28
 Kelch_2,Kelch-like protein,,,Pfam,PF07646.18
@@ -371,6 +390,8 @@ MaoC_dehydratas,fatty acid synthase,,#FF8059,Pfam,PF01575.22
 MARVEL,,,,Pfam,PF01284.26
 MBOAT_2,acetyltransferase,,#76D6FF,Pfam,PF13813.9
 MdpA,transcriptional coactivator,,#929000,MyHMM,
+Melibiase_2,alpha-galactosidase,,#0096FF,Pfam,PF16499.7
+Melibiase_C,alpha-galactosidase,,#0096FF,Pfam,PF17801.3
 Methyltransf_10,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",,Pfam,PF05971.15
 Methyltransf_11,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",#FF9300,Pfam,PF08241.15
 Methyltransf_12,methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS",#FF9300,Pfam,PF08242.15
@@ -408,6 +429,7 @@ Myb_DNA-binding,transcription factor,,#929000,Pfam,PF00249.34
 NACHT,,,,Pfam,PF05729.15
 NAD_binding_1,,,,Pfam,PF00175.24
 NAD_binding_10,short-chain dehydrogenase/reductase,,#531B93,Pfam,PF13460.9
+NAD_binding_11,dehydrogenase,,#531B93,Pfam,PF14833.8
 NAD_binding_2,,,,Pfam,PF03446.18
 NAD_binding_3,short-chain dehydrogenase/reductase,,#531B93,Pfam,PF03447.19
 NAD_binding_4,,,,Pfam,PF07993.15
@@ -463,6 +485,7 @@ Peptidase_S9,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#
 Peptidase_S9_N,peptidase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,NRPS-like",#0096FF,Pfam,PF02897.18
 peroxidase,peroxidase,,#00A4A7,Pfam,PF00141.26
 Peroxidase_2,peroxidase,,#00A4A7,Pfam,PF01328.20
+PfB,pericyclase,,#00F900,MyHMM,
 Phe_hydrox_dim,FAD-dependent monooxygenase,,#008F01,Pfam,PF07976.15
 PHM7_cyt,,,,Pfam,PF14703.9
 PhomB,DUF3328 protein (UstY-like),,#FFD479,MyHMM,
@@ -470,6 +493,7 @@ Phosphodiest,,,,Pfam,PF01663.25
 PhyH,2OG-Fe(II)-dependent dioxygenase,,#FF2F92,Pfam,PF05721.16
 PIF1,,,,Pfam,PF05970.17
 PIGO_PIGG,GPI ethanolamine phosphate transferase,,#D7B467,Pfam,PF19316.2
+PK_Tyr_Ser-Thr,,,,Pfam,PF07714.19
 Pkinase,,,,Pfam,PF00069.28
 PKS_AT,,,,SMART,SM00827
 PKS_KS,,,,SMART,SM00825
@@ -477,9 +501,11 @@ PKS_NRPS_MT,trans-acting methyltransferase,"NR-PKS,PR-PKS,HR-PKS,PKS-NRPS,NRPS-P
 Polyketide_cyc2,,,,Pfam,PF10604.12
 Polysacc_deac_1,,,,Pfam,PF01522.24
 Polysacc_synt_2,,,,Pfam,PF02719.18
+PPR_2,,,,Pfam,PF13041.8
 Prefoldin,,,,Pfam,PF02996.20
 Prenyltrans,,,,Pfam,PF00432.24
 Pribosyltran,,,,Pfam,PF00156.30
+Pro_CA,carbonic anhydrase,,#87B2A3,Pfam,PF00484.24
 Pro_isomerase,,,,Pfam,PF00160.24
 Proteasome,,,,Pfam,PF00227.29
 PrpF,aconitate-delta-isomerase,,#00FA92,Pfam,PF04303.16
@@ -505,6 +531,7 @@ SAT2,starter-unit acyltransferase,"NR-PKS,PR-PKS,HR-PKS,NRPS,PKS-NRPS,NRPS-PKS",
 Say1_Mug180,,,,Pfam,PF10340.12
 Scytalone_dh,dehydratase,,#C4C35F,Pfam,PF02982.17
 Sdh_cyt,succinate dehydrogenase cytochrome B subunit,,,Pfam,PF01127.25
+SdnG,Diels-Alderase,,#00F900,MyHMM,
 SdnJ,glycosyltransferase,,#9437FF,MyHMM,
 Semialdhyde_dh,,,,Pfam,PF01118.27
 SET,methyltransferase,,#FF9300,Pfam,PF00856.31
@@ -529,6 +556,7 @@ Sulfotransfer_4,sulfotransferase,,#24424F,Pfam,PF17784.4
 T2SSE,,,,Pfam,PF00437.23
 Tannase,esterase,,#0096FF,Pfam,PF07519.14
 TauD,2OG-Fe(II)-dependent dioxygenase,,#FF2F92,Pfam,PF02668.19
+Tcf25,transcription factor,,#929000,Pfam,PF04910.16
 TdiC,medium-chain dehydrogenase/reductase,,#531B93,MyHMM,
 Terpene_syn_C_2,,,,Pfam,PF19086.3
 Terpene_synth_C,,,,Pfam,PF03936.19
@@ -579,39 +607,14 @@ UNC-93,,,,Pfam,PF05978.19
 UstYa,DUF3328 protein (UstY-like),,#FFD479,Pfam,PF11807.11
 VicYx,DUF3328 protein (UstY-like),,#FFD479,MyHMM,
 VidS,dehydratase,,#C4C35F,MyHMM,
+VniA,,,,MyHMM,
 VrtF,methyltransferase,,#FF9300,MyHMM,
 WD40,,,,Pfam,PF00400.35
 XenC,cyclic ether formation enzyme,,#009193,MyHMM,
 XenD,hydroxylase/epoxidase,,#8EFA00,MyHMM,
 YCII,,,,Pfam,PF03795.17
-zf-C6H2,,,,Pfam,PF15801.8
-zf-H2C2_2,,,,Pfam,PF13465.9
-Zn_clus,transcription factor,,#929000,Pfam,PF00172.21
-PfB,pericyclase,,#00F900,MyHMM,
-Acetyltransf_1,acetyltransferase,,#76D6FF,Pfam,PF00583.27
-CMD,decarboxylase,,#73FCD6,Pfam,PF02627.22
-Cytochrom_B561,,,,Pfam,PF03188.18
-DSBA,thioredoxin-like protein,,#FFFC79,Pfam,PF01323.22
-DUF1772,anthrone oxygenase,,#8EFA00,Pfam,PF08592.13
-DUF1857,,,,Pfam,PF08982.13
-DUF1929,,,,Pfam,PF09118.13
-DUF3533,,,,Pfam,PF12051.10
-DUF4451,,,,Pfam,PF14616.8
-Egh16-like,,,,Pfam,PF11327.10
-FtsJ,methyltransferase,,#FF9300,Pfam,PF01728.21
-Gln-synt_C,glutamine synthetase,,#D783FF,Pfam,PF00120.26
-Glyco_tran_28_C,glycosyltransferase,,#9437FF,Pfam,PF04101.18
-HD,phosphohydrolase,,#0096FF,Pfam,PF01966.24
-Haem_degrading,,,,Pfam,PF03928.16
-K_oxygenase,FAD-dependent monooxygenase,,#008F01,Pfam,PF13434.8
-Melibiase_2,alpha-galactosidase,,#0096FF,Pfam,PF16499.7
-Melibiase_C,alpha-galactosidase,,#0096FF,Pfam,PF17801.3
-NAD_binding_11,dehydrogenase,,#531B93,Pfam,PF14833.8
-PK_Tyr_Ser-Thr,,,,Pfam,PF07714.19
-PPR_2,,,,Pfam,PF13041.8
-Tcf25,transcription factor,,#929000,Pfam,PF04910.16
 zf-C2H2,transcription factor,,#929000,Pfam,PF00096.28
-AnkG,ATP-grasp protein,,#D783FF,MyHMM,
-Cp1D,amide bond synthetase,,#011993,MyHMM,
-Pro_CA,carbonic anhydrase,,#87B2A3,Pfam,PF00484.24
-Arginosuc_synth,argininosuccinate synthetase-like protein,,#C00000,Pfam,PF00764.25
+zf-C6H2,zinc finger protein,,,Pfam,PF15801.8
+zf-H2C2_2,zinc finger protein,,,Pfam,PF13465.9
+zf_CCCH_4,zinc finger protein,,,Pfam,PF18345.7
+Zn_clus,transcription factor,,#929000,Pfam,PF00172.21
