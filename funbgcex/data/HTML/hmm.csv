@@ -376,7 +376,7 @@ LIP,hydrolase,,#0096FF,Pfam,PF03583.17
 Lipocalin_5,,,,Pfam,PF13924.9
 Lipocalin_9,,,,Pfam,PF17186.7
 LolU,acetyltransferase,,#76D6FF,MyHMM,
-LtmS,,,,MyHMM,
+LtmS,epoxide hydrolase,,#0096FF,MyHMM,
 Lumazine_bd_2,aldolase,,#D4FB79,Pfam,PF12893.10
 Lyase_1,,,,Pfam,PF00206.23
 Lyase_aromatic,phenylalanine ammonia-lyase,,#9BB75A,Pfam,PF00221.22
