@@ -372,6 +372,7 @@ Lactamase_B_2,beta-lactamase-like hydrolase,,#0096FF,Pfam,PF12706.10
 Lactamase_B_3,,,,Pfam,PF13483.9
 LCM,methyltransferase,,#FF9300,Pfam,PF04072.17
 LcsT,short-chain dehydrogenase/reductase,,#531B93,MyHMM,
+LigB,aromatic ring-opening dioxygenase,,#FF2F92,Pfam,PF02900.23
 LIP,hydrolase,,#0096FF,Pfam,PF03583.17
 Lipocalin_5,,,,Pfam,PF13924.9
 Lipocalin_9,,,,Pfam,PF17186.7
