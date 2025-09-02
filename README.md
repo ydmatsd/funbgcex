@@ -75,8 +75,8 @@ To extract BGCs that encode a protein with a protein family/domain (Pfam) of you
 ```bash
 $ funbgcex input_directory output_directory -m pfam -p Pfam_name
 ```
-
-See [here](docs/available_Pfam.txt) for available protein domains.
+* `-p Pfam_name`: The Pfam domain name to be used for BGC extraction
+See [here](docs/available_Pfam.txt) for the list of supported Pfam domains.
 
 ### Example: Extracting BGCs encoding Pyr4-family terpene cyclases
 Suppose you have several GenBank files in a directory named `gbk` in your current directory. If you wish to extract BGCs that encode a Pyr4-family terpene cyclase from these GenBank files and to obtain the result in a directory named `results`, then run the following:
