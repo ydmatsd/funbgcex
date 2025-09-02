@@ -48,10 +48,12 @@ BGC extraction using `funbgcex` can be performed as follows:
 $ funbgcex input_directory output_directory [options]
 ```
 
-The `input_directory` is the path to a directory that contains GenBank files from which BGCs will be extracted. The GenBank files need to have CDS features with a translation qualifier. Do not include any non-GenBank files in the directory.  
-The `output_directory` is the path to a directory in which the results will be saved.
-
-After the BGC extraction, the output directory should have the `all_clusters` and `results` directories and the CSV file named `allBGCs.csv`. The `all_clusters` directory contains all the extracted BGCs, while the `results` directory has separate results from each GenBank file. The CSV file `allBGCs.csv` contains the information of each extracted BGC.
+The `input_directory` is the path to a directory that contains GenBank files from which BGCs will be extracted. The GenBank files must include CDS features with a translation qualifier. Please ensure that no non-GenBank files are placed in this directory.  
+The `output_directory` is the path to a directory where the results will be saved. After extraction, the output directory will contain the following:
+* The `all_clusters` directory, which contains all extracted BGCs;
+* The `results` directory, which contains separate results for each GenBank file;
+* A CSV file named `allBGCs.csv`, which holds information about each extracted BGC;
+* An HTML file named `allBGCs.html`, which summarizes all extracted BGCs and provides links to each BGC.
 
 ### Extract all possible BGCs
 To extract all possible BGCs from given fungal genomes, simply run without options as follows:
