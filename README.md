@@ -20,8 +20,8 @@ If you have difficulties installing the software, you could also try the [Google
 ## Dependencies
 Install the following dependencies:
 * Python (version 3.8 or higher)
-* [DIAMOND](https://github.com/bbuchfink/diamond/wiki/2.-Installation) (version 2.1.7 tested; older versions might cause database incompatibility)
-* [HMMER](http://hmmer.org/documentation.html) (version 3.3.2 tested)
+* [DIAMOND](https://github.com/bbuchfink/diamond/wiki/2.-Installation) (version 2.1.13 tested; older versions might cause database incompatibility)
+* [HMMER](http://hmmer.org/documentation.html) (version 3.4 tested)
 
 Make sure that `diamond` and HMMER executables (e.g., `hmmscan` and `hmmfetch`) are on your system $PATH.  
 **Note:** FunBGCeX was tested on macOS Sequoia 15.6 and Red Hat Enterprise Linux 8.5 (Ootpa).
