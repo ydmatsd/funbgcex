@@ -48,8 +48,7 @@ BGC extraction using `funbgcex` can be performed as follows:
 $ funbgcex input_directory output_directory [options]
 ```
 
-The `input_directory` is the path to a directory that contains GenBank files from which BGCs will be extracted. The GenBank files must include CDS features with a translation qualifier. Please ensure that no non-GenBank files are placed in this directory.  
-The `output_directory` is the path to a directory where the results will be saved. After extraction, the output directory will contain the following:
+The `input_directory` is the path to a directory that contains GenBank files from which BGCs will be extracted. The GenBank files must include CDS features with a translation qualifier. Please ensure that no non-GenBank files are placed in this directory. The `output_directory` is the path to a directory where the results will be saved. After extraction, the output directory will contain the following:
 * The `all_clusters` directory, which contains all extracted BGCs;
 * The `results` directory, which contains separate results for each GenBank file;
 * A CSV file named `allBGCs.csv`, which holds information about each extracted BGC;
