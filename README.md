@@ -8,7 +8,7 @@
 **FunBGCeX** is a genome mining tool for fungal natural product discovery. It detects biosynthetic proteins based on our manually curated database of fungal natural product biosynthetic gene clusters (BGCs), [FunBGCs](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html). FunBGCeX can detect all possible BGCs from given fungal genomes and selectively extract BGCs according to the user's various needs. Currently available methods include:
 * Extraction of BGCs encoding a homologue of a protein of the user's interest
 * Extraction of BGCs harboring a putative self-resistance gene
-* Extraction of BGCs lacking well-defined core biosynthetic enzymes (e.g., PKSs, NRPSs, and terpene synthases) — still under development
+* Extraction of BGCs lacking well-defined core biosynthetic enzyme genes (e.g., PKSs, NRPSs, and terpene synthases) — still under development
   
 The extracted BGCs are provided in the GenBank format and can also be visualized using a web browser (You can access a sample output [here](docs/sample_output) or [here](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcex/sample2/results.html)).
 
@@ -77,6 +77,20 @@ $ funbgcex input_directory output_directory -m pfam -p Pfam_name
 ```
 * `-p Pfam_name`: The Pfam domain name to be used for BGC extraction
 See [here](docs/available_Pfam.txt) for the list of supported Pfam domains.
+
+### Extract BGCs with a putative self-resistance gene
+To extract BGCs that encode a possible self-resistance protein, use the sre mode by specifying `-m sre`:
+
+```bash
+$ funbgcex input_directory output_directory -m sre
+```
+
+### Extract BGCs lacking well-defined core biosynthetic enzyme genes
+To extract BGCs that encode a possible self-resistance protein, use the sre mode by specifying `-m sre`:
+
+```bash
+$ funbgcex input_directory output_directory -m sre
+```
 
 ### Example: Extracting BGCs encoding Pyr4-family terpene cyclases
 Suppose you have several GenBank files in a directory named `gbk` in your current directory. If you wish to extract BGCs that encode a Pyr4-family terpene cyclase from these GenBank files and to obtain the result in a directory named `results`, then run the following:
