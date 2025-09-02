@@ -6,9 +6,9 @@
 
 ## Overview
 **FunBGCeX** is a genome mining tool for fungal natural product discovery. It detects biosynthetic proteins based on our manually curated database of fungal natural product biosynthetic gene clusters (BGCs), [FunBGCs](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html). FunBGCeX can detect all possible BGCs from given fungal genomes and selectively extract BGCs according to the user's various needs. Currently available methods include:
-* Extraction of BGCs encoding a homologue of a protein of the user's interest;
-* Extraction of BGCs harboring a putative self-resistance gene;
-* Extraction of BGCs lacking well-defined core biosynthetic enzymes (e.g., PKSs, NRPSs, and terpene synthases).
+* Extraction of BGCs encoding a homologue of a protein of the user's interest
+* Extraction of BGCs harboring a putative self-resistance gene
+* Extraction of BGCs lacking well-defined core biosynthetic enzymes (e.g., PKSs, NRPSs, and terpene synthases)
   
 The extracted BGCs are provided in the GenBank format and can also be visualized using a web browser (You can access a sample output [here](docs/sample_output) or [here](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcex/sample2/results.html)).
 
