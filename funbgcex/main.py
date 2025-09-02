@@ -53,7 +53,7 @@ def main():
 
     if os.path.isdir(gbk_dir) == False:
         sys.exit("The input directory does not exist.")
-    if (mode == "all" or mode == "sre" or mode == "ripps") and noCore:
+    if (mode == "all" or mode == "ripps" or mode == "sre" or mode == "human") and noCore:
         sys.exit("'no_core' can only be used with the target or pfam mode.")
     if additional_genes < 0:
         sys.exit("Please provide a non-negative int value for additional_genes.")
