@@ -75,8 +75,7 @@ To extract BGCs that encode a protein with a protein family/domain (Pfam) of you
 ```bash
 $ funbgcex input_directory output_directory -m pfam -p Pfam_name
 ```
-* `-p Pfam_name`: The Pfam domain name to be used for BGC extraction
-See [here](docs/available_Pfam.txt) for the list of supported Pfam domains.
+* `-p Pfam_name`: The Pfam domain name to be used for BGC extraction. See [here](docs/available_Pfam.txt) for the list of supported Pfam domains.
 
 ### Extract BGCs with a putative self-resistance gene
 To extract BGCs that encode a possible self-resistance protein, use the sre mode by specifying `-m sre`:
@@ -86,10 +85,14 @@ $ funbgcex input_directory output_directory -m sre
 ```
 
 ### Extract BGCs lacking well-defined core biosynthetic enzyme genes
-To extract BGCs that encode a possible self-resistance protein, use the sre mode by specifying `-m sre`:
+If you wish to extract BGCs that do not encode well-defined core enzymes (e.g., PKSs, NRPSs, and terpene synthases), specify `--no_core` when running an analysis. Note that this option can currently be used only with the target or pfam mode, so run one of the following:
 
 ```bash
-$ funbgcex input_directory output_directory -m sre
+$ funbgcex input_directory output_directory -m target -f FASTA_file --no_core
+```
+
+```bash
+$ funbgcex input_directory output_directory -m pfam -p Pfam_name --no_core
 ```
 
 ### Example: Extracting BGCs encoding Pyr4-family terpene cyclases
