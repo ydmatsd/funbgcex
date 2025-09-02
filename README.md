@@ -9,6 +9,7 @@
 * Extraction of BGCs encoding a homologue of a protein of the user's interest;
 * Extraction of BGCs harboring a putative self-resistance gene;
 * Extraction of BGCs lacking well-defined core biosynthetic enzymes (e.g., PKSs, NRPSs, and terpene synthases).
+  
 The extracted BGCs are provided in the GenBank format and can also be visualized using a web browser (You can access a sample output [here](docs/sample_output) or [here](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcex/sample2/results.html)).
 
 If you have difficulties installing the software, you could also try the [Google Colab version](https://colab.research.google.com/github/ydmatsd/funbgcex-colab/blob/main/funbgcex-colab/FunBGCeX.ipynb).
