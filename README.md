@@ -84,6 +84,12 @@ To extract BGCs that encode a possible self-resistance protein, use the sre mode
 $ funbgcex input_directory output_directory -m sre
 ```
 
+Similar analysis can be performed using the database of disease-related human proteins. In this case, use the human mode by specifying `-m human`:
+
+```bash
+$ funbgcex input_directory output_directory -m human
+```
+
 ### Extract BGCs lacking well-defined core biosynthetic enzyme genes
 If you wish to extract BGCs that do not encode well-defined core enzymes (e.g., PKSs, NRPSs, and terpene synthases), specify `--no_core` when running an analysis. Note that this option can currently be used only with the target or pfam mode, so run one of the following:
 
