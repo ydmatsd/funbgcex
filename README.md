@@ -19,7 +19,7 @@ Install the following dependencies:
 * [HMMER](http://hmmer.org/documentation.html) (version 3.3.2 tested)
 
 Make sure that `diamond` and HMMER executables (e.g., `hmmscan` and `hmmfetch`) are on your system $PATH.  
-**Note:** FunBGCeX was tested on MacOS Ventura 13.4.
+**Note:** FunBGCeX was tested on macOS Sequoia 15.6 and Red Hat Enterprise Linux 8.5 (Ootpa).
 
 ## Installation
 `funbgcex` can be installed using pip:
