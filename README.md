@@ -15,7 +15,7 @@ The extracted BGCs are provided in the GenBank format and can also be visualized
 If you have difficulties installing the software, you could also try the [Google Colab version](https://colab.research.google.com/github/ydmatsd/funbgcex-colab/blob/main/funbgcex-colab/FunBGCeX.ipynb).
 
 
-<img src="docs/img/result.png" alt="FunBGCeX sample result" width=500>
+<img src="docs/img/result2.png" alt="FunBGCeX sample result" width=500>
 
 ## Dependencies
 Install the following dependencies:
