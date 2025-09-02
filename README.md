@@ -8,7 +8,7 @@
 **FunBGCeX** is a genome mining tool for fungal natural product discovery. It detects biosynthetic proteins based on our manually curated database of fungal natural product biosynthetic gene clusters (BGCs), [FunBGCs](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html). FunBGCeX can detect all possible BGCs from given fungal genomes and selectively extract BGCs according to the user's various needs. Currently available methods include:
 * Extraction of BGCs encoding a homologue of a protein of the user's interest
 * Extraction of BGCs harboring a putative self-resistance gene
-* Extraction of BGCs lacking well-defined core biosynthetic enzymes (e.g., PKSs, NRPSs, and terpene synthases) — currently under development
+* Extraction of BGCs lacking well-defined core biosynthetic enzymes (e.g., PKSs, NRPSs, and terpene synthases) — still under development
   
 The extracted BGCs are provided in the GenBank format and can also be visualized using a web browser (You can access a sample output [here](docs/sample_output) or [here](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcex/sample2/results.html)).
 
@@ -55,18 +55,19 @@ The `input_directory` is the path to a directory that contains GenBank files fro
 * An HTML file named `allBGCs.html`, which summarizes all extracted BGCs and provides links to each BGC.
 
 ### Extract all possible BGCs
-To extract all possible BGCs from given fungal genomes, simply run without options as follows:
+To extract all possible BGCs from given fungal genomes, simply run the command without any additional options as follows:
 
 ```bash
 $ funbgcex input_directory output_directory
 ```
 
 ### Extract BGCs that encode a homologue of given protein sequence(s)
-To extract BGCs that encode a homologue of protein(s) of your interest, use the target mode by specifying `-m target`. First, create a FASTA file containing the protein sequences, and then run the following:
+To extract BGCs that encode a homologue of protein(s) of your interest, use the target mode by specifying `-m target`. First, create a FASTA file containing the protein sequences, then run the following command:
 
 ```bash
 $ funbgcex input_directory output_directory -m target -f FASTA_file
 ```
+* `-f FASTA_file`: FASTA file containing your query protein sequences
 
 ### Extract BGCs that encode a protein with a selected protein family
 To extract BGCs that encode a protein with a protein family/domain (Pfam) of your interest, use the pfam mode by specifying `-m pfam`:
