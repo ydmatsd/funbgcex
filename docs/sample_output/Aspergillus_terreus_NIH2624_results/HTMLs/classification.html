@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Classification of Core Enzymes</title>
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+		<link  rel="stylesheet" href="css/protfam_style.css">
+		<script src="js/filter2.js" defer></script>
+
+	<body>
+		<header class="page-header wrapper">
+			<h1><img class="logo" src="img/logo.png" alt="FunBGCeX"></h1>
+			<h2><i><u><strong>Fun</strong></u>gal <u><strong>B</strong></u>iosynthetic <u><strong>G</strong></u>ene<br> <u><strong>C</strong></u>luster <u><strong>eX</strong></u>tractor</i></h2>
+			<nav>
+				<ul class="main-nav">
+					<li><a href="http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html" target="_blank">FunBGCs</a></li>
+					<li><a href="http://staffweb1.cityu.edu.hk/ymatsuda/index.html" target="_blank">THE MATSUDA GROUP</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<h3>Classification of Core Enzymes</h3>
+		<p class="filter">Filter: <input type="text" id="search" onkeyup="Filter()" placeholder="Enter search query"></p>
+		<p id="count"></p>
+
+		<table id="bgcTable">
+			<tr class="header">
+				<th style="width: 30%">Classification</th>
+				<th style="width: 15%">Short name</th>
+				<th style="width: 55%">Detection criteria</th>
+			</tr>
+			<tr>
+				<td id="NR-PKS">non-reducing polyketide synthase</td>
+				<td>NR-PKS</td>
+				<td style="text-align: justify;"><b>With:</b> PKS_KS + PKS_AT + fPKS_PT<br><b>Without:</b> fPKS_KR + AA-adenyl-dom</td>
+			</tr>
+			<tr>
+				<td id="PR-PKS">partially reducing polyketide synthase</td>
+				<td>PR-PKS</td>
+				<td style="text-align: justify;"><b>With:</b> PKS_KS + PKS_AT + fPKS_TH<br><b>Without:</b> AA-adenyl-dom</td>
+			</tr>
+			<tr>
+				<td id="HR-PKS">highly reducing polyketide synthase</td>
+				<td>HR-PKS</td>
+				<td style="text-align: justify;"><b>With:</b> PKS_KS + PKS_AT + fPKS_DH<br><b>Without:</b> AA-adenyl-dom</td>
+			</tr>
+			<tr>
+				<td id="T3PKS">type III polyketide synthase</td>
+				<td>T3PKS</td>
+				<td style="text-align: justify;"><b>With:</b> Chal_sti_synt_N or Chal_sti_synt_C</td>
+			</tr>
+			<tr>
+				<td id="PKS-like">PKS-like enzyme</td>
+				<td>PKS-like</td>
+				<td style="text-align: justify;"><b>With:</b> PKS_KS + PKS_AT<br><b>Without:</b> fPKS_PT + fPKS_TH + fPKS_DH</td>
+			</tr>
+			<tr>
+				<td id="NRPS">nonribosomal peptide synthetase</td>
+				<td>NRPS</td>
+				<td style="text-align: justify;"><b>With:</b> AA-adenyl-dom + (NRPS_C or NRPS_CT)<br><b>Without:</b> PKS_KS</td>
+			</tr>
+			<tr>
+				<td id="NRPS-like">NRPS-like enzyme</td>
+				<td>NRPS-like</td>
+				<td style="text-align: justify;"><b>With:</b> AA-adenyl-dom + (fPKS_R or Thioesterase or Abhydrolase_3 or ACP_PCP)<br><b>Without:</b> NRPS_C + NRPS_CT + PKS_KS</td>
+			</tr>
+			<tr>
+				<td id="PKS-NRPS">polyketide synthase-nonribosomal peptide synthetase</td>
+				<td>PKS-NRPS</td>
+				<td style="text-align: justify;"><b>With:</b> PKS_KS + AA-adenyl-dom<br>PKS_KS appears before AA-adenyl-dom</td>
+			</tr>
+			<tr>
+				<td id="NRPS-PKS">nonribosomal peptide synthetase-polyketide synthase</td>
+				<td>NRPS-PKS</td>
+				<td style="text-align: justify;"><b>With:</b> PKS_KS + AA-adenyl-dom<br>PKS_KS appears after AA-adenyl-dom</td>
+			</tr>
+			<tr>
+				<td id="TC_Class1">canonical class I terpene cyclase</td>
+				<td>TC (Class1)</td>
+				<td style="text-align: justify;"><b>With:</b> Terpene_syn_C_2 or Terpene_synth_C<br><b>Without:</b> GGPS</td>
+			</tr>
+			<tr>
+				<td id="TC_Tri5">Tri5-like terpene synthase</td>
+				<td>TC (Tri5)</td>
+				<td style="text-align: justify;"><b>With:</b> TRI5</td>
+			</tr>
+			<tr>
+				<td id="TC_SHC_OSC">squalene-hopene cyclase/oxidosqualene cyclase</td>
+				<td>TC (SHC/OSC)</td>
+				<td style="text-align: justify;"><b>With:</b> SQHop_cyclase_N or SQHop_cyclase_C</td>
+			</tr>
+			<tr>
+				<td id="TC_Pyr4">Pyr4-like terpene cyclase</td>
+				<td>TC (Pyr4)</td>
+				<td style="text-align: justify;"><b>With:</b> Pyr4</td>
+			</tr>
+			<tr>
+				<td id="TC_UbiA">UbiA-like terpene synthase</td>
+				<td>TC (UbiA)</td>
+				<td style="text-align: justify;"><b>With:</b> UbiA_TC</td>
+			</tr>
+			<tr>
+				<td id="TC_PbcA">PbcA-like terpene synthase</td>
+				<td>TC (PbcA)</td>
+				<td style="text-align: justify;"><b>With:</b> PbcA<br><b>Without:</b> GGPS</td>
+			</tr>
+			<tr>
+				<td id="TC_AstC">AstC-like terpene synthase</td>
+				<td>TC (AstC)</td>
+				<td style="text-align: justify;"><b>With:</b> AstC</td>
+			</tr>
+			<tr>
+				<td id="TC_ABA3">ABA3-like terpene synthase</td>
+				<td>TC (ABA3)</td>
+				<td style="text-align: justify;"><b>With:</b> ABA3</td>
+			</tr>
+			<tr>
+				<td id="TC_AsR6">AsR6-like terpene synthase</td>
+				<td>TC (AsR6)</td>
+				<td style="text-align: justify;"><b>With:</b> AsR6</td>
+			</tr>
+			<tr>
+				<td id="TC_SalTPS">SalTPS-like terpene synthase</td>
+				<td>TC (SalTPS)</td>
+				<td style="text-align: justify;"><b>With:</b> SalTPS</td>
+			</tr>
+			<tr>
+				<td id="TC_VniA">VniA-like terpene synthase</td>
+				<td>TC (VniA)</td>
+				<td style="text-align: justify;"><b>With:</b> VniA</td>
+			</tr>
+			<tr>
+				<td id="chimeric_TS">bifunctional prenyltransferase/terpene cyclase</td>
+				<td>chimeric TS</td>
+				<td style="text-align: justify;"><b>With:</b> (Terpene_syn_C_2 or Terpene_synth_C or PbcA) + GGPS</td>
+			</tr>
+			<tr>
+				<td id="PT_UbiA">UbiA-like prenyltransferase</td>
+				<td>PT (UbiA)</td>
+				<td style="text-align: justify;"><b>With:</b> UbiA_PT</td>
+			</tr>
+			<tr>
+				<td id="PT_PaxC">IPPS-type prenyltransferase</td>
+				<td>PT (PaxC)</td>
+				<td style="text-align: justify;"><b>With:</b> PaxC</td>
+			</tr>
+			<tr>
+				<td id="PT_DMATS">DMATS-type prenyltransferase</td>
+				<td>PT (DMATS)</td>
+				<td style="text-align: justify;"><b>With:</b> Trp_DMAT</td>
+			</tr>
+			<tr>
+				<td id="PT_CosA">CosA-like prenyltransferase</td>
+				<td>PT (CosA)</td>
+				<td style="text-align: justify;"><b>With:</b> CosA</td>
+			</tr>
+			<tr>
+				<td id="PPPS">polyprenyl pyrophosphate synthase</td>
+				<td>PPPS</td>
+				<td style="text-align: justify;"><b>With:</b> GGPS<br><b>Without:</b> Terpene_syn_C_2 + Terpene_synth_C + PbcA</td>
+			</tr>
+			<tr>
+				<td id="RiPP_PP">ribosomally synthesized and posttranslationally modified peptide (RiPP) precursor peptide</td>
+				<td>RiPP PP</td>
+				<td style="text-align: justify;"><b>1.</b> The protein sequence contains ≥3, ≥90% identical sequences with ≥10 amino acids, with ≥3 different amino acids, and with either "KR," "KK," "RK," or "RR."<br><b>2.</b> At least one <i>ustY</i>-like gene is found in the flanking regions of the gene encoding the protein.</td>
+			</tr>
+			<tr>
+				<td id="RCDPS">arginine-containing cyclodipeptide synthase</td>
+				<td>RCDPS</td>
+				<td style="text-align: justify;"><b>With:</b> AnkA</td>
+			</tr> 
+			<tr>
+				<td id="ICS">isocyanide synthase</td>
+				<td>ICS</td>
+				<td style="text-align: justify;"><b>With:</b> DIT1_PvcA</td>
+			</tr>
+			<tr>
+				<td id="PEPM">phosphoenolpyruvate mutase</td>
+				<td>PEPM</td>
+				<td style="text-align: justify;"><b>With:</b> PEP_mutase</td>
+			</tr>
+			<tr>
+				<td id="ePLS">ε-poly-L</span>-lysine synthetase</td>
+				<td>ePLS</td>
+				<td style="text-align: justify;"><b>With:</b> AA-adenyl-dom + NRPS_term_dom<br><b>Without:</b> PKS_KS</td>
+			</tr>
+		</table>
+		<p></p>
+  </body>
+</html>

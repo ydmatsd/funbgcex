@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>BGC7</title>
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+		<link  rel="stylesheet" href="css/style.css">
+		<script src="js/BGC7.js" defer></script>
+	</head>
+
+	<body>
+		<header class="page-header wrapper" id="top">
+			<h1><a href="../results.html"><img class="logo" src="img/logo.png" alt="FunBGCeX"></a></h1>
+			<h2><i><u><strong>Fun</strong></u>gal <u><strong>B</strong></u>iosynthetic <u><strong>G</strong></u>ene<br> <u><strong>C</strong></u>luster <u><strong>eX</strong></u>tractor</i></h2>
+			<nav>
+				<ul class="main-nav">
+					<li><a href="http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html" target="_blank" rel="noopener noreferrer">FunBGCs</a></li>
+					<li><a href="http://staffweb1.cityu.edu.hk/ymatsuda/index.html" target="_blank" rel="noopener noreferrer">THE MATSUDA GROUP</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<h3><a class="link" href="../results.html">BGCs Overview</a></h3>
+
+		<ol class="wrapper2"> 
+			<li><a href="BGC1.html#top"><span class="circle pks">1</span></a></li>
+			<li><a href="BGC2.html#top"><span class="circle pks">2</span></a></li>
+			<li><a href="BGC3.html#top"><span class="circle nrps">3</span></a></li>
+			<li><a href="BGC4.html#top"><span class="circle pks">4</span></a></li>
+			<li><a href="BGC5.html#top"><span class="circle terpene">5</span></a></li>
+			<li><a href="BGC6.html#top"><span class="circle pks">6</span></a></li>
+			<li><a href="BGC7.html#top"><span class="circle current_terpene">7</span></a></li>
+			<li><a href="BGC8.html#top"><span class="circle terpene">8</span></a></li>
+
+		</ol>
+
+		<table>
+			<tr><th colspan="2">BGC7 - Aspergillus terreus NIH2624</th></tr>
+			<tr><th>Scaffold / Position</th><td>NT_165933 / 1283154...1300349</td></tr>
+			<tr><th>Length (bp)</th><td>17196</td></tr>
+			<tr><th><a class="link" href="classification.html" target="_blank">Core enzymes</a></th><td>TC (UbiA)</td></tr>
+			<tr><th>Duplicated fungal proteins</th><td>Uracil phosphoribosyltransferase</td></tr>
+			<tr><th>Duplicated human proteins</th><td>–</td></tr>
+			<tr><th>Similar BGC / Similarity score</th><td><a class='funbgcs' href='http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs/FBGC00026.html' target='_blank'>FBGC00026</a> (funiculolide D) / 7.6</td></tr>
+		</table>
+
+	    <p><a class="link" href="../BGCs/BGC7_NT_165933_ATEG_07297_ATEG_07305.gbk">Download BGC GenBank file</a></p>
+
+	    <canvas id="canvas" width="800" height="60"></canvas>
+
+		<table>
+			<tr><th colspan="2">Gene information</th></tr>
+			<tr><th>Locus tag / Position</th><td><span id="position"></span></td></tr>
+			<tr><th>Predicted function</th><td><span id="function"></span></td></tr>
+			<tr><th>Predicted domain organization</th><td><span id="domain"></span></td></tr>
+			<tr><th>Closest homologue in FunBGCs</th><td><span id="homologue"></span></td></tr>
+			<tr><th>Homologue in A. fumigatus</th><td><span id="hkg_homologue"></span></td></tr>
+			<tr><th>Human homologue</th><td><span id="human_homologue"></span></td></tr>
+			<tr><th>Representative protein families</th><td><span id="pfam"></span></td></tr>
+			<tr><th>Amino acid length</th><td><span id="aalen"></span></td></tr>
+		</table>
+
+		<p id="aaseq" style="display: none;"></p>
+		<button type="button" autofocus onclick="copyToClipboard()" class="btn">Copy AA sequence to clipboard</button>
+	    <p id="blastLink"><a class="link" id="blast" href="https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&LAYOUT=OneWindow&PROGRAM=blastp&PAGE=Proteins&FORMAT_TYPE=HTML&NCBI_GI=on&SHOW_OVERVIEW=on" target="_blank" rel="noopener noreferrer">BLASTp on this protein</a></p>
+	    <p id="message" style="display: none;"><font color="red"><b>The sequence is too long. For BLASTp, copy the sequence and go to the BLAST website.</b></font></p>
+	    <br>
+
+ 	</body>
+</html>

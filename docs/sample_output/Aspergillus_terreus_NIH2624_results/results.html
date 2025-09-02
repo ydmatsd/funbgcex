@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>FunBGCeX Result Overview</title>
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+		<link rel="stylesheet" href="HTMLs/css/main_style.css">
+		<script src="HTMLs/js/filter1.js" defer></script>
+
+	<body>
+		<header class="page-header wrapper">
+			<h1><a href="results.html"><img class="logo" src="HTMLs/img/logo.png" alt="FunBGCeX"></a></h1>
+			<h2><i><u><strong>Fun</strong></u>gal <u><strong>B</strong></u>iosynthetic <u><strong>G</strong></u>ene<br> <u><strong>C</strong></u>luster <u><strong>eX</strong></u>tractor</i></h2>
+			<nav>
+				<ul class="main-nav">
+					<li><a href="http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html" target="_blank" rel="noopener noreferrer">FunBGCs</a></li>
+					<li><a href="http://staffweb1.cityu.edu.hk/ymatsuda/index.html" target="_blank" rel="noopener noreferrer">THE MATSUDA GROUP</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<h3>Aspergillus terreus NIH2624</h3>
+		<p class="filter">Filter: <input type="text" id="search" onkeyup="Filter()" placeholder="Enter search query"></p>
+		<p id="count"></p>
+
+		<table id="bgcTable">
+			<tr class="header">
+				<th style="width: 5%">BGC no.</th>
+				<th style="width: 20%">Scaffold / Position</th>
+				<th style="width: 5%">Number of genes</th>
+				<th style="width: 21%">Core enzymes</th>
+				<th style="width: 15%">Duplicated fungal proteins</th>
+				<th style="width: 15%">Duplicated human proteins</th>
+				<th style="width: 14%">Similar BGC</th>
+				<th style="width: 5%">Similarity score</th>
+			</tr>
+			<tr>
+				<td><a class="link" href="HTMLs/BGC1.html#top">BGC1</a></td>
+				<td>NT_165939 / 36186...87559</td>
+				<td>14</td>
+				<td>HR-PKS, HR-PKS</td>
+				<td>3-hydroxy-3-methylglutaryl-coenzyme A reductase 1</td>
+				<td>3-hydroxy-3-methylglutaryl-CoA reductase</td>
+				<td><a class='link' href='http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs/FBGC00278.html' target='_blank'>FBGC00278</a> (lovastatin)</td>
+				<td>99.5</td>
+			</tr>
+			<tr>
+				<td><a class="link" href="HTMLs/BGC2.html#top">BGC2</a></td>
+				<td>NT_165938 / 371434...389192</td>
+				<td>7</td>
+				<td>HR-PKS</td>
+				<td>ATP synthase subunit beta, mitochondrial</td>
+				<td>–</td>
+				<td><a class='link' href='http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs/FBGC00285.html' target='_blank'>FBGC00285</a> (citreoviridin)</td>
+				<td>99.5</td>
+			</tr>
+			<tr>
+				<td><a class="link" href="HTMLs/BGC3.html#top">BGC3</a></td>
+				<td>NT_165937 / 159864...203620</td>
+				<td>13</td>
+				<td>NRPS, NRPS</td>
+				<td>Phospho-2-dehydro-3-deoxyheptonate aldolase, tyrosine-inhibited</td>
+				<td>–</td>
+				<td><a class='link' href='http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs/FBGC00350.html' target='_blank'>FBGC00350</a> (asperphenamate)</td>
+				<td>56.1</td>
+			</tr>
+			<tr>
+				<td><a class="link" href="HTMLs/BGC4.html#top">BGC4</a></td>
+				<td>NT_165937 / 228330...245391</td>
+				<td>4</td>
+				<td>HR-PKS</td>
+				<td>Pheromone-regulated membrane protein 10</td>
+				<td>–</td>
+				<td><a class='link' href='http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs/FBGC00669.html' target='_blank'>FBGC00669</a> (cordycepin)</td>
+				<td>16.9</td>
+			</tr>
+			<tr>
+				<td><a class="link" href="HTMLs/BGC5.html#top">BGC5</a></td>
+				<td>NT_165936 / 1163001...1192503</td>
+				<td>11</td>
+				<td>TC (Class1)</td>
+				<td>Carboxyvinyl-carboxyphosphonate phosphorylmutase</td>
+				<td>–</td>
+				<td><a class='link' href='http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs/FBGC00306.html' target='_blank'>FBGC00306</a> (AM-toxin)</td>
+				<td>4.2</td>
+			</tr>
+			<tr>
+				<td><a class="link" href="HTMLs/BGC6.html#top">BGC6</a></td>
+				<td>NT_165935 / 528338...557513</td>
+				<td>8</td>
+				<td>HR-PKS</td>
+				<td>Sphingolipid C4-hydroxylase SUR2</td>
+				<td>–</td>
+				<td><a class='link' href='http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs/FBGC00123.html' target='_blank'>FBGC00123</a> (1233A)</td>
+				<td>12.8</td>
+			</tr>
+			<tr>
+				<td><a class="link" href="HTMLs/BGC7.html#top">BGC7</a></td>
+				<td>NT_165933 / 1283154...1300349</td>
+				<td>9</td>
+				<td>TC (UbiA)</td>
+				<td>Uracil phosphoribosyltransferase</td>
+				<td>–</td>
+				<td><a class='link' href='http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs/FBGC00026.html' target='_blank'>FBGC00026</a> (funiculolide D)</td>
+				<td>7.6</td>
+			</tr>
+			<tr>
+				<td><a class="link" href="HTMLs/BGC8.html#top">BGC8</a></td>
+				<td>NT_165929 / 463498...483837</td>
+				<td>8</td>
+				<td>TC (Tri5)</td>
+				<td>Dihydroxy-acid dehydratase, mitochondrial</td>
+				<td>–</td>
+				<td><a class='link' href='http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs/FBGC00438.html' target='_blank'>FBGC00438</a> (aspterric acid)</td>
+				<td>100.0</td>
+			</tr>
+
+		</table>
+
+  </body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Additional Protein Families</title>
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+		<link  rel="stylesheet" href="css/protfam_style.css">
+		<script src="js/filter2.js" defer></script>
+
+	<body>
+		<header class="page-header wrapper">
+			<h1><img class="logo" src="img/logo.png" alt="FunBGCeX"></h1>
+			<h2><i><u><strong>Fun</strong></u>gal <u><strong>B</strong></u>iosynthetic <u><strong>G</strong></u>ene<br> <u><strong>C</strong></u>luster <u><strong>eX</strong></u>tractor</i></h2>
+			<nav>
+				<ul class="main-nav">
+					<li><a href="http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html" target="_blank">FunBGCs</a></li>
+					<li><a href="http://staffweb1.cityu.edu.hk/ymatsuda/index.html" target="_blank">THE MATSUDA GROUP</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<h3>Additional Protein Families</h3>
+		<p><a class="link" href="http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs/HMM.zip">Download all HMM profiles</a></p>
+		<p class="filter">Filter: <input type="text" id="search" onkeyup="Filter()" placeholder="Enter search query"></p>
+		<p id="count"></p>
+
+		<table id="bgcTable">
+			<tr class="header">
+				<th style="width: 12%">Protein family</th>
+				<th style="width: 78%">Description</th>
+				<th style="width: 10%">Reference</th>
+			</tr>
+			<tr>
+				<td id="ABA3">ABA3</td>
+				<td style="text-align: justify;"><b>ABA3</b> is a noncanonical sesquiterpene synthase involved in the biosynthesis of abscisic acid in fungi.</td>
+				<td><a href="https://pubs.acs.org/doi/10.1021/jacs.8b08925" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="ACP_PCP">ACP_PCP</td>
+				<td style="text-align: justify;"><b>Acyl carrier protein (ACP)</b> or <b>peptidyl carrier protein (PCP)</b> domains found in fungal polyketide synthases (PKSs) and nonribosomal peptide synthetases (NRPSs).</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td id="AnkA">AnkA</td>
+				<td style="text-align: justify;"><b>AnkA</b> is an arginine-containing cyclodipeptide synthase (RCDPS) that shows no sequence similarity with nonribosomal peptide synthases. Its homologues have been identified in many fungal species.</td>
+				<td><a href="https://www.nature.com/articles/s41589-022-01246-6" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="AnkG">AnkG</td>
+				<td style="text-align: justify;"><b>AnkG</b> is an ATP-grasp enzyme for NK13650 C biosynthesis.</td>
+				<td><a href="https://www.nature.com/articles/s41589-022-01246-6" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="AsR5">AsR5</td>
+				<td style="text-align: justify;"><b>AsR5</b> is a hetero Diels–Alderase involved in the biosynthesis of xenovulene A.</td>
+				<td><a href="https://www.nature.com/articles/s41467-018-04364-9" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="AsR6">AsR6</td>
+				<td style="text-align: justify;"><b>AsR6</b> is a noncanonical sesquiterpene synthase involved in the biosynthesis of xenovulene A and cyclizes farnesyl pyrophosphate (FPP) into humulene.</td>
+				<td><a href="https://www.nature.com/articles/s41467-018-04364-9" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="AstC">AstC</td>
+				<td style="text-align: justify;"><b>AstC</b> is a noncanonical class II sesquiterpene synthase responsible for astellolide biosynthesis and forms drimanyl pyrophosphate.</td>
+				<td><a href="https://www.nature.com/articles/srep32865" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="ATEG_03636">ATEG_03636</td>
+				<td style="text-align: justify;"><b>ATEG_03636</b> is involved in the biosynthesis of azasperpyranone A and is proposed to be responsible for the heterodimerization of preasperpyranone and a polyketide-derived aromatic aldehyde.</td>
+				<td><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.201915514" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="AtnE">AtnE</td>
+				<td style="text-align: justify;"><b>AtnE</b> is a transcription factor for arthripenoid biosynthesis.</td>
+				<td><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.201804317" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="BfL6">BfL6</td>
+				<td style="text-align: justify;"><b>BfL6</b> is a ketosteroid isomerase-like protein, which is involved in the hybridization of butenyl carboxymethyl maleic anhydride and its decarboxylated form to yield byssochlamic acid.</td>
+				<td><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.201511882" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="BfL8">BfL8</td>
+				<td style="text-align: justify;"><b>BfL8</b> is a putative regulatory protein for byssochlamic acid biosynthesis.</td>
+				<td><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.201511882" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="CalD">CalD</td>
+				<td style="text-align: justify;"><b>CalD</b> is an acyltransferase involved in the biosynthesis of calbistrin A and performs esterification of the decalin and polyene portions.</td>
+				<td><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202016525" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="CghF">CghF</td>
+				<td style="text-align: justify;"><b>CghF</b> is a transcription factor for Sch 210972 biosynthesis.</td>
+				<td><a href="https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/cbic.201500386" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="Clz3">Clz3</td>
+				<td style="text-align: justify;"><b>Clz3</b> is a copper-dependent oxygenase involved in the biosynthesis of zaragozic acid A. The enzyme is homologous to MfM1 responsible for squalestatin biosynthesis.</td>
+				<td><a href="https://pubs.acs.org/doi/10.1021/acs.orglett.7b01534" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a><a href="https://pubs.rsc.org/en/content/articlehtml/2019/sc/c8sc02615g" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="Clz7">Clz7</td>
+				<td style="text-align: justify;"><b>Clz7</b> is a transcription factor for zaragozic acid A biosynthesis.</td>
+				<td><a href="https://pubs.acs.org/doi/10.1021/acs.orglett.7b01534" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a>
+			</tr>
+			<tr>
+				<td id="CosA">CosA</td>
+				<td style="text-align: justify;"><b>CosA</b> is an unusual UbiA-like prenyltransferase for cosmosporaside biosynthesis.</td>
+				<td><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202308887" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="Cp1D">Cp1D</td>
+				<td style="text-align: justify;"><b>Cp1D</b> is an amide bond synthetase for CPI-2 biosynthesis.</td>
+				<td><a href="https://www.biorxiv.org/content/10.1101/2024.10.09.617497v1" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="CpaE">CpaE</td>
+				<td style="text-align: justify;"><b>CpaE</b> is a transcription factor for curvupallide biosynthesis.</td>
+				<td><a href="https://pubs.acs.org/doi/10.1021/acs.orglett.7b00559" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="CtvD">CtvD</td>
+				<td style="text-align: justify;"><b>CtvD</b> is an epoxide hydrolase involved in the biosynthesis of citreoviridin. Its homologues include IdtAs (e.g., PaxA) that serve as the second terpene cyclase in indole diterpenoid biosynthesis.</td>
+				<td><a href="https://pubs.acs.org/doi/10.1021/acs.orglett.6b00299" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a><a href="https://pubs.rsc.org/en/content/articlelanding/2025/sc/d5sc02009c" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="EcdJ">EcdJ</td>
+				<td style="text-align: justify;"><b>EcdJ</b> is a hypothetical protein encoded by the echinocandin B biosynthetic gene cluster.</td>
+				<td><a href="https://pubs.acs.org/doi/full/10.1021/ja307220z" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="EfHP">EfHP</td>
+				<td style="text-align: justify;"><b>EfHP1</b>, <b>EfHP2</b>, and <b>EfHP3</b> are all hypothetical proteins encoded by the elsinochrome biosynthetic gene cluster.</td>
+				<td><a href="https://www.microbiologyresearch.org/content/journal/micro/10.1099/mic.0.2008/019414-0" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="ElcH">ElcH</td>
+				<td style="text-align: justify;"><b>ElcH</b> is a berberine bridge enzyme-like oxidase involved in the biosynthesis of elsinochrome A and responsible for the coupling of two naphthol derivatives in collaboration with another enzyme ElcG.</td>
+				<td><a href="https://pubs.rsc.org/en/content/articlelanding/2019/SC/C8SC02870B" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="EqxR">EqxR</td>
+				<td style="text-align: justify;"><b>EqxR</b> is a transcription factor for equisetin biosynthesis.</td>
+				<td><a href="https://pubs.acs.org/doi/10.1021/cb400159f" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="FncF">FncF</td>
+				<td style="text-align: justify;"><b>FncF</b> is a short-chain dehydrogenase/reductase involved in the biosynthesis of funiculolide D and serves as an enoylreductase.</td>
+				<td><a href="https://pubs.acs.org/doi/10.1021/acs.orglett.1c00951" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="fPKS_DH">fPKS_DH</td>
+				<td style="text-align: justify;"><b>Dehydratase (DH)</b> domain found in fungal polyketide synthases (PKSs). DH domains are observed in highly reducing (HR)-PKSs.</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td id="fPKS_ER">fPKS_ER</td>
+				<td style="text-align: justify;"><b>Enoylreductase (ER)</b> domain found in fungal polyketide synthases (PKSs).</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td id="fPKS_KR">fPKS_KR</td>
+				<td style="text-align: justify;"><b>Ketoreductase (KR)</b> domain found in fungal polyketide synthases (PKSs).</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td id="fPKS_PT">fPKS_PT</td>
+				<td style="text-align: justify;"><b>Product template (PT)</b> domain found in fungal polyketide synthases (PKSs). PT domains are observed in non-reducing reducing (NR)-PKSs and show sequence similarity with DH domains.</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td id="fPKS_R">fPKS_R</td>
+				<td style="text-align: justify;"><b>Reductase (R)</b> domain found in fungal polyketide synthases (PKSs) and nonribosomal peptide synthetases (NRPSs). This protein family includes Dieckmann condensation (DKC) domains found at the C-terminus of fungal PKS-NRPS hybrid enzymes.</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td id="fPKS_TH">fPKS_TH</td>
+				<td style="text-align: justify;"><b>Thiohydrolase (TH)</b> domain found in fungal polyketide synthases (PKSs). TH domains are observed in partially reducing (PR)-PKSs and show sequence similarity with DH domains.</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td id="FPSE_09189">FPSE_09189</td>
+				<td style="text-align: justify;"><b>FPSE_09189</b> is a putative transcription factor for W493 B biosynthesis.</td>
+				<td><a href="https://pubs.acs.org/doi/10.1021/np500436r" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="FrzJ">FrzJ</td>
+				<td style="text-align: justify;"><b>FrzJ</b> is a phosphotransferase involved in the biosynthesis of FR901483.</td>
+				<td><a href="https://pubs.acs.org/doi/10.1021/jacs.0c12352" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="Fsa2">Fsa2</td>
+				<td style="text-align: justify;"><b>Fsa2</b> is a Diels-Alderase involved in the biosynthesis of fusarisetin A and forms the decalin ring system.</td>
+				<td><a href="https://www.sciencedirect.com/science/article/abs/pii/S0006291X15004362" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="FscB">FscB</td>
+				<td style="text-align: justify;"><b>FscB</b> is a transcription factor for fusarochromene biosynthesis.</td>
+				<td><a href="https://pubs.rsc.org/en/content/articlelanding/2021/OB/D0OB02031A" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="GGPS">GGPS</td>
+				<td style="text-align: justify;">This protein family mainly includes <b>geranylgeranyl pyrophosphate (GGPP) synthase (GGPS)</b> but also contains other polyprenyl pyrophosphate synthases.</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td id="GliK">GliK</td>
+				<td style="text-align: justify;"><b>GliK</b> is a γ-glutamyl cyclotransferase-like enzyme that removes the γ-glutamyl moieties in gliotoxin biosynthesis.</td>
+				<td><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/anie.201305059" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="GliN">GliN</td>
+				<td style="text-align: justify;"><b>GliN</b> is an <i>N</i>-methyltransferase involved in the biosynthesis of gliotoxin.</td>
+				<td><a href="https://pubs.acs.org/doi/full/10.1021/ja5033106" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="GsfR1">GsfR1</td>
+				<td style="text-align: justify;"><b>GsfR1</b> is a transcription factor for griseofulvin biosynthesis.</td>
+				<td><a href="https://www.sciencedirect.com/science/article/pii/S1074552110001560" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="HimD">HimD</td>
+				<td style="text-align: justify;"><b>HimD</b> is a transcription factor for himeic acid A biosynthesis.</td>
+				<td><a href="https://chemistry-europe.onlinelibrary.wiley.com/doi/10.1002/cbic.201700584" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="LcsT">LcsT</td>
+				<td style="text-align: justify;"><b>LcsT</b> is a short-chain dehydrogenase/reductase encoded by the leucinostatin A biosynthetic gene cluster.</td>
+				<td><a href="https://journals.plos.org/plospathogens/article?id=10.1371/journal.ppat.1005685" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="LolU">LolU</td>
+				<td style="text-align: justify;"><b>LolU</b> is a transcription factor for <i>N</i>-formylloline biosynthesis.</td>
+				<td><a href="https://academic.oup.com/genetics/article/169/3/1403/6059357" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="LtmS">LtmS</td>
+				<td style="text-align: justify;"><b>LtmS</b> is an epoxide hybrolase/terpene cyclase for lolitrem B biosynthesis.</td>
+				<td><a href="https://pubs.rsc.org/en/content/articlelanding/2025/sc/d5sc02009c" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="MdpA">MdpA</td>
+				<td style="text-align: justify;"><b>MdpA</b> is a transcriptional coactivator for shamixanthone biosynthesis.</td>
+				<td><a href="https://pubs.acs.org/doi/10.1021/ja1096682" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="NRPS_C">NRPS_C</td>
+				<td style="text-align: justify;"><b>Condensation (C) domain</b> found in fungal nonribosomal peptide synthetases (NRPSs).</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td id="NRPS_E">NRPS_E</td>
+				<td style="text-align: justify;"><b>Epimerization (E) domain</b> found in fungal nonribosomal peptide synthetases (NRPSs). E domains show sequence similarity with C domains.</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td id="NRPS_CT">NRPS_CT</td>
+				<td style="text-align: justify;"><b>Terminal condensation domain (C<sub>T</sub>) domain</b> found in fungal nonribosomal peptide synthetases (NRPSs). C<sub>T</sub> domains are often found at the C-terminus of fungal NRPSs and are responsible for peptide chain release by macrocyclization, hydrolysis, or further incorporation of an amino acid.</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td id="NvfI">NvfI</td>
+				<td style="text-align: justify;"><b>NvfI</b> is an Fe(II)/α-ketoglutarate-dependent dioxygenase that performs endoperoxidation in the biosynthesis of novofumigatonin.</td>
+				<td><a href="https://www.nature.com/articles/s41467-018-04983-2" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="OphC">OphC</td>
+				<td style="text-align: justify;"><b>OphC</b> is a hypothetical protein encoded by the omphalotin biosynthetic gene cluster.</td>
+				<td><a href="https://www.nature.com/articles/nchembio.2393" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="OtaR1">OtaR1</td>
+				<td style="text-align: justify;"><b>OtaR1</b> is a transcription factor for ochratoxin A biosynthesis.</td>
+				<td><a href="https://journals.asm.org/doi/full/10.1128/AEM.01009-18" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="PatF">PatF</td>
+				<td style="text-align: justify;"><b>PatF</b> is one of the biosynthetic enzymes of patulin and converts phyllostine to neopatulin.</td>
+				<td><a href="https://ami-journals.onlinelibrary.wiley.com/doi/full/10.1111/1462-2920.14542" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="PatJ">PatJ</td>
+				<td style="text-align: justify;"><b>PatJ</b> is a cupin domain-containing protein involved in the biosynthesis of patulin and is predicted to be responsible for the transformation of gentisaldehyde to isoepoxydon.</td>
+				<td><a href="https://ami-journals.onlinelibrary.wiley.com/doi/full/10.1111/1462-2920.14542" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="PaxC">PaxC</td>
+				<td style="text-align: justify;"><b>PaxC</b> is an isoprenyl pyrophosphate synthase (IPPS)-like geranylgeranyltransferase involved in the biosynthesis of paxilline. PaxC accepts glyceraldehyde 3-phosphate and geranylgeranyl pyrophosphate as substrates to yield 3-geranylgeranyl indole (GGI).</td>
+				<td><a href="https://pubs.acs.org/doi/full/10.1021/ja3116636" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="PbcA">PbcA</td>
+				<td style="text-align: justify;"><b>PbcA</b> is a bifunctional diterpene synthase that performs both class I and class II cyclizations to yield <i>ent</i>-pimara-8(14),15-diene.</td>
+				<td><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0035450" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="PenF">PenF</td>
+				<td style="text-align: justify;"><b>PenF</b> performs cationic epoxide rearrangement in the biosynthesis of penigequinolone.</td>
+				<td><a href="https://www.nature.com/articles/nchembio.2283" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="PenF">PfB</td>
+				<td style="text-align: justify;"><b>PfB</b> is a pericyclase involved in the biosynthesis of (–)-PF1018.</td>
+				<td><a href="https://pubs.acs.org/doi/10.1021/jacs.3c02380" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="PhomB">PhomB</td>
+				<td style="text-align: justify;"><b>PhomB</b> is a hypothetical protein encoded by the phomopsin A biosynthetic gene cluster.</td>
+				<td><a href="https://www.pnas.org/doi/abs/10.1073/pnas.1522907113" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="PKS_NRPS_MT">PKS_NRPS_MT</td>
+				<td style="text-align: justify;"><b>Methyltransferase (MT)</b> domain found in fungal polyketide synthases (PKSs) and nonribosomal peptide synthetases (NRPSs).</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td id="PydY">PydY</td>
+				<td style="text-align: justify;"><b>PydY</b> is a hypothetical protein encoded by the pyrrocidine biosynthetic gene cluster and is proposed to catalyze the Diels-Alder reaction.</td>
+				<td><a href="https://pubs.acs.org/doi/10.1021/jacs.1c00098" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="Pyr4">Pyr4</td>
+				<td style="text-align: justify;"><b>Pyr4</b> is a noncanonical transmembrane terpene cyclase involved in the biosynthesis of pyripyropene A. Its homologues are responsible for the production of diverse microbial meroterpenoids, including polyketide-terpenoid hybrids and indole diterpenoids.</td>
+				<td><a href="https://www.nature.com/articles/nchem.764" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="SalTPS">SalTPS</td>
+				<td style="text-align: justify;"><b>SalTPS</b> is a noncanonical terpene synthase from <i>Streptomyces alanosinicus</i>. Its homologues have been found in fungi, although their functions have yet to be experimentally investigated.</td>
+				<td><a href="https://pubs.rsc.org/en/content/articlelanding/2024/sc/d4sc01381f" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="SAT2">SAT2</td>
+				<td style="text-align: justify;"><b>Starter-unit acyltransferase (SAT)</b> domain found in fungal nonreducing polyketide synthases (NR-PKSs).</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td id="SdnG">SdnG</td>
+				<td style="text-align: justify;"><b>SdnG</b> is a Diels-Alderase involved in the biosynthesis of hypoxysordarin.</td>
+				<td><a href="https://www.nature.com/articles/s41467-022-30288-6" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202205577" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="SdnJ">SdnJ</td>
+				<td style="text-align: justify;"><b>SdnJ</b> is a glycosyltransferase involved in the biosynthesis of hypoxysordarin.</td>
+				<td><a href="https://www.nature.com/articles/ja201640" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="SmbD">SmbD</td>
+				<td style="text-align: justify;"><b>SmbD</b> is a short-chain dehydrogenase/reductase involved in the biosynthesis of (-)-sambutoxin and is proposed to serve as a ketoreductase.</td>
+				<td><a href="https://pubs.acs.org/doi/10.1021/acs.orglett.1c02836" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="Spd14">Spd14</td>
+				<td style="text-align: justify;"><b>Spd14</b> is a transporter for sporidesmin biosynthesis.</td>
+				<td><a href="https://www.biorxiv.org/content/10.1101/2021.04.29.441555v1" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="SrdD">SrdD</td>
+				<td style="text-align: justify;"><b>SrdD</b> is a cupin domain-containing protein involved in the biosynthesis of sordarial. Some members of this protein family are predicted to serve as a polyketide cyclase (aromatase) in fungal alkyl salicylaldehyde biosynthesis.</td>
+				<td><a href="https://pubs.acs.org/doi/10.1021/acs.jnatprod.8b00983" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="TdiC">TdiC</td>
+				<td style="text-align: justify;"><b>TdiC</b> is a medium-chain dehydrogenase/reductase involved in the biosynthesis of terrequinone A.</td>
+				<td><a href="https://www.nature.com/articles/nchembio.2007.20" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="TqaK">TqaK</td>
+				<td style="text-align: justify;"><b>TqaK</b> is a transcription factor for tryptoquialanine biosynthesis.</td>
+				<td><a href="https://pubs.acs.org/doi/10.1021/ja1101085" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="Tri6">Tri6</td>
+				<td style="text-align: justify;"><b>Tri6</b> is a transcription factor for trichothecene biosynthesis.</td>
+				<td><a href="https://journals.asm.org/doi/abs/10.1128/aem.61.5.1923-1930.1995" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="Tri14">Tri14</td>
+				<td style="text-align: justify;"><b>Tri14</b> is a hypothetical protein encoded by the trichothecene biosynthetic gene cluster.</td>
+				<td><a href="https://pubs.acs.org/doi/full/10.1021/jf051441a" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="Trt5">Trt5</td>
+				<td style="text-align: justify;"><b>Trt5</b> is a methyltransferase involved in the biosynthesis of terretonin and methylates the carboxy group of farnesyl-DMOA.</td>
+				<td><a href="https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/cbic.201200369" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="Trt14">Trt14</td>
+				<td style="text-align: justify;"><b>Trt14</b> is an isomerase involved in the biosynthesis of terretonin and achieves ring expansion reaction in collaboration with another enzyme Trt6.</td>
+				<td><a href="https://pubs.acs.org/doi/full/10.1021/jacs.5b00570" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="TwmC">TwmC</td>
+				<td style="text-align: justify;"><b>TwmC</b> is a G protein-coupled receptor (GPCR)-like protein encoded by the wortmanamide biosynthetic gene cluster.</td>
+				<td><a href="https://pubs.acs.org/doi/full/10.1021/jacs.7b13350" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="UbiA_PT">UbiA_PT</td>
+				<td style="text-align: justify;">This protein family includes <b>UbiA-like prenyltransferases</b> that are involved in the biosynthesis of diverse fungal meroterpenoids.</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td id="UbiA_TC">UbiA_TC</td>
+				<td style="text-align: justify;">This protein family includes <b>UbiA-like terpene cyclases</b>, as represented by Fma-TC responsible for fumagillin biosynthesis.</td>
+				<td><a href="https://pubs.acs.org/doi/full/10.1021/ja312503y" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="VicY">VicY</td>
+				<td style="text-align: justify;">The biosynthetic gene clusters of victorins encode several <b>VicY</b> proteins. This protein family includes <b>VicY</b> proteins that contain two “HXXHC” motifs, which are characteristic of the DUF3328 domain-containing proteins, although the DUF3328 domain is not found in these proteins.</td>
+				<td><a href="https://www.pnas.org/doi/full/10.1073/pnas.2010573117" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="VidS">VidS</td>
+				<td style="text-align: justify;"><b>VidS</b> is a dehydratase involved in the biosynthesis of demethoxyviridin and performs dehydration reaction to form the furan ring system.</td>
+				<td><a href="https://www.nature.com/articles/s41467-018-04298-2" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="VniA">VniA</td>
+				<td style="text-align: justify;"><b>VniA</b> is a noncanonical terpene synthase involved in the biosynthesis of (-)-vinigrol.</td>
+				<td><a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.202416795" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="VrtF">VrtF</td>
+				<td style="text-align: justify;"><b>VrtF</b> is an <i>O</i>-methyltransferase involved in the biosynthesis of viridicatumtoxin.</td>
+				<td><a href="https://www.sciencedirect.com/science/article/pii/S1074552110001560" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="XenC">XenC</td>
+				<td style="text-align: justify;"><b>XenC</b> is involved in the biosynthesis of xenoacremone A and is proposed to catalyze the paracyclophane ether formation.</td>
+				<td><a href="https://www.sciencedirect.com/science/article/pii/S2211383521001064" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+			<tr>
+				<td id="XenD">XenD</td>
+				<td style="text-align: justify;"><b>XenD</b> is proposed to serve as hydroxylase/epoxidase in the biosynthesis of xenoacremone A.</td>
+				<td><a href="https://www.sciencedirect.com/science/article/pii/S2211383521001064" target="_blank" class="ref"><img class="logo2" src="img/link.png" alt="Ref."></a></td>
+			</tr>
+		</table>
+		<p></p>
+  </body>
+</html>
