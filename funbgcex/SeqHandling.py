@@ -3,6 +3,8 @@
 import glob
 from pathlib import Path
 import pandas as pd
+import glob
+import math
 import warnings
 from Bio import BiopythonWarning
 warnings.simplefilter('ignore', BiopythonWarning)
@@ -132,4 +134,35 @@ def combineFASTA(fasta_dir,output_dir):
             combined.write(seq)
             locus_tag_list.append(locus_tag)
     combined.close()
+
+
+def CombineSplitFASTA(fasta_dir,output_dir,split_num):
+    fasta_files = glob.glob(f"{fasta_dir}/*.fasta")
+    ALLlist = []
+
+    for fasta in fasta_files:
+        with open(fasta,"r") as fa:
+            for line in fa:
+                ALLlist.append(line)
+
+    #Calculate the number of items in each sublist
+    item_num = math.ceil(len(ALLlist)/split_num)
+    if item_num %2 == 1:
+        item_num += 1
+        
+    sublists = []
+    for i in range(0, len(ALLlist), item_num):
+        sublists.append(ALLlist[i:i+item_num])
+   
+    locus_tag_list = []
+    for i in range(len(sublists)):
+        combined = open(f"{output_dir}/split{str(i+1)}.fasta","w")
+        for j in range(len(sublists[i])-1):
+            if sublists[i][j].startswith(">") and sublists[i] not in locus_tag_list:            
+                locus_tag = sublists[i][j]
+                seq = sublists[i][j+1]
+                combined.write(locus_tag)
+                combined.write(seq)
+                locus_tag_list.append(locus_tag)
+        combined.close()
 

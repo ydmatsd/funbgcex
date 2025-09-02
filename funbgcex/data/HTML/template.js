@@ -16,7 +16,7 @@ ctx.lineTo(canvasWidth, center);
 ctx.stroke();
 
 
-function DrawArrow(start_ori, end_ori, BGClen, strand, center, height, color, locus_tag, protein_type, aalen, aaseq, domain, homologue, pfam) {
+function DrawArrow(start_ori, end_ori, BGClen, strand, center, height, color, locus_tag, protein_type, aalen, aaseq, domain, homologue, hkg_homologue, human_homologue, pfam) {
   const start = start_ori * canvasWidth / BGClen;
   const end = end_ori * canvasWidth / BGClen;
   const arrowHeadSize = Math.log(end - start) * 3;
@@ -31,7 +31,18 @@ function DrawArrow(start_ori, end_ori, BGClen, strand, center, height, color, lo
     ctx.lineTo(arrowHeadStart, center + height / 4);
     ctx.lineTo(start, center + height / 4);
     ctx.fillStyle = color;
+    ctx.closePath();
     ctx.fill();
+    if (
+      (hkg_homologue !== "–" && hkg_homologue.includes("duplicated")) ||
+      (human_homologue !== "–" && human_homologue.includes("duplicated"))
+    ) {
+      ctx.fillStyle = "#CCFFFF";
+      ctx.fill();
+      ctx.strokeStyle = "#005493";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
 
   } else if (strand === "-") {
     const arrowHeadStart = start + arrowHeadSize;
@@ -44,7 +55,18 @@ function DrawArrow(start_ori, end_ori, BGClen, strand, center, height, color, lo
     ctx.lineTo(arrowHeadStart, center + height / 4);
     ctx.lineTo(end, center + height / 4);
     ctx.fillStyle = color;
+    ctx.closePath();
     ctx.fill()
+    if (
+      (hkg_homologue !== "–" && hkg_homologue.includes("duplicated")) ||
+      (human_homologue !== "–" && human_homologue.includes("duplicated"))
+    ) {
+      ctx.fillStyle = "#CCFFFF";
+      ctx.fill();
+      ctx.strokeStyle = "#005493";
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
   };
     
   // Add click event listener to canvas
@@ -61,6 +83,8 @@ function DrawArrow(start_ori, end_ori, BGClen, strand, center, height, color, lo
       }
       document.querySelector('#domain').innerHTML = domain;
       document.querySelector('#homologue').innerHTML = homologue;
+      document.querySelector('#hkg_homologue').innerHTML = hkg_homologue;
+      document.querySelector('#human_homologue').innerHTML = human_homologue;
       document.querySelector('#aalen').textContent = aalen;
       document.querySelector('#aaseq').textContent = aaseq;
       document.querySelector('#pfam').innerHTML = pfam;
@@ -90,8 +114,10 @@ for(let i = 0; i < geneList.length; i++) {
   const aaseq = geneList[i].aaseq
   const domain = geneList[i].domain
   const homologue = geneList[i].homologue
+  const hkg_homologue = geneList[i].hkg_homologue
+  const human_homologue = geneList[i].human_homologue
   const pfam = geneList[i].pfam
-  DrawArrow(start,end,BGClen,strand,center,50,color,locus_tag,protein_type,aalen,aaseq,domain,homologue,pfam)
+  DrawArrow(start,end,BGClen,strand,center,50,color,locus_tag,protein_type,aalen,aaseq,domain,homologue,hkg_homologue,human_homologue,pfam)
 }
 
 function copyToClipboard() {

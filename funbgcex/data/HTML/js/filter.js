@@ -46,7 +46,7 @@ window.addEventListener('load', function () {
         column.row = table.rows[r];
         column.value = table.rows[r].cells[column_no].textContent;
 
-        if (column_no == 5) {
+        if (column_no == 7) {
           if (column.value == "–") {
             column.value = 0;
           }
@@ -59,7 +59,7 @@ window.addEventListener('load', function () {
         }
       }
 
-      if (column_no === 0) {
+      if (column_no === 1) {
         if (column_no_prev == column_no) {
           sortArray.sort(compareBGCDesc);
         } else {
