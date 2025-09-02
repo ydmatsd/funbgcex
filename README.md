@@ -1,4 +1,4 @@
-# FunBGCeX (Fungal Biosynthetic Gene Cluster eXtractor)
+# FunBGCeX (Fungal Biosynthetic Gene Cluster eXtractor2)
 
 [![pypi](https://img.shields.io/pypi/v/funbgcex.svg)](https://pypi.python.org/pypi/funbgcex)
 [![GitHub license](https://img.shields.io/github/license/ydmatsd/funbgcex.svg)](https://github.com/ydmatsd/funbgcex)
