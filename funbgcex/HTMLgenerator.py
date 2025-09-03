@@ -80,9 +80,8 @@ coreColorDict = {"PKS-NRPS":"#802A4A",
 
 
 def MakeAllBGCpage(current_dir,BGCcsv,fungus_name,main_result_dir,output_dir):
-    output_dir = output_dir.split("/")
-    del output_dir[0]
-    output_dir = "/".join(output_dir)
+    output_dir_split = output_dir.split("/")
+    output_dir = f"{output_dir_split[-2]}/{output_dir_split[-1]}"
     codeList = []
     df = pd.read_csv(BGCcsv,index_col=[0]).fillna("-")
     for i in range(len(df)):
