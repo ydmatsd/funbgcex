@@ -11,81 +11,35 @@ import shutil
 import glob
 import warnings
 from Bio import BiopythonWarning
-warnings.simplefilter('ignore', BiopythonWarning)
+warnings.simplefilter('ignore',BiopythonWarning)
 from Bio import SeqIO
 from Bio import SearchIO
 from Bio.Blast import NCBIXML
+import numpy as np
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+import re
+from collections import Counter
+from difflib import SequenceMatcher
 from funbgcex.GeneralCommands import RunDIAMOND
 from funbgcex.CoreAnnotation import Annotation
 from funbgcex.SimilarBGCfinder import *
 
 
 
-def LinkChecker(seq1,seq2,database,protCSV,temp_dir):
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    isLinked = False
-
-    """
-    Make a fasta file containing the two sequences
-    """
-    fasta = f"{temp_dir}/proteins.fasta"
-    with open(fasta,"w") as fa:
-        fa.write(f">seq1\n{seq1}\n")
-        fa.write(f">seq2\n{seq2}\n")
-    
-    """
-    Run DIAMOND search
-    """
-    dmnd_result = f"{temp_dir}/dmnd_result.xml"
-    RunDIAMOND(fasta,database,dmnd_result,50,1)
-    
-    """
-    Analyze DIAMOND result
-    """
-    BGClist = []
-    df = pd.read_csv(protCSV,index_col=[1])
-    blast_records = NCBIXML.parse(open(dmnd_result))
-    for blast_record in blast_records:
-        BGCsublist = []
-        for alignment in blast_record.alignments:
-            for hsp in alignment.hsps:
-                query = blast_record.query
-                blast_hit = alignment.title.replace(" ","")
-                BGCno = df.at[blast_hit,"FBGC or FPROT ID"]
-            BGCsublist.append(BGCno)
-        BGClist.append(BGCsublist)
-    if len(BGClist[0]) > len(BGClist[1]):
-        for i in range(len(BGClist[1])):
-            if BGClist[1][i] in BGClist[0]:
-                isLinked = True
-                break
-    else:
-        for i in range(len(BGClist[0])):
-            if BGClist[0][i] in BGClist[1]:
-                isLinked = True
-                break  
-                
-    shutil.rmtree(temp_dir)
-
-    if isLinked:
-        return True
-    else:
-        return False
-
-
-def Core_extractor(hmmscan_result,df,temp_dir,mode="normal"):
+def Core_extractor(mode,hmmscan_result,df,temp_dir):
     current_dir = os.path.dirname(os.path.abspath(__file__))
     hmmscan_core_database = f"{current_dir}/data/hmm/core/core.hmm"
 
     Corefam_list = ["Terpene_syn_C_2","Terpene_synth_C","TRI5","SQHop_cyclase_C","SQHop_cyclase_N",
     "Trp_DMAT","Pyr4","PbcA","AstC","ABA3","AsR6","SalTPS","VniA","UbiA_PT","UbiA_TC","CosA","PaxC","GGPS",
     "Chal_sti_synt_N","Chal_sti_synt_C","AnkA","DIT1_PvcA","PEP_mutase"]
-    UstY_list = ["UstYa","VicY"]
 
     # To make a list in which each locus_tag can be linked with a Pfam hit
-    df["core"] = "none"
-    df["UstY"] = "none"
-    df["domain_organization"] = "none"
+    if mode != "ripps":
+        df["core"] = "none"
+        df["domain_organization"] = "none"
 
     hmm_list = []
     for qresult in SearchIO.parse(hmmscan_result, 'hmmscan3-domtab'):
@@ -105,13 +59,10 @@ def Core_extractor(hmmscan_result,df,temp_dir,mode="normal"):
 
     for prot in hmm_list:
         isCore = False
-        withUstY = False
 
         for item in prot:
             if item in Corefam_list:
                 isCore = True
-            if item in UstY_list:
-                withUstY = True
         if 'AA-adenyl-dom' in prot:
             if 'PKS_KS' in prot or 'NRPS_C' in prot or 'NRPS_CT' in prot or 'fPKS_R' in prot or "Thioesterase" in prot or "Abhydrolase_3" in prot:
                 isCore = True
@@ -130,41 +81,106 @@ def Core_extractor(hmmscan_result,df,temp_dir,mode="normal"):
                     df.at[i,"domain_organization"] = domain_organization
                     df.at[i,"BP"] = 1
                     break
-                if withUstY:
-                    df.at[i,"UstY"] = "UstY"
-                    df.at[i,"BP"] = 1
-                    break
 
 
+def predict_signal_peptide(sequences):
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    model = load_model(f"{current_dir}/data/signal_peptide_model.keras")
+    amino_acid_map = {
+    'A': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5,
+    'G': 6, 'H': 7, 'I': 8, 'K': 9, 'L': 10,
+    'M': 11, 'N': 12, 'P': 13, 'Q': 14, 'R': 15,
+    'S': 16, 'T': 17, 'V': 18, 'W': 19, 'Y': 20
+    }
+    # Treatment of the input sequence
+    numerical_sequences = [[amino_acid_map.get(aa, 0) for aa in sequence] for sequence in sequences]  # convert amino acids to values
+    padded_sequences = pad_sequences(numerical_sequences, maxlen=40)  # padding
 
-def RiPPppFinder(aa_len,unique_aa,min_repeat,min_match,fasta,df):
-    with open(fasta,"r") as fa:
-        protList = [line.rstrip() for line in fa]
+    # Prediction by the model
+    predictions = model.predict(padded_sequences, verbose=0)
 
-    RiPPppCandList = []
-    i = 0
-    while i < len(protList) - 1:
-        if protList[i].startswith(">"):
-            seq = protList[i+1]
-            isRiPPpp = False
-            seq_list = [seq[j:j + aa_len] for j in range(len(seq) - aa_len + 1)]
+    # Check the presence of a signal peptide
+    results = ["Y" if prediction[0] > 0.5 else "N" for prediction in predictions]
+    return results
 
-            repeated_seq_list = []
-            for item in seq_list:
-                uniqueAA = len(set(item)) #The number of unique amino acids in a given sequence fragment
 
-                if uniqueAA >= unique_aa and item not in repeated_seq_list and any(x in item for x in ["KR", "KK", "RK", "RR"]):
-                    hitNumber = sum(1 for item2 in seq_list if sum(1 for k in range(aa_len) if item[k] == item2[k]) >= min_match)
-                    if hitNumber >= min_repeat:
-                        isRiPPpp = True
+def similarity_ratio(seq1,seq2):
+    s = SequenceMatcher(None,seq1,seq2)
+    similarity = s.ratio()
+    return similarity
 
-            if isRiPPpp:
-                protName = protList[i].replace(">","")
-                RiPPppCandList.append(protName)
-        i += 1
+    
+def RepeatSeqFinder(seq,cleavage_sites,aa_len,unique_aa,min_repeat,threshold):
+    isRepeated = False
+    fragment_list = []
+    for site in cleavage_sites:
+        fragment_list.append(seq.replace("*","").split(site))
+    
+    list_lengths = [len(lst) for lst in fragment_list]
+    max_index = list_lengths.index(max(list_lengths))
+    best_list = fragment_list[max_index]
+    cleavage_site = cleavage_sites[max_index]
 
-    df.loc[df["locus_tag"].isin(RiPPppCandList) & (df["core"] == "none"), "core"] = "RiPP_PP_cand"
-    df.loc[df["locus_tag"].isin(RiPPppCandList), "BP"] = 1
+    repeat_num_list = []
+    for fragment in best_list:
+        repeat_num = 0
+        if len(fragment) >= aa_len and len(set(fragment)) >= unique_aa:
+            for frag in best_list:
+                if similarity_ratio(fragment,frag) > threshold:
+                    repeat_num += 1
+        repeat_num_list.append(repeat_num)
+    max_index = repeat_num_list.index(max(repeat_num_list))
+    if repeat_num_list[max_index] >= min_repeat:
+        repeat_seq = best_list[max_index]
+        repeat_seq_list = [fragment for fragment in best_list if similarity_ratio(repeat_seq,fragment) > threshold]
+        repeat_seq_updated = Counter(repeat_seq_list).most_common(1)[0][0]           
+        repeat_num = repeat_num_list[max_index]
+        representative_repeat = f"{repeat_seq_updated}{cleavage_site}"
+        isRepeated = True
+    
+    if isRepeated:
+        return representative_repeat, repeat_num
+    else:
+        return None, None
+
+
+def RiPPppFinder(mode,aa_len,unique_aa,min_repeat,threshold,noKexB,fasta,df):
+    if mode == "ripps":
+        df["core"] = "none"
+        df["domain_organization"] = "none"
+    df["repeated_sequence"] = "none"
+    df["repeat_count"] = "none"
+    locus_tag_list = []
+    seq_list = []
+
+    cleavage_sites = ["KR","KK","RK","RR"]
+    aa_letters = "ACDEFGHIKLMNPQRSTVWY"
+    dipeptide_list = [f"{aa}{amino_acid}" for aa in aa_letters for amino_acid in aa_letters]
+    
+    for record in SeqIO.parse(fasta, "fasta"):
+        locus_tag_list.append(record.id)
+        seq_list.append(record.seq)
+        
+    truncated_sequences = [sequence[0:40] for sequence in seq_list]
+    is_signal_list = predict_signal_peptide(truncated_sequences)
+    
+    for i in range(len(is_signal_list)):
+        if is_signal_list[i] == "Y":
+            isRepeated = False
+            seq = str(seq_list[i])
+            truncated_seq = seq[0:299]
+            repeat_seq,count = RepeatSeqFinder(truncated_seq,cleavage_sites,aa_len,unique_aa,min_repeat,threshold)
+            if repeat_seq:
+                isRepeated = True
+            if isRepeated == False and noKexB:
+                repeat_seq,count = RepeatSeqFinder(truncated_seq,dipeptide_list,aa_len,unique_aa,min_repeat,threshold)
+                if repeat_seq:
+                    isRepeated = True
+            if isRepeated:
+                df.loc[(df["locus_tag"] == locus_tag_list[i]) & (df["core"] == "none"), "core"] = "RiPP PP"
+                df.loc[df["locus_tag"] == locus_tag_list[i], "BP"] = 1
+                df.loc[df["locus_tag"] == locus_tag_list[i], "repeated_sequence"] = repeat_seq
+                df.loc[df["locus_tag"] == locus_tag_list[i], "repeat_count"] = count
 
 
 def AddTargetHomologue(blastp_result,df):
@@ -179,7 +195,7 @@ def AddTargetHomologue(blastp_result,df):
                 for hsp in alignment.hsps:
                     query = blast_record.query
                     blast_hit = alignment.title
-                    identity = "{:.1f}".format(100*hsp.identities/len(hsp.match)) # value of %identity
+                    identity = str(round(100*hsp.identities/len(hsp.match),1)) # value of %identity
 
                     for i in range(len(df)):
                         if df.at[i,"locus_tag"] == query:
@@ -194,7 +210,6 @@ def AddTargetHomologue(blastp_result,df):
 
 def AddTargetPfam(hmmscan_result,df):
     df["withTarget"] = 0
- 
     hit_set = set()
 
     for qresult in SearchIO.parse(hmmscan_result, 'hmmscan3-domtab'):
@@ -205,7 +220,7 @@ def AddTargetPfam(hmmscan_result,df):
 
 
 def ExtractCDS4Check(mode,num_of_genes_checked,output_dir,df):
-    if mode == "all":
+    if mode == "all" or mode == "ripps" or mode == "sre" or mode == "human":
         target = "core"
     elif mode == "target":
         target = "target_homologue"
@@ -213,8 +228,9 @@ def ExtractCDS4Check(mode,num_of_genes_checked,output_dir,df):
         target = "withTarget"
 
     for i in range(len(df)):
-        if mode == "all":
-            if df.at[i,target] != "none" or df.at[i,"UstY"] != "none":
+        if mode == "all" or mode == "ripps" or mode == "sre" or mode == "human":
+            # if df.at[i,target] != "none" or df.at[i,"UstY"] != "none":
+            if df.at[i,target] != "none":
                 pass
             else:
                 continue
@@ -281,25 +297,26 @@ def AddPfam(hmmscan_result,df,SMhmm):
     with open(SMhmm,"r") as h:
         for line in h:
             if line.startswith("NAME"):
-                name = line.split(" ")[-1].replace("\n","")
+                name = line.split(" ")[-1].rstrip()
                 addDict = True
             if line.startswith("LENG"):
-                length = int(line.split(" ")[-1].replace("\n",""))
+                length = int(line.split(" ")[-1].rstrip())
                 if addDict:
                     pfamLength[name] = length
                     addDict = False
 
     with open(hmmscan_result) as hmm:
-        hmm_hits = hmm.readlines()
+        # hmm_hits = hmm.readlines()
+        hmm_hits = [line for line in hmm if line.startswith("#")==False]
 
     prot_hmm_list = []
-    for i in range(3,len(hmm_hits)-10):
+    for i in range(len(hmm_hits)):
         split_list = hmm_hits[i].split()
         query = split_list[3]
         if [query] not in prot_hmm_list:
             prot_hmm_list.append([query])
 
-    for i in range(3,len(hmm_hits)-10):
+    for i in range(len(hmm_hits)):
         split_list = hmm_hits[i].split()
         query = split_list[3]
         domName = split_list[0]
@@ -398,8 +415,7 @@ def AddHomologue(blastp_result,df):
                 for hsp in alignment.hsps:
                     query = blast_record.query
                     blast_hit = alignment.title.replace(" ","")
-                    identity = "{:.1f}".format(100*hsp.identities/len(hsp.match)) # value of %identity
-
+                    identity = str(round(100*hsp.identities/len(hsp.match),1)) # value of %identity
                     query_indices = df.index[df["locus_tag"] == query]
                     i = query_indices[0]
                     df.at[i,"BP"] = 1
@@ -414,7 +430,104 @@ def AddHomologue(blastp_result,df):
             pass
 
 
-def DuplicationChecker(blastp_result,min_identity,min_prot_len,df):
+def HKGfinder(blastp_result,df):
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+
+    min_identity = 50
+    min_coverage = 50
+
+    df["conserved_protein"] = 0
+    df["other_conserved_protein"] = 0
+    df["hkg_homologue"] = "none"
+    df["hkg_homologue_product"] = "none"
+    df["hkg_homologue_identity"] = "none"
+
+    # Make a dictionary to link locus tags with their corresponding products
+    hkgDict = {}
+    hkg_csv = f"{current_dir}/data/Aspfum_proteins.csv"
+    df_ = pd.read_csv(hkg_csv)
+    for i in range(len(df_)):
+        locus_tag = df_.at[i,"locus_tag"]
+        product = df_.at[i,"product"]
+        hkgDict[locus_tag] = product
+
+    blast_records = NCBIXML.parse(open(blastp_result))
+
+    for blast_record in blast_records:
+        query = blast_record.query 
+        try:
+            for alignment in blast_record.alignments:
+                if blast_record.query != alignment.title.replace(" ",""):
+                    for hsp in alignment.hsps:                                    
+                        identity = 100*hsp.identities/len(hsp.match) # value of %identity
+                        identity_ = str(round(identity,1))
+                        alignLen = hsp.align_length
+                        hitLen = alignment.length
+                        coverage = alignLen/hitLen*100
+                        
+                        if identity > min_identity and coverage > min_coverage:
+                            blast_hit = alignment.title.replace(" ","")
+                            blast_hit_product = hkgDict[blast_hit]
+                            query_indices = df.index[df["locus_tag"] == query]
+                            i = query_indices[0]
+                            df.at[i,"conserved_protein"] = 1
+                            df.at[i,"hkg_homologue"] = blast_hit
+                            df.at[i,"hkg_homologue_product"] = blast_hit_product
+                            df.at[i,"hkg_homologue_identity"] = identity_
+                        break
+        except:
+            pass
+
+
+def HumanProteinFinder(blastp_result,df):
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+
+    min_identity = 40
+    min_coverage = 40
+
+    df["human_protein_like"] = 0
+    df["human_homologue"] = "none"
+    df["human_homologue_product"] = "none"
+    df["human_homologue_identity"] = "none"
+
+    # Make a dictionary to link locus tags with their corresponding products
+    HumanProtDict = {}
+    HumanProt_csv = f"{current_dir}/data/human_proteins.csv"
+    df_ = pd.read_csv(HumanProt_csv)
+    for i in range(len(df_)):
+        gene = df_.at[i,"gene"]
+        product = df_.at[i,"product"]
+        HumanProtDict[gene] = product
+
+    blast_records = NCBIXML.parse(open(blastp_result))
+
+    for blast_record in blast_records:
+        query = blast_record.query 
+        try:
+            for alignment in blast_record.alignments:
+                if blast_record.query != alignment.title.replace(" ",""):
+                    for hsp in alignment.hsps:                                    
+                        identity = 100*hsp.identities/len(hsp.match) # value of %identity
+                        identity_ = str(round(identity,1))
+                        alignLen = hsp.align_length
+                        hitLen = alignment.length
+                        coverage = alignLen/hitLen*100
+
+                        if identity > min_identity and coverage > min_coverage:
+                            blast_hit = alignment.title.replace(" ","")
+                            blast_hit_product = HumanProtDict[blast_hit]
+                            query_indices = df.index[df["locus_tag"] == query]
+                            i = query_indices[0]
+                            df.at[i,"human_protein_like"] = 1
+                            df.at[i,"human_homologue"] = blast_hit
+                            df.at[i,"human_homologue_product"] = blast_hit_product
+                            df.at[i,"human_homologue_identity"] = identity_
+                        break
+        except:
+            pass
+
+
+def DuplicationChecker(blastp_result,min_identity,df):
     df["duplicated_protein"] = "none"
     df["duplicated_protein_identity"] = "none"
     df["duplicated"] = 0
@@ -429,27 +542,47 @@ def DuplicationChecker(blastp_result,min_identity,min_prot_len,df):
                         query = blast_record.query
                         blast_hit = alignment.title.replace(" ","")
                         identity = 100*hsp.identities/len(hsp.match) # value of %identity
-                        identity_ = "{:.1f}".format(100*hsp.identities/len(hsp.match)) 
+                        identity_ = str(round(identity,1))
 
                         if identity > min_identity:
-                            for i in range(len(df)):
-                                if df.at[i,"locus_tag"] == query:
-                                    if df.at[i,"length"] >= min_prot_len:
-                                        df.at[i,"BP"] = 1
-                                        df.at[i,"duplicated"] = 1
-                                        df.at[i,"duplicated_protein"] = blast_hit
-                                        df.at[i,"duplicated_protein_identity"] = identity_
-                                        break
-                                    else:
-                                        break
-                        break
+                            query_indices = df.index[df["locus_tag"] == query]
+                            i = query_indices[0]
+                            if df.at[i,"conserved_protein"] == 1 and (float(df.at[i,"hkg_homologue_identity"]) - identity < 12) and identity < 85: #If a protein is much more similar to the HKG protein than to the duplicated protein, it suggests the protein is not a duplicated protein but that it has the same function as the HKG protein. Also, if the identity is too high (>85%), the protein might not be a self-resistance protein.
+                                df.at[i,"BP"] = 1
+                                df.at[i,"duplicated"] = 1
+                                df.at[i,"duplicated_protein"] = blast_hit
+                                df.at[i,"duplicated_protein_identity"] = identity_
+                                break
+                            elif df.at[i,"other_conserved_protein"] == 1:
+                                df.at[i,"duplicated"] = 1
+                                df.at[i,"duplicated_protein"] = blast_hit
+                                df.at[i,"duplicated_protein_identity"] = identity_
+                                break
+                            elif df.at[i,"conserved_protein"] == 0 and df.at[i,"human_protein_like"] == 1 and identity < 85:
+                                df.at[i,"BP"] = 1
+                                df.at[i,"duplicated"] = 1
+                                df.at[i,"duplicated_protein"] = blast_hit
+                                df.at[i,"duplicated_protein_identity"] = identity_
+                                break                                
+
         except:
             pass
 
-def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,df_original,cluster_csv,all_cluster_csv,IDdict,GeneNumDict,MetabDict,temp_dir,log):
+
+def HousekeepingGeneFinder(df):
+    df["housekeeping"] = 0
+    min_identity = 70
+    for i in range(len(df)):
+        if (df.at[i,"conserved_protein"] == 1 or df.at[i,"other_conserved_protein"] == 1) and df.at[i,"duplicated"] == 0 and float(df.at[i,"hkg_homologue_identity"]) > min_identity:
+            df.at[i,"core"] = "none"
+            df.at[i,"housekeeping"] = 1
+            df.at[i,"BP"] = 0
+
+
+def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,df_original,cluster_csv,IDdict,GeneNumDict,MetabDict,additional_genes,temp_dir,noCore,noUstY,file_name,log):
     current_dir = os.path.dirname(os.path.abspath(__file__))
 
-    logger = logging.getLogger(__name__)
+    logger = logging.getLogger(file_name)
     logger.setLevel(logging.DEBUG)
     formatter = logging.Formatter('%(asctime)s - %(levelname)s:%(name)s - %(message)s')
     log.setFormatter(formatter)
@@ -461,9 +594,7 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
     database = f"{current_dir}/data/DIAMOND/fungal_SM_proteins"
     protCSV = f"{current_dir}/data/proteins.csv"
 
-
     BGCdf = pd.read_csv(cluster_csv,index_col=[0])
-    allBGCdf = pd.read_csv(all_cluster_csv,index_col=[0])
 
     counter = 0
     BGC_num = 1
@@ -475,6 +606,8 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
         withRiPPpp = False
         withUstY = False
         withPPPS = False
+        withSRE = False
+        withHumanP = False
         ToBeExtracted = False
         ToBeReset = False
 
@@ -487,33 +620,22 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
             start_pos = df.at[counter,"start"]
             locus_tag_start = df.at[counter,"locus_tag"]
 
-            DupProtNum = 0
-            allowedDupNum = 2
             geneNum = -1
             for j in range(counter,len(df)):
                 geneNum += 1
-                if df.at[j,"core"] != "none" and df.at[j,"core"] != "RiPP_PP_cand":
+                if df.at[j,"core"] != "none" and df.at[j,"core"] != "RiPP_PP":
                     withCore = True
 
-                if df.at[j,"core"] == "RiPP_PP_cand":
+                if df.at[j,"core"] == "RiPP PP":
                     withRiPPpp = True
                     RiPPppList.append(df.at[j,"locus_tag"])
                     RippPosList.append(j)
-                    # df.at[j,"core"] == "RiPP PP"
 
-                if "UstYa" in df.at[j,"Pfam"] or "VicY" in df.at[j,"Pfam"]:
+                if "UstYa" in df.at[j,"Pfam"] or "PhomB" in df.at[j,"Pfam"] or "VicY" in df.at[j,"Pfam"]:
                     withUstY = True
 
                 if df.at[j,"core"] == "PPPS":
                     withPPPS = True
-
-                if df.at[j,"core"] == "none" and df.at[j,"Pfam"] == "none" and df.at[j,"known_homologue"] == "none"\
-                    and df.at[j,"duplicated_protein"] != "none":
-                    DupProtNum += 1
-                    if DupProtNum > allowedDupNum:
-                        end_pos = df.at[j,"end"]
-                        locus_tag_end = df.at[j,"locus_tag"]
-                        break
 
                 if mode == "target":
                     if df.at[j,"target_homologue"] != "none":
@@ -526,6 +648,14 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                 if mode == "pfam":
                     if df.at[j,"withTarget"] == 1:
                         withTarget = True
+
+                if mode == "sre":
+                    if df.at[j,"conserved_protein"] == 1 and df.at[j,"duplicated"] == 1 and df.at[j,"core"] == "none":
+                        withSRE = True
+
+                if mode == "human":
+                    if df.at[j,"human_protein_like"] == 1 and df.at[j,"duplicated"] == 1 and df.at[j,"core"] == "none":
+                        withHumanP = True
 
                 if j == len(df) - 1:
                     if df.at[j,"BP"] == 1:
@@ -556,26 +686,65 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                     break
 
             if mode == "all":
-                if withRiPPpp and withUstY:
-                    ToBeExtracted = True
+                if noUstY:
+                    if withRiPPpp:
+                        ToBeExtracted = True
+                else:
+                    if withRiPPpp and withUstY:
+                        ToBeExtracted = True
                 if withCore:
                     ToBeExtracted = True
-                #in case RiPP PP candidate is found but no UstY homologue is found, the candidate is considered as nonBP, and BGC extraction process will be repeated
-                if withRiPPpp and withUstY == False:
-                    ToBeReset = True
-                #in case only a PPPS is found in a BGC, the BGC will not be included
-                if withPPPS and geneNum == 1:
-                    ToBeExtracted = False
 
+            if mode == "ripps":
+                if noUstY:
+                    if withRiPPpp:
+                        ToBeExtracted = True
+                else:
+                    if withRiPPpp and withUstY:
+                        ToBeExtracted = True
+                
             if mode == "target" or mode == "pfam":
-                if withRiPPpp and withUstY and withTarget:
-                    ToBeExtracted = True
+                if noUstY:
+                    if withRiPPpp and withTarget:
+                        ToBeExtracted = True
+                else:
+                    if withRiPPpp and withUstY and withTarget:
+                        ToBeExtracted = True
                 if withCore and withTarget:
                     ToBeExtracted = True
-                if withRiPPpp and withUstY == False:
-                    ToBeReset = True
-                if withPPPS and geneNum == 1:
-                    ToBeExtracted = False
+                if noCore and withTarget:
+                    ToBeExtracted = True
+
+            if mode == "sre":
+                if noUstY:
+                    if withRiPPpp and withSRE:
+                        ToBeExtracted = True
+                else:
+                    if withRiPPpp and withUstY and withSRE:
+                        ToBeExtracted = True
+                if withCore and withSRE:
+                    ToBeExtracted = True
+
+            if mode == "human":
+                if noUstY:
+                    if withRiPPpp and withHumanP:
+                        ToBeExtracted = True
+                else:
+                    if withRiPPpp and withUstY and withHumanP:
+                        ToBeExtracted = True
+                if withCore and withHumanP:
+                    ToBeExtracted = True
+            
+            #in case RiPP PP candidate is found but no UstY homologue is found, the candidate is considered as nonBP, and BGC extraction process will be repeated
+            if noUstY == False and withRiPPpp and withUstY == False:
+                ToBeReset = True
+            #in case only a PPPS is found in a BGC, the BGC will not be included
+            if withPPPS and geneNum == 1:
+                ToBeExtracted = False
+            #in case only a RiPP PP is found in a BGC, the BGC will not be included
+            if mode != "ripps" and withRiPPpp and geneNum == 1:
+                ToBeExtracted = False
+
 
             if ToBeReset:
                 for i in RippPosList:
@@ -589,6 +758,47 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
             
 
             if ToBeExtracted:
+                if additional_genes > 0:
+                    #Adjusting the start point
+                    if counter_start - additional_genes >= 0:
+                        for i in range(counter_start-1,counter_start-additional_genes-1,-1):
+                            scaffold = df.at[counter_start,"scaffold"]
+                            if df.at[i,"scaffold"] == scaffold:
+                                start_pos = df.at[i,"start"]
+                                locus_tag_start = df.at[i,"locus_tag"]
+                            else:
+                                break
+                    else:
+                        for i in range(counter_start-1,-1,-1):
+                            scaffold = df.at[counter_start,"scaffold"]
+                            if df.at[i,"scaffold"] == scaffold:
+                                start_pos = df.at[i,"start"]
+                                locus_tag_start = df.at[i,"locus_tag"]
+                            else:
+                                break
+
+                    #Adjusting the end point
+                    for i in range(len(df)):
+                        if df.at[i,"locus_tag"] == locus_tag_end:
+                            counter_end = i
+                            break
+                    if counter_end + additional_genes <= len(df) - 1:
+                        for i in range(counter_end+1,counter_end+additional_genes+1):
+                            scaffold = df.at[counter_end,"scaffold"]
+                            if df.at[i,"scaffold"] == scaffold:
+                                end_pos = df.at[i,"end"]
+                                locus_tag_end = df.at[i,"locus_tag"]
+                            else:
+                                break
+                    else:
+                        for i in range(counter_end+1,len(df)):
+                            scaffold = df.at[counter_end,"scaffold"]
+                            if df.at[i,"scaffold"] == scaffold:
+                                end_pos = df.at[i,"end"]
+                                locus_tag_end = df.at[i,"locus_tag"]
+                            else:
+                                break                        
+
                 gbk = f"{GBK_dir}/{scaffold}.gbk"
                 seq_record = SeqIO.read(open(gbk),"genbank")
                 subrecord = seq_record[start_pos:end_pos]
@@ -599,12 +809,14 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                 bgc = f"{BGC_dir}/BGC{BGC_num}_{scaffold}_{locus_tag_start}_{locus_tag_end}.gbk"
                 
                 Pfam_list = []
+                conserved_duplicated_list = []
+                human_prot_list = []
 
                 for feature in subrecord.features:
                     if feature.type == "CDS":
                         for i in range(len(df_original)):
                             if feature.qualifiers["locus_tag"][0] == df_original.at[i,"locus_tag"]:
-                                if df_original.at[i,"core"] != "none" and df_original.at[i,"core"] != "RiPP_PP_cand" and df_original.at[i,"core"] != "UstY":
+                                if df_original.at[i,"core"] != "none":
                                     core_type = df_original.at[i,"core"]
                                     domain_organization = df_original.at[i,"domain_organization"]
                                     for core in core_type.split(","):
@@ -614,18 +826,37 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                                     else:
                                         core_info = core_type
                                     feature.qualifiers["core"] = core_info
-                                elif df_original.at[i,"core"] == "RiPP_PP_cand":
-                                    df_original.at[i,"core"] == "RiPP PP"
-                                    core_list.append("RiPP PP")
-                                    feature.qualifiers["core"] = "RiPP PP"
+                                if df_original.at[i,"core"] == "RiPP PP":
+                                    feature.qualifiers["repeated_seq"] = df_original.at[i,"repeated_sequence"] + " (" + str(df_original.at[i,"repeat_count"]) + " repeats)"
                                 if df_original.at[i,"Pfam"] != "none":
                                     feature.qualifiers["Pfam"] = df_original.at[i,"Pfam"]
                                 if df_original.at[i,"known_homologue"] != "none":
                                     homologue = df_original.at[i,"known_homologue full name"] + "|" + df_original.at[i,"known_homologue FBGC or FPROT ID"] + "; " + df_original.at[i,"known_homologue_identity"] + "%"
                                     feature.qualifiers["homologue"] = homologue
-                                if df_original.at[i,"duplicated"] == 1:
-                                    duplicated = df_original.at[i,"duplicated_protein"] + "; " + df_original.at[i,"duplicated_protein_identity"] + "%"
-                                    feature.qualifiers["duplicated_protein"] = duplicated
+                                if df_original.at[i,"conserved_protein"] == 1 or df_original.at[i,"other_conserved_protein"] == 1:
+                                    if df_original.at[i,"conserved_protein"] == 1 and df_original.at[i,"duplicated"] == 1:
+                                        duplicated = df_original.at[i,"duplicated_protein"] + "; " + df_original.at[i,"duplicated_protein_identity"] + "%"
+                                        feature.qualifiers["duplicated_protein"] = duplicated
+                                        hkg_homologue = df_original.at[i,"hkg_homologue"] + "; " + df_original.at[i,"hkg_homologue_product"] + "; " + df_original.at[i,"hkg_homologue_identity"] + "%" + " (duplicated)"
+                                        conserved_prot = df_original.at[i,"hkg_homologue_product"]
+                                        if df_original.at[i,"core"] == "none":
+                                            conserved_duplicated_list.append(conserved_prot)
+                                    else:
+                                        hkg_homologue = df_original.at[i,"hkg_homologue"] + "; " + df_original.at[i,"hkg_homologue_product"] + "; " + df_original.at[i,"hkg_homologue_identity"] + "%"
+                                    feature.qualifiers["hkg_homologue"] = hkg_homologue
+                                
+
+                                if df_original.at[i,"human_protein_like"] == 1:
+                                    if df_original.at[i,"duplicated"] == 1:
+                                        human_prot = df_original.at[i,"human_homologue_product"] + "; " + df_original.at[i,"human_homologue_identity"] + "%" + " (duplicated)"
+                                        feature.qualifiers["human_homologue"] = human_prot
+                                        human_product = df_original.at[i,"human_homologue_product"]
+                                        if df_original.at[i,"core"] == "none":
+                                            human_prot_list.append(human_product)
+                                    else:
+                                        human_prot = df_original.at[i,"human_homologue_product"] + "; " + df_original.at[i,"human_homologue_identity"] + "%"
+                                
+
                                 if mode == "target":
                                     if df_original.at[i,"target_homologue"] != "none":
                                         target_homologue_info = df_original.at[i,"target_homologue"].replace(" ","") + "; " + df_original.at[i,"target_homologue_identity"] + "%"
@@ -646,7 +877,15 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
 
                 core_list_sorted = sorted(core_list, key=lambda x: preference[x])
                 core_enz = ", ".join(core_list_sorted)
+                if len(conserved_duplicated_list) > 0:
+                    conserved_duplicated_prot = "; ".join(conserved_duplicated_list)
+                else:
+                    conserved_duplicated_prot = "-"
 
+                if len(human_prot_list) > 0:
+                    human_duplicated_prot = "; ".join(human_prot_list)
+                else:
+                    human_duplicated_prot = "-"
                 
                 for i in range(len(df_original)):
                     if df_original.at[i,"locus_tag"] == locus_tag_start:
@@ -669,26 +908,17 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                 similarMetab = similarBGC.metab()
 
 
-                BGC_list = [[f"BGC{BGC_num}",scaffold,start_pos+1,end_pos,locus_tag_start,locus_tag_end,total_genes,core_enz,similarBGCid,similarityScore,similarMetab,pfam]]
-                columns = ["BGC no.","Scaffold","Start position","End position","Locus tag start","Locus tag end",
-                            "Number of genes","Core enzymes","Similar BGC","Similarity score","Metabolite from similar BGC","Pfam domains"]
-                BGC_list_ = [[fungus_name,f"BGC{BGC_num}",scaffold,start_pos+1,end_pos,locus_tag_start,locus_tag_end,total_genes,core_enz,similarBGCid,similarityScore,similarMetab,pfam]]
-                columns_ = ["Fungus","BGC no.","Scaffold","Start position","End position","Locus tag start","Locus tag end",
-                            "Number of genes","Core enzymes","Similar BGC","Similarity score","Metabolite from similar BGC","Pfam domains"]
+                BGC_list = [[fungus_name,f"BGC{BGC_num}",scaffold,start_pos+1,end_pos,locus_tag_start,locus_tag_end,total_genes,core_enz,conserved_duplicated_prot,human_duplicated_prot,similarBGCid,similarityScore,similarMetab,pfam]]
+                columns = ["Fungus","BGC no.","Scaffold","Start position","End position","Locus tag start","Locus tag end",
+                            "Number of genes","Core enzymes","Duplicated fungal proteins","Duplicated human homologues","Similar BGC","Similarity score","Metabolite from similar BGC","Pfam domains"]
 
 
                 BGCdf_ = pd.DataFrame(BGC_list,columns=columns)
-                # BGCdf = pd.concat([BGCdf,BGCdf_])
+
                 if BGCdf.empty:
                     BGCdf = BGCdf_.copy()
                 else:
                     BGCdf = pd.concat([BGCdf,BGCdf_])
-                
-                allBGCdf_ = pd.DataFrame(BGC_list_,columns=columns_)
-                if allBGCdf.empty:
-                    allBGCdf = allBGCdf_.copy()
-                else:
-                    allBGCdf = pd.concat([allBGCdf,allBGCdf_])
 
                 BGC_num += 1
     
@@ -699,7 +929,3 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
 
     BGCdf = BGCdf.reset_index(drop=True).fillna("none")
     BGCdf.to_csv(cluster_csv)
-    allBGCdf = allBGCdf.reset_index(drop=True).fillna("none")
-    allBGCdf.to_csv(all_cluster_csv)
-
-

@@ -1,11 +1,16 @@
 #!/usr/bin/env python3
 
 import subprocess
+import glob
+import concurrent.futures
+# from pyhmmer.easel import SequenceFile
+# from pyhmmer.plan7 import HMMFile
+# from pyhmmer.hmmer import hmmscan
 
 
 def runHMMscan(input_file,output_file,database,Evalue):
-    subprocess.run(["hmmscan","--domtblout",output_file,"-E",Evalue,"--domE",
-                    Evalue,database,input_file],stdout=subprocess.DEVNULL)
+    subprocess.run(["hmmscan","--domtblout",output_file,"-E",str(Evalue),"--domE",
+                    str(Evalue),database,input_file],stdout=subprocess.DEVNULL)
 
 def runHMMfetch(HMMdatabase,target_name,output_file):
     subprocess.run(["hmmfetch","-o",output_file,HMMdatabase,target_name],stdout=subprocess.DEVNULL)

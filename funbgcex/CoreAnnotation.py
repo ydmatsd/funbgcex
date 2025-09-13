@@ -31,14 +31,14 @@ class Annotation:
         os.makedirs(hmmscan_output,exist_ok=True)
         hmmscan_result =  f"{hmmscan_output}/hmmscan_results.txt"
 
-        runHMMscan(fasta,hmmscan_result,hmm_file,"1e-3")
+        runHMMscan(fasta,hmmscan_result,hmm_file,1e-3)
 
         with open(hmmscan_result) as hmm:
-            hmm_hits = hmm.readlines()
+            hmm_hits = [line for line in hmm if line.startswith("#")==False]
 
         hmm_list = []
 
-        for i in range(3,len(hmm_hits)-10):
+        for i in range(len(hmm_hits)):
             split_list = hmm_hits[i].split()
             domName = split_list[0]
             score = float(split_list[13])
@@ -110,7 +110,7 @@ class Annotation:
 
         for item in sorted_list:
 
-            if "AA-adenyl-dom" in item and float(item[1]) > 50:
+            if "AA-adenyl-dom" in item and float(item[1]) > 30:
                 withA = True
                 domains_list.append(["A",item[2]])
             if "NRPS_C" in item and float(item[1]) > 50:
@@ -267,7 +267,7 @@ class Annotation:
                 classification = "TC (SalTPS)"
                 if classification not in coreList:
                     coreList.append(classification)
-            elif "VniA" in item:
+            elif "VniA" in item and float(item[1]) > 50:
                 classification = "TC (VniA)"
                 if classification not in coreList:
                     coreList.append(classification)
@@ -316,9 +316,9 @@ class Annotation:
 
 
         preference = {"PKS-NRPS":1,"NRPS-PKS":2,"NR-PKS":3,"PR-PKS":4,"HR-PKS":5,"T3PKS":6,"NRPS":7,"chimeric TS":8,"TC (Class1)":9,
-                            "TC (SHC/OSC)":10,"TC (Tri5)":11,"TC (Pyr4)":12,"TC (UbiA)":13,"TC (PbcA)":14,"TC (AstC)":15,"TC (ABA3)":16,
-                            "TC (AsR6)":17,"TC (SalTPS)":18,"TC (VniA)":19,"PT (UbiA)":20,"PT (PaxC)":21,"PT (DMATS)":22,"PT (CosA)":23,"PPPS":24,
-                            "RiPP PP":25,"RCDPS":26,"ICS":27,"PEPM":28,"NRPS-like":29,"PKS-like":30,"ePLS":31}
+        "TC (SHC/OSC)":10,"TC (Tri5)":11,"TC (Pyr4)":12,"TC (UbiA)":13,"TC (PbcA)":14,"TC (AstC)":15,"TC (ABA3)":16,
+        "TC (AsR6)":17,"TC (SalTPS)":18,"TC (VniA)":19,"PT (UbiA)":20,"PT (PaxC)":21,"PT (DMATS)":22,"PT (CosA)":23,"PPPS":24,
+        "RiPP PP":25,"RCDPS":26,"ICS":27,"PEPM":28,"NRPS-like":29,"PKS-like":30,"ePLS":31}
 
         coreList = sorted(coreList, key=lambda x: preference[x])
 

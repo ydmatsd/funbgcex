@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+.logo {
+    width: 180px;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.logo2 {
+    width: 17px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.page-header {
+    margin-top: 5px;
+    display: flex;
+    border-bottom: 2px solid #FFB9D3;
+}
+.wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.wrapper2 {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+nav {
+    float: right;
+    margin-left: auto;
+}
+.main-nav {
+    font-size: 0.9rem;
+/*    font-weight: bolder;*/
+    display: flex;
+    margin-top: 20px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 30px;
+    color: #7F4700;
+}
+.main-nav a {
+    color: #7F4700;
+    text-decoration: none;
+}
+.main-nav a:hover {
+    color: #FF2F92;
+}
+h1 {
+    text-align: left;
+}
+h2 {
+    text-align: left;
+    font-size: 0.75rem;
+    margin-top: 15px;
+    margin-left: 10px;
+    color: #7F4700;
+}
+h3 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 17px;
+    margin-left: 10px;
+    color: #7F4700;
+}
+.current{
+    padding: 0px 0px 5px;
+    border-bottom: 2px solid #FF2F92;
+}
+.main-text p {
+    text-align: left;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    line-height: 160%;
+}
+body {
+    font-family: "Helvetica","Arial",sans-serif;
+    text-align: center;
+}
+.filter {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#search {
+    width: 50%;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #ddd;
+}
+
+table {
+    font-size: 80%;
+    text-align: center;
+    width: 1000px;
+    margin: 10px auto 20px auto;
+    border-collapse: collapse;
+}
+
+th,td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+th {
+    padding: 7px;
+}
+td {
+    width: 450px;
+    padding: 15px;
+    line-height: 20px;
+}
+
+tr:nth-child(odd) {
+    background-color:  #FFBEC8;
+}
+
+tr:nth-child(even) {
+    background-color:  #ffdcdc;
+}
+
+tr:nth-child(1) {
+    background-color:  #C63C7C;
+    color: #fff;
+}
+
+p {
+    text-align: center;
+    font-size: 85%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.link {
+    color: #c52471;
+}
+.ref {
+    color: #9C1F5D;
+    font-weight: bolder;
+    text-decoration: none;
+}

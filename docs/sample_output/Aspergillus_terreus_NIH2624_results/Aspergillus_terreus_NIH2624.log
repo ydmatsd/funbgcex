@@ -1,0 +1,46 @@
+2025-08-17 19:11:06,545 - INFO:Aspergillus_terreus_NIH2624 - Aspergillus_terreus_NIH2624: BGC extraction started
+2025-08-17 19:11:06,545 - INFO:Aspergillus_terreus_NIH2624 - sre mode was selected
+2025-08-17 19:11:12,591 - DEBUG:Aspergillus_terreus_NIH2624 - Processed the input GenBank file
+2025-08-17 19:11:12,591 - DEBUG:Aspergillus_terreus_NIH2624 - Original fungus's name: Aspergillus terreus NIH2624
+2025-08-17 19:11:12,591 - DEBUG:Aspergillus_terreus_NIH2624 - Modified version of fungus's name: Aspergillus terreus NIH2624
+2025-08-17 19:11:22,709 - DEBUG:Aspergillus_terreus_NIH2624 - All protein sequences were extracted
+2025-08-17 19:11:22,709 - DEBUG:Aspergillus_terreus_NIH2624 - All scaffolds were extracted
+2025-08-17 19:11:22,709 - DEBUG:Aspergillus_terreus_NIH2624 - Running hmmscan to detect core enzymes
+2025-08-17 19:11:42,863 - DEBUG:Aspergillus_terreus_NIH2624 - Finding core enzymes
+2025-08-17 19:12:06,815 - DEBUG:Aspergillus_terreus_NIH2624 - Finding potential RiPP precursor proteins
+2025-08-17 19:12:08,363 - DEBUG:Aspergillus_terreus_NIH2624 - Extracting protein sequences around core/target proteins
+2025-08-17 19:12:08,543 - DEBUG:Aspergillus_terreus_NIH2624 - Combining all fasta files
+2025-08-17 19:12:08,688 - DEBUG:Aspergillus_terreus_NIH2624 - Running hmmscan to detect potential fungal SM proteins
+2025-08-17 19:13:25,103 - DEBUG:Aspergillus_terreus_NIH2624 - Adding Pfam information
+2025-08-17 19:13:29,357 - DEBUG:Aspergillus_terreus_NIH2624 - Running DIAMOND to find homologues in FunBGCs
+2025-08-17 19:13:30,947 - DEBUG:Aspergillus_terreus_NIH2624 - Adding homologue information
+2025-08-17 19:13:32,368 - DEBUG:Aspergillus_terreus_NIH2624 - Running DIAMOND to find possible housekeeping genes
+2025-08-17 19:13:33,352 - DEBUG:Aspergillus_terreus_NIH2624 - Checking if each gene has a close homologue in A. fumigatus
+2025-08-17 19:13:34,046 - DEBUG:Aspergillus_terreus_NIH2624 - Running DIAMOND to find human homologues
+2025-08-17 19:13:34,773 - DEBUG:Aspergillus_terreus_NIH2624 - Checking if each gene has a human homologue
+2025-08-17 19:13:35,207 - DEBUG:Aspergillus_terreus_NIH2624 - Creating DIAMOND database containing all proteins from the input
+2025-08-17 19:13:35,356 - DEBUG:Aspergillus_terreus_NIH2624 - Running DIAMOND to find duplicated proteins
+2025-08-17 19:13:37,127 - DEBUG:Aspergillus_terreus_NIH2624 - Checking duplications
+2025-08-17 19:13:38,714 - DEBUG:Aspergillus_terreus_NIH2624 - Finding possible housekeeping genes
+2025-08-17 19:13:38,862 - DEBUG:Aspergillus_terreus_NIH2624 - Removing small non-biosynthetic proteins
+2025-08-17 19:13:38,970 - DEBUG:Aspergillus_terreus_NIH2624 - Finding clustered proteins
+2025-08-17 19:15:58,129 - DEBUG:Aspergillus_terreus_NIH2624 - Extracting BGCs
+2025-08-17 19:15:58,899 - DEBUG:Aspergillus_terreus_NIH2624 - BGC1 extracted. Scaffold: NT_165939; Locus tag start: ATEG_09960; Locus tag end: ATEG_09973; Start: 36185; End: 87559.
+2025-08-17 19:15:58,901 - DEBUG:Aspergillus_terreus_NIH2624 - Finding a similar BGC
+2025-08-17 19:16:00,689 - DEBUG:Aspergillus_terreus_NIH2624 - BGC2 extracted. Scaffold: NT_165938; Locus tag start: ATEG_09616; Locus tag end: ATEG_09622; Start: 371433; End: 389192.
+2025-08-17 19:16:00,694 - DEBUG:Aspergillus_terreus_NIH2624 - Finding a similar BGC
+2025-08-17 19:16:02,467 - DEBUG:Aspergillus_terreus_NIH2624 - BGC3 extracted. Scaffold: NT_165937; Locus tag start: ATEG_09064; Locus tag end: ATEG_09076; Start: 159863; End: 203620.
+2025-08-17 19:16:02,476 - DEBUG:Aspergillus_terreus_NIH2624 - Finding a similar BGC
+2025-08-17 19:16:04,283 - DEBUG:Aspergillus_terreus_NIH2624 - BGC4 extracted. Scaffold: NT_165937; Locus tag start: ATEG_09088; Locus tag end: ATEG_09091; Start: 228329; End: 245391.
+2025-08-17 19:16:04,292 - DEBUG:Aspergillus_terreus_NIH2624 - Finding a similar BGC
+2025-08-17 19:16:06,068 - DEBUG:Aspergillus_terreus_NIH2624 - BGC5 extracted. Scaffold: NT_165936; Locus tag start: ATEG_08912; Locus tag end: ATEG_08922; Start: 1163000; End: 1192503.
+2025-08-17 19:16:06,086 - DEBUG:Aspergillus_terreus_NIH2624 - Finding a similar BGC
+2025-08-17 19:16:07,858 - DEBUG:Aspergillus_terreus_NIH2624 - BGC6 extracted. Scaffold: NT_165935; Locus tag start: ATEG_08167; Locus tag end: ATEG_08174; Start: 528337; End: 557513.
+2025-08-17 19:16:07,877 - DEBUG:Aspergillus_terreus_NIH2624 - Finding a similar BGC
+2025-08-17 19:16:09,760 - DEBUG:Aspergillus_terreus_NIH2624 - BGC7 extracted. Scaffold: NT_165933; Locus tag start: ATEG_07297; Locus tag end: ATEG_07305; Start: 1283153; End: 1300349.
+2025-08-17 19:16:09,792 - DEBUG:Aspergillus_terreus_NIH2624 - Finding a similar BGC
+2025-08-17 19:16:11,707 - DEBUG:Aspergillus_terreus_NIH2624 - BGC8 extracted. Scaffold: NT_165929; Locus tag start: ATEG_04412; Locus tag end: ATEG_04419; Start: 463497; End: 483837.
+2025-08-17 19:16:11,758 - DEBUG:Aspergillus_terreus_NIH2624 - Finding a similar BGC
+2025-08-17 19:16:13,198 - DEBUG:Aspergillus_terreus_NIH2624 - Copying BGC files
+2025-08-17 19:16:13,204 - DEBUG:Aspergillus_terreus_NIH2624 - Creating HTML files
+2025-08-17 19:16:13,292 - INFO:Aspergillus_terreus_NIH2624 - Aspergillus_terreus_NIH2624: BGC extraction finished in 5.11 min. 8 BGCs were extracted.

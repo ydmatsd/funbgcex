@@ -1,0 +1,1926 @@
+,locus_tag,product
+0,AFUA_1G00450,N-acetylglucosamine-6-phosphate deacetylase
+1,AFUA_1G00470,Betaine aldehyde dehydrogenase
+2,AFUA_1G00480,Glucosamine-6-phosphate deaminase
+3,AFUA_1G00490,"Lipoamide acyltransferase component of branched-chain alpha-keto acid dehydrogenase complex, mitochondrial"
+4,AFUA_1G00500,FMN-dependent alpha-hydroxy acid dehydrogenase
+5,AFUA_1G00510,"D-lactate dehydrogenase [cytochrome], mitochondrial"
+6,AFUA_1G01740,T-complex protein 1 subunit beta
+7,AFUA_1G01750,Peptidyl-prolyl cis-trans isomerase
+8,AFUA_1G01990,Ribosome assembly protein 4
+9,AFUA_1G02030,Eukaryotic translation initiation factor 3 subunit B
+10,AFUA_1G02070,"Cytochrome c1, heme protein, mitochondrial"
+11,AFUA_1G02110,Phospho-2-dehydro-3-deoxyheptonate aldolase
+12,AFUA_1G02140,Glycogen debranching enzyme
+13,AFUA_1G02150,Glycerol-3-phosphate dehydrogenase
+14,AFUA_1G02190,Ras GTPase Rab11
+15,AFUA_1G02210,Ribosome biogenesis protein BRX1
+16,AFUA_1G02410,RuvB-like helicase 2
+17,AFUA_1G02430,Ubiquitin fusion degradation protein 1
+18,AFUA_1G02460,DNA-directed RNA polymerase III subunit RPC2
+19,AFUA_1G02480,Plasma membrane ATPase
+20,AFUA_1G02550,Tubulin alpha-1 chain
+21,AFUA_1G02570,"Aspartate--tRNA ligase, cytoplasmic"
+22,AFUA_1G02630,rRNA processing protein Pwp1
+23,AFUA_1G02670,Actin-related protein 2/3 complex subunit 2
+24,AFUA_1G02810,mRNA 3'-end-processing protein YTH1
+25,AFUA_1G02830,Nuclear protein localization protein 4
+26,AFUA_1G02890,Deoxyuridine 5'-triphosphate nucleotidohydrolase
+27,AFUA_1G02980,6-phosphogluconolactonase
+28,AFUA_1G03010,Pre-mRNA-splicing factor CWC22
+29,AFUA_1G03020,Dolichol phosphate-mannose biosynthesis regulatory protein
+30,AFUA_1G03050,ATP-dependent DNA helicase MPH1
+31,AFUA_1G03060,F-actin-capping protein subunit beta
+32,AFUA_1G03070,Transcription initiation factor TFIID subunit 5
+33,AFUA_1G03080,Protein phosphatase methylesterase 1
+34,AFUA_1G03100,"ATP synthase subunit delta, mitochondrial"
+35,AFUA_1G03110,Large ribosomal subunit protein eL29
+36,AFUA_1G03150,Delta(14)-sterol reductase ERG24A
+37,AFUA_1G03390,Large ribosomal subunit protein uL11
+38,AFUA_1G03400,Protein transport protein SEC23
+39,AFUA_1G03410,DNA primase large subunit
+40,AFUA_1G03420,"GTP:AMP phosphotransferase, mitochondrial"
+41,AFUA_1G03500,DNA topoisomerase 1
+42,AFUA_1G03510,"ATP synthase subunit gamma, mitochondrial"
+43,AFUA_1G03550,"Dihydroxy-acid dehydratase, mitochondrial"
+44,AFUA_1G03740,glutamate carboxypeptidase II
+45,AFUA_1G03810,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit DAD1
+46,AFUA_1G03820,Pre-mRNA-splicing factor ATP-dependent RNA helicase PRP16
+47,AFUA_1G03830,Prefoldin subunit 2
+48,AFUA_1G03840,CCAAT-binding factor complex subunit HapC
+49,AFUA_1G03920,DNA replication licensing factor MCM3
+50,AFUA_1G03950,C-22 sterol desaturase ERG5
+51,AFUA_1G03970,Eukaryotic translation initiation factor 5B
+52,AFUA_1G04040,Ubiquitin-ribosomal protein eL40A fusion protein
+53,AFUA_1G04070,Eukaryotic translation initiation factor 5A
+54,AFUA_1G04090,L-2-hydroxyglutarate dehydrogenase
+55,AFUA_1G04120,"Succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondrial"
+56,AFUA_1G04190,"Polyadenylate-binding protein, cytoplasmic and nuclear"
+57,AFUA_1G04320,Small ribosomal subunit protein eS8A
+58,AFUA_1G04460,Lysine--tRNA ligase
+59,AFUA_1G04470,Mitochondrial import inner membrane translocase subunit TIM10
+60,AFUA_1G04530,Large ribosomal subunit protein eL20A
+61,AFUA_1G04540,NADH-cytochrome b5 reductase 2
+62,AFUA_1G04560,Urease
+63,AFUA_1G04660,Large ribosomal subunit protein eL15
+64,AFUA_1G04680,"NFU1 iron-sulfur cluster scaffold homolog, mitochondrial"
+65,AFUA_1G04710,Cytoplasmic tRNA 2-thiolation protein 1
+66,AFUA_1G04720,C-8 sterol isomerase ERG2
+67,AFUA_1G04800,Protein phosphatase 1 regulatory subunit SDS22
+68,AFUA_1G04820,NAD(P)H-dependent D-xylose reductase XYR1
+69,AFUA_1G04850,"Dynein light chain, cytoplasmic"
+70,AFUA_1G04890,Protein transport protein Sec61 subunit beta
+71,AFUA_1G04900,Proliferating cell nuclear antigen
+72,AFUA_1G04940,Small COPII coat GTPase SAR1
+73,AFUA_1G04950,Serine/threonine-protein phosphatase PP1
+74,AFUA_1G04970,Patatin-like phospholipase domain-containing protein
+75,AFUA_1G05040,Mitochondrial protein import protein MAS5
+76,AFUA_1G05050,Cytosine deaminase
+77,AFUA_1G05060,Uroporphyrinogen decarboxylase
+78,AFUA_1G05080,Large ribosomal subunit protein uL10
+79,AFUA_1G05120,ER-derived vesicles protein ERV46
+80,AFUA_1G05160,"DNA-directed RNA polymerases I, II, and III subunit RPABC2"
+81,AFUA_1G05180,N-terminal acetyltransferase B complex catalytic subunit NAA20
+82,AFUA_1G05200,Eukaryotic translation initiation factor 3 subunit A
+83,AFUA_1G05310,RNA cytidine acetyltransferase
+84,AFUA_1G05340,Small ribosomal subunit protein eS19
+85,AFUA_1G05390,"ADP,ATP carrier protein"
+86,AFUA_1G05450,Peptidyl-prolyl cis-trans isomerase PIN4
+87,AFUA_1G05500,Small ribosomal subunit protein eS12
+88,AFUA_1G05560,Ribosome-interacting GTPase 1
+89,AFUA_1G05570,Cysteine dioxygenase
+90,AFUA_1G05610,Protein phosphatase PP2A regulatory subunit A
+91,AFUA_1G05620,Phenylalanine--tRNA ligase beta subunit
+92,AFUA_1G05630,Small ribosomal subunit protein uS3
+93,AFUA_1G05700,Splicing factor 3B subunit 5
+94,AFUA_1G05720,Delta(14)-sterol reductase ERG24B
+95,AFUA_1G05800,MAP kinase kinae MKK2
+96,AFUA_1G05830,TATA-binding protein-associated factor MOT1
+97,AFUA_1G05990,Large ribosomal subunit protein uL13
+98,AFUA_1G06030,AP-1 complex subunit gamma-1
+99,AFUA_1G06100,Glutaredoxin
+100,AFUA_1G06150,L-serine dehydratase
+101,AFUA_1G06170,26S proteasome regulatory subunit 6A
+102,AFUA_1G06190,Histone H4 arginine methyltransferase RmtA
+103,AFUA_1G06210,Phosphoacetylglucosamine mutase
+104,AFUA_1G06220,ATP-dependent rRNA helicase RRP3
+105,AFUA_1G06230,Ribosome biogenesis protein SSF2
+106,AFUA_1G06240,Riboflavin synthase
+107,AFUA_1G06250,Succinyl-CoA:glutarate CoA-transferase
+108,AFUA_1G06290,U3 small nucleolar RNA-associated protein SOF1
+109,AFUA_1G06300,26S proteasome regulatory subunit RPN6
+110,AFUA_1G06340,Large ribosomal subunit protein eL27
+111,AFUA_1G06380,DNA-directed RNA polymerase III subunit RPC10
+112,AFUA_1G06390,Elongation factor 1-alpha
+113,AFUA_1G06400,Serine/threonine-protein kinase SCH9
+114,AFUA_1G06410,Chromatin structure-remodeling complex subunit RSC7
+115,AFUA_1G06420,Vacuolar-sorting protein SNF7
+116,AFUA_1G06470,Neutral ceramidase
+117,AFUA_1G06520,"Translation initiation factor IF-2, mitochondrial"
+118,AFUA_1G06570,Small ribosomal subunit protein uS2m
+119,AFUA_1G06610,"NADH-ubiquinone oxidoreductase 23 kDa subunit, mitochondrial"
+120,AFUA_1G06630,Vacuolar protein sorting-associated protein 74
+121,AFUA_1G06680,ADP-ribosylation factor-binding protein GGA2
+122,AFUA_1G06690,18S rRNA aminocarboxypropyltransferase
+123,AFUA_1G06700,Metacaspase CasA
+124,AFUA_1G06710,T-complex protein 1 subunit eta
+125,AFUA_1G06770,Small ribosomal subunit protein eS26
+126,AFUA_1G06790,Importin subunit beta-3
+127,AFUA_1G06810,"Aconitate hydratase, mitochondrial"
+128,AFUA_1G06830,Large ribosomal subunit protein P1
+129,AFUA_1G06860,"[Pyruvate dehydrogenase [acetyl-transferring]]-phosphatase 1, mitochondrial"
+130,AFUA_1G06890,"GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase"
+131,AFUA_1G06940,Chorismate synthase
+132,AFUA_1G06960,"Pyruvate dehydrogenase E1 component subunit alpha, mitochondrial"
+133,AFUA_1G07010,Phosphatidate cytidylyltransferase
+134,AFUA_1G07140,Delta(24(24(1)))-sterol reductase ERG4A
+135,AFUA_1G07220,6-phosphofructo-2-kinase 1
+136,AFUA_1G07380,Glutamate synthase [NADH]
+137,AFUA_1G07440,Molecular chaperone Hsp70
+138,AFUA_1G07470,Autophagy-related protein 8
+139,AFUA_1G07480,Oxygen-dependent coproporphyrinogen-III oxidase
+140,AFUA_1G07520,D-xylose 1-dehydrogenase (NADP(+))
+141,AFUA_1G07530,Adenylate kinase
+142,AFUA_1G07540,26S proteasome regulatory subunit RPN8
+143,AFUA_1G07570,tRNA (carboxymethyluridine(34)-5-O)-methyltransferase
+144,AFUA_1G07640,"Protein adenylyltransferase SelO, mitochondrial"
+145,AFUA_1G07680,Secretion related GTPase SrgD
+146,AFUA_1G07690,Dolichyl-phosphate-mannose--protein mannosyltransferase 2
+147,AFUA_1G07720,Transcription elongation complex subunit Cdc68
+148,AFUA_1G07740,Phospholipid-transporting ATPase accessory subunit CDC50
+149,AFUA_1G08760,Delta-aminolevulinic acid dehydratase
+150,AFUA_1G08790,Exportin KapK
+151,AFUA_1G08810,"Glycerol-3-phosphate dehydrogenase, mitochondrial"
+152,AFUA_1G08840,Guanylate kinase
+153,AFUA_1G08850,Septin
+154,AFUA_1G08880,Copper chaperone ATX1
+155,AFUA_1G08940,Pheromone processing carboxypeptidase KexA
+156,AFUA_1G08950,Protein arginine N-methyltransferase SFM1
+157,AFUA_1G08980,MYG1 exonuclease
+158,AFUA_1G09010,"Methionine--tRNA ligase, cytoplasmic"
+159,AFUA_1G09020,mRNA export factor GLE2
+160,AFUA_1G09050,Phosphatidyl-N-methylethanolamine N-methyltransferase
+161,AFUA_1G09100,Large ribosomal subunit protein uL6
+162,AFUA_1G09200,Ribosome biogenesis protein ERB1
+163,AFUA_1G09220,Vacuolar protein sorting-associated protein 20
+164,AFUA_1G09240,ATP-dependent RNA helicase DHX35
+165,AFUA_1G09280,Protein phosphatase 2C homolog 2
+166,AFUA_1G09290,Choline-phosphate cytidylyltransferase
+167,AFUA_1G09320,U3 small nucleolar RNA-associated protein 25
+168,AFUA_1G09330,Eukaryotic translation initiation factor 3 subunit F
+169,AFUA_1G09350,Transcription initiation factor TFIID subunit 13
+170,AFUA_1G09380,Pre-mRNA-splicing factor CWC18
+171,AFUA_1G09410,Large ribosomal subunit protein bL17m
+172,AFUA_1G09440,Small ribosomal subunit protein uS12
+173,AFUA_1G09470,Alanine--glyoxylate aminotransferase
+174,AFUA_1G09480,Vacuolar protein sorting-associated protein 29
+175,AFUA_1G09490,Polyadenylate-binding protein 3
+176,AFUA_1G09500,E3 ubiquitin-protein ligase RSP5
+177,AFUA_1G09540,Vacuolar transporter chaperone complex subunit 1
+178,AFUA_1G09560,Target of rapamycin complex subunit LST8
+179,AFUA_1G09600,N-terminal acetyltransferase A complex catalytic subunit ARD1
+180,AFUA_1G09750,Aldo-keto reductase family 1 member A1
+181,AFUA_1G09757,Cytochrome c oxidase assembly protein COX19
+182,AFUA_1G09780,"Stomatin-like protein 2, mitochondrial"
+183,AFUA_1G09790,Histone transcription regulator HIR1
+184,AFUA_1G09800,GTP-binding protein YchF
+185,AFUA_1G09810,Translation machinery-associated protein 20
+186,AFUA_1G09830,Small glutamine-rich tetratricopeptide repeat-containing protein 2
+187,AFUA_1G09840,Mitochondrial import inner membrane translocase subunit TIM44
+188,AFUA_1G09850,Small ribosomal subunit protein uS11m
+189,AFUA_1G09930,Glycerol 2-dehydrogenase (NADP(+))
+190,AFUA_1G09950,Casein kinase II subunit beta-2
+191,AFUA_1G10050,Pre-mRNA-processing ATP-dependent RNA helicase PRP5
+192,AFUA_1G10130,Adenosylhomocysteinase
+193,AFUA_1G10190,Pre-mRNA-processing factor 31
+194,AFUA_1G10200,Pre-mRNA-splicing factor CLF1
+195,AFUA_1G10270,Pyridoxal reductase
+196,AFUA_1G10290,Chromo domain-containing protein 1
+197,AFUA_1G10310,Translation initiation factor RLI1
+198,AFUA_1G10350,Phosphoglycerate kinase
+199,AFUA_1G10355,26S proteasome complex subunit SEM1
+200,AFUA_1G10410,DNA repair protein RAD51
+201,AFUA_1G10510,Large ribosomal subunit protein uL29
+202,AFUA_1G10540,NAD-dependent histone deacetylase HST4
+203,AFUA_1G10560,Nuclear GTP-binding protein NUG1
+204,AFUA_1G10570,Glycerol-1-phosphate phosphohydrolase
+205,AFUA_1G10630,S-adenosylmethionine synthase
+206,AFUA_1G10640,GPN-loop GTPase 3
+207,AFUA_1G10710,Pre-mRNA-splicing factor PRP46
+208,AFUA_1G10720,Origin recognition complex subunit 1
+209,AFUA_1G10740,Prefoldin subunit 5
+210,AFUA_1G10750,Proline--tRNA ligase
+211,AFUA_1G10760,Ribosome biogenesis protein MAK21
+212,AFUA_1G10780,"Aminomethyltransferase, mitochondrial"
+213,AFUA_1G10810,V-type proton ATPase subunit C
+214,AFUA_1G10820,Adenylyl-sulfate kinase
+215,AFUA_1G10830,"Succinate--CoA ligase [ADP-forming] subunit alpha, mitochondrial"
+216,AFUA_1G10850,Ubiquitin-like protein SMT3
+217,AFUA_1G10880,Calcium-transporting ATPase 2
+218,AFUA_1G10910,Tubulin beta chain
+219,AFUA_1G10940,MAP kinase kinase kinase SSK2
+220,AFUA_1G10950,GID complex substrate-recognition subunit 4
+221,AFUA_1G10960,Mago nashi domain protein
+222,AFUA_1G10970,Coatomer subunit beta
+223,AFUA_1G11080,Serine/threonine protein kinase KIN1
+224,AFUA_1G11130,Large ribosomal subunit protein eL6
+225,AFUA_1G11180,"Heat shock protein 78, mitochondrial"
+226,AFUA_1G11190,Elongation factor 1-beta
+227,AFUA_1G11230,3-hydroxy-3-methylglutaryl-coenzyme A reductase 2
+228,AFUA_1G11420,Protein SSD1
+229,AFUA_1G11470,Endosomal protein P24B
+230,AFUA_1G11610,3-dehydroquinate dehydratase QutE
+231,AFUA_1G11670,U6 snRNA-associated Sm-like protein LSm8
+232,AFUA_1G11710,Large ribosomal subunit protein uL1
+233,AFUA_1G11730,ADP-ribosylation factor
+234,AFUA_1G11770,Surfeit locus protein 4
+235,AFUA_1G11870,Mitochondrial-processing peptidase subunit alpha
+236,AFUA_1G11880,Acetoacetyl-CoA synthetase
+237,AFUA_1G11890,Serine palmitoyltransferase 2
+238,AFUA_1G11960,"External alternative NADH-ubiquinone oxidoreductase, mitochondrial"
+239,AFUA_1G11970,"Dynamin-like GTPase MGM1, mitochondrial"
+240,AFUA_1G11980,Glutamine amidotransferase DUG3
+241,AFUA_1G12040,Chitin synthase export chaperone
+242,AFUA_1G12070,Glycine cleavage system H protein
+243,AFUA_1G12150,Nucleoside diphosphatase Gda1
+244,AFUA_1G12170,"Elongation factor Tu, mitochondrial"
+245,AFUA_1G12290,NADH-ubiquinone oxidoreductase 20.8 kDa subunit
+246,AFUA_1G12332,DNA damage-responsive transcriptional repressor RPH1
+247,AFUA_1G12340,"Carnitine O-palmitoyltransferase 2, mitochondrial"
+248,AFUA_1G12530,Oleate hydroxylase
+249,AFUA_1G12610,Hsp70 chaperone Hsp88
+250,AFUA_1G12650,"3-ketoacyl-CoA thiolase, peroxisomal"
+251,AFUA_1G12800,"Isocitrate dehydrogenase [NAD] subunit 2, mitochondrial"
+252,AFUA_1G12830,Nitrate reductase NiaD
+253,AFUA_1G12890,Large ribosomal subunit protein uL18
+254,AFUA_1G12920,Glycogen phosphorylase
+255,AFUA_1G12930,G-protein complex alpha subunit GpaB
+256,AFUA_1G12940,MAP kinase SakA
+257,AFUA_1G12950,Late secretory pathway protein AVL9
+258,AFUA_1G12960,Cullin-1
+259,AFUA_1G13010,ATP-dependent helicase IRC5
+260,AFUA_1G13020,Cytoskeletal adaptor protein SagA
+261,AFUA_1G13060,Regulator of nonsense transcripts 1
+262,AFUA_1G13070,U3 small nucleolar ribonucleoprotein protein IMP4
+263,AFUA_1G13090,Multifunctional tryptophan biosynthesis protein
+264,AFUA_1G13140,G-protein complex alpha subunit GpaA/FadA
+265,AFUA_1G13195,MICOS complex subunit MIC10
+266,AFUA_1G13280,Mannose-6-phosphate isomerase
+267,AFUA_1G13300,GTP cyclohydrolase-2
+268,AFUA_1G13330,Actin-related protein 2
+269,AFUA_1G13390,Tubulin gamma chain
+270,AFUA_1G13420,Serine/threonine-protein phosphatase 2A activator 2
+271,AFUA_1G13470,Prohibitin-1
+272,AFUA_1G13480,"Cytochrome b-c1 complex subunit 8, mitochondrial"
+273,AFUA_1G13490,Spermidine synthase
+274,AFUA_1G13500,Transketolase
+275,AFUA_1G13540,GTP-binding protein
+276,AFUA_1G13570,H/ACA ribonucleoprotein complex subunit NHP2
+277,AFUA_1G13710,"Isoleucine--tRNA ligase, cytoplasmic"
+278,AFUA_1G13730,5'-3' exoribonuclease Dhp1
+279,AFUA_1G13740,Pentafunctional AROM polypeptide
+280,AFUA_1G13780,histone H4.1
+281,AFUA_1G13790,histone H3
+282,AFUA_1G13870,"Alpha-1,2-mannosyltransferase ALG9"
+283,AFUA_1G13890,U4/U6 small nuclear ribonucleoprotein PRP3
+284,AFUA_1G13900,DNA-directed RNA polymerase I subunit RPA1
+285,AFUA_1G13910,General transcription and DNA repair factor IIH helicase subunit XPD/RAD3
+286,AFUA_1G14010,AP-2 complex subunit sigma
+287,AFUA_1G14020,Diphthine methyl ester synthase
+288,AFUA_1G14030,SAGA complex subunit SPT3
+289,AFUA_1G14060,U4/U6.U5 small nuclear ribonucleoprotein component SNU23
+290,AFUA_1G14090,Histidinol-phosphate aminotransferase
+291,AFUA_1G14100,"Phosphatidate cytidylyltransferase, mitochondrial"
+292,AFUA_1G14110,"DNA-directed RNA polymerases I, II, and III subunit RPABC1"
+293,AFUA_1G14180,Multisite-specific tRNA:(cytosine-C(5))-methyltransferase
+294,AFUA_1G14200,Mitochondrial-processing peptidase subunit beta
+295,AFUA_1G14220,rRNA 2'-O-methyltransferase fibrillarin
+296,AFUA_1G14270,"Catechol 1,2-dioxygenase"
+297,AFUA_1G14290,U6 snRNA-associated Sm-like protein LSm7
+298,AFUA_1G14310,PAN2-PAN3 deadenylation complex subunit PAN3
+299,AFUA_1G14400,Glyoxylate reductase
+300,AFUA_1G14410,Large ribosomal subunit protein uL22
+301,AFUA_1G14550,"Superoxide dismutase [Mn], mitochondrial"
+302,AFUA_1G14570,Histidine biosynthesis trifunctional protein
+303,AFUA_1G14610,Phosphatidic acid phosphohydrolase
+304,AFUA_1G14630,tRNA(His) guanylyltransferase
+305,AFUA_1G14670,COMPASS component SWD1
+306,AFUA_1G14680,DNA-directed RNA polymerase II subunit RPB1
+307,AFUA_1G14710,Beta-glucosidase
+308,AFUA_1G14730,APC/C activator protein CDC20
+309,AFUA_1G14770,tRNA-dihydrouridine(47) synthase [NAD(P)(+)]
+310,AFUA_1G14850,"Short/branched chain specific acyl-CoA dehydrogenase, mitochondrial"
+311,AFUA_1G14910,Protein SSH4
+312,AFUA_1G14970,ADP-ribosylation factor-like protein 2
+313,AFUA_1G14990,ATP-dependent RNA helicase DRS1
+314,AFUA_1G15000,2-isopropylmalate synthase
+315,AFUA_1G15020,Small ribosomal subunit protein uS7
+316,AFUA_1G15030,Protein SDA1
+317,AFUA_1G15120,DNA repair and recombination protein RAD54B
+318,AFUA_1G15130,GPI-anchor transamidase
+319,AFUA_1G15170,Acyl-coenzyme A thioesterase II
+320,AFUA_1G15270,Heat shock protein 104
+321,AFUA_1G15340,Poly(A) polymerase Pap
+322,AFUA_1G15390,Coiled-coil domain-containing protein 124
+323,AFUA_1G15400,Peroxisomal targeting signal 2 receptor
+324,AFUA_1G15440,"Alpha-1,3-glucan synthase Ags3"
+325,AFUA_1G15450,Adenylosuccinate synthetase AdB
+326,AFUA_1G15500,GTP-binding protein Obg
+327,AFUA_1G15580,dTTP/UTP pyrophosphatase
+328,AFUA_1G15590,"Succinate dehydrogenase [ubiquinone] cytochrome b small subunit, mitochondrial"
+329,AFUA_1G15720,Importin subunit beta-1
+330,AFUA_1G15730,Small ribosomal subunit protein uS8
+331,AFUA_1G15760,"Phosphatidylserine decarboxylase proenzyme 1, mitochondrial"
+332,AFUA_1G15780,3-isopropylmalate dehydrogenase Leu2A
+333,AFUA_1G15790,CDP-diacylglycerol-inositol 3-phosphatidyltransferase PIS
+334,AFUA_1G15810,RNA-binding protein RSD1
+335,AFUA_1G15820,Ceramide very long chain fatty acid hydroxylase SCS7
+336,AFUA_1G15860,Coatomer subunit delta
+337,AFUA_1G15920,Ubiquitin carboxyl-terminal hydrolase 2
+338,AFUA_1G15950,MAP kinase kinase PBS2
+339,AFUA_1G15960,Glutathione reductase
+340,AFUA_1G16210,"Threonine--tRNA ligase, mitochondrial"
+341,AFUA_1G16270,xylitol dehydrogenase XdhB
+342,AFUA_1G16320,Vacuolar protein sorting-associated protein 28
+343,AFUA_1G16380,Molybdenum cofactor biosynthesis protein
+344,AFUA_1G16400,Beta-glucosidase
+345,AFUA_1G16500,GTP-binding protein GTR2
+346,AFUA_1G16523,Small ribosomal subunit protein eS25
+347,AFUA_1G16550,tRNA-dihydrouridine(16/17) synthase [NAD(P)(+)]
+348,AFUA_1G16600,Ribonuclease T2
+349,AFUA_1G16780,Dual specificity protein kinase LKH1
+350,AFUA_1G16800,Endoribonuclease YSH1
+351,AFUA_1G16820,Signal recognition particle SEC65 subunit
+352,AFUA_1G16850,Sphingolipid C4-hydroxylase SUR2
+353,AFUA_1G16950,Phosphatidylinositol:UDP-GlcNAc transferase subunit PIG-A
+354,AFUA_1G16970,ADP-ribosylation factor family protein
+355,AFUA_1G16990,Pre-mRNA-splicing factor 18
+356,AFUA_1G17140,Voltage-gated potassium channel subunit beta
+357,AFUA_1G17220,Polygalacturonase
+358,AFUA_1G17410,Beta-glucosidase M
+359,AFUA_2G00320,Delta(7)-sterol 5(6)-desaturase ERG3B
+360,AFUA_2G01010,Inositol-3-phosphate synthase
+361,AFUA_2G01030,1-aminocyclopropane-1-carboxylate deaminase
+362,AFUA_2G01040,formaldehyde dehydrogenase
+363,AFUA_2G01050,Mitochondrial import inner membrane translocase subunit TIM9
+364,AFUA_2G01090,DNA polymerase alpha-associated DNA helicase A
+365,AFUA_2G01120,Endonuclease III homolog
+366,AFUA_2G01130,Ubiquitin-conjugating enzyme E2 PEX4
+367,AFUA_2G01170,"1,3-beta-glucanosyltransferase Gel1"
+368,AFUA_2G01210,ATP-dependent RNA helicase DBP5
+369,AFUA_2G01220,GTP cyclohydrolase-2
+370,AFUA_2G01320,Sodium/potassium exporting P-type ATPase
+371,AFUA_2G01350,NAD(+) kinase
+372,AFUA_2G01360,Free methionine-R-sulfoxide reductase
+373,AFUA_2G01450,Mannan polymerase complexes subunit MNN9
+374,AFUA_2G01550,Repressor of RNA polymerase III transcription MAF1
+375,AFUA_2G01570,AP-1 complex subunit sigma-1
+376,AFUA_2G01630,"Protein UPS1, mitochondrial"
+377,AFUA_2G01640,"Tryptophan--tRNA ligase, cytoplasmic"
+378,AFUA_2G01660,Mitochondrial import receptor subunit TOM70
+379,AFUA_2G01750,Methionine aminopeptidase 2-1
+380,AFUA_2G01870,Chitin synthase A
+381,AFUA_2G01880,Low molecular weight phosphotyrosine protein phosphatase
+382,AFUA_2G01890,"5-demethoxyubiquinone hydroxylase, mitochondrial"
+383,AFUA_2G01920,Glutamine--tRNA ligase
+384,AFUA_2G02020,Formamidase FmdS
+385,AFUA_2G02050,Peptidyl-prolyl cis-trans isomerase D
+386,AFUA_2G02060,D-aminoacyl-tRNA deacylase
+387,AFUA_2G02100,"Dihydrolipoyl dehydrogenase, mitochondrial"
+388,AFUA_2G02130,Delta 8-(E)-sphingolipid desaturase
+389,AFUA_2G02150,Small ribosomal subunit protein uS10
+390,AFUA_2G02170,Structural maintenance of chromosomes protein 4
+391,AFUA_2G02220,Sterol 3-beta-glucosyltransferase
+392,AFUA_2G02230,Prefoldin subunit 3
+393,AFUA_2G02250,Allantoinase
+394,AFUA_2G02270,Small ribosomal subunit protein uS14m
+395,AFUA_2G02275,"ATP synthase subunit J, mitochondrial"
+396,AFUA_2G02320,Ribosome-associated complex subunit SSZ1
+397,AFUA_2G02430,Protein MGR2
+398,AFUA_2G02510,Target of rapamycin complex 1 subunit KOG1
+399,AFUA_2G02520,Kelch repeat-containing protein
+400,AFUA_2G02530,Casein kinase I homolog
+401,AFUA_2G02550,Phosducin-like protein
+402,AFUA_2G02560,Coatomer subunit gamma
+403,AFUA_2G02660,DNA topoisomerase 3
+404,AFUA_2G02680,Mitochondrial inner membrane m-AAA protease component YTA12
+405,AFUA_2G02700,Mitochondrial import inner membrane translocase subunit TIM14
+406,AFUA_2G02710,Ribosome biogenesis protein RLP24
+407,AFUA_2G02780,RNA-binding protein RNC1
+408,AFUA_2G02820,Protein yippee-like
+409,AFUA_2G02910,"Catechol 1,2-dioxygenase"
+410,AFUA_2G02960,Protein DOM34
+411,AFUA_2G02980,ER lumen protein-retaining receptor
+412,AFUA_2G03010,"Cytochrome c oxidase subunit 4, mitochondrial"
+413,AFUA_2G03030,Pre-mRNA-processing-splicing factor 8
+414,AFUA_2G03040,Large ribosomal subunit protein eL34B
+415,AFUA_2G03110,Alkaline phosphatase Pho8
+416,AFUA_2G03140,Peptide methionine sulfoxide reductase
+417,AFUA_2G03150,Kinesin-like protein KIP3
+418,AFUA_2G03260,RNA-binding protein 8A
+419,AFUA_2G03290,14-3-3 family protein ArtA
+420,AFUA_2G03340,rRNA-processing protein FCF1
+421,AFUA_2G03380,Large ribosomal subunit protein uL14
+422,AFUA_2G03390,Histone deacetylase RpdA/Rpd3
+423,AFUA_2G03400,Ubiquitin carboxyl-terminal hydrolase RPN11
+424,AFUA_2G03420,Mitochondrial import inner membrane translocase subunit TIM50
+425,AFUA_2G03490,Serine/threonine-protein kinase SRK1
+426,AFUA_2G03560,Histidine protein kinase NIK1
+427,AFUA_2G03580,Phenylalanine--tRNA ligase alpha subunit
+428,AFUA_2G03590,Small ribosomal subunit protein eS21
+429,AFUA_2G03610,Inosine-5'-monophosphate dehydrogenase
+430,AFUA_2G03700,3-hydroxy-3-methylglutaryl-coenzyme A reductase 1
+431,AFUA_2G03720,Peptidyl-prolyl cis-trans isomerase
+432,AFUA_2G03750,DNA repair and recombination protein RAD26
+433,AFUA_2G03760,RNA polymerase II subunit A C-terminal domain phosphatase SSU72
+434,AFUA_2G03790,Oxysterol-binding protein
+435,AFUA_2G03810,Histone deacetylase HosA
+436,AFUA_2G03820,Carboxyvinyl-carboxyphosphonate phosphorylmutase
+437,AFUA_2G03870,FK506-binding protein 2
+438,AFUA_2G03920,G1/S-specific cyclin CCN1
+439,AFUA_2G03950,Serine/threonine-protein phosphatase PpzA
+440,AFUA_2G04000,Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase
+441,AFUA_2G04010,"Alpha,alpha-trehalose-phosphate synthase [UDP-forming] 56 kDa subunit"
+442,AFUA_2G04130,Small ribosomal subunit protein uS17
+443,AFUA_2G04200,4-hydroxyphenylpyruvate dioxygenase
+444,AFUA_2G04220,"Homogentisate 1,2-dioxygenase"
+445,AFUA_2G04230,Fumarylacetoacetate hydrolase FahA
+446,AFUA_2G04270,Mitochondrial import inner membrane translocase subunit TIM17
+447,AFUA_2G04310,Argininosuccinate synthase
+448,AFUA_2G04430,Protein MAM3
+449,AFUA_2G04490,D-3-phosphoglycerate dehydrogenase
+450,AFUA_2G04520,"Hydroxyacid-oxoacid transhydrogenase, mitochondrial"
+451,AFUA_2G04620,Endoplasmic reticulum chaperone BiP
+452,AFUA_2G04630,Elongation factor 1-alpha
+453,AFUA_2G04670,Class E vacuolar protein-sorting machinery protein HSE1
+454,AFUA_2G04680,Sexual development serine/threonine kinase PakA
+455,AFUA_2G04710,Cytochrome b5
+456,AFUA_2G04740,Vacuolar protein sorting-associated protein 27
+457,AFUA_2G04780,Ribosome biogenesis protein ENP2
+458,AFUA_2G04820,Eukaryotic peptide chain release factor GTP-binding subunit
+459,AFUA_2G04870,"Pyruvate dehydrogenase E1 component subunit alpha, mitochondrial"
+460,AFUA_2G04910,Proteasome subunit beta type-2
+461,AFUA_2G04970,Kelch repeat-containing protein 3
+462,AFUA_2G05040,Membrane-bound O-acyltransferase GUP1
+463,AFUA_2G05060,"Alternative oxidase, mitochondrial"
+464,AFUA_2G05090,"Succinate dehydrogenase assembly factor 3, mitochondrial"
+465,AFUA_2G05110,Small nuclear ribonucleoprotein Sm D1
+466,AFUA_2G05340,"1,3-beta-glucanosyltransferase Gel4"
+467,AFUA_2G05420,Pre-rRNA-processing protein ESF1
+468,AFUA_2G05430,Uridine kinase
+469,AFUA_2G05440,GID complex subunit 8
+470,AFUA_2G05450,"External alternative NADH-ubiquinone oxidoreductase, mitochondrial"
+471,AFUA_2G05480,DNA-directed RNA polymerase I subunit RPA12
+472,AFUA_2G05490,Deoxyhypusine hydroxylase
+473,AFUA_2G05500,"NADH-ubiquinone oxidoreductase 21 kDa subunit, mitochondrial"
+474,AFUA_2G05510,"ATP synthase subunit f, mitochondrial"
+475,AFUA_2G05530,Histone acetyltransferase ESA1
+476,AFUA_2G05540,Pre-mRNA-splicing factor CEF1
+477,AFUA_2G05560,RNA exonuclease 4
+478,AFUA_2G05590,Ubiquitin carboxyl-terminal hydrolase L3
+479,AFUA_2G05650,"Asparagine--tRNA ligase, cytoplasmic"
+480,AFUA_2G05670,RNA-binding protein MRN1
+481,AFUA_2G05740,Rho GTPase ModA
+482,AFUA_2G05750,Agmatinase 2
+483,AFUA_2G05760,"3-oxoacyl-[acyl-carrier-protein] synthase, mitochondrial"
+484,AFUA_2G05780,mRNA-capping enzyme subunit alpha
+485,AFUA_2G05860,Calcium-transporting ATPase PmrA
+486,AFUA_2G05900,NAD-dependent protein deacetylase HST2
+487,AFUA_2G05910,Hexokinase
+488,AFUA_2G05950,13 kDa ribonucleoprotein-associated protein
+489,AFUA_2G05960,Splicing factor 3B subunit 6
+490,AFUA_2G06000,NAD-specific glutamate dehydrogenase
+491,AFUA_2G06040,Actin-interacting protein 1
+492,AFUA_2G06070,Pre-mRNA-splicing factor 6
+493,AFUA_2G06080,GTPase-activating protein GYP1
+494,AFUA_2G06090,Heterogeneous nuclear ribonucleoprotein HRP1
+495,AFUA_2G06110,Actin-related protein 4
+496,AFUA_2G06140,Uracil-DNA glycosylase
+497,AFUA_2G06150,Protein disulfide-isomerase
+498,AFUA_2G06220,Protein MPE1
+499,AFUA_2G06230,Imidazole glycerol phosphate synthase HisHF
+500,AFUA_2G06240,Deoxycytidylate deaminase
+501,AFUA_2G06250,Ubiquitin-like modifier-activating enzyme ATG7
+502,AFUA_2G06310,ATP-dependent RNA helicase DBP3
+503,AFUA_2G06320,Replication protein A 70 kDa DNA-binding subunit
+504,AFUA_2G06330,Ubiquitin carboxyl-terminal hydrolase 14
+505,AFUA_2G07350,Gamma-glutamyl phosphate reductase
+506,AFUA_2G07380,Large ribosomal subunit protein eL18
+507,AFUA_2G07410,Pre-mRNA-splicing factor SRP1
+508,AFUA_2G07420,Fimbrin
+509,AFUA_2G07460,RNA polymerase II transcriptional coactivator
+510,AFUA_2G07500,Xaa-Pro aminopeptidase PepP
+511,AFUA_2G07520,Leukotriene A4 hydrolase
+512,AFUA_2G07540,Type 2A phosphatase activator TIP41
+513,AFUA_2G07550,Serine/threonine protein kinase ARK1
+514,AFUA_2G07560,Mitochondrial inner membrane protease ATP23
+515,AFUA_2G07570,Glutamate 5-kinase
+516,AFUA_2G07620,Cystathionine beta-synthase
+517,AFUA_2G07710,Pre-mRNA-splicing factor ATP-dependent RNA helicase-like protein CDC28
+518,AFUA_2G07720,Cytochrome b5
+519,AFUA_2G07770,Ras small monomeric GTPase RasB
+520,AFUA_2G07780,"Acyl-CoA synthetase short-chain family member 3, mitochondrial"
+521,AFUA_2G07810,"Serine hydroxymethyltransferase, mitochondrial"
+522,AFUA_2G07960,eIF-2-alpha kinase activator GCN1
+523,AFUA_2G07970,Large ribosomal subunit protein eL19
+524,AFUA_2G08130,Large ribosomal subunit protein eL42
+525,AFUA_2G08150,Ubiquitin-like protein NEDD8
+526,AFUA_2G08250,Glycerol-3-phosphate dehydrogenase [NAD(+)]
+527,AFUA_2G08280,NADP-dependent malic enzyme MaeA
+528,AFUA_2G08300,DnaJ-related protein SCJ1
+529,AFUA_2G08320,U3 small nucleolar ribonucleoprotein protein IMP3
+530,AFUA_2G08390,Polyadenylation factor subunit 2
+531,AFUA_2G08420,Prenyl cysteine carboxyl methyltransferase Ste14
+532,AFUA_2G08460,tRNA pseudouridine synthase 1
+533,AFUA_2G08520,Large ribosomal subunit protein uL14m
+534,AFUA_2G08540,DNA-directed RNA polymerase II subunit RPB9
+535,AFUA_2G08550,Peptidyl-prolyl cis-trans isomerase ESS1
+536,AFUA_2G08570,Small subunit of nuclear cap-binding protein complex
+537,AFUA_2G08580,Pyridoxal 5'-phosphate synthase subunit PDX2
+538,AFUA_2G08600,1-acyl-sn-glycerol-3-phosphate acyltransferase
+539,AFUA_2G08670,Acetyl-CoA carboxylase
+540,AFUA_2G08750,Mitochondrial nuclease
+541,AFUA_2G08850,Phospholipid-transporting ATPase DRS2
+542,AFUA_2G08860,Exosome complex component RRP45
+543,AFUA_2G08870,Pre-mRNA-splicing factor CWF15
+544,AFUA_2G08970,Thiamine biosynthetic bifunctional enzyme
+545,AFUA_2G08990,Eukaryotic translation initiation factor 5
+546,AFUA_2G09010,DNA ligase 1
+547,AFUA_2G09040,Vacuolar transporter chaperone complex subunit 4
+548,AFUA_2G09060,DNA replication licensing factor MCM4
+549,AFUA_2G09090,Prohibitin-2
+550,AFUA_2G09100,Cleavage stimulation factor subunit 2
+551,AFUA_2G09130,"NADH-ubiquinone oxidoreductase 24 kDa subunit, mitochondrial"
+552,AFUA_2G09150,Adenine deaminase
+553,AFUA_2G09160,Translation initiation protein Sua5
+554,AFUA_2G09180,Coatomer subunit zeta
+555,AFUA_2G09200,Large ribosomal subunit protein eL30
+556,AFUA_2G09210,Large ribosomal subunit protein uL16
+557,AFUA_2G09230,ATP-dependent RNA helicase DHR2
+558,AFUA_2G09290,"Heat shock protein 60, mitochondrial"
+559,AFUA_2G09310,"ATP synthase subunit epsilon, mitochondrial"
+560,AFUA_2G09490,Eukaryotic translation initiation factor 4 gamma
+561,AFUA_2G09550,Biotin--protein ligase
+562,AFUA_2G09560,Mitochondrial genome maintenance protein MGM101
+563,AFUA_2G09650,"Aspartate aminotransferase, cytoplasmic"
+564,AFUA_2G09700,Superoxide dismutase 1 copper chaperone
+565,AFUA_2G09710,Serine/threonine-protein kinase PPK23
+566,AFUA_2G09740,"Protein arginine methyltransferase NDUFAF7, mitochondrial"
+567,AFUA_2G09750,CDC25-like phosphatase YCH1
+568,AFUA_2G09790,Glucose-6-phosphate isomerase
+569,AFUA_2G09810,L-galactonate dehydratase
+570,AFUA_2G09830,ADP-ribosylation factor GTPase-activating protein GLO3
+571,AFUA_2G09840,Folic acid synthesis protein FOL1
+572,AFUA_2G09870,Eukaryotic translation initiation factor 3 subunit G
+573,AFUA_2G09910,Long-chain-fatty-acid--CoA ligase 1
+574,AFUA_2G09960,"Iron-sulfur cluster biogenesis chaperone, mitochondrial"
+575,AFUA_2G10000,Antiviral helicase SKI2
+576,AFUA_2G10010,Nonsense-mediated mRNA decay protein 5
+577,AFUA_2G10070,"Carbamoyl phosphate synthase arginine-specific large chain, mitochondrial"
+578,AFUA_2G10090,Small ribosomal subunit protein uS19
+579,AFUA_2G10100,Large ribosomal subunit protein P2
+580,AFUA_2G10120,ATP-dependent (S)-NAD(P)H-hydrate dehydratase
+581,AFUA_2G10140,DNA replication licensing factor MCM7
+582,AFUA_2G10150,Peroxisomal ATPase PEX1
+583,AFUA_2G10220,Glycerol 2-dehydrogenase (NADP(+))
+584,AFUA_2G10230,Inositol oxygenase
+585,AFUA_2G10270,Serine/threonine-protein kinase TOR2
+586,AFUA_2G10300,Small ribosomal subunit protein eS17
+587,AFUA_2G10330,Pre-mRNA-splicing factor CWC25
+588,AFUA_2G10340,AP-2 complex subunit beta
+589,AFUA_2G10350,ER membrane protein complex subunit 4
+590,AFUA_2G10360,Kynureninase
+591,AFUA_2G10370,Iron-sulfur assembly protein 2
+592,AFUA_2G10380,Eukaryotic translation initiation factor 3 subunit L
+593,AFUA_2G10420,"Branched-chain-amino-acid aminotransferase, cytosolic"
+594,AFUA_2G10440,Small ribosomal subunit protein uS11
+595,AFUA_2G10450,Prephenate dehydrogenase [NADP(+)]
+596,AFUA_2G10500,Small ribosomal subunit protein uS9
+597,AFUA_2G10510,Large ribosomal subunit protein uL13m
+598,AFUA_2G10520,Urate oxidase UaZ
+599,AFUA_2G10610,Coatomer subunit beta'
+600,AFUA_2G10620,Serine/threonine-protein kinase YPK1
+601,AFUA_2G10640,Transcriptional adapter 2
+602,AFUA_2G10730,DNA polymerase alpha catalytic subunit
+603,AFUA_2G10740,Hydroxymethylpyrimidine/phosphomethylpyrimidine kinase THI20
+604,AFUA_2G10750,ATP-dependent RNA helicase DBP2
+605,AFUA_2G10820,ATP-dependent helicase HRQ1
+606,AFUA_2G10855,Phosphoribosylglycinamide formyltransferase
+607,AFUA_2G10920,"Enoyl-CoA hydratase, mitochondrial"
+608,AFUA_2G10930,Protein RER1
+609,AFUA_2G10980,ADP-ribosylation factor-like protein 1
+610,AFUA_2G11010,"Dihydroorotate dehydrogenase (quinone), mitochondrial"
+611,AFUA_2G11090,DNA replication complex GINS protein PSF2
+612,AFUA_2G11110,Structural maintenance of chromosomes protein 2
+613,AFUA_2G11140,Large ribosomal subunit protein uL29m
+614,AFUA_2G11150,Secretory pathway GDP dissociation inhibitor
+615,AFUA_2G11240,UDP-N-acetylglucosamine--dolichyl-phosphate N-acetylglucosaminephosphotransferase
+616,AFUA_2G11260,3-isopropylmalate dehydratase
+617,AFUA_2G11270,"Alpha-1,3-glucan synthase Ags2"
+618,AFUA_2G11290,Orotate phosphoribosyltransferase
+619,AFUA_2G11300,Methylenetetrahydrofolate reductase 2
+620,AFUA_2G11330,V-type proton ATPase subunit F
+621,AFUA_2G11340,Phosphatidylglycerol/phosphatidylinositol transfer protein
+622,AFUA_2G11350,"3-ketoacyl-CoA thiolase, peroxisomal"
+623,AFUA_2G11380,KRR1 small subunit processome component
+624,AFUA_2G11430,Spindle pole body component ALP4
+625,AFUA_2G11440,Proteasome subunit alpha type-5
+626,AFUA_2G11510,Nucleolar GTP-binding protein 1
+627,AFUA_2G11540,Very-long-chain 3-oxoacyl-CoA reductase
+628,AFUA_2G11560,Galactose-1-phosphate uridylyltransferase
+629,AFUA_2G11680,5'-deoxynucleotidase HDD1
+630,AFUA_2G11700,Bis(5'-adenosyl)-triphosphatase
+631,AFUA_2G11720,Zinc-regulated GTPase metalloprotein activator 1
+632,AFUA_2G11740,"Lon protease homolog, mitochondrial"
+633,AFUA_2G11750,"DnaJ homolog 1, mitochondrial"
+634,AFUA_2G11800,U6 snRNA-associated Sm-like protein LSm1
+635,AFUA_2G11850,Large ribosomal subunit protein uL3
+636,AFUA_2G11900,Pyruvate dehydrogenase kinase
+637,AFUA_2G11940,Adenylosuccinate lyase
+638,AFUA_2G12020,U6 snRNA-associated Sm-like protein LSm4
+639,AFUA_2G12110,Sporulation protein RMD1
+640,AFUA_2G12180,VIP36-like protein
+641,AFUA_2G12190,Mitochondrial import inner membrane translocase subunit TIM13
+642,AFUA_2G12200,cAMP-dependent protein kinase catalytic subunit PkaC1
+643,AFUA_2G12220,Replication factor C subunit 1
+644,AFUA_2G12230,Large ribosomal subunit protein uL16m
+645,AFUA_2G12250,Replication factor C subunit 5
+646,AFUA_2G12260,"Cytochrome c oxidase assembly protein COX11, mitochondrial"
+647,AFUA_2G12390,DBF2 kinase activator protein MOB1
+648,AFUA_2G12400,"ATP synthase subunit 5, mitochondrial"
+649,AFUA_2G12440,2-(3-amino-3-carboxypropyl)histidine synthase subunit 1
+650,AFUA_2G12450,"Hydroxymethylglutaryl-CoA lyase, mitochondrial"
+651,AFUA_2G12460,"Succinate dehydrogenase assembly factor 4, mitochondrial"
+652,AFUA_2G12470,"Acetylornithine aminotransferase, mitochondrial"
+653,AFUA_2G12480,Protein BTN1
+654,AFUA_2G12530,"Carnitine O-acetyltransferase, mitochondrial"
+655,AFUA_2G12580,Translocation protein SEC62
+656,AFUA_2G12610,"NADPH:adrenodoxin oxidoreductase, mitochondrial"
+657,AFUA_2G12850,"1,3-beta-glucanosyltransferase Gel3"
+658,AFUA_2G12870,Alpha-soluble NSF attachment protein
+659,AFUA_2G12880,Vesicular-fusion protein Sec17
+660,AFUA_2G12890,U3 small nucleolar RNA-associated protein 7
+661,AFUA_2G12900,Urease accessory protein UreG
+662,AFUA_2G12990,Peptidyl-prolyl cis-trans isomerase E
+663,AFUA_2G13010,"Cytochrome c oxidase subunit 12, mitochondrial"
+664,AFUA_2G13030,"Phenylalanine--tRNA ligase, mitochondrial"
+665,AFUA_2G13040,"GrpE protein homolog, mitochondrial"
+666,AFUA_2G13080,Diphosphoinositol polyphosphate phosphohydrolase DDP1
+667,AFUA_2G13090,DNA-directed RNA polymerase II subunit RPB3
+668,AFUA_2G13110,Cytochrome c
+669,AFUA_2G13140,Meiosis induction protein kinase IME2/SME1
+670,AFUA_2G13240,V-type proton ATPase subunit B
+671,AFUA_2G13250,Bifunctional tryptophan synthase TrpB
+672,AFUA_2G13320,Mitochondrial fission 1 protein
+673,AFUA_2G13370,Phosphatidylinositol 4-kinase LSB6
+674,AFUA_2G13400,Membrane protein TMS1
+675,AFUA_2G13430,Chitin synthase
+676,AFUA_2G13440,Chitin synthase ChsE
+677,AFUA_2G13512,Vacuole membrane protein HFL1
+678,AFUA_2G13530,Elongation factor 2
+679,AFUA_2G13570,Ribosome biogenesis protein BMS1
+680,AFUA_2G13630,Aromatic amino acid aminotransferase
+681,AFUA_2G13680,Calcium/calmodulin-dependent protein kinase kinase CmkA
+682,AFUA_2G13690,Ubiquitin-conjugating enzyme E2 W
+683,AFUA_2G13710,"NADH-ubiquinone oxidoreductase 49 kDa subunit, mitochondrial"
+684,AFUA_2G13720,DNA-directed RNA polymerases I and III subunit RPAC1
+685,AFUA_2G13730,NEDD8-activating enzyme E1 catalytic subunit
+686,AFUA_2G13780,Splicing factor 3B subunit 1
+687,AFUA_2G13860,Histone H4.2
+688,AFUA_2G13910,Emopamil-binding protein-like
+689,AFUA_2G13980,ATP-dependent RNA helicase DBP9
+690,AFUA_2G14030,"Arginine--tRNA ligase, cytoplasmic"
+691,AFUA_2G14060,NADH-cytochrome b5 reductase 1
+692,AFUA_2G14080,Structural maintenance of chromosomes protein 3
+693,AFUA_2G14090,Serine/threonine-protein kinase RIO1
+694,AFUA_2G14110,E3 ubiquitin ligase complex SCF subunit SconB
+695,AFUA_2G14160,Sorting nexin-41
+696,AFUA_2G14190,Mitochondrial import inner membrane translocase subunit TIM23
+697,AFUA_2G14210,"Dihydroxy-acid dehydratase, mitochondrial"
+698,AFUA_2G14250,NCT transcriptional regulatory complex subunit A
+699,AFUA_2G14270,Coronin-like protein
+700,AFUA_2G14280,Kinesin-like protein KlpA
+701,AFUA_2G14670,Eukaryotic translation initiation factor 3 subunit D
+702,AFUA_2G14810,"Prolyl 3,4-dihydroxylase TPA1"
+703,AFUA_2G14960,Monothiol glutaredoxin-4
+704,AFUA_2G14990,Tubulin alpha-2 chain
+705,AFUA_2G15050,Rho-GTPase-activating protein LRG1
+706,AFUA_2G15070,26S proteasome regulatory subunit RPN10
+707,AFUA_2G15080,Trafficking protein particle complex subunit 23
+708,AFUA_2G15190,Ribulose-phosphate 3-epimerase
+709,AFUA_2G15210,U6 snRNA-associated Sm-like protein LSm2
+710,AFUA_2G15430,NADP-dependent mannitol dehydrogenase
+711,AFUA_2G15500,Small nuclear ribonucleoprotein F
+712,AFUA_2G15550,Gephyrin
+713,AFUA_2G15560,V-type proton ATPase subunit c''
+714,AFUA_2G15570,RAS small monomeric GTPase Rab6
+715,AFUA_2G15590,Sulfite reductase [NADPH] subunit beta
+716,AFUA_2G15680,Transcription initiation factor IIA subunit 2
+717,AFUA_2G15760,Ubiquitin-activating enzyme E1 1
+718,AFUA_2G15770,Glutathione S-transferase omega-like 2
+719,AFUA_2G15790,RNA polymerase II holoenzyme cyclin-like subunit
+720,AFUA_2G15910,Mannan polymerase II complex ANP1 subunit
+721,AFUA_2G15940,tRNA-aminoacylation cofactor ARC1
+722,AFUA_2G15960,Cytosolic Fe-S cluster assembly factor NBP35
+723,AFUA_2G15970,Phosphatidylethanolamine N-methyltransferase
+724,AFUA_2G16010,Proline--tRNA ligase
+725,AFUA_2G16020,T-complex protein 1 subunit alpha
+726,AFUA_2G16090,Importin subunit alpha
+727,AFUA_2G16150,G2/mitotic-specific cyclin-4
+728,AFUA_2G16200,Uracil phosphoribosyltransferase
+729,AFUA_2G16250,COP9 signalosome subunit CsnE
+730,AFUA_2G16280,"Glutamate--tRNA ligase, mitochondrial"
+731,AFUA_2G16290,Mitochondrial protein import protein MAS5
+732,AFUA_2G16360,Pseudouridylate synthase
+733,AFUA_2G16370,Large ribosomal subunit protein eL32
+734,AFUA_2G16470,Ubiquitin-conjugating enzyme E2 6
+735,AFUA_2G16600,DNA polymerase delta catalytic subunit
+736,AFUA_2G16640,Polyphosphoinositide phosphatase Fig4
+737,AFUA_2G16700,Postreplication repair E3 ubiquitin-protein ligase RAD18
+738,AFUA_2G16750,60S ribosomal export protein NMD3
+739,AFUA_2G16790,"Dolichyl pyrophosphate Glc1Man9GlcNAc2 alpha-1,3-glucosyltransferase"
+740,AFUA_2G16840,SWI/SNF chromatin-remodeling complex subunit SNF5
+741,AFUA_2G16880,Large ribosomal subunit protein eL43
+742,AFUA_2G17060,60S ribosome subunit biogenesis protein NIP7
+743,AFUA_2G17110,Cell division control protein 48
+744,AFUA_2G17450,"3-hydroxyanthranilate 3,4-dioxygenase"
+745,AFUA_3G00110,Succinate-semialdehyde dehydrogenase [NADP(+)]
+746,AFUA_3G00520,NAD-dependent protein deacetylase HST2
+747,AFUA_3G00650,Leucine aminopeptidase 2
+748,AFUA_3G00810,"3-beta-hydroxysteroid-Delta(8),Delta(7)-isomerase"
+749,AFUA_3G00910,"Alpha-1,3-glucan synthase Ags1"
+750,AFUA_3G01110,GMP synthase
+751,AFUA_3G01450,"2-oxoisovalerate dehydrogenase subunit beta, mitochondrial"
+752,AFUA_3G02240,Aromatic-L-amino-acid decarboxylase
+753,AFUA_3G02290,Arylsulfatase
+754,AFUA_3G02320,DNA/RNA-binding protein KIN17
+755,AFUA_3G02340,NCT transcriptional regulatory complex subunit B
+756,AFUA_3G02380,Splicing factor U2AF 23 kDa subunit
+757,AFUA_3G03970,NADH-cytochrome b5 reductase 1
+758,AFUA_3G04030,"Succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondrial"
+759,AFUA_3G04110,Bystin
+760,AFUA_3G04130,"Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial"
+761,AFUA_3G04150,"Enoyl-[acyl-carrier-protein] reductase, mitochondrial"
+762,AFUA_3G04170,"Pyruvate dehydrogenase E1 component subunit beta, mitochondrial"
+763,AFUA_3G04210,Fatty acid synthase subunit alpha
+764,AFUA_3G04220,Fatty acid synthase subunit beta
+765,AFUA_3G04250,Inositol monophosphatase
+766,AFUA_3G04260,Protein HGH1 homolog
+767,AFUA_3G04300,Inositol hexakisphosphate and diphosphoinositol-pentakisphosphate kinase
+768,AFUA_3G05350,Histone H2B
+769,AFUA_3G05360,Histone H2A
+770,AFUA_3G05370,"Dihydrolipoyllysine-residue succinyltransferase component of 2-oxoglutarate dehydrogenase complex, mitochondrial"
+771,AFUA_3G05390,Protein-L-isoaspartate(D-aspartate) O-methyltransferase
+772,AFUA_3G05410,"Peptide chain release factor 1, mitochondrial"
+773,AFUA_3G05430,ATP-dependent RNA helicase DHH1
+774,AFUA_3G05450,Cys-Gly metallodipeptidase DUG1
+775,AFUA_3G05480,Cystathionine gamma-synthase
+776,AFUA_3G05520,Oxysterol-binding protein-like protein 1
+777,AFUA_3G05530,Condensin complex subunit 1
+778,AFUA_3G05540,Cell division control protein 7
+779,AFUA_3G05560,Chromatin structure-remodeling complex subunit RSC1
+780,AFUA_3G05600,Large ribosomal subunit protein uL15
+781,AFUA_3G05630,Phospholipase D1
+782,AFUA_3G05650,Trehalose-phosphatase
+783,AFUA_3G05730,Nicotinate-nucleotide pyrophosphorylase [carboxylating]
+784,AFUA_3G05860,Exosome complex component RRP4
+785,AFUA_3G05880,Oxysterol-binding protein homolog 3
+786,AFUA_3G05890,Transcription elongation factor SPT6
+787,AFUA_3G05900,MAP kinase kinase Ste7
+788,AFUA_3G05970,Eukaryotic translation initiation factor 2A
+789,AFUA_3G06010,Ribosomal RNA small subunit methyltransferase NEP1
+790,AFUA_3G06030,Ubiquitin-conjugating enzyme E2 4
+791,AFUA_3G06040,"Glutaryl-CoA dehydrogenase, mitochondrial"
+792,AFUA_3G06060,Flap endonuclease 1
+793,AFUA_3G06070,Histone H1
+794,AFUA_3G06080,Phosphatidylinositol 4-phosphate 5-kinase MSS4
+795,AFUA_3G06110,26S proteasome regulatory subunit RPN3
+796,AFUA_3G06120,"Hexaprenyl pyrophosphate synthase, mitochondrial"
+797,AFUA_3G06140,Protein SLA2
+798,AFUA_3G06210,Phosphoribosylaminoimidazole-succinocarboxamide synthase
+799,AFUA_3G06260,Eukaryotic translation initiation factor eIF-1
+800,AFUA_3G06300,Rho GTPase RacA
+801,AFUA_3G06340,Cytochrome oxidase assembly protein SHY1
+802,AFUA_3G06370,Mitochondrial intermembrane space cysteine motif-containing protein MIX17
+803,AFUA_3G06410,"Ubiquinone biosynthesis protein COQ4, mitochondrial"
+804,AFUA_3G06440,Pre-mRNA-splicing factor SAP114
+805,AFUA_3G06450,Dolichyl-phosphate-mannose--protein mannosyltransferase 1
+806,AFUA_3G06492,Protein ISD11
+807,AFUA_3G06530,Sulfate adenylyltransferase
+808,AFUA_3G06540,Phosphoadenosine phosphosulfate reductase
+809,AFUA_3G06550,Phosphoserine phosphatase
+810,AFUA_3G06560,"Lipoyl synthase, mitochondrial"
+811,AFUA_3G06600,Uroporphyrinogen-III C-methyltransferase
+812,AFUA_3G06610,26S proteasome regulatory subunit RPN5
+813,AFUA_3G06640,Small ribosomal subunit protein eS27
+814,AFUA_3G06660,Protein NipSnap
+815,AFUA_3G06690,Rho GTPase Rho3
+816,AFUA_3G06700,COP9 signalosome complex subunit 2
+817,AFUA_3G06760,Large ribosomal subunit protein eL37
+818,AFUA_3G06770,Pre-mRNA-splicing factor SLU7
+819,AFUA_3G06780,DNA polymerase zeta catalytic subunit
+820,AFUA_3G06830,Aspartate-semialdehyde dehydrogenase
+821,AFUA_3G06840,Small ribosomal subunit protein eS4
+822,AFUA_3G06880,Sorting nexin-3
+823,AFUA_3G06901,Protein transport protein Sec61 subunit gamma
+824,AFUA_3G06960,Large ribosomal subunit protein eL21
+825,AFUA_3G06970,Small ribosomal subunit protein uS4
+826,AFUA_3G07150,Succinate-semialdehyde dehydrogenase [NADP(+)]
+827,AFUA_3G07180,Pantothenate kinase CAB1
+828,AFUA_3G07200,ATP-dependent RNA helicase DED1
+829,AFUA_3G07230,Phosphopantothenate--cysteine ligase CAB2
+830,AFUA_3G07360,"Protein SCO1, mitochondrial"
+831,AFUA_3G07370,Molybdopterin synthase catalytic subunit
+832,AFUA_3G07430,Peptidyl-prolyl cis-trans isomerase
+833,AFUA_3G07590,Integral membrane protein SED5
+834,AFUA_3G07640,Plasma membrane H+-ATPase Pma1
+835,AFUA_3G07680,Ran GTPase-activating protein 1
+836,AFUA_3G07700,"Dolichyl pyrophosphate Man9GlcNAc2 alpha-1,3-glucosyltransferase"
+837,AFUA_3G07790,Argininosuccinate lyase
+838,AFUA_3G07810,"Succinate dehydrogenase [ubiquinone] flavoprotein subunit, mitochondrial"
+839,AFUA_3G07820,26S proteasome regulatory subunit 7
+840,AFUA_3G07830,T-complex protein 1 subunit delta
+841,AFUA_3G07850,Pheromone maturation dipeptidyl aminopeptidase DapB
+842,AFUA_3G07910,UDP-glucose 4-epimerase
+843,AFUA_3G08000,Peroxisomal ATPase PEX6
+844,AFUA_3G08030,tRNA (guanine(37)-N(1))-methyltransferase
+845,AFUA_3G08090,Ribosome biogenesis protein NSA2
+846,AFUA_3G08140,Oxaloacetate tautomerase FMP41
+847,AFUA_3G08160,ATP-dependent RNA helicase eIF4A
+848,AFUA_3G08200,Alpha-mannosidase
+849,AFUA_3G08240,Glycerophosphocholine acyltransferase 1
+850,AFUA_3G08260,Structural maintenance of chromosomes protein 1
+851,AFUA_3G08280,Fizzy-related protein homolog
+852,AFUA_3G08290,Aspartyl aminopeptidase
+853,AFUA_3G08300,Replication factor C subunit 2
+854,AFUA_3G08310,4-nitrophenylphosphatase
+855,AFUA_3G08330,ATP-dependent Clp protease proteolytic subunit
+856,AFUA_3G08380,Inorganic pyrophosphatase
+857,AFUA_3G08390,tRNA-dihydrouridine(20) synthase [NAD(P)+]
+858,AFUA_3G08460,Large ribosomal subunit protein eL33
+859,AFUA_3G08470,Glucose-6-phosphate 1-dehydrogenase
+860,AFUA_3G08590,Mitochondrial import protein 2
+861,AFUA_3G08600,Eukaryotic translation initiation factor 2 subunit beta
+862,AFUA_3G08630,Multiprotein-bridging factor 1
+863,AFUA_3G08640,Eukaryotic translation initiation factor 3 subunit I
+864,AFUA_3G08650,Formate--tetrahydrofolate ligase
+865,AFUA_3G08660,"Isocitrate dehydrogenase [NADP], mitochondrial"
+866,AFUA_3G08750,Vacuolar import and degradation protein 27
+867,AFUA_3G08770,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 13
+868,AFUA_3G08820,Glucosylceramidase
+869,AFUA_3G08840,Coatomer subunit alpha
+870,AFUA_3G08850,Mitochondrial FAD-linked sulfhydryl oxidase ERV1
+871,AFUA_3G08970,AP-1 complex subunit beta-1
+872,AFUA_3G08980,Threonine synthase
+873,AFUA_3G09020,DNA primase small subunit
+874,AFUA_3G09320,"Serine hydroxymethyltransferase, cytosolic"
+875,AFUA_3G09350,Prefoldin subunit 6
+876,AFUA_3G09360,Vacuolar protein sorting-associated protein 4
+877,AFUA_3G09550,Calcium/calmodulin-dependent protein kinase kinase CmkB
+878,AFUA_3G09560,DNA polymerase epsilon catalytic subunit A
+879,AFUA_3G09590,T-complex protein 1 subunit zeta
+880,AFUA_3G09600,Nucleolar protein 56
+881,AFUA_3G09630,"Asparagine--tRNA ligase, mitochondrial"
+882,AFUA_3G09740,Protein CWH43
+883,AFUA_3G09800,Alpha-adducin
+884,AFUA_3G09850,DNA mismatch repair protein MSH2
+885,AFUA_3G09860,Phosphatidylinositol N-acetylglucosaminyltransferase subunit GPI1
+886,AFUA_3G09900,GTPase activating protein Sar1
+887,AFUA_3G09940,N-alpha-acetyltransferase 30
+888,AFUA_3G09950,Phospholipid:diacylglycerol acyltransferase
+889,AFUA_3G09960,Inositol phosphorylceramide synthase catalytic subunit AUR1
+890,AFUA_3G10000,cAMP-dependent protein kinase regulatory subunit PkaR
+891,AFUA_3G10080,Serine/threonine-protein kinase PSK1
+892,AFUA_3G10100,Pre-mRNA-splicing factor SRP2
+893,AFUA_3G10110,"Electron transfer flavoprotein-ubiquinone oxidoreductase, mitochondrial"
+894,AFUA_3G10120,TATA-box-binding protein
+895,AFUA_3G10220,Tubulin--tyrosine ligase PBY1
+896,AFUA_3G10300,Galactokinase
+897,AFUA_3G10310,"Acetolactate synthase catalytic subunit, mitochondrial"
+898,AFUA_3G10340,Rho GTPase Rho 2
+899,AFUA_3G10360,Vacuolar protein sorting-associated protein 35
+900,AFUA_3G10400,Dolichol-phosphate mannosyltransferase subunit 1
+901,AFUA_3G10460,Nuclear transport factor 2
+902,AFUA_3G10490,Damage response protein 1
+903,AFUA_3G10510,Translation machinery-associated protein 7
+904,AFUA_3G10520,Serine/threonine-protein kinase PRP4
+905,AFUA_3G10530,Serine/threonine-protein kinase RAN1
+906,AFUA_3G10570,ADIPOR-like receptor IZH2
+907,AFUA_3G10600,Golgi apparatus membrane protein TVP18
+908,AFUA_3G10620,Transcription initiation factor IIB
+909,AFUA_3G10660,Hydroxymethylglutaryl-CoA synthase ERG13B
+910,AFUA_3G10690,Calcium-transporting ATPase 2
+911,AFUA_3G10710,"Arginine-hydroxylase NDUFAF5, mitochondrial"
+912,AFUA_3G10730,Small ribosomal subunit protein eS7
+913,AFUA_3G10740,Rab GTPase Vps21/Ypt51
+914,AFUA_3G10840,Branchpoint-bridging protein
+915,AFUA_3G10890,ATP-dependent RNA helicase DBP8
+916,AFUA_3G11030,Histone chaperone ASF1
+917,AFUA_3G11070,Pyruvate decarboxylase
+918,AFUA_3G11140,DNA ligase 1
+919,AFUA_3G11260,Ubiquitin-ribosomal protein eS31 fusion protein
+920,AFUA_3G11300,Proteasome subunit alpha type-1
+921,AFUA_3G11320,Spindle pole body component ALP6
+922,AFUA_3G11350,ATPase GET3
+923,AFUA_3G11360,Eukaryotic translation initiation factor 3 subunit E
+924,AFUA_3G11390,26S proteasome regulatory subunit 6B
+925,AFUA_3G11400,Aspartic endopeptidase Pep2
+926,AFUA_3G11430,Arginase
+927,AFUA_3G11610,Non-histone chromosomal protein 6
+928,AFUA_3G11640,Homoserine dehydrogenase
+929,AFUA_3G11690,Fructose-bisphosphate aldolase
+930,AFUA_3G11710,"Saccharopine dehydrogenase [NAD(+), L-lysine-forming]"
+931,AFUA_3G11750,Oxysterol-binding protein homolog 4
+932,AFUA_3G11820,"Oligoribonuclease, mitochondrial"
+933,AFUA_3G11830,Phosphoglucomutase PgmA
+934,AFUA_3G11860,Protein BIM1
+935,AFUA_3G12080,ADP-ribosylation factor 6
+936,AFUA_3G12250,Tyrosine-protein phosphatase CdcA
+937,AFUA_3G12270,Glutathione peroxidase-like peroxiredoxin HYR1
+938,AFUA_3G12280,Translin
+939,AFUA_3G12290,Pre-mRNA splicing factor Dim1
+940,AFUA_3G12300,Large ribosomal subunit protein eL22
+941,AFUA_3G12350,Plasma membrane proteolipid 3
+942,AFUA_3G12370,V-type proton ATPase subunit c
+943,AFUA_3G12400,G protein complex alpha subunit GanA
+944,AFUA_3G12480,Conidiophore development protein HymA
+945,AFUA_3G12490,protein arginine methyltransferase RmtB
+946,AFUA_3G12510,Vesicular-fusion protein SEC18
+947,AFUA_3G12560,Allantoicase
+948,AFUA_3G12600,Beta-glucosidase
+949,AFUA_3G12640,"Serine--tRNA ligase, mitochondrial"
+950,AFUA_3G12670,Serine/threonine-protein kinase PKH2
+951,AFUA_3G12840,Signal peptidase complex catalytic subunit SEC11
+952,AFUA_3G12970,Protein PNS1
+953,AFUA_3G13000,Mitochondrial chaperone BCS1
+954,AFUA_3G13030,T-complex protein 1 subunit gamma
+955,AFUA_3G13120,Porphobilinogen deaminase
+956,AFUA_3G13270,CTP-dependent diacylglycerol kinase 1
+957,AFUA_3G13280,ATP-dependent rRNA helicase SPB4
+958,AFUA_3G13320,Small ribosomal subunit protein uS2
+959,AFUA_3G13370,Ubiquitin-like modifier HUB1
+960,AFUA_3G13380,Ribose-phosphate pyrophosphokinase 5
+961,AFUA_3G13390,V-type proton ATPase subunit d
+962,AFUA_3G13400,Nucleolar protein 58
+963,AFUA_3G13440,Stomatin family protein
+964,AFUA_3G13480,Eukaryotic translation initiation factor 2 subunit alpha
+965,AFUA_3G13790,Endoplasmic reticulum transmembrane helix translocase SpfA
+966,AFUA_3G13850,ADP-ribose glycohydrolase MACROD1
+967,AFUA_3G13900,Glutamate--cysteine ligase
+968,AFUA_3G13940,Pheromone-regulated membrane protein 10
+969,AFUA_3G13970,Phosphatidylserine decarboxylase proenzyme 2
+970,AFUA_3G13990,Serine/threonine-protein kinase SSN3
+971,AFUA_3G14010,DNA replication licensing factor MCM2
+972,AFUA_3G14060,Palmitoyl-protein thioesterase precursor
+973,AFUA_3G14140,Metacaspase CasB
+974,AFUA_3G14230,Reduced viability upon starvation protein 167
+975,AFUA_3G14240,"Cysteine desulfurase, mitochondrial"
+976,AFUA_3G14290,EKC/KEOPS complex subunit BUD32
+977,AFUA_3G14320,Protein SLY1
+978,AFUA_3G14340,Mitotic spindle checkpoint component MAD2
+979,AFUA_3G14350,"Translation factor GUF1, mitochondrial"
+980,AFUA_3G14370,DNA-directed RNA polymerase III subunit RPC1
+981,AFUA_3G14420,Chitin synthase ChsG
+982,AFUA_3G14430,NEDD8-conjugating enzyme UBC12
+983,AFUA_3G14490,"Ketol-acid reductoisomerase, mitochondrial"
+984,AFUA_3G14520,"Delta(3,5)-Delta(2,4)-dienoyl-CoA isomerase, mitochondrial"
+985,AFUA_3G14550,General transcription and DNA repair factor IIH subunit TFB5
+986,AFUA_3G14680,Lysophospholipase Plb3
+987,AFUA_3G14850,Catabolic 3-dehydroquinase 2
+988,AFUA_4G00960,ATP-dependent 6-phosphofructokinase
+989,AFUA_4G00970,IMP-specific 5'-nucleotidase 1
+990,AFUA_4G02980,N-acetyltransferase ATS1
+991,AFUA_4G03000,Lysophospholipase NTE1
+992,AFUA_4G03020,Actin-related protein 5
+993,AFUA_4G03030,Chromatin-remodeling complex subunit IES6
+994,AFUA_4G03040,Protein transport protein GOT1
+995,AFUA_4G03070,RQC trigger complex helicase SLH1
+996,AFUA_4G03100,Ras-like GTP-binding protein
+997,AFUA_4G03120,L-lactate dehydrogenase (cytochrome)
+998,AFUA_4G03140,Serine/threonine-protein kinase SKY1
+999,AFUA_4G03190,"Alpha,alpha-trehalose-phosphate synthase [UDP-forming] 56 kDa subunit"
+1000,AFUA_4G03390,Aquaporin
+1001,AFUA_4G03630,Sterol 24-C-methyltransferase ERG6
+1002,AFUA_4G03640,Pre-mRNA-splicing factor SLT11
+1003,AFUA_4G03650,Zuotin
+1004,AFUA_4G03760,Glycine dehydrogenase
+1005,AFUA_4G03770,Guanine deaminase
+1006,AFUA_4G03840,DNA repair and recombination protein RAD26
+1007,AFUA_4G03850,Dual specificity protein kinase YAK1
+1008,AFUA_4G03860,Eukaryotic translation initiation factor 3 subunit C
+1009,AFUA_4G03870,Vacuolar-sorting protein SNF8
+1010,AFUA_4G03880,Large ribosomal subunit protein uL30
+1011,AFUA_4G03900,Peroxisomal hydratase-dehydrogenase-epimerase
+1012,AFUA_4G03950,Cystathionine beta-lyase
+1013,AFUA_4G03970,GPI ethanolamine phosphate transferase 1
+1014,AFUA_4G03990,Outer mitochondrial transmembrane helix translocase
+1015,AFUA_4G04020,FK506-binding protein 1B
+1016,AFUA_4G04030,Histidinol-phosphatase
+1017,AFUA_4G04110,Protein THP3
+1018,AFUA_4G04130,Protein AFG1
+1019,AFUA_4G04180,Chitin synthase B
+1020,AFUA_4G04210,Leucine aminopeptidase 1
+1021,AFUA_4G04260,Queuine tRNA-ribosyltransferase catalytic subunit
+1022,AFUA_4G04270,Thymidylate synthase
+1023,AFUA_4G04300,Pyridoxal phosphate homeostasis protein
+1024,AFUA_4G04310,AP-2 complex subunit alpha
+1025,AFUA_4G04350,RNA helicase aquarius
+1026,AFUA_4G04360,General transcription and DNA repair factor IIH subunit TFB2
+1027,AFUA_4G04410,"Hydroxyacyl-coenzyme A dehydrogenase, mitochondrial"
+1028,AFUA_4G04460,Large ribosomal subunit protein eL13
+1029,AFUA_4G04520,"Succinate--CoA ligase [ADP-forming] subunit beta, mitochondrial"
+1030,AFUA_4G04550,Xanthine phosphoribosyltransferase 1
+1031,AFUA_4G04600,Holocytochrome-c synthase
+1032,AFUA_4G04612,Ubiquitin-conjugating enzyme E2 6
+1033,AFUA_4G04660,26S proteasome regulatory subunit 8
+1034,AFUA_4G04680,D-ribulokinase FGGY
+1035,AFUA_4G04740,Guanine nucleotide exchange factor SRM1
+1036,AFUA_4G04810,Rab GTPase SrgA
+1037,AFUA_4G04820,C-4 methylsterol oxidase ERG25B
+1038,AFUA_4G05830,Methylthioribose-1-phosphate isomerase
+1039,AFUA_4G05860,"NADH-ubiquinone oxidoreductase 19.3 kDa subunit, mitochondrial"
+1040,AFUA_4G05920,"Protein UPS2, mitochondrial"
+1041,AFUA_4G05940,Ethanolamine-phosphate cytidylyltransferase
+1042,AFUA_4G05950,"Monothiol glutaredoxin-5, mitochondrial"
+1043,AFUA_4G05960,Phosphopantothenoylcysteine decarboxylase
+1044,AFUA_4G05970,"4-hydroxybenzoate polyprenyltransferase, mitochondrial"
+1045,AFUA_4G06000,Large ribosomal subunit protein uL3m
+1046,AFUA_4G06090,Protein transport protein SEC13
+1047,AFUA_4G06160,"Branched-chain amino acid aminotransferase, cytosolic"
+1048,AFUA_4G06180,Casein kinase II subunit beta-1
+1049,AFUA_4G06250,Nucleolar protein 4
+1050,AFUA_4G06260,Mating-type switch/DNA repair protein Swi10/Rad10
+1051,AFUA_4G06380,Sterol carrier protein
+1052,AFUA_4G06620,NADP-specific glutamate dehydrogenase
+1053,AFUA_4G06690,Ribonucleoside-diphosphate reductase large chain
+1054,AFUA_4G06750,Serine-threonine kinase SepH
+1055,AFUA_4G06760,ABC1 family protein MCP2
+1056,AFUA_4G06770,"Iron sulfur cluster assembly protein 1, mitochondrial"
+1057,AFUA_4G06790,Cytochrome b-c1 complex subunit 7
+1058,AFUA_4G06830,SUMO-conjugating enzyme UBC9
+1059,AFUA_4G06850,Oxalate--CoA ligase
+1060,AFUA_4G06870,Mannan polymerase II complex ANP1 subunit
+1061,AFUA_4G06890,Sterol 14-alpha demethylase Cyp51A
+1062,AFUA_4G06900,Asparagine synthetase [glutamine-hydrolyzing]
+1063,AFUA_4G06910,Outer mitochondrial membrane protein porin
+1064,AFUA_4G06930,Methionine aminopeptidase 2-2
+1065,AFUA_4G06940,Sphingolipid delta(4)-desaturase
+1066,AFUA_4G07010,Deoxyribonuclease Tat-D
+1067,AFUA_4G07020,L-lactate dehydrogenase (cytochrome)
+1068,AFUA_4G07060,"Acyl-coenzyme A thioesterase 9, mitochondrial"
+1069,AFUA_4G07130,Diphosphomevalonate decarboxylase ERG19
+1070,AFUA_4G07160,ATP-dependent RNA helicase DOB1
+1071,AFUA_4G07190,"Ornithine carbamoyltransferase, mitochondrial"
+1072,AFUA_4G07210,"Acetolactate synthase small subunit, mitochondrial"
+1073,AFUA_4G07220,KH homology domain-containing protein 4
+1074,AFUA_4G07250,Small ribosomal subunit protein mS23
+1075,AFUA_4G07330,DnaJ homolog subfamily B member 12
+1076,AFUA_4G07360,5-methyltetrahydropteroyltriglutamate--homocysteine methyltransferase
+1077,AFUA_4G07390,Protein ERP5
+1078,AFUA_4G07420,Proteasome subunit beta type-3
+1079,AFUA_4G07435,Large ribosomal subunit protein eL36
+1080,AFUA_4G07510,Proteasome subunit beta type-4
+1081,AFUA_4G07520,Pre-mRNA-splicing factor SAD1
+1082,AFUA_4G07580,Eukaryotic translation initiation factor 2 subunit gamma
+1083,AFUA_4G07590,CAAX prenyl protease 1
+1084,AFUA_4G07605,Large ribosomal subunit protein bL34
+1085,AFUA_4G07630,Ribosome biogenesis protein YTM1
+1086,AFUA_4G07640,Small ribosomal subunit protein uS13m
+1087,AFUA_4G07650,Peptidyl-prolyl cis-trans isomerase B
+1088,AFUA_4G07660,ATP-dependent RNA helicase DED1
+1089,AFUA_4G07690,Phosphoribosylaminoimidazolecarboxamide formyltransferase/IMP cyclohydrolase
+1090,AFUA_4G07700,Clathrin heavy chain
+1091,AFUA_4G07710,Pyruvate carboxylase
+1092,AFUA_4G07730,Large ribosomal subunit protein uL5
+1093,AFUA_4G07740,Small nuclear ribonucleoprotein-associated protein B
+1094,AFUA_4G07780,Mevalonate kinase ERG12
+1095,AFUA_4G07820,"Methionine--tRNA ligase, mitochondrial"
+1096,AFUA_4G07845,Large ribosomal subunit protein eL38
+1097,AFUA_4G07910,"Presequence protease, mitochondrial"
+1098,AFUA_4G08010,Ornithine decarboxylase
+1099,AFUA_4G08040,Rab GTPase Ypt5
+1100,AFUA_4G08050,Phosphatidylinositol-3-phosphatase SAC1
+1101,AFUA_4G08070,Glycylpeptide N-tetradecanoyltransferase
+1102,AFUA_4G08110,"Elongation factor G, mitochondrial"
+1103,AFUA_4G08140,"Threonine dehydratase, mitochondrial"
+1104,AFUA_4G08170,Succinate-semialdehyde dehydrogenase [NADP(+)]
+1105,AFUA_4G08190,Pescadillo homolog
+1106,AFUA_4G08200,GPI transamidase component GAB1
+1107,AFUA_4G08280,Glutaminyl-peptide cyclotransferase
+1108,AFUA_4G08300,DNA mismatch repair protein MSH6
+1109,AFUA_4G08320,"Tyrosine--tRNA ligase, mitochondrial"
+1110,AFUA_4G08330,"Aspartate--tRNA ligase, mitochondrial"
+1111,AFUA_4G08340,"Protoheme IX farnesyltransferase, mitochondrial"
+1112,AFUA_4G08440,Triacylglycerol lipase 4
+1113,AFUA_4G08480,26S proteasome regulatory subunit RPN2
+1114,AFUA_4G08500,Transcription elongation factor SPT5
+1115,AFUA_4G08580,"Peroxiredoxin PRX1, mitochondrial"
+1116,AFUA_4G08720,Lysophospholipase Plb1
+1117,AFUA_4G08810,Protein PBDC1
+1118,AFUA_4G08880,Glucose-6-phosphate 1-epimerase
+1119,AFUA_4G08930,Nucleolar GTP-binding protein 2
+1120,AFUA_4G09010,Pre-mRNA-processing factor 39
+1121,AFUA_4G09020,Pre-mRNA-splicing ATP-dependent RNA helicase PRP28
+1122,AFUA_4G09050,Serine/threonine-protein kinase ATG1
+1123,AFUA_4G09110,"Cytochrome c peroxidase, mitochondrial"
+1124,AFUA_4G09140,Ornithine aminotransferase
+1125,AFUA_4G09360,"ATP synthase subunit 9, mitochondrial"
+1126,AFUA_4G09440,Sodium/potassium exporting P-type ATPase
+1127,AFUA_4G09520,Synaptobrevin homolog YKT6
+1128,AFUA_4G09740,T-complex protein 1 subunit theta
+1129,AFUA_4G09750,Large ribosomal subunit protein bL12m
+1130,AFUA_4G09840,Kynureninase
+1131,AFUA_4G09960,Mitochondrial distribution and morphology protein 34-2
+1132,AFUA_4G10010,Hsp90 co-chaperone Cdc37
+1133,AFUA_4G10020,Clathrin light chain
+1134,AFUA_4G10040,t-SNARE affecting a late Golgi compartment protein 2
+1135,AFUA_4G10050,Calmodulin
+1136,AFUA_4G10130,Alpha-amylase
+1137,AFUA_4G10150,Alpha-glucosidase AgdA
+1138,AFUA_4G10210,Phospholipid-transporting ATPase DRS2
+1139,AFUA_4G10240,Small nuclear ribonucleoprotein Sm D3
+1140,AFUA_4G10280,Phosphorelay intermediate protein YPD1
+1141,AFUA_4G10330,Protein farnesyltransferase subunit beta
+1142,AFUA_4G10350,Polyubiquitin
+1143,AFUA_4G10410,"Aspartate aminotransferase, mitochondrial"
+1144,AFUA_4G10430,Peptidyl-tRNA hydrolase 2
+1145,AFUA_4G10460,"Homocitrate synthase, mitochondrial"
+1146,AFUA_4G10470,Sphingosine-1-phosphate lyase
+1147,AFUA_4G10480,Large ribosomal subunit protein uL30m
+1148,AFUA_4G10520,Diphthamide biosynthesis protein 3
+1149,AFUA_4G10620,4-hydroxyphenylpyruvate dioxygenase
+1150,AFUA_4G10660,Chromatin modification-related protein EAF3
+1151,AFUA_4G10690,Iron-sulfur assembly protein 1
+1152,AFUA_4G10710,t-SNARE VTI1
+1153,AFUA_4G10730,RuvB-like helicase 1
+1154,AFUA_4G10790,Ribose-phosphate pyrophosphokinase 2
+1155,AFUA_4G10800,Small ribosomal subunit protein eS6B
+1156,AFUA_4G10950,"3-ketoacyl-CoA thiolase, peroxisomal"
+1157,AFUA_4G11000,Vacuolar protein-sorting-associated protein 60
+1158,AFUA_4G11050,"NADH-ubiquinone oxidoreductase 51 kDa subunit, mitochondrial"
+1159,AFUA_4G11080,Acetyl-coenzyme A synthetase
+1160,AFUA_4G11180,DNA-dependent ATPase MGS1
+1161,AFUA_4G11190,Kynurenine--oxoglutarate transaminase BNA3
+1162,AFUA_4G11220,Xanthine dehydrogenase
+1163,AFUA_4G11250,Carbonic anhydrase
+1164,AFUA_4G11300,V-type proton ATPase subunit a
+1165,AFUA_4G11310,"Fructose-1,6-bisphosphatase"
+1166,AFUA_4G11330,Hsp90 co-chaperone AHA1
+1167,AFUA_4G11340,"Saccharopine dehydrogenase [NADP(+), L-glutamate-forming]"
+1168,AFUA_4G11360,Glycerol-3-phosphate acyltransferase Sct1
+1169,AFUA_4G11390,"Cytochrome b-c1 complex subunit 6, mitochondrial"
+1170,AFUA_4G11510,Mannose-1-phosphate guanyltransferase
+1171,AFUA_4G11530,Mitochondrial inner membrane i-AAA protease supercomplex subunit YME1
+1172,AFUA_4G11540,Glycerol kinase
+1173,AFUA_4G11580,"Superoxide dismutase [Mn], mitochondrial"
+1174,AFUA_4G11650,2-oxoglutarate dehydrogenase
+1175,AFUA_4G11840,Glyoxylate reductase
+1176,AFUA_4G11880,Pre-mRNA-splicing factor SAP62
+1177,AFUA_4G11910,N-terminal acetyltransferase A complex subunit NAT1
+1178,AFUA_4G11960,Cytosolic Fe-S cluster assembly factor NAR1
+1179,AFUA_4G11970,"DNA-directed RNA polymerases I, II, and III subunit RPABC4"
+1180,AFUA_4G12040,Lanosterol synthase ERG7B
+1181,AFUA_4G12050,Gluconokinase
+1182,AFUA_4G12060,Vacuolar protein sorting-associated protein 26
+1183,AFUA_4G12080,Ubiquitin-conjugating enzyme variant MMS2
+1184,AFUA_4G12120,NAD-dependent protein deacetylase HST1
+1185,AFUA_4G12140,tRNA (guanine(10)-N(2))-methyltransferase
+1186,AFUA_4G12160,G2/M-specific cyclin NimE
+1187,AFUA_4G12170,Large ribosomal subunit protein uL2m
+1188,AFUA_4G12240,Nitrilase NIT2
+1189,AFUA_4G12250,Exosome complex exonuclease DIS3
+1190,AFUA_4G12280,tRNA (guanine-N(7)-)-methyltransferase
+1191,AFUA_4G12390,Cell differentiation protein RCD1
+1192,AFUA_4G12430,DNA replication complex GINS protein PSF1
+1193,AFUA_4G12490,Vacuolar protein sorting-associated protein 9
+1194,AFUA_4G12600,Phosphoribosylaminoimidazole carboxylase
+1195,AFUA_4G12620,Copper-transporting ATPase
+1196,AFUA_4G12650,Histone acetyltransferase GCN5
+1197,AFUA_4G12720,Phosphatase DCR2
+1198,AFUA_4G12730,Polyol phosphate phosphatase PYP1
+1199,AFUA_4G12750,CCR4-Not complex 3'-5'-exoribonuclease subunit Ccr4
+1200,AFUA_4G12770,Electron transfer flavoprotein regulatory factor 1
+1201,AFUA_4G12840,Methylthioribulose-1-phosphate dehydratase
+1202,AFUA_4G12850,Calnexin
+1203,AFUA_4G12870,"Methylmalonate-semialdehyde/malonate-semialdehyde dehydrogenase [acylating], mitochondrial"
+1204,AFUA_4G12910,Ubiquitin carboxyl-terminal hydrolase CreB
+1205,AFUA_4G12920,"Histidine--tRNA ligase, mitochondrial"
+1206,AFUA_4G12970,Kexin
+1207,AFUA_4G12990,Thioredoxin reductase
+1208,AFUA_4G13030,"Citramalyl-CoA lyase, mitochondrial"
+1209,AFUA_4G13040,Golgi apparatus membrane protein TVP23
+1210,AFUA_4G13120,Glutamine synthetase
+1211,AFUA_4G13170,G-protein comlpex beta subunit CpcB
+1212,AFUA_4G13180,"Succinate dehydrogenase assembly factor 2, mitochondrial"
+1213,AFUA_4G13190,Endoplasmic reticulum vesicle protein 25
+1214,AFUA_4G13250,Transgelin
+1215,AFUA_4G13270,Protein ORM1
+1216,AFUA_4G13330,ATP-dependent RNA helicase HAS1
+1217,AFUA_4G13350,U1 small nuclear ribonucleoprotein C
+1218,AFUA_4G13390,Actin-related protein ArpA
+1219,AFUA_4G13410,Small ribosomal subunit protein mS35
+1220,AFUA_4G13460,ISWI chromatin-remodeling complex ATPase ISW2
+1221,AFUA_4G13500,Beta-apo-4'-carotenal oxygenase
+1222,AFUA_4G13510,Isocitrate lyase
+1223,AFUA_4G13530,Cytosolic neutral trehalase
+1224,AFUA_4G13680,CDP-diacylglycerol--serine O-phosphatidyltransferase
+1225,AFUA_4G13690,H/ACA ribonucleoprotein complex subunit GAR1
+1226,AFUA_4G13700,"Threonine--tRNA ligase, cytoplasmic"
+1227,AFUA_4G13720,MAP kinase MpkA
+1228,AFUA_4G13920,Polygalacturonase
+1229,AFUA_4G14450,Mannitol 2-dehydrogenase
+1230,AFUA_4G14740,Serine/threonine protein kinase ARK1
+1231,AFUA_5G00760,Chitin synthase C
+1232,AFUA_5G01020,Alpha N-terminal protein methyltransferase 1
+1233,AFUA_5G01030,Glyceraldehyde-3-phosphate dehydrogenase
+1234,AFUA_5G01170,Protein SYM1
+1235,AFUA_5G01340,Lysophospholipase Plb2
+1236,AFUA_5G01440,Peroxiredoxin
+1237,AFUA_5G01470,Peroxisomal copper amine oxidase
+1238,AFUA_5G01740,Deoxyhypusine synthase
+1239,AFUA_5G01760,Nucleolar RNA methyltransferase Nop2
+1240,AFUA_5G01800,DNA repair protein RAD14
+1241,AFUA_5G01810,Meiotically up-regulated gene 84 protein
+1242,AFUA_5G01860,Actin-related protein 2/3 complex subunit 3
+1243,AFUA_5G01870,Replication factor C subunit 3
+1244,AFUA_5G01950,Histone H2A.Z
+1245,AFUA_5G01970,Glyceraldehyde-3-phosphate dehydrogenase
+1246,AFUA_5G01980,Histone deacetylase HdaA
+1247,AFUA_5G02010,A-pheromone processing metallopeptidase Ste23
+1248,AFUA_5G02030,Cleavage and polyadenylation specificity factor subunit 5
+1249,AFUA_5G02060,Dephospho-CoA kinase CAB5
+1250,AFUA_5G02080,NADH-ubiquinone oxidoreductase
+1251,AFUA_5G02150,Proteasome subunit alpha type-4
+1252,AFUA_5G02160,RNA-binding protein involved in heterochromatin assembly
+1253,AFUA_5G02180,Cysteine synthase 1
+1254,AFUA_5G02200,Mitochondrial import inner membrane translocase subunit TIM22
+1255,AFUA_5G02220,Serine/threonine-protein kinase SvkA
+1256,AFUA_5G02230,D-2-hydroxyglutarate--pyruvate transhydrogenase DLD2
+1257,AFUA_5G02240,Methionine adenosyltransferase 2 subunit beta
+1258,AFUA_5G02360,Vacuolar protein sorting-associated protein 1
+1259,AFUA_5G02370,V-type proton ATPase catalytic subunit A
+1260,AFUA_5G02410,ATP-dependent RNA helicase FAL1
+1261,AFUA_5G02420,Splicing factor 3A subunit 3
+1262,AFUA_5G02440,Anaphase-promoting complex subunit 8
+1263,AFUA_5G02450,Farnesyl pyrophosphate synthase ERG20
+1264,AFUA_5G02470,4-amino-5-hydroxymethyl-2-methylpyrimidine phosphate synthase
+1265,AFUA_5G02480,Glycogen [starch] synthase
+1266,AFUA_5G02520,DNA replication licensing factor MCM5
+1267,AFUA_5G02560,Serine/threonine-protein phosphatase 2A 56 kDa regulatory subunit delta isoform
+1268,AFUA_5G02570,SAGA complex/NuA4 acetyltransferase complex subunit TRA1
+1269,AFUA_5G02580,mRNA splicing protein Yju2
+1270,AFUA_5G02590,Anaphase-promoting complex subunit cut9
+1271,AFUA_5G02720,Phosphoribosylformylglycinamidine synthase
+1272,AFUA_5G02740,Mannosyltransferase KTR4
+1273,AFUA_5G02750,"Cytochrome c oxidase subunit 6, mitochondrial"
+1274,AFUA_5G02760,Fatty acid elongase Gns1
+1275,AFUA_5G02780,"NAD(P) transhydrogenase, mitochondrial"
+1276,AFUA_5G02930,60 kDa lysophospholipase
+1277,AFUA_5G03020,Large ribosomal subunit protein uL4B
+1278,AFUA_5G03050,Pre-mRNA-processing protein 45
+1279,AFUA_5G03080,Cell division control protein 12
+1280,AFUA_5G03090,Periodic tryptophan protein 2
+1281,AFUA_5G03130,Histone acetyltransferase type B subunit 2
+1282,AFUA_5G03140,GTP cyclohydrolase 1
+1283,AFUA_5G03180,Eukaryotic translation initiation factor 4E type 2
+1284,AFUA_5G03250,Ubiquitin carboxyl-terminal hydrolase 15
+1285,AFUA_5G03260,Protein ERP3
+1286,AFUA_5G03320,General transcription and DNA repair factor IIH helicase/translocase subunit XPB/SSL2
+1287,AFUA_5G03350,Glutamine-dependent NAD(+) synthetase
+1288,AFUA_5G03430,Lid2 complex component lid2
+1289,AFUA_5G03460,Thymidylate kinase
+1290,AFUA_5G03480,Methylenetetrahydrofolate reductase 1
+1291,AFUA_5G03490,Nucleoside diphosphate kinase
+1292,AFUA_5G03500,Glucosidase 2 subunit alpha
+1293,AFUA_5G03550,Plasma membrane ATPase
+1294,AFUA_5G03560,"Glutamate--tRNA ligase, cytoplasmic"
+1295,AFUA_5G03600,Cytosolic Fe-S cluster assembly factor CFD1
+1296,AFUA_5G03630,Mitochondrial import protein 1
+1297,AFUA_5G03680,Transcription initiation factor TFIID subunit 6
+1298,AFUA_5G03740,Alpha-methylacyl-CoA racemase
+1299,AFUA_5G03780,"Protein MMF1, mitochondrial"
+1300,AFUA_5G03790,Iron transport multicopper oxidase FetC
+1301,AFUA_5G03880,Signal recognition particle subunit SRP54
+1302,AFUA_5G03900,"Adrenodoxin homolog, mitochondrial"
+1303,AFUA_5G03990,Vacuolar aminopeptidase 1
+1304,AFUA_5G04030,Large ribosomal subunit protein bL27m
+1305,AFUA_5G04060,Ubiquitin-conjugating enzyme E2 G2
+1306,AFUA_5G04080,Lanosterol synthase ERG7
+1307,AFUA_5G04120,NAD-dependent protein deacylase SIR4
+1308,AFUA_5G04130,Cyclin-dependent protein kinase PhoA
+1309,AFUA_5G04170,Heat shock protein 90
+1310,AFUA_5G04230,"Citrate synthase, mitochondrial"
+1311,AFUA_5G04240,Protein NRD1
+1312,AFUA_5G04250,Homocysteine synthase
+1313,AFUA_5G04320,Secretion related GTPase SrgB/Ypt1
+1314,AFUA_5G04330,Aminopeptidase
+1315,AFUA_5G04333,General transcription and DNA repair factor IIH subunit SSL1
+1316,AFUA_5G04370,"NADH-ubiquinone oxidoreductase 78 kDa subunit, mitochondrial"
+1317,AFUA_5G04420,Splicing factor 3B subunit 2
+1318,AFUA_5G05450,Small ribosomal subunit protein eS1
+1319,AFUA_5G05460,Uracil phosphoribosyltransferase
+1320,AFUA_5G05480,Small monomeric GTPase RhbA
+1321,AFUA_5G05490,"Serine--tRNA ligase, cytoplasmic"
+1322,AFUA_5G05500,D-3-phosphoglycerate dehydrogenase
+1323,AFUA_5G05510,Serine/threonine-protein kinase Bur1
+1324,AFUA_5G05520,Vacuolar cation-transporting ATPase YPK9
+1325,AFUA_5G05540,Nucleosome assembly protein
+1326,AFUA_5G05550,Myosin-2
+1327,AFUA_5G05560,Inosine triphosphate pyrophosphatase
+1328,AFUA_5G05570,Adenylate kinase isoenzyme 6 homolog FAP7
+1329,AFUA_5G05590,Aspartokinase
+1330,AFUA_5G05610,Pre-mRNA-splicing factor BUD31
+1331,AFUA_5G05630,Large ribosomal subunit protein uL23
+1332,AFUA_5G05660,25S rRNA (adenine2142-N1)-methyltransferase
+1333,AFUA_5G05680,Eukaryotic peptide chain release factor subunit 1
+1334,AFUA_5G05710,H/ACA ribonucleoprotein complex subunit CBF5
+1335,AFUA_5G05770,Glucan synthesis regulatory protein
+1336,AFUA_5G05790,RING-box protein HRT1
+1337,AFUA_5G05800,Signal peptidase complex subunit 1
+1338,AFUA_5G05820,Homoserine kinase
+1339,AFUA_5G05900,Serine/threonine-protein kinase CLA4
+1340,AFUA_5G05920,"Glycine--tRNA ligase 1, mitochondrial"
+1341,AFUA_5G05930,Ribosome production factor 1
+1342,AFUA_5G05950,Reduced viability upon starvation protein 161
+1343,AFUA_5G05960,Serine/threonine-protein kinase HAL4/SAT4
+1344,AFUA_5G05970,Trafficking protein particle complex subunit BET5
+1345,AFUA_5G05980,Calcium/calmodulin-dependent protein kinase kinase CmkC
+1346,AFUA_5G06000,"Histone-lysine N-methyltransferase, H3 lysine-36 specific"
+1347,AFUA_5G06010,Eukaryotic translation initiation factor 6
+1348,AFUA_5G06040,UV excision repair protein RAD23
+1349,AFUA_5G06060,E3 ubiquitin ligase complex SCF subunit sconC
+1350,AFUA_5G06100,DNA damage tolerance protein RHC31
+1351,AFUA_5G06130,"Succinate--CoA ligase [ADP-forming] subunit alpha, mitochondrial"
+1352,AFUA_5G06140,Elongator complex protein 3
+1353,AFUA_5G06150,V-type proton ATPase subunit f
+1354,AFUA_5G06160,1-(5-phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino] imidazole-4-carboxamide isomerase
+1355,AFUA_5G06220,Endosomal/prevacuolar sodium/hydrogen exchanger
+1356,AFUA_5G06260,Chromatin-remodeling ATPase INO80
+1357,AFUA_5G06270,"5-aminolevulinate synthase, mitochondrial"
+1358,AFUA_5G06320,Protein YOP1
+1359,AFUA_5G06330,Nuclear protein STH1/NPS1
+1360,AFUA_5G06360,Large ribosomal subunit protein uL2
+1361,AFUA_5G06390,Adenosine kinase
+1362,AFUA_5G06420,MAP kinase kinase kinase SteC
+1363,AFUA_5G06500,Acyl-CoA dehydrogenase family protein
+1364,AFUA_5G06510,Large subunit GTPase 1
+1365,AFUA_5G06530,CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase
+1366,AFUA_5G06610,Glutathione synthetase GSH2
+1367,AFUA_5G06680,4-aminobutyrate aminotransferase
+1368,AFUA_5G06700,Serine/threonine protein phosphatase PPT1
+1369,AFUA_5G06710,Damage-control phosphatase ARMT1
+1370,AFUA_5G06760,Pre-mRNA-splicing factor CWC2
+1371,AFUA_5G06770,Ribosome-interacting GTPase 2
+1372,AFUA_5G06780,Carbamoyl phosphate synthase arginine-specific small chain
+1373,AFUA_5G07040,Ubiquitin-conjugating enzyme E2 1
+1374,AFUA_5G07050,26S proteasome regulatory subunit 4
+1375,AFUA_5G07190,Beta-glucosidase I
+1376,AFUA_5G07210,Homoserine O-acetyltransferase
+1377,AFUA_5G07290,NADPH-dependent diflavin oxidoreductase 1
+1378,AFUA_5G07300,Electron transfer flavoprotein subunit beta
+1379,AFUA_5G07340,Protein PSI1
+1380,AFUA_5G07360,Copper amine oxidase 1
+1381,AFUA_5G07370,CCR4-NOT transcription complex subunit 7
+1382,AFUA_5G07380,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3
+1383,AFUA_5G07440,GTPase-activating protein GYP2
+1384,AFUA_5G07470,"Peroxisomal 2,4-dienoyl-CoA reductase SPS19 [(3E)-enoyl-CoA-producing]"
+1385,AFUA_5G07720,Pre-mRNA-splicing factor CWC24
+1386,AFUA_5G07750,"Ferrochelatase, mitochondrial"
+1387,AFUA_5G07780,Squalene epoxidase ERG1
+1388,AFUA_5G07930,AP-2 complex subunit mu
+1389,AFUA_5G08050,Xaa-Pro aminopeptidase P
+1390,AFUA_5G08090,Pyridoxal 5'-phosphate synthase subunit PDX1
+1391,AFUA_5G08120,"Arginine biosynthesis bifunctional protein ArgJ, mitochondrial"
+1392,AFUA_5G08130,Protein transport protein SEC61 subunit alpha
+1393,AFUA_5G08210,Dolichyl-phosphate beta-glucosyltransferase
+1394,AFUA_5G08240,ADP-ribose pyrophosphatase
+1395,AFUA_5G08300,Alpha-actinin-like protein 1
+1396,AFUA_5G08350,Small ribosomal subunit protein bS16m
+1397,AFUA_5G08360,NAD(P)H-hydrate epimerase
+1398,AFUA_5G08530,SVP1-like protein 2
+1399,AFUA_5G08540,Septin homolog SPN3
+1400,AFUA_5G08550,Rho1 guanine nucleotide exchange factor 1
+1401,AFUA_5G08560,V-type proton ATPase subunit c'
+1402,AFUA_5G08570,cAMP-dependent protein kinase catalytic subunit
+1403,AFUA_5G08600,Serine O-succinyltransferase
+1404,AFUA_5G08610,tRNA threonylcarbamoyladenosine dehydratase
+1405,AFUA_5G08670,Phosphatidylinositol 3-kinase VPS34
+1406,AFUA_5G08690,Pre-mRNA-splicing factor ISY1
+1407,AFUA_5G08700,Myosin type-2 heavy chain
+1408,AFUA_5G08890,"Homoaconitase, mitochondrial"
+1409,AFUA_5G08910,"Methylcrotonoyl-CoA carboxylase subunit alpha, mitochondrial"
+1410,AFUA_5G08930,"Isovaleryl-CoA dehydrogenase, mitochondrial"
+1411,AFUA_5G08940,"Methylcrotonoyl-CoA carboxylase beta chain, mitochondrial"
+1412,AFUA_5G08950,RAS small monomeric GTPase Rsr1
+1413,AFUA_5G08965,Mitochondrial protein PET191
+1414,AFUA_5G08980,NADH-ubiquinone oxidoreductase 9.5 kDa subunit
+1415,AFUA_5G09060,Pre-mRNA-splicing factor 38
+1416,AFUA_5G09080,SAGA complex subunit SPT8
+1417,AFUA_5G09100,MAP kinase MpkC
+1418,AFUA_5G09200,Ubiquitin-conjugating enzyme E2 R1
+1419,AFUA_5G09210,Alkaline protease 2
+1420,AFUA_5G09230,Transaldolase
+1421,AFUA_5G09240,Superoxide dismutase [Cu-Zn]
+1422,AFUA_5G09250,Staphylococcal nuclease domain-containing protein 1
+1423,AFUA_5G09310,Protein lifeguard 4
+1424,AFUA_5G09360,Calcineurin catalytic subunit CnaA
+1425,AFUA_5G09610,Cysteine--tRNA ligase
+1426,AFUA_5G09620,tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit TRM61
+1427,AFUA_5G09650,GTP-binding protein Gtr1
+1428,AFUA_5G09660,AP-1 complex subunit mu
+1429,AFUA_5G09680,Succinate dehydrogenase cytochrome b560 subunit
+1430,AFUA_5G09840,D-xylulose kinase
+1431,AFUA_5G09860,S-formylglutathione hydrolase
+1432,AFUA_5G10370,"Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mitochondrial"
+1433,AFUA_5G10480,Adenylyltransferase and sulfurtransferase UBA4
+1434,AFUA_5G10540,"1,4-alpha-glucan-branching enzyme"
+1435,AFUA_5G10550,"ATP synthase subunit beta, mitochondrial"
+1436,AFUA_5G10560,"Cytochrome c oxidase subunit 5, mitochondrial"
+1437,AFUA_5G10610,"Cytochrome b-c1 complex subunit Rieske, mitochondrial"
+1438,AFUA_5G10640,"Tyrosine--tRNA ligase, cytoplasmic"
+1439,AFUA_5G10750,Small ribosomal subunit protein uS12m
+1440,AFUA_5G10760,"Alpha-1,2-mannosyltransferase 1"
+1441,AFUA_5G10780,UDP-glucose 4-epimerase
+1442,AFUA_5G10830,Pre-mRNA-splicing factor ATP-dependent RNA helicase PRP22
+1443,AFUA_5G10890,DNA replication licensing factor MCM6
+1444,AFUA_5G11000,U2 small nuclear ribonucleoprotein A'
+1445,AFUA_5G11040,Pantoate--beta-alanine ligase
+1446,AFUA_5G11050,ATP-dependent RNA helicase DBP7
+1447,AFUA_5G11120,"DNA-directed RNA polymerases I, II, and III subunit RPABC3"
+1448,AFUA_5G11230,RAS small monomeric GTPase RasA
+1449,AFUA_5G11240,NADP-dependent 3-hydroxy acid dehydrogenase
+1450,AFUA_5G11360,AP-3 complex subunit beta
+1451,AFUA_5G11370,Ser/Thr protein phosphatase
+1452,AFUA_5G11380,Rho GDP-dissociation inhibitor
+1453,AFUA_5G11430,Quinone oxidoreductase
+1454,AFUA_5G11520,Serine/threonine-protein kinase Nrc-2
+1455,AFUA_5G11540,Small ribosomal subunit protein uS5m
+1456,AFUA_5G11550,tRNA (uracil(54)-C(5))-methyltransferase
+1457,AFUA_5G11560,Actin-related protein 3
+1458,AFUA_5G11580,General transcription and DNA repair factor IIH subunit TFB4
+1459,AFUA_5G11620,Pre-mRNA-splicing factor ATP-dependent RNA helicase PRP43
+1460,AFUA_5G11660,Autophagy-related protein 18
+1461,AFUA_5G11700,DNA mismatch repair protein MLH1
+1462,AFUA_5G11720,26S proteasome regulatory subunit RPN1
+1463,AFUA_5G11730,Serine/threonine-protein kinase RIO2
+1464,AFUA_5G11740,Large ribosomal subunit protein uL23m
+1465,AFUA_5G11750,"Lon protease homolog 2, peroxisomal"
+1466,AFUA_5G11760,Porphobilinogen deaminase
+1467,AFUA_5G11810,"Dynein heavy chain, cytoplasmic"
+1468,AFUA_5G11820,Ceramide-binding protein SVF1
+1469,AFUA_5G11830,Large ribosomal subunit protein uL11m
+1470,AFUA_5G11910,Pre-mRNA-splicing factor SYF1
+1471,AFUA_5G11920,V-type proton ATPase subunit D
+1472,AFUA_5G11930,U1 small nuclear ribonucleoprotein USP102
+1473,AFUA_5G11970,Protein kinase c
+1474,AFUA_5G11990,"Dol-P-Man:Man(5)GlcNAc(2)-PP-Dol alpha-1,3-mannosyltransferase"
+1475,AFUA_5G12010,Serine/threonine-protein phosphatase 4 catalytic subunit
+1476,AFUA_5G12100,AdoMet-dependent rRNA methyltransferase SPB1
+1477,AFUA_5G12130,Ypt/Rab-type GTPase Rab7
+1478,AFUA_5G12160,"Alpha-1,2-mannosyltransferase Kre5"
+1479,AFUA_5G12180,Ran-specific GTPase-activating protein 1
+1480,AFUA_5G12190,Transcription initiation factor TFIID subunit 14
+1481,AFUA_5G12210,G protein complex beta subunit SfaD
+1482,AFUA_5G12260,Protein disulfide-isomerase TigA
+1483,AFUA_5G12270,rRNA-processing protein EBP2
+1484,AFUA_5G12310,tRNA pseudouridine synthase 4
+1485,AFUA_5G12350,Ribonucleoside-diphosphate reductase small chain
+1486,AFUA_5G12550,N-acetylglucosaminyl-phosphatidylinositol de-N-acetylase
+1487,AFUA_5G12570,U6 snRNA-associated Sm-like protein LSm3
+1488,AFUA_5G12580,GTP-binding protein 1
+1489,AFUA_5G12640,"DNA polymerase gamma, mitochondrial"
+1490,AFUA_5G12680,Cullin-4
+1491,AFUA_5G12690,Dihydroxyacetone kinase
+1492,AFUA_5G12790,Small ribosomal subunit protein mS47
+1493,AFUA_5G12800,Large ribosomal subunit protein uL4m
+1494,AFUA_5G12840,Hydroxyacylglutathione hydrolase
+1495,AFUA_5G12870,NAD(+) kinase
+1496,AFUA_5G12880,Transport protein particle subunit TRS31
+1497,AFUA_5G12910,Small nuclear ribonucleoprotein Sm D2
+1498,AFUA_5G12940,Arylsulfatase
+1499,AFUA_5G12990,5'-AMP-activated protein kinase subunit gamma
+1500,AFUA_5G13000,CRAL/TRIO domain protein
+1501,AFUA_5G13040,Translation initiation factor eIF2B subunit delta
+1502,AFUA_5G13050,Kinesin family protein
+1503,AFUA_5G13120,Protein-transporting protein BCP1
+1504,AFUA_5G13130,Chorismate mutase
+1505,AFUA_5G13180,Agmatinase 1
+1506,AFUA_5G13210,"Alpha-1,3/1,6-mannosyltransferase ALG2"
+1507,AFUA_5G13340,Protein phosphatase 2C homolog 1
+1508,AFUA_5G13350,Peptidyl-prolyl cis-trans isomerase-like 2
+1509,AFUA_5G13370,ATP-dependent DNA helicase PIF1
+1510,AFUA_5G13392,Mitofusin FZO1
+1511,AFUA_5G13410,DOA4-independent degradation protein 4
+1512,AFUA_5G13450,Triosephosphate isomerase
+1513,AFUA_5G13470,Large ribosomal subunit protein uL10
+1514,AFUA_5G13480,U1 small nuclear ribonucleoprotein 70 kDa
+1515,AFUA_5G13490,Large ribosomal subunit protein mL43
+1516,AFUA_5G13510,Pre-mRNA-processing factor 19
+1517,AFUA_5G13520,Ribosome assembly protein 1
+1518,AFUA_5G13540,Vacuolar protein 8
+1519,AFUA_5G13600,Vacuolar protein sorting-associated protein 16
+1520,AFUA_5G13930,Translation machinery-associated protein 46
+1521,AFUA_5G14060,Rho GTPase Rho4
+1522,AFUA_5G14350,Delta(24(24(1)))-sterol reductase ERG4B
+1523,AFUA_6G00300,Serine palmitoyltransferase 2
+1524,AFUA_6G02070,Phospholipid-transporting ATPase DNF1
+1525,AFUA_6G02090,V-type proton ATPase subunit E
+1526,AFUA_6G02140,Peptidyl-prolyl cis-trans isomerase-like 1
+1527,AFUA_6G02230,Glucokinase
+1528,AFUA_6G02370,Actin-related protein 2/3 complex subunit 4
+1529,AFUA_6G02380,Ubiquitin carboxyl-terminal hydrolase 6
+1530,AFUA_6G02420,Ubiquitin-conjugating enzyme E2 13
+1531,AFUA_6G02440,Large ribosomal subunit protein eL24
+1532,AFUA_6G02450,Small ribosomal subunit protein eS30
+1533,AFUA_6G02470,"Fumarate hydratase, mitochondrial"
+1534,AFUA_6G02490,"Aspartate aminotransferase, cytoplasmic"
+1535,AFUA_6G02510,Chitin biosynthesis protein CHS5
+1536,AFUA_6G02520,Eukaryotic translation initiation factor 1A
+1537,AFUA_6G02530,DNA repair protein RAD1
+1538,AFUA_6G02600,"Sedoheptulose 1,7-bisphosphatase"
+1539,AFUA_6G02630,ATP-dependent RNA helicase SUB2
+1540,AFUA_6G02670,G2-specific protein kinase NimA
+1541,AFUA_6G02750,Nascent polypeptide-associated complex subunit beta
+1542,AFUA_6G02840,Serine/threonine-protein kinase DBF2
+1543,AFUA_6G02860,"2-methylisocitrate lyase, mitochondrial"
+1544,AFUA_6G02910,"Protein ARG5,6, mitochondrial"
+1545,AFUA_6G02920,Synaptobrevin homolog 1
+1546,AFUA_6G03540,"Malate synthase, glyoxysomal"
+1547,AFUA_6G03580,[NU+] prion formation protein 1
+1548,AFUA_6G03590,"2-methylcitrate synthase, mitochondrial"
+1549,AFUA_6G03670,"Biotin synthase, mitochondrial"
+1550,AFUA_6G03690,Sodium/potassium exporting P-type ATPase
+1551,AFUA_6G03730,"2-methylcitrate dehydratase, mitochondrial"
+1552,AFUA_6G03750,Amidophosphoribosyltransferase
+1553,AFUA_6G03810,"ATP synthase subunit d, mitochondrial"
+1554,AFUA_6G03820,Nascent polypeptide-associated complex subunit alpha
+1555,AFUA_6G03830,Large ribosomal subunit protein eL14
+1556,AFUA_6G03840,Protein transport protein YIF1
+1557,AFUA_6G03850,Signal recognition particle receptor subunit alpha homolog
+1558,AFUA_6G03890,Catalase A
+1559,AFUA_6G03940,GTPase-activating protein GYP7
+1560,AFUA_6G03950,Phospholipid-transporting ATPase NEO1
+1561,AFUA_6G04010,Importin alpha re-exporter
+1562,AFUA_6G04040,"3,2-trans-enoyl-CoA isomerase"
+1563,AFUA_6G04050,Translation initiation factor eIF2 assembly protein
+1564,AFUA_6G04150,Protein transport protein SEC22
+1565,AFUA_6G04210,Mannosyl-oligosaccharide glucosidase
+1566,AFUA_6G04260,Protein MAK16
+1567,AFUA_6G04290,GPI ethanolamine phosphate transferase 3
+1568,AFUA_6G04330,ATP-dependent RNA helicase DHR1
+1569,AFUA_6G04380,"Atypical kinase COQ8, mitochondrial"
+1570,AFUA_6G04420,Maintenance of mitochondrial morphology protein 1
+1571,AFUA_6G04430,Acireductone dioxygenase
+1572,AFUA_6G04440,Mitochondrial translation optimization protein 1
+1573,AFUA_6G04460,Cardiolipin synthase (CMP-forming)
+1574,AFUA_6G04510,tRNA N6-adenosine threonylcarbamoyltransferase
+1575,AFUA_6G04540,Calcineurin subunit B
+1576,AFUA_6G04560,Small ribosomal subunit protein uS9m
+1577,AFUA_6G04570,Elongation factor 1-gamma
+1578,AFUA_6G04610,DNA-directed RNA polymerases I and III subunit RPAC2
+1579,AFUA_6G04620,NADH-ubiquinone oxidoreductase 14.8 kDa subunit
+1580,AFUA_6G04630,60S ribosomal subunit assembly/export protein LOC1
+1581,AFUA_6G04660,Histone H3-like centromeric protein CSE4
+1582,AFUA_6G04670,Derlin-2
+1583,AFUA_6G04700,imidazoleglycerol-phosphate dehydratase
+1584,AFUA_6G04730,Bifunctional purine biosynthetic protein ADE1
+1585,AFUA_6G04740,Actin
+1586,AFUA_6G04750,Hsp70 nucleotide exchange factor FES1
+1587,AFUA_6G04760,Vacuolar protein sorting-associated protein 68
+1588,AFUA_6G04780,Vacuolar protein sorting-associated protein 55
+1589,AFUA_6G04790,Proteasome subunit alpha type-6
+1590,AFUA_6G04860,Lysophospholipid acyltransferase
+1591,AFUA_6G04870,Vacuolar protein sorting-associated protein 45
+1592,AFUA_6G04910,"Leucine--tRNA ligase, mitochondrial"
+1593,AFUA_6G04920,Formate dehydrogenase
+1594,AFUA_6G04970,Phosphoserine aminotransferase
+1595,AFUA_6G05040,Replication factor C subunit 4
+1596,AFUA_6G05060,Decapping nuclease RAI1
+1597,AFUA_6G05080,CCR4-associated factor 16
+1598,AFUA_6G05100,"6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase"
+1599,AFUA_6G05110,Mitochondrial import receptor subunit TOM40
+1600,AFUA_6G05120,Glycogen synthase kinase 1
+1601,AFUA_6G05140,Delta(7)-sterol 5(6)-desaturase ERG3A
+1602,AFUA_6G05150,General transcriptional corepressor TUP1
+1603,AFUA_6G05174,Mitochondrial import receptor subunit TOM7
+1604,AFUA_6G05180,Splicing factor 3B subunit 4
+1605,AFUA_6G05200,Large ribosomal subunit protein eL28
+1606,AFUA_6G05210,"Malate dehydrogenase, NAD-dependent"
+1607,AFUA_6G05220,Trafficking protein particle complex subunit 6B
+1608,AFUA_6G05300,Transcriptional activator HAP5
+1609,AFUA_6G05320,Purine nucleoside phosphorylase
+1610,AFUA_6G05330,Small ribosomal subunit protein uS10m
+1611,AFUA_6G05340,"Tryptophan--tRNA ligase, mitochondrial"
+1612,AFUA_6G06325,U6 snRNA-associated Sm-like protein LSm6
+1613,AFUA_6G06330,Multifunctional methyltransferase subunit TRM112
+1614,AFUA_6G06340,Glutamine--fructose-6-phosphate aminotransferase [isomerizing]
+1615,AFUA_6G06345,"6,7-dimethyl-8-ribityllumazine synthase"
+1616,AFUA_6G06350,Proteasome subunit alpha type-3
+1617,AFUA_6G06370,"Isocitrate dehydrogenase [NAD] subunit 1, mitochondrial"
+1618,AFUA_6G06380,18S rRNA (guanine(1575)-N(7))-methyltransferase
+1619,AFUA_6G06420,Mitochondrial distribution and morphology protein 31
+1620,AFUA_6G06430,Pre-rRNA-processing protein PNO1
+1621,AFUA_6G06440,Proteasome subunit beta type-6
+1622,AFUA_6G06450,Proteasome subunit beta type-7
+1623,AFUA_6G06460,fumarylacetoacetate hydrolase family protein
+1624,AFUA_6G06490,U2 small nuclear ribonucleoprotein B''
+1625,AFUA_6G06500,Actin-related protein 2/3 complex subunit 1
+1626,AFUA_6G06580,Phosphomannomutase
+1627,AFUA_6G06620,Prenylated Rab acceptor 1
+1628,AFUA_6G06740,Endoplasmic reticulum calcium ATPase SrcA
+1629,AFUA_6G06750,14-3-3 family protein
+1630,AFUA_6G06770,Enolase
+1631,AFUA_6G06780,26S proteasome subunit RPT4
+1632,AFUA_6G06790,"Mannosyl-oligosaccharide 1,2-alpha-mannosidase"
+1633,AFUA_6G06870,Casein kinase I homolog
+1634,AFUA_6G06900,Rho GTPase Rho1
+1635,AFUA_6G07120,Nuclear movement protein NudC
+1636,AFUA_6G07150,tRNA N(3)-methylcytidine methyltransferase TRM140
+1637,AFUA_6G07290,ER-derived vesicles protein ERV14
+1638,AFUA_6G07300,Pre-mRNA-processing factor 17
+1639,AFUA_6G07330,Methionine aminopeptidase 1
+1640,AFUA_6G07340,Kynurenine 3-monooxygenase
+1641,AFUA_6G07390,"Homoisocitrate dehydrogenase, mitochondrial"
+1642,AFUA_6G07430,Pyruvate kinase
+1643,AFUA_6G07520,Sphingolipid long chain base-responsive protein PIL1/LSP1
+1644,AFUA_6G07540,T-complex protein 1 subunit epsilon
+1645,AFUA_6G07620,GDP-mannose pyrophosphorylase A
+1646,AFUA_6G07640,"Lysine--tRNA ligase, cytoplasmic"
+1647,AFUA_6G07670,Heme A synthase COX15
+1648,AFUA_6G07690,mRNA cap guanine-N(7) methyltransferase
+1649,AFUA_6G07720,Phosphoenolpyruvate carboxykinase (ATP)
+1650,AFUA_6G07760,26S proteasome regulatory subunit RPN7
+1651,AFUA_6G07770,"Alanine aminotransferase, mitochondrial"
+1652,AFUA_6G07840,Peptide methionine sulfoxide reductase
+1653,AFUA_6G07860,Catabolite repression protein CreC
+1654,AFUA_6G07870,Mitochondrial Rho GTPase 1
+1655,AFUA_6G07880,SH3 domain-containing YSC84-like protein
+1656,AFUA_6G07940,Lactoylglutathione lyase
+1657,AFUA_6G07980,Cyclin-dependent kinase 1
+1658,AFUA_6G08050,"6-phosphogluconate dehydrogenase, decarboxylating"
+1659,AFUA_6G08220,Cullin-3
+1660,AFUA_6G08290,ADP-ribosylation factor family protein
+1661,AFUA_6G08300,DNA-directed RNA polymerase I subunit RPA2
+1662,AFUA_6G08310,Proteasome subunit beta type-5
+1663,AFUA_6G08320,Sphingolipid long chain base-responsive protein PIL1/LSP1
+1664,AFUA_6G08360,Thiamine thiazole synthase
+1665,AFUA_6G08370,Inositol phosphosphingolipids phospholipase C
+1666,AFUA_6G08470,Glycerol kinase
+1667,AFUA_6G08480,Aquaglyceroporin
+1668,AFUA_6G08610,Trimethylguanosine synthase
+1669,AFUA_6G08680,Serine/threonine-protein phosphatase 2A activator 1
+1670,AFUA_6G08700,Beta-glucosidase F
+1671,AFUA_6G08720,S-methyl-5'-thioadenosine phosphorylase
+1672,AFUA_6G08750,"Delta-1-pyrroline-5-carboxylate dehydrogenase, mitochondrial"
+1673,AFUA_6G08810,"NADH-ubiquinone oxidoreductase 30.4 kDa subunit, mitochondrial"
+1674,AFUA_6G08830,"2-oxoisovalerate dehydrogenase subunit alpha, mitochondrial"
+1675,AFUA_6G08850,"2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondrial"
+1676,AFUA_6G08870,Nicotinamide/nicotinic acid mononucleotide adenylyltransferase
+1677,AFUA_6G08880,Ubiquitin fusion degradation protein 4
+1678,AFUA_6G08900,ATP-dependent RNA helicase MAK5
+1679,AFUA_6G08910,tRNA (cytidine(32)/guanosine(34)-2'-O)-methyltransferase
+1680,AFUA_6G08960,Proteasome subunit alpha type-3
+1681,AFUA_6G09010,Protein LUC7
+1682,AFUA_6G09020,GPI transamidase component GPI16
+1683,AFUA_6G09060,Large ribosomal subunit protein uL6m
+1684,AFUA_6G09070,"3'(2'),5'-bisphosphate nucleotidase"
+1685,AFUA_6G09160,Ubiquitin-conjugating enzyme E2 8
+1686,AFUA_6G09165,Ubiquitin-like protein ATG12
+1687,AFUA_6G09170,3-methyl-2-oxobutanoate hydroxymethyltransferase
+1688,AFUA_6G09190,Intermediate cleaving peptidase 55
+1689,AFUA_6G09210,NAD-dependent protein deacylase SIR5
+1690,AFUA_6G09810,Iron-sulfur cluster transfer protein NUBPL
+1691,AFUA_6G10320,Ribosome assembly protein RRB1
+1692,AFUA_6G10330,Protein TEM1
+1693,AFUA_6G10460,Ceramide synthase LAG1
+1694,AFUA_6G10470,Zinc finger chaperone ZPR1
+1695,AFUA_6G10480,Peptidyl-prolyl cis-trans isomerase-like 3
+1696,AFUA_6G10500,Queuosine 5'-phosphate N-glycosylase/hydrolase
+1697,AFUA_6G10510,Ubiquitin-activating enzyme E1-like
+1698,AFUA_6G10530,Elongin-C
+1699,AFUA_6G10610,Ribose-5-phosphate isomerase
+1700,AFUA_6G10620,Mitotic checkpoint protein BUB3
+1701,AFUA_6G10630,GPN-loop GTPase 2
+1702,AFUA_6G10650,ATP-citrate synthase subunit 1
+1703,AFUA_6G10660,Probable ATP-citrate synthase subunit 2
+1704,AFUA_6G10700,"10 kDa heat shock protein, mitochondrial"
+1705,AFUA_6G10810,"Homogentisate 1,2-dioxygenase"
+1706,AFUA_6G10830,Serine/threonine-protein phosphatase PP2A catalytic subunit
+1707,AFUA_6G10965,Centromere protein S
+1708,AFUA_6G10990,NADPH--cytochrome P450 reductase
+1709,AFUA_6G11020,3-hydroxyisobutyrate dehydrogenase
+1710,AFUA_6G11040,Flavin adenine dinucleotide synthase
+1711,AFUA_6G11060,DnaJ domain protein
+1712,AFUA_6G11070,ATP-dependent RNA helicase DBP4
+1713,AFUA_6G11120,ATP-dependent RNA helicase DBP10
+1714,AFUA_6G11160,Isopentenyl-diphosphate delta-isomerase
+1715,AFUA_6G11260,Large ribosomal subunit protein uL24
+1716,AFUA_6G11270,Vesicle-associated membrane protein 7
+1717,AFUA_6G11310,Multifunctional protein PyrABCN
+1718,AFUA_6G11380,Mitochondrial import receptor subunit TOM20
+1719,AFUA_6G11390,"1,3-beta-glucanosyltransferase Gel2"
+1720,AFUA_6G11410,Double-strand break repair protein MRE11
+1721,AFUA_6G11470,TOR signaling pathway phosphatase SitA
+1722,AFUA_6G11510,S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine synthase
+1723,AFUA_6G11910,Beta-glucosidase J
+1724,AFUA_6G12170,FK506-binding protein 1A
+1725,AFUA_6G12250,Succinyl-CoA:3-ketoacid coenzyme A transferase 1
+1726,AFUA_6G12390,Serine palmitoyltransferase 1
+1727,AFUA_6G12400,"1,3-beta-glucan synthase catalytic subunit FksP"
+1728,AFUA_6G12410,"1,3-beta-glucanosyltransferase GAS1"
+1729,AFUA_6G12490,BolA domain protein
+1730,AFUA_6G12500,AhpC/TSA family protein
+1731,AFUA_6G12540,E3 ubiquitin-protein ligase DBL4
+1732,AFUA_6G12580,Anthranilate synthase component 1
+1733,AFUA_6G12630,"Leucine--tRNA ligase, cytoplasmic"
+1734,AFUA_6G12650,Splicing regulator SDE2
+1735,AFUA_6G12660,Small ribosomal subunit protein eS10A
+1736,AFUA_6G12680,Adenosine 5'-monophosphoramidase HNT1
+1737,AFUA_6G12700,DASH complex subunit DAM1
+1738,AFUA_6G12720,Small ribosomal subunit protein uS14
+1739,AFUA_6G12770,26S proteasome regulatory subunit RPN9
+1740,AFUA_6G12790,"NADH-ubiquinone oxidoreductase 40 kDa subunit, mitochondrial"
+1741,AFUA_6G12820,MAP kinase MpkB
+1742,AFUA_6G12830,Protein transport protein SEC24
+1743,AFUA_6G12840,Kinesin family protein
+1744,AFUA_6G12890,Vacuole morphology and inheritance protein 14
+1745,AFUA_6G12910,DNA repair and recombination protein RAD54
+1746,AFUA_6G12930,"Aconitate hydratase, mitochondrial"
+1747,AFUA_6G12950,"Alpha,alpha-trehalose-phosphate synthase [UDP-forming] 1"
+1748,AFUA_6G12970,Nuclear migration protein NudF
+1749,AFUA_6G12990,Large ribosomal subunit protein eL8B
+1750,AFUA_6G13020,AP-3 complex subunit sigma
+1751,AFUA_6G13030,Cell division control protein 4
+1752,AFUA_6G13140,"3,4-dihydroxy-2-butanone 4-phosphate synthase"
+1753,AFUA_6G13170,Ubiquitin-conjugating enzyme E2 C
+1754,AFUA_6G13230,Omega-amidase NIT3
+1755,AFUA_6G13250,Large ribosomal subunit protein eL31
+1756,AFUA_6G13280,Fatty acid-binding protein
+1757,AFUA_6G13300,GTP-binding nuclear protein Ran
+1758,AFUA_6G13410,Pre-mRNA-splicing factor RSE1
+1759,AFUA_6G13490,Glutamate decarboxylase
+1760,AFUA_6G13520,Tryptophan synthase
+1761,AFUA_6G13530,Ribosome maturation protein SDO1
+1762,AFUA_6G13540,Carboxypeptidase Y homolog A
+1763,AFUA_6G13550,Small ribosomal subunit protein uS13
+1764,AFUA_6G13570,Heme-binding peroxidase
+1765,AFUA_6G13590,3-isopropylmalate dehydrogenase
+1766,AFUA_6G13650,Pro-apoptotic serine protease NMA111
+1767,AFUA_6G13690,DNA topoisomerase 2
+1768,AFUA_6G14130,Ubiquitin-conjugating enzyme E2 15
+1769,AFUA_6G14180,Chitobiosyldiphosphodolichol beta-mannosyltransferase
+1770,AFUA_6G14200,"Acetyl-CoA acetyltransferase ERG10A, mitochondrial"
+1771,AFUA_6G14210,Ubiquitin-conjugating enzyme E2 2
+1772,AFUA_6G14220,Kinesin heavy chain
+1773,AFUA_6G14240,Calcium-binding protein NCS-1
+1774,AFUA_6G14250,Transmembrane 9 superfamily member 1
+1775,AFUA_6G14330,5-oxoprolinase
+1776,AFUA_6G14490,Beta-glucosidase H
+1777,AFUA_7G00250,Tubulin beta chain
+1778,AFUA_7G00350,"Sulfide:quinone oxidoreductase, mitochondrial"
+1779,AFUA_7G01030,Calcium-transporting ATPase 2
+1780,AFUA_7G01220,Squalene synthase ERG9
+1781,AFUA_7G01230,DnaJ domain protein
+1782,AFUA_7G01270,DNA polymerase kappa
+1783,AFUA_7G01300,GPI mannosyltransferase 1
+1784,AFUA_7G01370,Thiosulfate sulfurtransferase TUM1
+1785,AFUA_7G01380,Anaphase-promoting complex subunit 11
+1786,AFUA_7G01420,Isoleucine--tRNA ligase
+1787,AFUA_7G01460,Small ribosomal subunit protein uS5
+1788,AFUA_7G01480,Eukaryotic translation initiation factor 4E
+1789,AFUA_7G01520,BolA domain protein
+1790,AFUA_7G01830,UTP--glucose-1-phosphate uridylyltransferase
+1791,AFUA_7G01860,Heat shock protein STI1
+1792,AFUA_7G01880,Nicotinate phosphoribosyltransferase
+1793,AFUA_7G01910,Beta-catenin-like protein 1
+1794,AFUA_7G01920,DNA-directed RNA polymerase II subunit RPB2
+1795,AFUA_7G02020,V-type proton ATPase subunit G
+1796,AFUA_7G02070,Apoptosis-inducing factor 1
+1797,AFUA_7G02140,Small ribosomal subunit protein eS24
+1798,AFUA_7G02170,Peptidyl-prolyl cis-trans isomerase-like 4
+1799,AFUA_7G02180,UDP-N-acetylglucosamine pyrophosphorylase
+1800,AFUA_7G02200,Meiotic recombination protein DMC1
+1801,AFUA_7G02230,RNA-binding post-transcriptional regulator CSX1
+1802,AFUA_7G02270,Trafficking protein particle complex subunit BET3
+1803,AFUA_7G02280,Pre-mRNA-splicing factor CWC17
+1804,AFUA_7G02290,ER degradation-enhancing alpha-mannosidase-like protein 1
+1805,AFUA_7G02310,Adenine phosphoribosyltransferase
+1806,AFUA_7G02340,Protein HMF1
+1807,AFUA_7G02420,"NAD-dependent malic enzyme, mitochondrial"
+1808,AFUA_7G02480,Oxysterol-binding protein homolog 1
+1809,AFUA_7G02540,GTP-binding protein Ypt4
+1810,AFUA_7G02550,Xylitol dehydrogenase A
+1811,AFUA_7G02560,"D-lactate dehydrogenase [cytochrome], mitochondrial"
+1812,AFUA_7G02620,"DNA-directed RNA polymerases I, II, and III subunit RPABC5"
+1813,AFUA_7G03700,Diacylglycerol acyltransferase type 2A
+1814,AFUA_7G03720,Serine/threonine-protein kinase KIN28
+1815,AFUA_7G03740,Sterol 14-alpha demethylase Cyp51B
+1816,AFUA_7G03750,DNA damage response protein kinase DUN1
+1817,AFUA_7G03820,DNA repair protein RAD16
+1818,AFUA_7G03860,DNA-directed RNA polymerase II subunit RPB11
+1819,AFUA_7G03870,Actin cytoskeleton-regulatory complex protein PAN1
+1820,AFUA_7G03940,"Alpha,alpha-trehalose-phosphate synthase [UDP-forming] 106 kDa subunit"
+1821,AFUA_7G03990,Uridylate kinase
+1822,AFUA_7G04070,"Phospho-2-dehydro-3-deoxyheptonate aldolase, tyrosine-inhibited"
+1823,AFUA_7G04080,"3-ketoacyl-CoA thiolase, peroxisomal"
+1824,AFUA_7G04150,Mitochondrial import inner membrane translocase subunit TIM16
+1825,AFUA_7G04190,Sphingolipid C9-methyltransferase
+1826,AFUA_7G04280,U6 snRNA-associated Sm-like protein LSm5
+1827,AFUA_7G04430,Regulator of ribosome biosynthesis
+1828,AFUA_7G04460,Geranylgeranyl transferase type-2 subunit beta
+1829,AFUA_7G04480,DNA mismatch repair protein MSH3
+1830,AFUA_7G04490,Small ribosomal subunit protein eS28
+1831,AFUA_7G04500,ATP phosphoribosyltransferase
+1832,AFUA_7G04640,PHO85 cyclin-7
+1833,AFUA_7G04650,Proteasome subunit beta type-1
+1834,AFUA_7G04690,FAD-linked sulfhydryl oxidase ERV2
+1835,AFUA_7G04860,Dimethyladenosine transferase
+1836,AFUA_7G05210,CTP synthase
+1837,AFUA_7G05270,COMPASS component SDC1
+1838,AFUA_7G05290,Small ribosomal subunit protein uS15
+1839,AFUA_7G05310,Splicing factor U2AF large subunit
+1840,AFUA_7G05320,N-glycosylase/DNA lyase
+1841,AFUA_7G05360,FACT complex subunit POB3
+1842,AFUA_7G05370,Cell division control protein 3
+1843,AFUA_7G05470,"Electron transfer flavoprotein subunit alpha, mitochondrial"
+1844,AFUA_7G05510,Chromatin structure-remodeling complex protein RSC8
+1845,AFUA_7G05540,GPI inositol-deacylase
+1846,AFUA_7G05590,U6 small nuclear RNA (adenine-(43)-N(6))-methyltransferase
+1847,AFUA_7G05660,Elongation factor 3
+1848,AFUA_7G05670,Ribose-phosphate pyrophosphokinase 1
+1849,AFUA_7G05680,Siroheme synthase
+1850,AFUA_7G05720,"Dihydrolipoyllysine-residue acetyltransferase component of pyruvate dehydrogenase complex, mitochondrial"
+1851,AFUA_7G05740,"Malate dehydrogenase, mitochondrial"
+1852,AFUA_7G05800,"Fructose-2,6-bisphosphatase"
+1853,AFUA_7G05870,Proteasome subunit alpha type-2
+1854,AFUA_7G05920,Acyl-CoA desaturase
+1855,AFUA_7G05930,metallopeptidase MepB
+1856,AFUA_7G05950,Myosin regulatory light chain CDC4
+1857,AFUA_7G05980,Small nuclear ribonucleoprotein E
+1858,AFUA_7G06090,Acyl-coenzyme A oxidase
+1859,AFUA_7G06270,Cyanamide hydratase
+1860,AFUA_7G06380,Maltase
+1861,AFUA_8G00590,Delta 8-(E)-sphingolipid desaturase
+1862,AFUA_8G00850,Dihydroorotase
+1863,AFUA_8G01070,Delta(7)-sterol 5(6)-desaturase ERG3C
+1864,AFUA_8G01090,Thioredoxin
+1865,AFUA_8G01970,Endopolygalacturonase B
+1866,AFUA_8G02000,D-xylulose reductase
+1867,AFUA_8G02440,C-4 methylsterol oxidase ERG25A
+1868,AFUA_8G02560,Glyceraldehyde-3-phosphate dehydrogenase
+1869,AFUA_8G02730,Translation machinery-associated protein 22
+1870,AFUA_8G02750,rRNA processing protein CgrA
+1871,AFUA_8G02770,Cytidine deaminase
+1872,AFUA_8G02840,Dynamin-related protein DNM1
+1873,AFUA_8G02860,AMP deaminase
+1874,AFUA_8G03880,Alanine--tRNA ligase
+1875,AFUA_8G03890,Peptidyl-prolyl cis-trans isomerase H
+1876,AFUA_8G03920,Cyclin-dependent kinases regulatory subunit
+1877,AFUA_8G03930,Ribosome-associated molecular chaperone SSB1
+1878,AFUA_8G03980,MIP18 family protein
+1879,AFUA_8G03990,Pre-mRNA-splicing factor CWF10
+1880,AFUA_8G04000,"Acetyl-CoA acetyltransferase ERG10B, cytosolic"
+1881,AFUA_8G04070,Glucosamine-6-phosphate deaminase
+1882,AFUA_8G04080,Betaine aldehyde dehydrogenase
+1883,AFUA_8G04100,N-acetylglucosamine-6-phosphate deacetylase
+1884,AFUA_8G04260,Translocation protein SEC66
+1885,AFUA_8G04270,ATPase histone chaperone YTA7
+1886,AFUA_8G04340,Cystathionine gamma-lyase
+1887,AFUA_8G04350,DNA-directed RNA polymerase III subunit RPC8
+1888,AFUA_8G04430,Dolichyl-diphosphooligosaccharide--protein glycosyltransferase subunit STT3
+1889,AFUA_8G04460,Cytoplasmic dynein 1 intermediate chain 1
+1890,AFUA_8G04500,Dolichyl-phosphate-mannose--protein mannosyltransferase 4
+1891,AFUA_8G04510,Pirin
+1892,AFUA_8G04520,Actin cytoskeleton-regulatory complex protein SLA1
+1893,AFUA_8G04640,rRNA processing protein RCL1
+1894,AFUA_8G04650,"3-hydroxyanthranilate 3,4-dioxygenase"
+1895,AFUA_8G04740,Pre-mRNA-splicing helicase BRR2
+1896,AFUA_8G04750,"DNA mismatch repair protein MSH1, mitochondrial"
+1897,AFUA_8G04770,Acetoacetyl-CoA synthetase
+1898,AFUA_8G04780,Peroxisomal membrane protein 4
+1899,AFUA_8G04790,Ribosome biogenesis protein RPF2
+1900,AFUA_8G04800,"Valine--tRNA ligase, mitochondrial"
+1901,AFUA_8G04810,Casein kinase II subunit alpha
+1902,AFUA_8G04960,Small nuclear ribonucleoprotein G
+1903,AFUA_8G05140,Endoplasmic reticulum oxidoreductin-1
+1904,AFUA_8G05160,Peroxisomal membrane protein PEX13
+1905,AFUA_8G05200,Cysteine synthase 2
+1906,AFUA_8G05240,Peroxisomal targeting signal receptor
+1907,AFUA_8G05300,DNA-directed RNA polymerase II subunit RPB7
+1908,AFUA_8G05310,2-hydroxy-palmitic acid dioxygenase MPO1
+1909,AFUA_8G05320,"ATP synthase subunit alpha, mitochondrial"
+1910,AFUA_8G05330,Methylenetetrahydrofolate dehydrogenase [NAD(+)]
+1911,AFUA_8G05350,ER membrane protein complex subunit 3
+1912,AFUA_8G05440,"ATP synthase subunit 4, mitochondrial"
+1913,AFUA_8G05500,COP9 signalosome complex subunit 4
+1914,AFUA_8G05530,Fumarate reductase
+1915,AFUA_8G05560,Protein phosphatase PP2A regulatory subunit B
+1916,AFUA_8G05580,Acetyl-CoA hydrolase
+1917,AFUA_8G05630,Chitin synthase F
+1918,AFUA_8G05660,Myosin-1
+1919,AFUA_8G06020,Glutamate decarboxylase
+1920,AFUA_8G06540,Ornithine decarboxylase
+1921,AFUA_8G06550,Carbonic anhydrase
+1922,AFUA_8G07070,Alpha-glucosidase
+1923,AFUA_8G07130,"Peroxiredoxin PRX1, mitochondrial"
+1924,AFUA_8G07210,Hydroxymethylglutaryl-CoA synthase ERG13A

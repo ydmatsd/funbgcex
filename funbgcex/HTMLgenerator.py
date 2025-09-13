@@ -10,6 +10,7 @@ import warnings
 from Bio import BiopythonWarning
 warnings.simplefilter('ignore', BiopythonWarning)
 from Bio import SeqIO
+import threading
 
 
 coreDict = {"PKS-NRPS":"polyketide synthase-nonribosomal peptide synthetase",
@@ -78,48 +79,56 @@ coreColorDict = {"PKS-NRPS":"#802A4A",
                 "ePLS":"#005493"}
 
 
-def HTMLgenerator(BGCcsv,fungus_name,output_dir):
-    current_dir = os.path.dirname(os.path.abspath(__file__))
+def MakeAllBGCpage(current_dir,BGCcsv,fungus_name,main_result_dir,output_dir):
+    output_dir_split = output_dir.split("/")
+    output_dir = f"{output_dir_split[-2]}/{output_dir_split[-1]}"
+    codeList = []
+    df = pd.read_csv(BGCcsv,index_col=[0]).fillna("-")
+    for i in range(len(df)):
+        fungus = f'<a class="link" href="{output_dir}/results.html#top" target="_blank">{fungus_name}</a>'
+        BGCno = df.at[i,"BGC no."]
+        BGClink = f'<a class="link" href="{output_dir}/HTMLs/{BGCno}.html#top" target="_blank">{BGCno}</a>'
+        core = df.at[i,"Core enzymes"]
+        geneNum = df.at[i,"Number of genes"]
+        conserved = df.at[i,"Duplicated fungal proteins"]
+        human = df.at[i,"Duplicated human homologues"]
+        if conserved == "-":
+            conserved = "–"
+        if human == "-":
+            human = "–"    
+        similarBGCid = df.at[i,"Similar BGC"]
+        if similarBGCid != "-":
+            similarity = str(df.at[i,"Similarity score"])
+            similarMetab = df.at[i,"Metabolite from similar BGC"]
+            similarBGC = f"<a class='link' href='http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs/{similarBGCid}.html' target='_blank'>{similarBGCid}</a> ({similarMetab})"
+        else:
+            similarBGC = "–"
+            similarity = "–"
 
-    html_dir = f"{output_dir}/HTMLs"
-    os.makedirs(html_dir,exist_ok=True)
+        code = f'\t\t\t<tr>\n\t\t\t\t<td>{fungus}</td>\n\t\t\t\t<td>{BGClink}</td>\n\t\t\t\t<td>{geneNum}</td>\n\t\t\t\t<td>{core}</td>\n\t\t\t\t<td>{conserved}</td>\n\t\t\t\t<td>{human}</td>\n\t\t\t\t<td>{similarBGC}</td>\n\t\t\t\t<td>{similarity}</td>\n\t\t\t</tr>\n'
+        codeList.append(code)
 
-    css = f"{current_dir}/data/HTML/css/style.css"
-    main_css = f"{current_dir}/data/HTML/css/main_style.css"
-    pfam_css = f"{current_dir}/data/HTML/css/protfam_style.css"
-    copied_css_dir = f"{output_dir}/HTMLs/css"
-    os.makedirs(copied_css_dir,exist_ok=True)
-    shutil.copy2(css,copied_css_dir)
-    shutil.copy2(main_css,copied_css_dir)
-    shutil.copy2(pfam_css,copied_css_dir)
+    tableCode = "".join(codeList)
+    tableCode += "<!-- BGCsTABLE -->"
 
-    logo = f"{current_dir}/data/HTML/img/logo.png"
-    link = f"{current_dir}/data/HTML/img/link.png"
-    copied_img_dir = f"{html_dir}/img"
-    os.makedirs(copied_img_dir,exist_ok=True)
-    shutil.copy2(logo,copied_img_dir)
-    shutil.copy2(link,copied_img_dir)
+    lock = threading.Lock()
+    with lock: 
+        templateHTML = open(f"{main_result_dir}/allBGCs.html","r")
+        lineList = []
 
-    js_dir = f"{html_dir}/js"
-    os.makedirs(js_dir,exist_ok=True)
-    filter_js = f"{current_dir}/data/HTML/js/filter.js"
-    filter_js2 = f"{current_dir}/data/HTML/js/filter2.js"
-    shutil.copy2(filter_js,js_dir)
-    shutil.copy2(filter_js2,js_dir)
+        for line in templateHTML:
+            newLine = line.replace("<!-- BGCsTABLE -->",tableCode)
+            lineList.append(newLine)
 
-    pfamHTML = f"{current_dir}/data/HTML/protfam.html"
-    classHTML = f"{current_dir}/data/HTML/classification.html"
-    shutil.copy2(pfamHTML,html_dir)
-    shutil.copy2(classHTML,html_dir)
+        newHTML = open(f"{main_result_dir}/allBGCs.html","w")
+        for line in lineList:
+            newHTML.write(line)
 
-    BGCcsv = f"{output_dir}/BGCs.csv"
-    BGCdir = f"{output_dir}/BGCs"
-
-    gbk_files = glob.glob(f"{BGCdir}/*.gbk")
-    gbk_files = natsorted(gbk_files)
+        templateHTML.close()
+        newHTML.close()
 
 
-    #Make the main page
+def MakeMainPage(current_dir,BGCcsv,fungus_name,output_dir):
     codeList = []
     df = pd.read_csv(BGCcsv,index_col=[0]).fillna("-")
     for i in range(len(df)):
@@ -130,6 +139,12 @@ def HTMLgenerator(BGCcsv,fungus_name,output_dir):
         position = f"{scaffold} / {start}...{end}"
         core = df.at[i,"Core enzymes"]
         geneNum = df.at[i,"Number of genes"]
+        conserved = df.at[i,"Duplicated fungal proteins"]
+        human = df.at[i,"Duplicated human homologues"]
+        if conserved == "-":
+            conserved = "–"
+        if human == "-":
+            human = "–" 
         similarBGCid = df.at[i,"Similar BGC"]
         if similarBGCid != "-":
             similarity = str(df.at[i,"Similarity score"])
@@ -139,7 +154,7 @@ def HTMLgenerator(BGCcsv,fungus_name,output_dir):
             similarBGC = "–"
             similarity = "–"
 
-        code = f'\t\t\t<tr>\n\t\t\t\t<td><a class="link" href="HTMLs/{BGCno}.html#top">{BGCno}</a></td>\n\t\t\t\t<td>{position}</td>\n</td>\n\t\t\t\t<td>{geneNum}</td>\n\t\t\t\t<td>{core}</td>\n\t\t\t\t<td>{similarBGC}</td>\n\t\t\t\t<td>{similarity}</td>\n'
+        code = f'\t\t\t<tr>\n\t\t\t\t<td><a class="link" href="HTMLs/{BGCno}.html#top">{BGCno}</a></td>\n\t\t\t\t<td>{position}</td>\n\t\t\t\t<td>{geneNum}</td>\n\t\t\t\t<td>{core}</td>\n\t\t\t\t<td>{conserved}</td>\n\t\t\t\t<td>{human}</td>\n\t\t\t\t<td>{similarBGC}</td>\n\t\t\t\t<td>{similarity}</td>\n\t\t\t</tr>\n'
         codeList.append(code)
 
     tableCode = "".join(codeList)
@@ -148,14 +163,15 @@ def HTMLgenerator(BGCcsv,fungus_name,output_dir):
     newHTML = open(f"{output_dir}/results.html","w")
 
     for line in templateHTML:
-        newLine = line.replace("BGCsTABLE",tableCode)
+        newLine = line.replace("<h3>FUNGUS</h3>",f"<h3>{fungus_name}</h3>").replace("<!-- BGCsTABLE -->",tableCode)
         newHTML.write(newLine)
 
     templateHTML.close()
     newHTML.close()
 
 
-    #Make the top part of the HTML file
+def MakeBGCpage(current_dir,BGCcsv,fungus_name,gbk_files,html_dir):
+#Make the top part of the HTML file
     BGClist = []
     df = pd.read_csv(BGCcsv,index_col=[0]).fillna("-")
     for i in range(len(df)):
@@ -229,7 +245,7 @@ def HTMLgenerator(BGCcsv,fungus_name,output_dir):
         BGClist.append(bgcLink)
 
 
-    df = pd.read_csv(BGCcsv,index_col=[1]).fillna("-")
+    df = pd.read_csv(BGCcsv,index_col=[2]).fillna("-")
     for gbk in gbk_files:
         #Obtain BGC information
         BGCno = Path(gbk).stem.split("_")[0]
@@ -239,6 +255,12 @@ def HTMLgenerator(BGCcsv,fungus_name,output_dir):
         end = df.at[BGCno,"End position"]
         position = f"{scaffold} / {start}...{end}"
         core = df.at[BGCno,"Core enzymes"]
+        conserved = df.at[BGCno,"Duplicated fungal proteins"]
+        human = df.at[BGCno,"Duplicated human homologues"]
+        if conserved == "-":
+            conserved = "–"
+        if human == "-":
+            human = "–"
         seq_record = SeqIO.read(open(gbk),"genbank")
         length = len(seq_record.seq)
         similarBGCid = df.at[BGCno,"Similar BGC"]
@@ -260,14 +282,14 @@ def HTMLgenerator(BGCcsv,fungus_name,output_dir):
         BGClinks = "".join(BGClist2)
         
         for line in templateHTML:
-            newLine = line.replace("BGClist",BGClinks).replace("bgcNUMBER",BGCno).replace("bgcTITLE",BGCtitle).replace("POSITION",position).replace("CORE",core).replace("bgcLENGTH",str(length)).replace("similarBGC",similarBGC).replace("bgcGENBANK",gbk.split("/")[-1])
+            newLine = line.replace("BGClist",BGClinks).replace("bgcNUMBER",BGCno).replace("bgcTITLE",BGCtitle).replace("POSITION",position).replace("CORE",core).replace("DuplicatedFungalProteins",conserved).replace("DuplicatedHumanProteins",human).replace("bgcLENGTH",str(length)).replace("similarBGC",similarBGC).replace("bgcGENBANK",gbk.split("/")[-1])
             newHTML.write(newLine)
                 
         templateHTML.close()
         newHTML.close()
 
 
-    #Create an JavaScript file
+def MakeJS(current_dir,gbk_files,js_dir):
     df = pd.read_csv(f"{current_dir}/data/HTML/hmm.csv",index_col=[0]).fillna("none")
 
     for gbk in gbk_files:
@@ -342,7 +364,17 @@ def HTMLgenerator(BGCcsv,fungus_name,output_dir):
                                 homologue = f"{homologueProt} (<a class='funbgcs' href='http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs/{FBGCnum}.html' target='_blank'>{FBGCnum}</a>); identity: {identity}"
                             except:
                                 homologue = "–"
-                            
+
+                            try:
+                                HKGhomologue = feature.qualifiers["hkg_homologue"][0]
+                            except:
+                                HKGhomologue = "–"
+
+                            try:
+                                HumanHomologue = feature.qualifiers["human_homologue"][0]
+                            except:
+                                HumanHomologue = "–"
+
                             try:
                                 if feature.qualifiers["Pfam"][0] != "SKIPPED":
                                     pfamList = feature.qualifiers["Pfam"][0].split(", ")
@@ -380,7 +412,7 @@ def HTMLgenerator(BGCcsv,fungus_name,output_dir):
                             if core != "–":
                                 colorCode = coreColorDict[cores[0]]
                             
-                            gene_info = '{locus_tag: "' + locus_tag_pos + '", protein_type: "' + protein_type + '", start: ' + str(start).replace("<","") + ', end: ' + str(end).replace(">","") + ', strand: "' + strand + '", aaseq: "' + aaseq + '", aalen: "' + str(aalen) + '", color: "' + colorCode + '", domain: "' + domain + '", homologue: "' + homologue + '", pfam: "' + pfam + '",}'
+                            gene_info = '{locus_tag: "' + locus_tag_pos + '", protein_type: "' + protein_type + '", start: ' + str(start).replace("<","") + ', end: ' + str(end).replace(">","") + ', strand: "' + strand + '", aaseq: "' + aaseq + '", aalen: "' + str(aalen) + '", color: "' + colorCode + '", domain: "' + domain + '", homologue: "' + homologue + '", hkg_homologue: "' + HKGhomologue + '", human_homologue: "' + HumanHomologue + '", pfam: "' + pfam + '",}'
                             gene_list.append(gene_info)
                 
                         except:
@@ -400,3 +432,71 @@ def HTMLgenerator(BGCcsv,fungus_name,output_dir):
             
         templateJS.close()
         newJS.close()
+
+
+def HTMLgenerator(BGCcsv,fungus_name,main_result_dir,output_dir):
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+
+    html_dir = f"{output_dir}/HTMLs"
+    os.makedirs(html_dir,exist_ok=True)
+
+    css = f"{current_dir}/data/HTML/css/style.css"
+    main_css = f"{current_dir}/data/HTML/css/main_style.css"
+    pfam_css = f"{current_dir}/data/HTML/css/protfam_style.css"
+    copied_css_dir = f"{output_dir}/HTMLs/css"
+    os.makedirs(copied_css_dir,exist_ok=True)
+    shutil.copy2(css,copied_css_dir)
+    shutil.copy2(main_css,copied_css_dir)
+    shutil.copy2(pfam_css,copied_css_dir)
+
+    logo = f"{current_dir}/data/HTML/img/logo.png"
+    link = f"{current_dir}/data/HTML/img/link.png"
+    copied_img_dir = f"{html_dir}/img"
+    os.makedirs(copied_img_dir,exist_ok=True)
+    shutil.copy2(logo,copied_img_dir)
+    shutil.copy2(link,copied_img_dir)
+
+    js_dir = f"{html_dir}/js"
+    os.makedirs(js_dir,exist_ok=True)
+    filter_js = f"{current_dir}/data/HTML/js/filter.js"
+    filter_js1 = f"{current_dir}/data/HTML/js/filter1.js"
+    filter_js2 = f"{current_dir}/data/HTML/js/filter2.js"
+    shutil.copy2(filter_js,js_dir)
+    shutil.copy2(filter_js1,js_dir)
+    shutil.copy2(filter_js2,js_dir)
+
+    pfamHTML = f"{current_dir}/data/HTML/protfam.html"
+    classHTML = f"{current_dir}/data/HTML/classification.html"
+    shutil.copy2(pfamHTML,html_dir)
+    shutil.copy2(classHTML,html_dir)
+
+    BGCcsv = f"{output_dir}/BGCs.csv"
+    BGCdir = f"{output_dir}/BGCs"
+
+    gbk_files = glob.glob(f"{BGCdir}/*.gbk")
+    gbk_files = natsorted(gbk_files)
+
+    data_dir = f"{main_result_dir}/data"
+
+    if os.path.isdir(data_dir) == False:
+        os.makedirs(data_dir,exist_ok=True)
+        allHTMLtemplate = f"{current_dir}/data/HTML/ALLtemplate.html"
+        allHTML = f"{main_result_dir}/allBGCs.html"
+        shutil.copy2(allHTMLtemplate,allHTML)
+        shutil.copy2(main_css,data_dir)
+        shutil.copy2(filter_js,data_dir)
+        shutil.copy2(logo,data_dir)
+
+    
+    #Make the main page
+    MakeAllBGCpage(current_dir,BGCcsv,fungus_name,main_result_dir,output_dir)
+
+    #Make the overview page
+    MakeMainPage(current_dir,BGCcsv,fungus_name,output_dir)
+
+    #Make individual BGC pages
+    MakeBGCpage(current_dir,BGCcsv,fungus_name,gbk_files,html_dir)
+
+    #Create a JavaScript file
+    MakeJS(current_dir,gbk_files,js_dir)
+    
