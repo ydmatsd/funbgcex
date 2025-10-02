@@ -586,6 +586,7 @@ Tri3,acetyltransferase,,#76D6FF,Pfam,PF07428.14
 TRI5,,,,Pfam,PF06330.14
 Tri6,transcription factor,,#929000,MyHMM,
 TRI9,,,,Pfam,PF08195.14
+TriDTC,,,,MyHMM,
 tRNA_anti-codon,tRNA synthetase,,,Pfam,PF01336.28
 tRNA-synt_1c,tRNA synthetase,,,Pfam,PF00749.24
 tRNA-synt_1c_C,tRNA synthetase,,,Pfam,PF03950.21
