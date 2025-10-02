@@ -25,7 +25,7 @@ def get_args():
     parser.add_argument("--no_kexb",action="store_true",help="Extract RiPP BGCs without a precursor peptide with KexB cleavage sites.")
     parser.add_argument("-w","--workers",default=1,help="Number of cuncurrently analyzed genomes (Default: 1)",type=int)
     parser.add_argument("--csv",action="store_true",help="To include analysis CSV files in the output.")
-    parser.add_argument("-v","--version",action="version",version='%(prog)s 1.0.0')
+    parser.add_argument("-v","--version",action="version",version='%(prog)s 1.0.1')
     args = parser.parse_args()
     return(args)
 
