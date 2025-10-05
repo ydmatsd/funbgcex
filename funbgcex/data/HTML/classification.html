@@ -33,17 +33,17 @@
 			<tr>
 				<td id="NR-PKS">non-reducing polyketide synthase</td>
 				<td>NR-PKS</td>
-				<td style="text-align: justify;"><b>With:</b> PKS_KS + PKS_AT + fPKS_PT<br><b>Without:</b> fPKS_KR + AA-adenyl-dom</td>
+				<td style="text-align: justify;"><b>With:</b> PKS_KS + PKS_AT + ACP_PCP + fPKS_PT<br><b>Without:</b> fPKS_KR + AA-adenyl-dom</td>
 			</tr>
 			<tr>
 				<td id="PR-PKS">partially reducing polyketide synthase</td>
 				<td>PR-PKS</td>
-				<td style="text-align: justify;"><b>With:</b> PKS_KS + PKS_AT + fPKS_TH<br><b>Without:</b> AA-adenyl-dom</td>
+				<td style="text-align: justify;"><b>With:</b> PKS_KS + PKS_AT + ACP_PCP + fPKS_TH<br><b>Without:</b> AA-adenyl-dom</td>
 			</tr>
 			<tr>
 				<td id="HR-PKS">highly reducing polyketide synthase</td>
 				<td>HR-PKS</td>
-				<td style="text-align: justify;"><b>With:</b> PKS_KS + PKS_AT + fPKS_DH<br><b>Without:</b> AA-adenyl-dom</td>
+				<td style="text-align: justify;"><b>With:</b> PKS_KS + PKS_AT + ACP_PCP + fPKS_DH<br><b>Without:</b> AA-adenyl-dom</td>
 			</tr>
 			<tr>
 				<td id="T3PKS">type III polyketide synthase</td>
@@ -53,7 +53,7 @@
 			<tr>
 				<td id="PKS-like">PKS-like enzyme</td>
 				<td>PKS-like</td>
-				<td style="text-align: justify;"><b>With:</b> PKS_KS + PKS_AT<br><b>Without:</b> fPKS_PT + fPKS_TH + fPKS_DH</td>
+				<td style="text-align: justify;"><b>With:</b> PKS_KS + (PKS_AT or ACP_PCP)<br><b>Without:</b> fPKS_PT + fPKS_TH + fPKS_DH</td>
 			</tr>
 			<tr>
 				<td id="NRPS">nonribosomal peptide synthetase</td>
@@ -63,7 +63,7 @@
 			<tr>
 				<td id="NRPS-like">NRPS-like enzyme</td>
 				<td>NRPS-like</td>
-				<td style="text-align: justify;"><b>With:</b> AA-adenyl-dom + (fPKS_R or Thioesterase or Abhydrolase_3 or ACP_PCP)<br><b>Without:</b> NRPS_C + NRPS_CT + PKS_KS</td>
+				<td style="text-align: justify;"><b>With:</b> AA-adenyl-dom + (fPKS_R or Thioesterase or Abhydrolase_3 or FSH1 or Transferase or ACP_PCP)<br><b>Without:</b> NRPS_C + NRPS_CT + PKS_KS</td>
 			</tr>
 			<tr>
 				<td id="PKS-NRPS">polyketide synthase-nonribosomal peptide synthetase</td>
@@ -165,10 +165,15 @@
 				<td>PPPS</td>
 				<td style="text-align: justify;"><b>With:</b> GGPS<br><b>Without:</b> Terpene_syn_C_2 + Terpene_synth_C + PbcA</td>
 			</tr>
-			<tr>
+<!-- 			<tr>
 				<td id="RiPP_PP">ribosomally synthesized and posttranslationally modified peptide (RiPP) precursor peptide</td>
 				<td>RiPP PP</td>
 				<td style="text-align: justify;"><b>1.</b> The protein sequence contains ≥3, ≥90% identical sequences with ≥10 amino acids, with ≥3 different amino acids, and with either "KR," "KK," "RK," or "RR."<br><b>2.</b> At least one <i>ustY</i>-like gene is found in the flanking regions of the gene encoding the protein.</td>
+			</tr> -->
+			<tr>
+				<td id="RiPP_PP">ribosomally synthesized and posttranslationally modified peptide (RiPP) precursor peptide</td>
+				<td>RiPP PP</td>
+				<td style="text-align: justify;"><b>1.</b> The protein has an N-terminal signal sequence.<br><b>2.</b> The protein sequence contains ≥2, ≥70% identical sequences with ≥8 amino acids, with ≥3 different amino acids, and with either "KR," "KK," "RK," or "RR."<br><b>3.</b> At least one <i>ustY</i>-like gene is found in the flanking regions of the gene encoding the protein.<br><b>NOTE:</b> The above-described detection criteria are the default settings and can be modified according to the user's need.</td>
 			</tr>
 			<tr>
 				<td id="RCDPS">arginine-containing cyclodipeptide synthase</td>

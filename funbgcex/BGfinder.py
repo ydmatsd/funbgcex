@@ -64,10 +64,10 @@ def Core_extractor(mode,hmmscan_result,df,temp_dir):
             if item in Corefam_list:
                 isCore = True
         if 'AA-adenyl-dom' in prot:
-            if 'PKS_KS' in prot or 'NRPS_C' in prot or 'NRPS_CT' in prot or 'fPKS_R' in prot or "Thioesterase" in prot or "Abhydrolase_3" in prot:
+            if 'PKS_KS' in prot or 'NRPS_C' in prot or 'NRPS_CT' in prot or 'fPKS_R' in prot or "Thioesterase" in prot or "Abhydrolase_3" in prot or "FSH1" in prot or 'Transferase' in prot or 'ACP_PCP' in prot:
                 isCore = True
         elif 'PKS_KS' in prot:
-            if 'PKS_AT' in prot:
+            if 'PKS_AT' in prot or 'ACP_PCP' in prot:
                 isCore = True
 
         for i in range(len(df)):

@@ -20,7 +20,7 @@ class Annotation:
         'UbiA_TC': 292, 'Thioesterase': 230, 'SQHop_cyclase_C': 319, 'Carn_acyltransf': 568, 
         'fPKS_DH': 306, 'Terpene_syn_C_2': 199, 'Terpene_synth_C':267,'Abhydrolase_3': 211, 'fPKS_KR': 175,
         'AA-adenyl-dom': 409, 'DIT1_PvcA': 277, 'PEP_mutase': 241, 'SalTPS': 606, 'CosA': 319, 'Aminotran_5': 371,
-        'VniA': 590,'TriDTC':653}
+        'VniA': 590, 'TriDTC': 653, 'Transferase': 434, 'FSH1': 212}
 
         os.makedirs(temp_dir,exist_ok=True)
         fasta = f"{temp_dir}/seq.fasta"
@@ -111,7 +111,7 @@ class Annotation:
 
         for item in sorted_list:
 
-            if "AA-adenyl-dom" in item and float(item[1]) > 30:
+            if "AA-adenyl-dom" in item and float(item[1]) > 20:
                 withA = True
                 domains_list.append(["A",item[2]])
             if "NRPS_C" in item and float(item[1]) > 50:
@@ -122,7 +122,7 @@ class Annotation:
                 domains_list.append(["CT",item[2]])
             if "fPKS_R" in item:
                 domains_list.append(["R",item[2]])
-            if "Thioesterase" in item or "Abhydrolase_3" in item:
+            if "Thioesterase" in item or "Abhydrolase_3" in item or "FSH1" in item:
                 domains_list.append(["TE",item[2]])
             if "PKS_KS" in item and float(item[1]) > 50:
                 withKS = True
@@ -149,6 +149,8 @@ class Annotation:
                 domains_list.append(["ACP",item[2]])            
             if "Carn_acyltransf" in item:
                 domains_list.append(["cAT",item[2]])
+            if "Transferase" in item:
+                domains_list.append(["Transferase",item[2]])
             if "NRPS_term_dom" in item:
                 domains_list.append(["C-C-C",item[2]])
 
@@ -168,7 +170,7 @@ class Annotation:
                     else:
                         classification = "NRPS-PKS"
                         coreList.append(classification)
-                elif "AT" in domain_org_list:
+                elif "AT" in domain_org_list and 'ACP' in domain_org_list:
                     if "PT" in domain_org_list and "KR" not in domain_org_list:
                         classification = "NR-PKS"
                         coreList.append(classification)
@@ -181,13 +183,16 @@ class Annotation:
                     else:
                         classification = "PKS-like"
                         coreList.append(classification)
+                elif "AT" in domain_org_list or 'ACP' in domain_org_list:
+                    classification = "PKS-like"
+                    coreList.append(classification)
                 else:
                     classification = "none"
             elif "A" in domain_org_list:
                 if "C" in domain_org_list or "CT" in domain_org_list:
                     classification = "NRPS"
                     coreList.append(classification)
-                elif "R" in domain_org_list or "TE" in domain_org_list or "ACP" in domain_org_list:
+                elif "R" in domain_org_list or "TE" in domain_org_list or "Transferase" in domain_org_list or "ACP" in domain_org_list:
                     classification = "NRPS-like"
                     coreList.append(classification)
                 elif "C-C-C" in domain_org_list:
