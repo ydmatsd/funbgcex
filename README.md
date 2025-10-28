@@ -124,4 +124,4 @@ $ funbgcex --help
 ## Citation
 If you find FunBGCeX useful, please cite:  
 * Tang, J., Matsuda, Y. *Nat. Commun.* **15**, 4312 (2024)  
-* Chan, T. K., Wei, X., Ma, L., Wang, H., Liao, P., Matsuda, Y. *ChemRxiv* DOI: 10.26434/chemrxiv-2025-2zn37
+* Chan, T. K., Wei, X., Ma, L., Wang, H., Liao, P., Matsuda, Y. *J. Am. Chem. Soc* in press (2025)
