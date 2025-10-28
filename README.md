@@ -2,7 +2,7 @@
 
 [![pypi](https://img.shields.io/pypi/v/funbgcex.svg)](https://pypi.python.org/pypi/funbgcex)
 [![GitHub license](https://img.shields.io/github/license/ydmatsd/funbgcex.svg)](https://github.com/ydmatsd/funbgcex)
-[![DOI](https://zenodo.org/badge/661527897.svg)](https://zenodo.org/badge/latestdoi/661527897)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8126796.svg)](https://zenodo.org/badge/latestdoi/661527897)
 
 ## Overview
 **FunBGCeX** is a genome mining tool for fungal natural product discovery. It detects biosynthetic proteins based on our manually curated database of fungal natural product biosynthetic gene clusters (BGCs), [FunBGCs](http://staffweb1.cityu.edu.hk/ymatsuda/funbgcs/funbgcs.html). FunBGCeX can detect all possible BGCs from given fungal genomes and selectively extract BGCs according to the user's various needs. Currently available methods include:
@@ -124,4 +124,4 @@ $ funbgcex --help
 ## Citation
 If you find FunBGCeX useful, please cite:  
 * Tang, J., Matsuda, Y. *Nat. Commun.* **15**, 4312 (2024)  
-* Chan, T. K., Wei, X., Ma, L., Wang, H., Liao, P., Matsuda, Y. *ChemRxiv* DOI: 10.26434/chemrxiv-2025-2zn37
+* Chan, T. K., Wei, X., Ma, L., Wang, H., Liao, P., Matsuda, Y. *J. Am. Chem. Soc* in press (2025)
