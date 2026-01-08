@@ -15,6 +15,7 @@ warnings.simplefilter('ignore',BiopythonWarning)
 from Bio import SeqIO
 from Bio import SearchIO
 from Bio.Blast import NCBIXML
+from Bio.SeqFeature import SeqFeature, FeatureLocation
 import numpy as np
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 from tensorflow.keras.models import load_model
@@ -758,6 +759,9 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
             
 
             if ToBeExtracted:
+                BGC_start = start_pos
+                BGC_end = end_pos
+
                 if additional_genes > 0:
                     #Adjusting the start point
                     if counter_start - additional_genes >= 0:
@@ -801,6 +805,8 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
 
                 gbk = f"{GBK_dir}/{scaffold}.gbk"
                 seq_record = SeqIO.read(open(gbk),"genbank")
+                feature = SeqFeature(FeatureLocation(int(BGC_start),int(BGC_end)),type="misc_feature",qualifiers={"note": ["predicted BGC"]})
+                seq_record.features.append(feature)
                 subrecord = seq_record[start_pos:end_pos]
                 subrecord.annotations["molecule_type"] = "DNA"
                 subrecord.annotations['topology'] = 'linear'
