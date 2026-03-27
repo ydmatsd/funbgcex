@@ -520,6 +520,7 @@ Pyr_redox_3,FAD-dependent monooxygenase,,#008F01,Pfam,PF13738.9
 Pyr4,,,,MyHMM,
 Pyridoxal_deC,decarboxylase,,#73FCD6,Pfam,PF00282.22
 Questin_oxidase,dioxygenase,,#FF2F92,Pfam,PF14027.9
+rSAM_SeCys,radical SAM enzyme,,#993664,TIGRFAMs,TIGR04167.1
 RmlD_sub_bind,,,,Pfam,PF04321.20
 RsgA_GTPase,,,,Pfam,PF03193.19
 RSN1_7TM,,,,Pfam,PF02714.18
