@@ -297,6 +297,7 @@ Glyco_hydro_3_C,glycosyl hydrolase,,#0096FF,Pfam,PF01915.25
 Glyco_hydro_31,glycosyl hydrolase,,#0096FF,Pfam,PF01055.29
 Glyco_hydro_43,glycosyl hydrolase,,#0096FF,Pfam,PF04616.17
 Glyco_hydro_cc,glycosyl hydrolase,,#0096FF,Pfam,PF11790.11
+Glyco_tranf_2_3,glycosyltransferase,,#9437FF,Pfam,PF13641.13
 Glyco_tran_28_C,glycosyltransferase,,#9437FF,Pfam,PF04101.18
 Glyco_transf_28,glycosyltransferase,,#9437FF,Pfam,PF03033.23
 Glyoxal_oxid_N,,,,Pfam,PF07250.14
