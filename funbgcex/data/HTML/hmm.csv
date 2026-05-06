@@ -529,6 +529,7 @@ RSN1_TM,,,,Pfam,PF13967.9
 RTA1,transporter,,#000000,Pfam,PF04479.16
 Rua1_C,transcription factor,,#929000,Pfam,PF14616.9
 Sacchrp_dh_NADP,,,,Pfam,PF03435.21
+SacE,,,,MyHMM,
 SalTPS,,,,MyHMM,
 SAT2,starter-unit acyltransferase,"NR-PKS,PR-PKS,HR-PKS,NRPS,PKS-NRPS,NRPS-PKS,PKS-like",#5298B5,MyHMM,
 Say1_Mug180,,,,Pfam,PF10340.12

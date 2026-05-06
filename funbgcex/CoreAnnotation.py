@@ -20,7 +20,7 @@ class Annotation:
         'UbiA_TC': 292, 'Thioesterase': 230, 'SQHop_cyclase_C': 319, 'Carn_acyltransf': 568, 
         'fPKS_DH': 306, 'Terpene_syn_C_2': 199, 'Terpene_synth_C':267,'Abhydrolase_3': 211, 'fPKS_KR': 175,
         'AA-adenyl-dom': 409, 'DIT1_PvcA': 277, 'PEP_mutase': 241, 'SalTPS': 606, 'CosA': 319, 'Aminotran_5': 371,
-        'VniA': 590, 'TriDTC': 653, 'Transferase': 434, 'FSH1': 212}
+        'VniA': 590, 'TriDTC': 653, 'Transferase': 434, 'FSH1': 212, 'SacE': 250}
 
         os.makedirs(temp_dir,exist_ok=True)
         fasta = f"{temp_dir}/seq.fasta"
@@ -306,6 +306,10 @@ class Annotation:
                 classification = "RCDPS"
                 if classification not in coreList:
                     coreList.append(classification)
+            elif "SacE" in item:
+                classification = "CDPS (SacE)"
+                if classification not in coreList:
+                    coreList.append(classification)
             elif "DIT1_PvcA" in item:
                 classification = "ICS"
                 if classification not in coreList:
@@ -328,7 +332,7 @@ class Annotation:
         preference = {"PKS-NRPS":1,"NRPS-PKS":2,"NR-PKS":3,"PR-PKS":4,"HR-PKS":5,"T3PKS":6,"NRPS":7,"chimeric TS":8,"TC (Class1)":9,
         "TC (SHC/OSC)":10,"TC (Tri5)":11,"TC (Pyr4)":12,"TC (UbiA)":13,"TC (PbcA)":14,"TC (AstC)":15,"TC (ABA3)":16,
         "TC (AsR6)":17,"TC (SalTPS)":18,"TC (VniA)":19,"TC (TriDTC)":20,"PT (UbiA)":21,"PT (PaxC)":22,"PT (DMATS)":23,"PT (CosA)":24,"PPPS":25,
-        "RiPP PP":26,"RCDPS":27,"ICS":28,"PEPM":29,"NRPS-like":30,"PKS-like":31,"ePLS":32}
+        "RiPP PP":26,"RCDPS":27,"CDPS (SacE)":28,"ICS":29,"PEPM":30,"NRPS-like":31,"PKS-like":32,"ePLS":33}
 
         coreList = sorted(coreList, key=lambda x: preference[x])
 

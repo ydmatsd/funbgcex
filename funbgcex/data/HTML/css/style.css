@@ -179,11 +179,11 @@ ol a {
     font: 14px Helvetica, sans-serif;
     position: absolute;  
 }
-.rcdps {
+.cdps {
     background-color: #01B101;
     border: 2px solid #007501;
 }
-.current_rcdps {
+.current_cdps {
     border-radius: 25%;
     width: 30px;
     height: 30px;

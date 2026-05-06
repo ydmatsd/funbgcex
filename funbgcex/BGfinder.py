@@ -35,7 +35,7 @@ def Core_extractor(mode,hmmscan_result,df,temp_dir):
 
     Corefam_list = ["Terpene_syn_C_2","Terpene_synth_C","TRI5","SQHop_cyclase_C","SQHop_cyclase_N",
     "Trp_DMAT","Pyr4","PbcA","AstC","ABA3","AsR6","SalTPS","VniA","TriDTC","UbiA_PT","UbiA_TC","CosA","PaxC","GGPS",
-    "Chal_sti_synt_N","Chal_sti_synt_C","AnkA","DIT1_PvcA","PEP_mutase"]
+    "Chal_sti_synt_N","Chal_sti_synt_C","AnkA","SacE","DIT1_PvcA","PEP_mutase"]
 
     # To make a list in which each locus_tag can be linked with a Pfam hit
     if mode != "ripps":
@@ -879,7 +879,7 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                 preference = {"PKS-NRPS":1,"NRPS-PKS":2,"NR-PKS":3,"PR-PKS":4,"HR-PKS":5,"T3PKS":6,"NRPS":7,"chimeric TS":8,"TC (Class1)":9,
                 "TC (SHC/OSC)":10,"TC (Tri5)":11,"TC (Pyr4)":12,"TC (UbiA)":13,"TC (PbcA)":14,"TC (AstC)":15,"TC (ABA3)":16,
                 "TC (AsR6)":17,"TC (SalTPS)":18,"TC (VniA)":19,"TC (TriDTC)":20,"PT (UbiA)":21,"PT (PaxC)":22,"PT (DMATS)":23,"PT (CosA)":24,"PPPS":25,
-                "RiPP PP":26,"RCDPS":27,"ICS":28,"PEPM":29,"NRPS-like":30,"PKS-like":31,"ePLS":32}
+                "RiPP PP":26,"RCDPS":27,"CDPS (SacE)":28,"ICS":29,"PEPM":30,"NRPS-like":31,"PKS-like":32,"ePLS":33}
 
                 core_list_sorted = sorted(core_list, key=lambda x: preference[x])
                 core_enz = ", ".join(core_list_sorted)

@@ -40,6 +40,7 @@ coreDict = {"PKS-NRPS":"polyketide synthase-nonribosomal peptide synthetase",
             "PPPS":"polyprenyl pyrophosphate synthase",
             "RiPP PP":"RiPP precursor peptide",
             "RCDPS":"arginine-containing cyclodipeptide synthase",
+            "CDPS (SacE)":"SacE-like cyclodipeptide synthase",
             "ICS":"isocyanide synthase",
             "PEPM":"phosphoenolpyruvate mutase",
             "NRPS-like":"NRPS-like enzyme",
@@ -74,6 +75,7 @@ coreColorDict = {"PKS-NRPS":"#802A4A",
                 "PPPS":"#0000FF",
                 "RiPP PP":"#FF6BA0",
                 "RCDPS":"#941751",
+                "CDPS (SacE)":"#941751",
                 "ICS":"#83194C",
                 "PEPM":"#C7E280",
                 "NRPS-like":"#005493",
@@ -189,7 +191,7 @@ def MakeBGCpage(current_dir,BGCcsv,fungus_name,gbk_files,html_dir):
         withTC = False
         withPT = False
         withPiPPpp = False
-        withRCDPS = False
+        withCDPS = False
         withICS = False
         withPEPM = False
 
@@ -207,8 +209,8 @@ def MakeBGCpage(current_dir,BGCcsv,fungus_name,gbk_files,html_dir):
             withPT = True
         if "RiPP PP" in coreList:
             withPiPPpp = True
-        if "RCDPS" in coreList:
-            withRCDPS = True
+        if "RCDPS" in coreList or "CDPS " in coreList:
+            withCDPS = True
         if "ICS" in coreList:
             withICS = True
         if "PEPM" in coreList:
@@ -231,8 +233,8 @@ def MakeBGCpage(current_dir,BGCcsv,fungus_name,gbk_files,html_dir):
             BGCtype = "terpene"
         elif withPiPPpp:
             BGCtype = "ripp"
-        elif withRCDPS:
-            BGCtype = "rcdps"
+        elif withCDPS:
+            BGCtype = "cdps"
         elif withICS:
             BGCtype = "ics"
         elif withPEPM:
