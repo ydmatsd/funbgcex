@@ -210,7 +210,7 @@ def BGCeXtractor(file,gbk_dir,results_dir,results_dir2,mode,query,gap_allowed,ma
             SMhmm = f"{current_dir}/data/hmm/fungalSM/fungalSM.hmm"
 
             logger.debug("Adding Pfam information")
-            AddPfam(hmmscan_result_,df,SMhmm)
+            AddPfam(mode,hmmscan_result_,df,SMhmm)
 
             """
             Find the closest homologue in the fungal biosynthetic proteins
@@ -347,7 +347,7 @@ def BGCeXtractor(file,gbk_dir,results_dir,results_dir2,mode,query,gap_allowed,ma
     """
     Delete directories
     """
-    shutil.rmtree(temp_dir)
+    # shutil.rmtree(temp_dir)
 
     """
     Message for BGC extraction completion
