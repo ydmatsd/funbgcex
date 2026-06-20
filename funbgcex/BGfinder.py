@@ -299,7 +299,7 @@ def ExtractCDS4Check(mode,num_of_genes_checked,output_dir,df):
                 fa.write(df.at[i,"sequence"]+"\n")
 
 
-def AddPfam(hmmscan_result,df,SMhmm):
+def AddPfam(mode,hmmscan_result,df,SMhmm):
     pfamLength = {} #Make a dictiory that contains the name and length of each Pfam entry
     addDict = False
     with open(SMhmm,"r") as h:
@@ -402,6 +402,16 @@ def AddPfam(hmmscan_result,df,SMhmm):
         pfam = ", ".join(sublist)
         df.loc[df["locus_tag"] == item[0], "Pfam"] = pfam
         df.loc[df["locus_tag"] == item[0], "BP"] = 1
+
+    #E-value in hmmscan analysis can vary depending on the number of HMM profiles used. Even if Pfam domains are detected in earlier analyses, if no Pfam domain is detected in this round of analysis, the previous results are overwritten.
+    for i in range(len(df)):
+        if df.at[i,"Pfam"] == "none":
+            if mode == "pfam" and df.at[i,"withTarget"] == 1:
+                df.at[i,"BP"] = 0
+                df.at[i,"withTarget"] = 0
+            if df.at[i,"core"] != "none" and df.at[i,"core"] != "RiPP PP":
+                df.at[i,"core"] = "none"
+
 
 
 def AddHomologue(blastp_result,df):
