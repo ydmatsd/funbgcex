@@ -171,9 +171,13 @@ class Annotation:
                         classification = "NRPS-PKS"
                         coreList.append(classification)
                 elif "AT" in domain_org_list and 'ACP' in domain_org_list:
-                    if "PT" in domain_org_list and "KR" not in domain_org_list:
-                        classification = "NR-PKS"
-                        coreList.append(classification)
+                    if "PT" in domain_org_list:
+                        if "KR" not in domain_org_list:
+                            classification = "NR-PKS"
+                            coreList.append(classification)
+                        elif "KR" in domain_org_list and domain_org_list.index("KS") > domain_org_list.index("KR"):
+                            classification = "nPR-PKS"
+                            coreList.append(classification)
                     elif "DH" in domain_org_list:
                         classification = "HR-PKS"
                         coreList.append(classification)
@@ -328,11 +332,10 @@ class Annotation:
             coreList.append("chimeric TS")
             classification = "chimeric TS"
 
-
-        preference = {"PKS-NRPS":1,"NRPS-PKS":2,"NR-PKS":3,"PR-PKS":4,"HR-PKS":5,"T3PKS":6,"NRPS":7,"chimeric TS":8,"TC (Class1)":9,
-        "TC (SHC/OSC)":10,"TC (Tri5)":11,"TC (Pyr4)":12,"TC (UbiA)":13,"TC (PbcA)":14,"TC (AstC)":15,"TC (ABA3)":16,
-        "TC (AsR6)":17,"TC (SalTPS)":18,"TC (VniA)":19,"TC (TriDTC)":20,"PT (UbiA)":21,"PT (PaxC)":22,"PT (DMATS)":23,"PT (CosA)":24,"PPPS":25,
-        "RiPP PP":26,"RCDPS":27,"CDPS (SacE)":28,"ICS":29,"PEPM":30,"NRPS-like":31,"PKS-like":32,"ePLS":33}
+        preference = {"PKS-NRPS":1,"NRPS-PKS":2,"NR-PKS":3,"PR-PKS":4,"nPR-PKS":5,"HR-PKS":6,"T3PKS":7,"NRPS":8,"chimeric TS":9,"TC (Class1)":10,
+        "TC (SHC/OSC)":11,"TC (Tri5)":12,"TC (Pyr4)":13,"TC (UbiA)":14,"TC (PbcA)":15,"TC (AstC)":16,"TC (ABA3)":17,
+        "TC (AsR6)":18,"TC (SalTPS)":19,"TC (VniA)":20,"TC (TriDTC)":21,"PT (UbiA)":22,"PT (PaxC)":23,"PT (DMATS)":24,"PT (CosA)":25,"PPPS":26,
+        "RiPP PP":27,"RCDPS":28,"CDPS (SacE)":29,"ICS":30,"PEPM":31,"NRPS-like":32,"PKS-like":33,"ePLS":34}
 
         coreList = sorted(coreList, key=lambda x: preference[x])
 
