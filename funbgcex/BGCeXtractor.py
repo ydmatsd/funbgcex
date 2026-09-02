@@ -347,7 +347,7 @@ def BGCeXtractor(file,gbk_dir,results_dir,results_dir2,mode,query,gap_allowed,ma
     """
     Delete directories
     """
-    # shutil.rmtree(temp_dir)
+    shutil.rmtree(temp_dir)
 
     """
     Message for BGC extraction completion
