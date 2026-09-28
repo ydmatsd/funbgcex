@@ -23,6 +23,7 @@ def get_args():
     parser.add_argument("--no_core",action="store_true",help="Use if you wish to extract BGCs without a core protein as well.")
     parser.add_argument("--no_usty",action="store_true",help="Extract RiPP BGCs without a UstY homologue(s)")
     parser.add_argument("--no_kexb",action="store_true",help="Extract RiPP BGCs without a precursor peptide with KexB cleavage sites.")
+    parser.add_argument("--min_aa",default=3,help="Minimum number of amino acid-related genes in a BGC when using the aa mode",type=int)
     parser.add_argument("-w","--workers",default=1,help="Number of cuncurrently analyzed genomes (Default: 1)",type=int)
     parser.add_argument("--csv",action="store_true",help="To include analysis CSV files in the output.")
     parser.add_argument("-v","--version",action="version",version='%(prog)s 1.0.2')
@@ -48,8 +49,10 @@ def main():
     noCore = args.no_core
     noUstY = args.no_usty
     noKexB = args.no_kexb
+    aa_num = args.min_aa
     workers = args.workers
     NeedCSV = args.csv
+
 
     if os.path.isdir(gbk_dir) == False:
         sys.exit("The input directory does not exist.")
@@ -57,7 +60,7 @@ def main():
         sys.exit("'no_core' can only be used with the target or pfam mode.")
     if additional_genes < 0:
         sys.exit("Please provide a non-negative int value for additional_genes.")
-    if mode == "all" or mode == "ripps" or mode == "sre" or mode == "human":
+    if mode == "all" or mode == "ripps" or mode == "sre" or mode == "human" or mode == "aa":
         query = "none"
     elif mode == "target":
         query = args.fasta
@@ -97,7 +100,7 @@ def main():
     """
     Start BGC extraction
     """
-    BGCeXtractorMain(gbk_dir,results_dir,mode,query,gap_allowed,max_bgc_gap,min_prot_len,num_of_genes_checked,min_identity,additional_genes,noCore,noUstY,noKexB,workers,NeedCSV)
+    BGCeXtractorMain(gbk_dir,results_dir,mode,query,gap_allowed,max_bgc_gap,min_prot_len,num_of_genes_checked,min_identity,additional_genes,noCore,noUstY,noKexB,aa_num,workers,NeedCSV)
 
 
 if __name__ == "__main__":
