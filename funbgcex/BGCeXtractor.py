@@ -17,7 +17,7 @@ from funbgcex.SimilarBGCfinder import MakeProtBGCidDict
 
 pd.set_option('future.no_silent_downcasting', True)
 
-def BGCeXtractor(file,gbk_dir,results_dir,results_dir2,mode,query,gap_allowed,max_bgc_gap,min_prot_len,num_of_genes_checked,min_identity,additional_genes,noCore,noUstY,noKexB,IDdict,GeneNumDict,MetabDict,all_BGC_dir,NeedCSV):
+def BGCeXtractor(file,gbk_dir,results_dir,results_dir2,mode,query,gap_allowed,max_bgc_gap,min_prot_len,num_of_genes_checked,min_identity,additional_genes,noCore,noUstY,noKexB,aa_num,IDdict,GeneNumDict,MetabDict,all_BGC_dir,NeedCSV):
     current_dir = os.path.dirname(os.path.abspath(__file__))
 
     time_start = time.time()
@@ -157,6 +157,21 @@ def BGCeXtractor(file,gbk_dir,results_dir,results_dir2,mode,query,gap_allowed,ma
             logger.debug("Adding target information")
             AddTargetPfam(hmmscan_result,df)
 
+        if mode == "aa":
+            """
+            hmmscan to detect amino acid-related proteins
+            """
+            hmmscan_output_dir = f"{temp_dir}/hmmscan"
+            os.makedirs(hmmscan_output_dir,exist_ok=True)
+            hmmscan_result = f"{hmmscan_output_dir}/hmm_aa.txt"
+            hmmscan_aa_database = f"{current_dir}/data/hmm/aa/aa.hmm"
+
+            logger.debug("Running hmmscan to detect amino acid-related proteins")
+            runHMMscan(fasta_file,hmmscan_result,hmmscan_aa_database,1e-5)
+
+            logger.debug("Adding target information")
+            AddAaPfam(hmmscan_result,df)            
+
         """
         Extract protein sequences around core/target proteins
         """
@@ -175,7 +190,7 @@ def BGCeXtractor(file,gbk_dir,results_dir,results_dir2,mode,query,gap_allowed,ma
             combineFASTA(extract_CDS_target_dir,temp_dir)
             combined_fasta = f"{temp_dir}/combined.fasta"
 
-            if mode == "ripps" or mode == "target" or mode == "pfam":
+            if mode == "ripps" or mode == "target" or mode == "pfam" or mode == "aa":
                 """
                 hmmscan to detect core enzymes
                 """
@@ -298,7 +313,7 @@ def BGCeXtractor(file,gbk_dir,results_dir,results_dir2,mode,query,gap_allowed,ma
             BGC_dir = f"{temp_dir}/../BGCs"
             os.makedirs(BGC_dir,exist_ok=True)
             logger.debug("Extracting BGCs")
-            DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df_,original_df,cluster_csv,IDdict,GeneNumDict,MetabDict,additional_genes,temp_dir_,noCore,noUstY,file_name,log2)
+            DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df_,original_df,cluster_csv,IDdict,GeneNumDict,MetabDict,additional_genes,temp_dir_,noCore,noUstY,aa_num,file_name,log2)
 
             """
             Copy BGC gbk files
@@ -363,7 +378,7 @@ def BGCeXtractor(file,gbk_dir,results_dir,results_dir2,mode,query,gap_allowed,ma
     print(f"{file_name}: BGC extraction finished in {total_time} min. {message} extracted.")
 
 
-def BGCeXtractorMain(gbk_dir,results_dir,mode,query,gap_allowed,max_bgc_gap,min_prot_len,num_of_genes_checked,min_identity,additional_genes,noCore,noUstY,noKexB,workers,NeedCSV):
+def BGCeXtractorMain(gbk_dir,results_dir,mode,query,gap_allowed,max_bgc_gap,min_prot_len,num_of_genes_checked,min_identity,additional_genes,noCore,noUstY,noKexB,aa_num,workers,NeedCSV):
     current_dir = os.path.dirname(os.path.abspath(__file__))
     temp_dir = f"{results_dir}/temp"
     os.makedirs(temp_dir,exist_ok=True)
@@ -398,6 +413,7 @@ def BGCeXtractorMain(gbk_dir,results_dir,mode,query,gap_allowed,max_bgc_gap,min_
     logger_main.info(f"no_core: {noCore}")
     logger_main.info(f"usty: {noUstY}")
     logger_main.info(f"kexb: {noKexB}")
+    logger_main.info(f"aa_num: {aa_num}")
     logger_main.info(f"csv: {NeedCSV}")
 
     if mode == "target":
@@ -459,11 +475,11 @@ def BGCeXtractorMain(gbk_dir,results_dir,mode,query,gap_allowed,max_bgc_gap,min_
             executor.map(BGCeXtractor,input_gbk_files,[gbk_dir]*total_no,[results_dir]*total_no,[results_dir2]*total_no,
             [mode]*total_no,[query]*total_no,[gap_allowed]*total_no,[max_bgc_gap]*total_no,[min_prot_len]*total_no,
             [num_of_genes_checked]*total_no,[min_identity]*total_no,[additional_genes]*total_no,[noCore]*total_no,[noUstY]*total_no,
-            [noKexB]*total_no,[IDdict]*total_no,[GeneNumDict]*total_no,[MetabDict]*total_no,[all_BGC_dir]*total_no,[NeedCSV]*total_no)    
+            [noKexB]*total_no,[aa_num]*total_no,[IDdict]*total_no,[GeneNumDict]*total_no,[MetabDict]*total_no,[all_BGC_dir]*total_no,[NeedCSV]*total_no)    
 
     if workers == 1:
         for file in input_gbk_files:
-            BGCeXtractor(file,gbk_dir,results_dir,results_dir2,mode,query,gap_allowed,max_bgc_gap,min_prot_len,num_of_genes_checked,min_identity,additional_genes,noCore,noUstY,noKexB,IDdict,GeneNumDict,MetabDict,all_BGC_dir,NeedCSV)
+            BGCeXtractor(file,gbk_dir,results_dir,results_dir2,mode,query,gap_allowed,max_bgc_gap,min_prot_len,num_of_genes_checked,min_identity,additional_genes,noCore,noUstY,noKexB,aa_num,IDdict,GeneNumDict,MetabDict,all_BGC_dir,NeedCSV)
 
 
     """
