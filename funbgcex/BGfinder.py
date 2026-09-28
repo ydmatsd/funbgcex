@@ -227,6 +227,17 @@ def AddTargetPfam(hmmscan_result,df):
     df.loc[df['locus_tag'].isin(hit_set),'BP'] = 1
 
 
+def AddAaPfam(hmmscan_result,df):
+    df["AA_related"] = 0
+    hit_set = set()
+
+    for qresult in SearchIO.parse(hmmscan_result, 'hmmscan3-domtab'):
+        hit_set.add(qresult.id)
+
+    df.loc[df['locus_tag'].isin(hit_set),'AA_related'] = 1
+    df.loc[df['locus_tag'].isin(hit_set),'BP'] = 1
+
+
 def ExtractCDS4Check(mode,num_of_genes_checked,output_dir,df):
     if mode == "all" or mode == "ripps" or mode == "sre" or mode == "human":
         target = "core"
@@ -234,6 +245,8 @@ def ExtractCDS4Check(mode,num_of_genes_checked,output_dir,df):
         target = "target_homologue"
     elif mode == "pfam":
         target = "withTarget"
+    elif mode == "aa":
+        target = "AA_related"
 
     for i in range(len(df)):
         if mode == "all" or mode == "ripps" or mode == "sre" or mode == "human":
@@ -409,6 +422,9 @@ def AddPfam(mode,hmmscan_result,df,SMhmm):
             if mode == "pfam" and df.at[i,"withTarget"] == 1:
                 df.at[i,"BP"] = 0
                 df.at[i,"withTarget"] = 0
+            if mode == "aa" and df.at[i,"AA_related"] == 1:
+                df.at[i,"BP"] = 0
+                df.at[i,"AA_related"] = 0
             if df.at[i,"core"] != "none" and df.at[i,"core"] != "RiPP PP":
                 df.at[i,"core"] = "none"
 
@@ -597,7 +613,7 @@ def HousekeepingGeneFinder(df):
             df.at[i,"BP"] = 0
 
 
-def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,df_original,cluster_csv,IDdict,GeneNumDict,MetabDict,additional_genes,temp_dir,noCore,noUstY,file_name,log):
+def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,df_original,cluster_csv,IDdict,GeneNumDict,MetabDict,additional_genes,temp_dir,noCore,noUstY,aa_num,file_name,log):
     current_dir = os.path.dirname(os.path.abspath(__file__))
 
     logger = logging.getLogger(file_name)
@@ -628,6 +644,7 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
         withHumanP = False
         ToBeExtracted = False
         ToBeReset = False
+        aa_count = 0
 
         if df.at[counter,"BP"] == 1:
             counter_start = counter
@@ -675,6 +692,12 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                     if df.at[j,"human_protein_like"] == 1 and df.at[j,"duplicated"] == 1 and df.at[j,"core"] == "none":
                         withHumanP = True
 
+                if mode == "aa":
+                    if df.at[j,"AA_related"] == 1:
+                        aa_count += 1
+                    if aa_count >= aa_num:
+                        withTarget = True
+
                 if j == len(df) - 1:
                     if df.at[j,"BP"] == 1:
                         end_pos = df.at[j,"end"]
@@ -721,7 +744,7 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                     if withRiPPpp and withUstY:
                         ToBeExtracted = True
                 
-            if mode == "target" or mode == "pfam":
+            if mode == "target" or mode == "pfam" or mode == "aa":
                 if noUstY:
                     if withRiPPpp and withTarget:
                         ToBeExtracted = True
