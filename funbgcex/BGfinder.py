@@ -195,25 +195,26 @@ def AddTargetHomologue(blastp_result,df):
     df["target_homologue"] = "none"
     df["target_homologue_identity"] = "none"
     
-    blast_records = NCBIXML.parse(open(blastp_result))
+    with open(blastp_result,"r") as br:
+        blast_records = NCBIXML.parse(br)
 
-    for blast_record in blast_records:
-        try:
-            for alignment in blast_record.alignments:
-                for hsp in alignment.hsps:
-                    query = blast_record.query
-                    blast_hit = alignment.title
-                    identity = str(round(100*hsp.identities/len(hsp.match),1)) # value of %identity
+        for blast_record in blast_records:
+            try:
+                for alignment in blast_record.alignments:
+                    for hsp in alignment.hsps:
+                        query = blast_record.query
+                        blast_hit = alignment.title
+                        identity = str(round(100*hsp.identities/len(hsp.match),1)) # value of %identity
 
-                    for i in range(len(df)):
-                        if df.at[i,"locus_tag"] == query:
-                            df.at[i,"BP"] = 1
-                            df.at[i,"target_homologue"] = blast_hit
-                            df.at[i,"target_homologue_identity"] = identity
-                            break
-                    break
-        except:
-            pass
+                        for i in range(len(df)):
+                            if df.at[i,"locus_tag"] == query:
+                                df.at[i,"BP"] = 1
+                                df.at[i,"target_homologue"] = blast_hit
+                                df.at[i,"target_homologue_identity"] = identity
+                                break
+                        break
+            except:
+                pass
 
 
 def AddTargetPfam(hmmscan_result,df):
@@ -441,27 +442,28 @@ def AddHomologue(blastp_result,df):
     df["known_homologue metabolite"] = "none"
     df["known_homologue FBGC or FPROT ID"] = "none"
     
-    blast_records = NCBIXML.parse(open(blastp_result))
+    with open(blastp_result) as br:
+        blast_records = NCBIXML.parse(br)
 
-    for blast_record in blast_records:
-        try:
-            for alignment in blast_record.alignments:
-                for hsp in alignment.hsps:
-                    query = blast_record.query
-                    blast_hit = alignment.title.replace(" ","")
-                    identity = str(round(100*hsp.identities/len(hsp.match),1)) # value of %identity
-                    query_indices = df.index[df["locus_tag"] == query]
-                    i = query_indices[0]
-                    df.at[i,"BP"] = 1
-                    df.at[i,"known_homologue"] = prot_df.at[blast_hit,"protein"].split(" ")[-1]
-                    df.at[i,"known_homologue_identity"] = identity
-                    df.at[i,"known_homologue full name"] = prot_df.at[blast_hit,"protein"]
-                    df.at[i,"known_homologue source"] = prot_df.at[blast_hit,"source"]
-                    df.at[i,"known_homologue metabolite"] = prot_df.at[blast_hit,"metabolite"]
-                    df.at[i,"known_homologue FBGC or FPROT ID"] = prot_df.at[blast_hit,"FBGC or FPROT ID"]
-                    break
-        except:
-            pass
+        for blast_record in blast_records:
+            try:
+                for alignment in blast_record.alignments:
+                    for hsp in alignment.hsps:
+                        query = blast_record.query
+                        blast_hit = alignment.title.replace(" ","")
+                        identity = str(round(100*hsp.identities/len(hsp.match),1)) # value of %identity
+                        query_indices = df.index[df["locus_tag"] == query]
+                        i = query_indices[0]
+                        df.at[i,"BP"] = 1
+                        df.at[i,"known_homologue"] = prot_df.at[blast_hit,"protein"].split(" ")[-1]
+                        df.at[i,"known_homologue_identity"] = identity
+                        df.at[i,"known_homologue full name"] = prot_df.at[blast_hit,"protein"]
+                        df.at[i,"known_homologue source"] = prot_df.at[blast_hit,"source"]
+                        df.at[i,"known_homologue metabolite"] = prot_df.at[blast_hit,"metabolite"]
+                        df.at[i,"known_homologue FBGC or FPROT ID"] = prot_df.at[blast_hit,"FBGC or FPROT ID"]
+                        break
+            except:
+                pass
 
 
 def HKGfinder(blastp_result,df):
@@ -485,32 +487,33 @@ def HKGfinder(blastp_result,df):
         product = df_.at[i,"product"]
         hkgDict[locus_tag] = product
 
-    blast_records = NCBIXML.parse(open(blastp_result))
+    with open(blastp_result) as br:
+        blast_records = NCBIXML.parse(br)
 
-    for blast_record in blast_records:
-        query = blast_record.query 
-        try:
-            for alignment in blast_record.alignments:
-                if blast_record.query != alignment.title.replace(" ",""):
-                    for hsp in alignment.hsps:                                    
-                        identity = 100*hsp.identities/len(hsp.match) # value of %identity
-                        identity_ = str(round(identity,1))
-                        alignLen = hsp.align_length
-                        hitLen = alignment.length
-                        coverage = alignLen/hitLen*100
-                        
-                        if identity > min_identity and coverage > min_coverage:
-                            blast_hit = alignment.title.replace(" ","")
-                            blast_hit_product = hkgDict[blast_hit]
-                            query_indices = df.index[df["locus_tag"] == query]
-                            i = query_indices[0]
-                            df.at[i,"conserved_protein"] = 1
-                            df.at[i,"hkg_homologue"] = blast_hit
-                            df.at[i,"hkg_homologue_product"] = blast_hit_product
-                            df.at[i,"hkg_homologue_identity"] = identity_
-                        break
-        except:
-            pass
+        for blast_record in blast_records:
+            query = blast_record.query 
+            try:
+                for alignment in blast_record.alignments:
+                    if blast_record.query != alignment.title.replace(" ",""):
+                        for hsp in alignment.hsps:                                    
+                            identity = 100*hsp.identities/len(hsp.match) # value of %identity
+                            identity_ = str(round(identity,1))
+                            alignLen = hsp.align_length
+                            hitLen = alignment.length
+                            coverage = alignLen/hitLen*100
+                            
+                            if identity > min_identity and coverage > min_coverage:
+                                blast_hit = alignment.title.replace(" ","")
+                                blast_hit_product = hkgDict[blast_hit]
+                                query_indices = df.index[df["locus_tag"] == query]
+                                i = query_indices[0]
+                                df.at[i,"conserved_protein"] = 1
+                                df.at[i,"hkg_homologue"] = blast_hit
+                                df.at[i,"hkg_homologue_product"] = blast_hit_product
+                                df.at[i,"hkg_homologue_identity"] = identity_
+                            break
+            except:
+                pass
 
 
 def HumanProteinFinder(blastp_result,df):
@@ -533,32 +536,33 @@ def HumanProteinFinder(blastp_result,df):
         product = df_.at[i,"product"]
         HumanProtDict[gene] = product
 
-    blast_records = NCBIXML.parse(open(blastp_result))
+    with open(blastp_result) as br:
+        blast_records = NCBIXML.parse(br)
 
-    for blast_record in blast_records:
-        query = blast_record.query 
-        try:
-            for alignment in blast_record.alignments:
-                if blast_record.query != alignment.title.replace(" ",""):
-                    for hsp in alignment.hsps:                                    
-                        identity = 100*hsp.identities/len(hsp.match) # value of %identity
-                        identity_ = str(round(identity,1))
-                        alignLen = hsp.align_length
-                        hitLen = alignment.length
-                        coverage = alignLen/hitLen*100
+        for blast_record in blast_records:
+            query = blast_record.query 
+            try:
+                for alignment in blast_record.alignments:
+                    if blast_record.query != alignment.title.replace(" ",""):
+                        for hsp in alignment.hsps:                                    
+                            identity = 100*hsp.identities/len(hsp.match) # value of %identity
+                            identity_ = str(round(identity,1))
+                            alignLen = hsp.align_length
+                            hitLen = alignment.length
+                            coverage = alignLen/hitLen*100
 
-                        if identity > min_identity and coverage > min_coverage:
-                            blast_hit = alignment.title.replace(" ","")
-                            blast_hit_product = HumanProtDict[blast_hit]
-                            query_indices = df.index[df["locus_tag"] == query]
-                            i = query_indices[0]
-                            df.at[i,"human_protein_like"] = 1
-                            df.at[i,"human_homologue"] = blast_hit
-                            df.at[i,"human_homologue_product"] = blast_hit_product
-                            df.at[i,"human_homologue_identity"] = identity_
-                        break
-        except:
-            pass
+                            if identity > min_identity and coverage > min_coverage:
+                                blast_hit = alignment.title.replace(" ","")
+                                blast_hit_product = HumanProtDict[blast_hit]
+                                query_indices = df.index[df["locus_tag"] == query]
+                                i = query_indices[0]
+                                df.at[i,"human_protein_like"] = 1
+                                df.at[i,"human_homologue"] = blast_hit
+                                df.at[i,"human_homologue_product"] = blast_hit_product
+                                df.at[i,"human_homologue_identity"] = identity_
+                            break
+            except:
+                pass
 
 
 def DuplicationChecker(blastp_result,min_identity,df):
@@ -566,41 +570,42 @@ def DuplicationChecker(blastp_result,min_identity,df):
     df["duplicated_protein_identity"] = "none"
     df["duplicated"] = 0
 
-    blast_records = NCBIXML.parse(open(blastp_result))
+    with open(blastp_result) as br:
+        blast_records = NCBIXML.parse(br)
 
-    for blast_record in blast_records:
-        try:
-            for alignment in blast_record.alignments:
-                if blast_record.query != alignment.title.replace(" ",""):
-                    for hsp in alignment.hsps:
-                        query = blast_record.query
-                        blast_hit = alignment.title.replace(" ","")
-                        identity = 100*hsp.identities/len(hsp.match) # value of %identity
-                        identity_ = str(round(identity,1))
+        for blast_record in blast_records:
+            try:
+                for alignment in blast_record.alignments:
+                    if blast_record.query != alignment.title.replace(" ",""):
+                        for hsp in alignment.hsps:
+                            query = blast_record.query
+                            blast_hit = alignment.title.replace(" ","")
+                            identity = 100*hsp.identities/len(hsp.match) # value of %identity
+                            identity_ = str(round(identity,1))
 
-                        if identity > min_identity:
-                            query_indices = df.index[df["locus_tag"] == query]
-                            i = query_indices[0]
-                            if df.at[i,"conserved_protein"] == 1 and (float(df.at[i,"hkg_homologue_identity"]) - identity < 12) and identity < 85: #If a protein is much more similar to the HKG protein than to the duplicated protein, it suggests the protein is not a duplicated protein but that it has the same function as the HKG protein. Also, if the identity is too high (>85%), the protein might not be a self-resistance protein.
-                                df.at[i,"BP"] = 1
-                                df.at[i,"duplicated"] = 1
-                                df.at[i,"duplicated_protein"] = blast_hit
-                                df.at[i,"duplicated_protein_identity"] = identity_
-                                break
-                            elif df.at[i,"other_conserved_protein"] == 1:
-                                df.at[i,"duplicated"] = 1
-                                df.at[i,"duplicated_protein"] = blast_hit
-                                df.at[i,"duplicated_protein_identity"] = identity_
-                                break
-                            elif df.at[i,"conserved_protein"] == 0 and df.at[i,"human_protein_like"] == 1 and identity < 85:
-                                df.at[i,"BP"] = 1
-                                df.at[i,"duplicated"] = 1
-                                df.at[i,"duplicated_protein"] = blast_hit
-                                df.at[i,"duplicated_protein_identity"] = identity_
-                                break                                
+                            if identity > min_identity:
+                                query_indices = df.index[df["locus_tag"] == query]
+                                i = query_indices[0]
+                                if df.at[i,"conserved_protein"] == 1 and (float(df.at[i,"hkg_homologue_identity"]) - identity < 12) and identity < 85: #If a protein is much more similar to the HKG protein than to the duplicated protein, it suggests the protein is not a duplicated protein but that it has the same function as the HKG protein. Also, if the identity is too high (>85%), the protein might not be a self-resistance protein.
+                                    df.at[i,"BP"] = 1
+                                    df.at[i,"duplicated"] = 1
+                                    df.at[i,"duplicated_protein"] = blast_hit
+                                    df.at[i,"duplicated_protein_identity"] = identity_
+                                    break
+                                elif df.at[i,"other_conserved_protein"] == 1:
+                                    df.at[i,"duplicated"] = 1
+                                    df.at[i,"duplicated_protein"] = blast_hit
+                                    df.at[i,"duplicated_protein_identity"] = identity_
+                                    break
+                                elif df.at[i,"conserved_protein"] == 0 and df.at[i,"human_protein_like"] == 1 and identity < 85:
+                                    df.at[i,"BP"] = 1
+                                    df.at[i,"duplicated"] = 1
+                                    df.at[i,"duplicated_protein"] = blast_hit
+                                    df.at[i,"duplicated_protein_identity"] = identity_
+                                    break                                
 
-        except:
-            pass
+            except:
+                pass
 
 
 def HousekeepingGeneFinder(df):
@@ -844,7 +849,8 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                                 break                        
 
                 gbk = f"{GBK_dir}/{scaffold}.gbk"
-                seq_record = SeqIO.read(open(gbk),"genbank")
+                with open(gbk,"r") as g:
+                    seq_record = SeqIO.read(g,"genbank")
                 feature = SeqFeature(FeatureLocation(int(BGC_start),int(BGC_end)),type="misc_feature",qualifiers={"note": ["predicted BGC"]})
                 seq_record.features.append(feature)
                 subrecord = seq_record[start_pos:end_pos]
@@ -912,7 +918,8 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                                 PfamInfo = f"[{locus_tag}: {Pfams}]"
                                 Pfam_list.append(PfamInfo)
 
-                SeqIO.write([subrecord],open(bgc,"w"),"genbank")
+                with open(bgc,"w") as b:
+                    SeqIO.write([subrecord],b,"genbank")
 
                 logger.debug(f"BGC{BGC_num} extracted. Scaffold: {scaffold}; Locus tag start: {locus_tag_start}; Locus tag end: {locus_tag_end}; Start: {start_pos}; End: {end_pos}.")
 
