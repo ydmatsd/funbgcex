@@ -267,7 +267,8 @@ def MakeBGCpage(current_dir,BGCcsv,fungus_name,gbk_files,html_dir):
             conserved = "–"
         if human == "-":
             human = "–"
-        seq_record = SeqIO.read(open(gbk),"genbank")
+        with open(gbk,"r") as g:
+            seq_record = SeqIO.read(g,"genbank")
         length = len(seq_record.seq)
         similarBGCid = df.at[BGCno,"Similar BGC"]
         if similarBGCid != "-":
@@ -306,7 +307,8 @@ def MakeJS(current_dir,gbk_files,js_dir):
         gene_list = []
         locus_tag_list = []
 
-        seq_record = SeqIO.read(open(gbk),"genbank")
+        with open(gbk,"r") as g:
+            seq_record = SeqIO.read(g,"genbank")
         length = len(seq_record.seq)
         for feature in seq_record.features:
             if feature.type == "CDS":            
