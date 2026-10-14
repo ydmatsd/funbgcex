@@ -59,24 +59,25 @@ def ClusteredProteinFinder(fasta_dir,database,IDdict,deletedProtDict,max_bgc_gap
 		"""
 		Analyze BLASTp result
 		"""
-		blast_records = NCBIXML.parse(open(blastp_result))
+		with open(blastp_result,"r") as br:
+			blast_records = NCBIXML.parse(br)
 
-		BLASTlist = []
+			BLASTlist = []
 
-		for blast_record in blast_records:
-			try:
-				for alignment in blast_record.alignments:
-					for hsp in alignment.hsps:
-						query = blast_record.query
-						blast_hit = alignment.title.replace(" ","")
-						identity = hsp.identities/len(hsp.match)*100
-						alignLen = hsp.align_length
-						hitLen = alignment.length
-						coverage = alignLen/hitLen*100
-						if identity > 25 and coverage > 50:
-							BLASTlist.append([query,IDdict[blast_hit],identity])
-			except:
-				pass
+			for blast_record in blast_records:
+				try:
+					for alignment in blast_record.alignments:
+						for hsp in alignment.hsps:
+							query = blast_record.query
+							blast_hit = alignment.title.replace(" ","")
+							identity = hsp.identities/len(hsp.match)*100
+							alignLen = hsp.align_length
+							hitLen = alignment.length
+							coverage = alignLen/hitLen*100
+							if identity > 25 and coverage > 50:
+								BLASTlist.append([query,IDdict[blast_hit],identity])
+				except:
+					pass
 
 		for item in BLASTlist:
 			for prot in link_list:
@@ -215,7 +216,8 @@ class SimilarBGCfinder:
 		fasta_file = f"{temp_dir}/proteins.fasta"
 		output_handle = open(fasta_file,"w")
 
-		seq_record = SeqIO.read(open(inputGBK),"genbank")
+		with open(inputGBK,"r") as g:
+			seq_record = SeqIO.read(g,"genbank")
 
 		counter = 1
 		for feature in seq_record.features:
@@ -239,25 +241,26 @@ class SimilarBGCfinder:
 		"""
 		Analyze BLASTp result
 		"""
-		blast_records = NCBIXML.parse(open(blastp_result))
+		with open(blastp_result,"r") as br:
+			blast_records = NCBIXML.parse(br)
 
-		BLASTlist = []
+			BLASTlist = []
 
-		for blast_record in blast_records:
-			try:
-				for alignment in blast_record.alignments:
-					for hsp in alignment.hsps:
-						query = blast_record.query
-						blast_hit = alignment.title.replace(" ","")
-						identity = 100*hsp.identities/len(hsp.match) # value of %identity
-						evalue = hsp.expect
-						alignLen = hsp.align_length
-						hitLen = alignment.length
-						coverage = alignLen/hitLen*100
-						if identity >= 45 and coverage > 50:
-							BLASTlist.append([query,blast_hit,IDdict[blast_hit],evalue,identity])
-			except:
-				pass
+			for blast_record in blast_records:
+				try:
+					for alignment in blast_record.alignments:
+						for hsp in alignment.hsps:
+							query = blast_record.query
+							blast_hit = alignment.title.replace(" ","")
+							identity = 100*hsp.identities/len(hsp.match) # value of %identity
+							evalue = hsp.expect
+							alignLen = hsp.align_length
+							hitLen = alignment.length
+							coverage = alignLen/hitLen*100
+							if identity >= 45 and coverage > 50:
+								BLASTlist.append([query,blast_hit,IDdict[blast_hit],evalue,identity])
+				except:
+					pass
 
 		BGClist = []
 		for item in BLASTlist:
