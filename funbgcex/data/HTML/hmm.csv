@@ -394,21 +394,21 @@ MBOAT_2,acetyltransferase,,#76D6FF,Pfam,PF13813.9
 MdpA,transcriptional coactivator,,#929000,MyHMM,
 Melibiase_2,alpha-galactosidase,,#0096FF,Pfam,PF16499.7
 Melibiase_C,alpha-galactosidase,,#0096FF,Pfam,PF17801.3
-Methyltransf_10,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",,Pfam,PF05971.15
+Methyltransf_10,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF05971.15
 Methyltransf_11,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF08241.15
 Methyltransf_12,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF08242.15
 Methyltransf_16,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF10294.12
 Methyltransf_2,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF00891.21
-Methyltransf_21,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",,Pfam,PF05050.15
+Methyltransf_21,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF05050.15
 Methyltransf_23,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF13489.9
 Methyltransf_24,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF13578.9
 Methyltransf_25,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF13649.9
-Methyltransf_28,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",,Pfam,PF02636.20
+Methyltransf_28,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF02636.20
 Methyltransf_3,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF01596.20
 Methyltransf_31,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF13847.9
-Methyltransf_32,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",,Pfam,PF13679.9
+Methyltransf_32,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF13679.9
 Methyltransf_33,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF10017.12
-Methyltransf_4,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",,Pfam,PF02390.20
+Methyltransf_4,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF02390.20
 Methyltransf_7,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF03492.18
 Methyltransf_9,methyltransferase,"NR-PKS,PR-PKS,nPR-PKS,HR-PKS,PKS-NRPS,NRPS-PKS,NRPS,PKS-like,NRPS-like",#FF9300,Pfam,PF08003.14
 MetW,,,,Pfam,PF07021.15
