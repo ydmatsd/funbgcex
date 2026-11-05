@@ -162,6 +162,7 @@ def RiPPppFinder(mode,aa_len,unique_aa,min_repeat,threshold,noKexB,fasta,df):
     seq_list = []
 
     cleavage_sites = ["KR","KK","RK","RR"]
+    # cleavage_sites = ["AR"]
     aa_letters = "ACDEFGHIKLMNPQRSTVWY"
     dipeptide_list = [f"{aa}{amino_acid}" for aa in aa_letters for amino_acid in aa_letters]
     
