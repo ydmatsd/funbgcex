@@ -160,6 +160,7 @@ Cu_amine_oxid,copper amine oxidase,,#009193,Pfam,PF01179.23
 Cu-oxidase,laccase,,#009193,Pfam,PF00394.25
 Cu-oxidase_2,laccase,,#009193,Pfam,PF07731.17
 Cu-oxidase_3,laccase,,#009193,Pfam,PF07732.18
+Cucumopine_C,opine synthase,,#709858,Pfam,PF18631.8
 Cupin_2,cupin domain-containing protein,,#FF7E79,Pfam,PF07883.14
 Cys_Met_Meta_PP,PLP-containing enzyme,,#73FCD6,Pfam,PF01053.23
 Cyt-b5,cytochrome b5-like protein,,#FF8AD8,Pfam,PF00173.31
