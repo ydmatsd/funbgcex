@@ -229,6 +229,43 @@ def AddTargetPfam(hmmscan_result,df):
     df.loc[df['locus_tag'].isin(hit_set),'BP'] = 1
 
 
+def AddTargetPfamMulti(hmmscan_result,df):
+    df["withTarget"] = 0
+    df["target_Pfams"] = "none"
+    hit_set = set()
+    hmm_list = []
+    Pfam_dict = {}
+
+    for qresult in SearchIO.parse(hmmscan_result, 'hmmscan3-domtab'):
+        hit_set.add(qresult.id)
+        for i in range(len(qresult.hits)):
+            hit_list = []
+            newList = True
+            for item in hmm_list:
+                if item[0] == qresult.id:
+                    if qresult.hits[i].id not in item:
+                        item.append(qresult.hits[i].id)
+                        newList = False
+                        break
+            if newList == True:
+                hit_list.append(qresult.id) # To obtain the name of the query
+                hit_list.append(qresult.hits[i].id) # To obtain the name of the hit
+                hmm_list.append(hit_list)
+
+    for item in hmm_list:
+        locus_tag = item[0]
+        pfams = ", ".join(item[1:])
+        Pfam_dict[locus_tag] = pfams
+
+    df.loc[df['locus_tag'].isin(hit_set),'withTarget'] = 1
+    df.loc[df['locus_tag'].isin(hit_set),'BP'] = 1
+
+    for i in range(len(df)):
+        locus_tag = df.at[i,"locus_tag"]
+        if locus_tag in Pfam_dict:
+            df.at[i,"target_Pfams"] = Pfam_dict[locus_tag]
+
+
 def ExtractCDS4Check(mode,num_of_genes_checked,output_dir,df):
     if mode == "all" or mode == "ripps" or mode == "sre" or mode == "human":
         target = "core"
@@ -685,7 +722,7 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                 if mode == "mpfam":
                     if df.at[j,"withTarget"] == 1:
                         pfam_gene_count += 1
-                        domains = df.at[j,"Pfam"].split(", ")
+                        domains = df.at[j,"target_Pfams"].split(", ")
                         for domain in domains:
                             if domain in pfams and domain not in pfam_type_list:
                                 pfam_type_list.append(domain)
