@@ -15,6 +15,9 @@ def runHMMscan(input_file,output_file,database,Evalue):
 def runHMMfetch(HMMdatabase,target_name,output_file):
     subprocess.run(["hmmfetch","-o",output_file,HMMdatabase,target_name],stdout=subprocess.DEVNULL)
 
+def runHMMfetch_m(HMMdatabase,target_file,output_file):
+    subprocess.run(["hmmfetch","-o",output_file,"-f",HMMdatabase,target_file],stdout=subprocess.DEVNULL)
+
 def runHMMpress(input_file):
     subprocess.run(["hmmpress",input_file],stdout=subprocess.DEVNULL)
 
