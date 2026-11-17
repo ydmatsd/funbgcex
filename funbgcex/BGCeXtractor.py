@@ -158,9 +158,7 @@ def BGCeXtractor(file,gbk_dir,results_dir,results_dir2,mode,query,gap_allowed,ma
             if mode == "pfam":
                 AddTargetPfam(hmmscan_result,df)
             if mode == "mpfam":
-                AddTargetPfamMulti(hmmscan_result,df)
-                df.to_csv("test1.csv")
-          
+                AddTargetPfamMulti(hmmscan_result,df)          
 
         """
         Extract protein sequences around core/target proteins
