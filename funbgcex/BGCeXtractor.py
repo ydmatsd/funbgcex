@@ -155,7 +155,11 @@ def BGCeXtractor(file,gbk_dir,results_dir,results_dir2,mode,query,gap_allowed,ma
             runHMMscan(fasta_file,hmmscan_result,hmmscan_target_database,1e-5)
 
             logger.debug("Adding target information")
-            AddTargetPfam(hmmscan_result,df)
+            if mode == "pfam":
+                AddTargetPfam(hmmscan_result,df)
+            if mode == "mpfam":
+                AddTargetPfamMulti(hmmscan_result,df)
+                df.to_csv("test1.csv")
           
 
         """
