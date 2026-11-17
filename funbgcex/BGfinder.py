@@ -646,7 +646,7 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
     BGC_num = 1
 
     if mode == "mpfam":
-        pfams = query.split(",")
+        pfams = set(query.split(","))
         if min_pfam_type == None:
             min_pfam_type = len(pfams)
         if min_pfam_genes == None:
@@ -664,7 +664,7 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
         withHumanP = False
         ToBeExtracted = False
         ToBeReset = False
-        pfam_type_list = []
+        pfam_type_set = set()
         pfam_gene_count = 0
 
         if df.at[counter,"BP"] == 1:
@@ -709,10 +709,8 @@ def DefineBoundary(mode,GBK_dir,BGC_dir,gap_allowed,min_prot_len,fungus_name,df,
                     if df.at[j,"withTarget"] == 1:
                         pfam_gene_count += 1
                         domains = df.at[j,"target_Pfams"].split(", ")
-                        for domain in domains:
-                            if domain in pfams and domain not in pfam_type_list:
-                                pfam_type_list.append(domain)
-                    if len(pfam_type_list) >= min_pfam_type and pfam_gene_count >= min_pfam_genes:
+                        pfam_type_set.update(domain for domain in domains if domain in pfams)
+                    if len(pfam_type_set) >= min_pfam_type and pfam_gene_count >= min_pfam_genes:
                         withTarget = True
 
                 if mode == "sre":
