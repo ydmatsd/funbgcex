@@ -11,9 +11,9 @@ def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("gbk_dir",help="Directory of input GenBank files")
     parser.add_argument("output_dir",help="Output directory")
-    parser.add_argument("-m","--mode",default="all",help="Search mode: all, ripps, target, pfam, sre, or human")
-    parser.add_argument("-f","--fasta",default="none",help="This is required when 'target' mode is used. Please provide a FASTA file containing sequence(s) whose homologue should be found in extracted BGCs.")
-    parser.add_argument("-p","--pfam",default="none",help="This is required when 'pfam' mode is used. Please provide a name of a protein family that should be included in extracted BGCs.")
+    parser.add_argument("-m","--mode",default="all",help="Search mode: all, ripps, target, pfam, mpfam, sre, or human")
+    parser.add_argument("-f","--fasta",default="none",help="Required for 'target' mode. Provide a FASTA file containing sequence(s) whose homologue should be found in extracted BGCs.")
+    parser.add_argument("-p","--pfam",default="none",help="Required for 'pfam' and 'mpfam' modes. Specify the Pfam domain(s) to search for. For 'mpfam' mode, provide multiple Pfam domains separated by commas without spaces.")
     parser.add_argument("-g","--gap",default=2500,help="Maximum allowed gap (in bp) between two adjacent genes in a cluster, if no correlation is detected between the two genes (Default: 2500)",type=int)
     parser.add_argument("-bg","--bgc_gap",default=15000,help="Maximum allowed gap (in bp) between two adjacent genes, if they only have a weak correlation (Default: 15000)",type=int)
     parser.add_argument("-ml","--min_length",default=200,help="Minimum protein length considered for biosynthetic protein detection (Default: 200)",type=int)
@@ -23,7 +23,8 @@ def get_args():
     parser.add_argument("--no_core",action="store_true",help="Use if you wish to extract BGCs without a core protein as well.")
     parser.add_argument("--no_usty",action="store_true",help="Extract RiPP BGCs without a UstY homologue(s)")
     parser.add_argument("--no_kexb",action="store_true",help="Extract RiPP BGCs without a precursor peptide with KexB cleavage sites.")
-    parser.add_argument("--min_aa",default=3,help="Minimum number of amino acid-related genes in a BGC when using the aa mode",type=int)
+    parser.add_argument("--min_pfam_type",help="Minimum number of distinct selected Pfam domains required in a BGC",type=int)
+    parser.add_argument("--min_pfam_genes",help="Minimum number of genes containing at least one selected Pfam domain required in a BGC",type=int)
     parser.add_argument("-w","--workers",default=1,help="Number of cuncurrently analyzed genomes (Default: 1)",type=int)
     parser.add_argument("--csv",action="store_true",help="To include analysis CSV files in the output.")
     parser.add_argument("-v","--version",action="version",version='%(prog)s 1.0.2')
@@ -49,7 +50,8 @@ def main():
     noCore = args.no_core
     noUstY = args.no_usty
     noKexB = args.no_kexb
-    aa_num = args.min_aa
+    min_pfam_type = args.min_pfam_type
+    min_pfam_genes = args.min_pfam_genes
     workers = args.workers
     NeedCSV = args.csv
 
@@ -60,7 +62,7 @@ def main():
         sys.exit("'no_core' can only be used with the target or pfam mode.")
     if additional_genes < 0:
         sys.exit("Please provide a non-negative int value for additional_genes.")
-    if mode == "all" or mode == "ripps" or mode == "sre" or mode == "human" or mode == "aa":
+    if mode == "all" or mode == "ripps" or mode == "sre" or mode == "human":
         query = "none"
     elif mode == "target":
         query = args.fasta
@@ -68,7 +70,8 @@ def main():
             sys.exit("Please provide a fasta file.")
         if os.path.isfile(query) == False:
             sys.exit("The fasta file does not exist.")        
-    elif mode == "pfam":
+    elif mode == "pfam" or mode == "mpfam":
+        query = args.pfam
         PfamList = []
         allHMM = f"{current_dir}/data/hmm/fungalSM/fungalSM.hmm"
         with open(allHMM,"r") as hmm:
@@ -76,31 +79,35 @@ def main():
                 if line.startswith("NAME"):
                     name = line.split(" ")[-1].replace("\n","")
                     PfamList.append(name)
-        query = args.pfam
-        if query not in PfamList:
-            if query != "none":
-                print(f"{query} does not exist in the database.")
-                ToBeContinued = True
-                while ToBeContinued:
-                    answer = input("Do you want to check the available protein family names? y/n: ")
-                    if answer == "Y" or answer == "y":
-                        print(PfamList)
-                        ToBeContinued = False
-                        sys.exit()
-                    elif answer == "N" or answer == "n":
-                        ToBeContinued = False
-                    else:
-                        pass    
-                sys.exit()
-            else:
-                sys.exit("Please provide the name of a protein family to be used for BGC extraction.")
+        if mode == "pfam":            
+            pfams = [query]
+        elif mode == "mpfam":
+            pfams = args.pfam.split(",")
+        for pfam in pfams:
+            if pfam not in PfamList:
+                if pfam != "none":
+                    print(f"{pfam} does not exist in the database.")
+                    ToBeContinued = True
+                    while ToBeContinued:
+                        answer = input("Do you want to check the available protein family names? y/n: ")
+                        if answer == "Y" or answer == "y":
+                            print(PfamList)
+                            ToBeContinued = False
+                            sys.exit()
+                        elif answer == "N" or answer == "n":
+                            ToBeContinued = False
+                        else:
+                            pass    
+                    sys.exit()
+                else:
+                    sys.exit("Please provide the name of a protein family to be used for BGC extraction.")
     else:
         sys.exit("Please choose 'all', 'ripps', 'target', 'pfam', 'sre', or 'human' as an extraction mode.")
 
     """
     Start BGC extraction
     """
-    BGCeXtractorMain(gbk_dir,results_dir,mode,query,gap_allowed,max_bgc_gap,min_prot_len,num_of_genes_checked,min_identity,additional_genes,noCore,noUstY,noKexB,aa_num,workers,NeedCSV)
+    BGCeXtractorMain(gbk_dir,results_dir,mode,query,gap_allowed,max_bgc_gap,min_prot_len,num_of_genes_checked,min_identity,additional_genes,noCore,noUstY,noKexB,min_pfam_type,min_pfam_genes,workers,NeedCSV)
 
 
 if __name__ == "__main__":
